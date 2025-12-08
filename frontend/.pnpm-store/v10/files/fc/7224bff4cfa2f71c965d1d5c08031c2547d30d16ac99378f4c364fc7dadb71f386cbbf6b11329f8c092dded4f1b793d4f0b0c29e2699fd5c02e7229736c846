@@ -1,0 +1,35 @@
+'use strict';
+
+const uuid = require('uuid');
+const CastAttribute = require('../shared/pinia-orm.DWjxIbAJ.cjs');
+
+class UidCast extends CastAttribute.CastAttribute {
+  static parameters;
+  /**
+   * Create a new String attribute instance.
+   */
+  constructor(attributes) {
+    super(attributes);
+  }
+  static withParameters(parameters) {
+    this.parameters = parameters;
+    return this;
+  }
+  /**
+   * Make the value for the attribute.
+   */
+  set(value) {
+    return value ?? uuid.v4(this.$parameters);
+  }
+}
+
+function Uid(options) {
+  return (target, propertyKey) => {
+    const self = target.$self();
+    self.setCast(propertyKey, UidCast.withParameters(options));
+    self.setRegistry(propertyKey, () => self.uid());
+  };
+}
+
+exports.Uid = Uid;
+exports.UidCast = UidCast;

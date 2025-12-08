@@ -1,0 +1,28 @@
+{
+  "config": {
+    "title": "Configurer la session",
+    "source": "Je parle (Source)",
+    "target": "Je veux apprendre (Cible)",
+    "domain": "Domaine",
+    "difficulty": "Difficulté",
+    "type": "Type",
+    "start": "Commencer",
+    "starting": "Démarrage..."
+  },
+  "session": {
+    "title": "Session",
+    "translate": "Traduisez :",
+    "domain": "Domaine :",
+    "check": "Avez-vous eu bon ?",
+    "correct": "Correct",
+    "incorrect": "Incorrect",
+    "reveal": "Révéler",
+    "placeholder": "Tapez votre réponse..."
+  },
+  "summary": {
+    "title": "Session Terminée !",
+    "words": "Mots",
+    "correct": "Correct",
+    "new_session": "Nouvelle Session"
+  }
+}

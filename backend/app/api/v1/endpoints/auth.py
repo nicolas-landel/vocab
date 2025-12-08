@@ -5,8 +5,8 @@ from sqlalchemy import select
 
 from ....core.database import get_db
 from ....core.security import verify_password, get_password_hash, create_access_token, decode_access_token
-from ....models.user import User
-from ....schemas.user import UserCreate, UserResponse, Token
+from ....domain.user.models import User
+from ....domain.user.schemas import UserCreate, UserResponse, Token
 
 
 router = APIRouter()

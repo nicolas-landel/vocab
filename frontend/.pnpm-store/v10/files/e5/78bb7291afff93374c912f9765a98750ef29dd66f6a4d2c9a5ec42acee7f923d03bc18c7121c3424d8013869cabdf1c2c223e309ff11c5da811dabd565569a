@@ -1,0 +1,33 @@
+import { customAlphabet, nanoid } from 'nanoid';
+import { C as CastAttribute } from '../shared/pinia-orm.C7bM_uXu.mjs';
+
+class UidCast extends CastAttribute {
+  static parameters;
+  /**
+   * Create a new String attribute instance.
+   */
+  constructor(attributes) {
+    super(attributes);
+  }
+  static withParameters(parameters) {
+    this.parameters = parameters;
+    return this;
+  }
+  /**
+   * Make the value for the attribute.
+   */
+  set(value) {
+    const nanoid$1 = this.$parameters?.alphabet ? customAlphabet(this.$parameters.alphabet) : nanoid;
+    return value ?? nanoid$1(this.$parameters?.size);
+  }
+}
+
+function Uid(options) {
+  return (target, propertyKey) => {
+    const self = target.$self();
+    self.setCast(propertyKey, UidCast.withParameters(options));
+    self.setRegistry(propertyKey, () => self.uid());
+  };
+}
+
+export { Uid, UidCast };

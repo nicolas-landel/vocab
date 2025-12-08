@@ -1,0 +1,40 @@
+import { R as Repository, C as Constructor, M as Model, W as WeakCache, F as FilledInstallOptions } from './shared/pinia-orm.Bzthh6rU.cjs';
+export { A as AfterHook, J as Attribute, B as BeforeHook, Q as BelongsTo, T as BelongsToMany, ap as CacheConfig, h as CacheConfigOptions, a2 as CastAttribute, a1 as Casts, b as Collection, k as CreatePiniaOrm, d as DataStore, D as DataStoreState, m as Database, K as Dictionary, ak as EagerLoad, al as EagerLoadConstraint, E as Element, a as Elements, a9 as GetElementType, af as Group, ah as GroupBy, ai as GroupByFields, G as GroupedCollection, U as HasMany, X as HasManyBy, Y as HasManyThrough, V as HasOne, z as InheritanceTypes, j as InstallOptions, a5 as Interpreter, I as Item, y as MetaValues, g as ModelConfigOptions, q as ModelFields, x as ModelOptions, t as ModelRegistries, v as ModelRegistry, s as ModelSchemas, Z as MorphMany, a0 as MorphOne, _ as MorphTo, $ as MorphToMany, am as Mutator, an as MutatorFunctions, ao as Mutators, a8 as NonMethodKeys, N as NormalizedData, ae as Order, ag as OrderBy, aj as OrderDirection, i as PiniaConfigOptions, e as PiniaOrmPlugin, P as PiniaOrmPluginContext, w as PrimaryKey, a6 as Query, O as Relation, o as Schema, n as Schemas, S as StoreActions, a4 as Type, a3 as TypeDefault, aa as UltimateKeys, a7 as Where, ad as WhereGroup, ab as WherePrimaryClosure, ac as WhereSecondaryClosure, H as WithKeys, l as createORM, f as definePiniaOrmPlugin, L as deleteModes, p as plugins, r as registerPlugins, c as useDataStore, u as useStoreActions } from './shared/pinia-orm.Bzthh6rU.cjs';
+import { Pinia } from 'pinia';
+import 'vue-demi';
+import '@pinia-orm/normalizr';
+import '@/composables';
+
+declare function useRepo<R extends Repository<any>>(repository: R | Constructor<R>, pinia?: Pinia): R;
+declare function useRepo<M extends Model>(model: Constructor<M>, pinia?: Pinia): Repository<M>;
+
+type ModelOrRepository<M extends typeof Model, R extends typeof Repository> = M | R;
+type ModelsOrRepositories<M extends typeof Model = any, R extends typeof Repository = any> = Record<string, ModelOrRepository<M, R>>;
+type MappedRepositories<MR extends ModelsOrRepositories> = {
+    [K in keyof MR]: MR[K] extends typeof Model ? () => Repository<InstanceType<MR[K]>> : () => InstanceType<MR[K]>;
+};
+/**
+ * Map given models or repositories to the Vue Component.
+ */
+declare function mapRepos<MR extends ModelsOrRepositories>(modelsOrRepositories: MR): MappedRepositories<MR>;
+
+declare const CONFIG_DEFAULTS: {
+    model: {
+        namespace: string;
+        withMeta: boolean;
+        hidden: string[];
+        visible: string[];
+    };
+    cache: {
+        shared: boolean;
+        provider: typeof WeakCache;
+    };
+    pinia: {
+        storeType: string;
+    };
+};
+declare const config: FilledInstallOptions & {
+    [key: string]: any;
+};
+
+export { CONFIG_DEFAULTS, Constructor, FilledInstallOptions, type MappedRepositories, Model, type ModelOrRepository, type ModelsOrRepositories, Repository, config, mapRepos, useRepo };

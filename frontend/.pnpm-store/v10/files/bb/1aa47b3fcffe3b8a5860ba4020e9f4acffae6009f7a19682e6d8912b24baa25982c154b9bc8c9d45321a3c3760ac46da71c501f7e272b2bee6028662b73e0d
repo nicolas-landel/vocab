@@ -1,0 +1,36 @@
+'use strict';
+
+const async = require('nanoid/async');
+const CastAttribute = require('../shared/pinia-orm.DWjxIbAJ.cjs');
+
+class UidCast extends CastAttribute.CastAttribute {
+  static parameters;
+  /**
+   * Create a new String attribute instance.
+   */
+  constructor(attributes) {
+    super(attributes);
+  }
+  static withParameters(parameters) {
+    this.parameters = parameters;
+    return this;
+  }
+  /**
+   * Make the value for the attribute.
+   */
+  async set(value) {
+    const nanoid = this.$parameters?.alphabet ? async.customAlphabet(this.$parameters.alphabet) : async.nanoid;
+    return value ?? await nanoid(this.$parameters?.size);
+  }
+}
+
+function Uid(options) {
+  return (target, propertyKey) => {
+    const self = target.$self();
+    self.setCast(propertyKey, UidCast.withParameters(options));
+    self.setRegistry(propertyKey, () => self.uid());
+  };
+}
+
+exports.Uid = Uid;
+exports.UidCast = UidCast;

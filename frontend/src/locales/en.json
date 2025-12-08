@@ -1,0 +1,28 @@
+{
+  "config": {
+    "title": "Configure Session",
+    "source": "I speak (Source)",
+    "target": "I want to learn (Target)",
+    "domain": "Domain",
+    "difficulty": "Difficulty",
+    "type": "Type",
+    "start": "Start Session",
+    "starting": "Starting..."
+  },
+  "session": {
+    "title": "Session",
+    "translate": "Translate:",
+    "domain": "Domain:",
+    "check": "Did you get it right?",
+    "correct": "Correct",
+    "incorrect": "Incorrect",
+    "reveal": "Reveal",
+    "placeholder": "Type your answer..."
+  },
+  "summary": {
+    "title": "Session Complete!",
+    "words": "Words",
+    "correct": "Correct",
+    "new_session": "Start New Session"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "config": {
+    "title": "Configurar Sesión",
+    "source": "Hablo (Origen)",
+    "target": "Quiero aprender (Destino)",
+    "domain": "Dominio",
+    "difficulty": "Dificultad",
+    "type": "Tipo",
+    "start": "Comenzar sesión",
+    "starting": "Comenzando..."
+  },
+  "session": {
+    "title": "Sesión",
+    "translate": "Traducir:",
+    "domain": "Dominio:",
+    "check": "¿Lo has acertado?",
+    "correct": "Correcto",
+    "incorrect": "Incorrecto",
+    "reveal": "Revelar",
+    "placeholder": "Escribe tu respuesta..."
+  },
+  "summary": {
+    "title": "¡Sesión Completada!",
+    "words": "Palabras",
+    "correct": "Correctas",
+    "new_session": "Comenzar nueva sesión"
+  }
+}

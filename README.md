@@ -70,7 +70,6 @@ docker-compose up db
       /api/v1/endpoints    # API endpoints
       /core               # Config, security, database
       /models            # SQLAlchemy models
-      /schemas           # Pydantic schemas
     main.py             # FastAPI app
     pyproject.toml      # Poetry dependencies
     poetry.lock         # Locked dependencies

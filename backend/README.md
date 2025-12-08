@@ -56,7 +56,6 @@ ACCESS_TOKEN_EXPIRE_MINUTES=30
       database.py    # Database connection
       security.py    # Auth utilities
     /models          # SQLAlchemy models
-    /schemas         # Pydantic schemas
   main.py            # FastAPI application
   pyproject.toml     # Poetry dependencies
   Dockerfile
