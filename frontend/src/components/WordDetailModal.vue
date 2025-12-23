@@ -1,106 +1,109 @@
 <template>
-  <v-dialog :model-value="modelValue" @update:model-value="$emit('update:modelValue', $event)" max-width="600">
-    <v-card v-if="translation">
-      <v-card-title class="d-flex justify-space-between align-center">
+  <VDialog :model-value="modelValue" @update:model-value="$emit('update:modelValue', $event)" max-width="600">
+    <VCard v-if="translation">
+      <VCardTitle class="d-flex justify-space-between align-center">
         <span>{{ translation.text }}</span>
-        <v-btn icon="mdi-close" variant="text" @click="$emit('update:modelValue', false)"></v-btn>
-      </v-card-title>
+        <VBtn icon="mdi-close" variant="text" @click="$emit('update:modelValue', false)"></VBtn>
+      </VCardTitle>
 
-      <v-divider></v-divider>
+      <VDivider></VDivider>
 
-      <v-card-text class="pt-4">
-        <v-row>
+      <VCardText class="pt-4">
+        <VRow>
           <!-- Native Language Translation -->
-          <v-col cols="12">
-            <div class="text-subtitle-2 text-grey">Translation</div>
+          <VCol cols="12">
+            <div class="text-subtitle-2 text-grey">{{ t('wordDetail.translation') }}</div>
             <div class="text-h6">{{ translation.masterWord?.text || '-' }}</div>
-          </v-col>
+          </VCol>
 
           <!-- Gender -->
-          <v-col cols="6" v-if="translation.gender">
-            <div class="text-subtitle-2 text-grey">Gender</div>
+          <VCol cols="6" v-if="translation.gender">
+            <div class="text-subtitle-2 text-grey">{{ t('wordDetail.gender') }}</div>
             <div class="text-body-1">{{ translation.gender }}</div>
-          </v-col>
+          </VCol>
 
           <!-- Plural Form -->
-          <v-col cols="6" v-if="translation.plural">
-            <div class="text-subtitle-2 text-grey">Plural</div>
+          <VCol cols="6" v-if="translation.plural">
+            <div class="text-subtitle-2 text-grey">{{ t('wordDetail.plural') }}</div>
             <div class="text-body-1">{{ translation.plural }}</div>
-          </v-col>
+          </VCol>
 
           <!-- Domain -->
-          <v-col cols="6">
-            <div class="text-subtitle-2 text-grey">Domain</div>
-            <div class="text-body-1">{{ translation.masterWord?.domain?.name || '-' }}</div>
-          </v-col>
+          <VCol cols="6">
+            <div class="text-subtitle-2 text-grey">{{ t('wordDetail.domain') }}</div>
+            <div class="text-body-1">{{ translation.masterWord?.domain?.code ? t(`domains.${translation.masterWord.domain.code}`) : '-' }}</div>
+          </VCol>
 
           <!-- Difficulty -->
-          <v-col cols="6">
-            <div class="text-subtitle-2 text-grey">Difficulty</div>
-            <v-chip :color="getDifficultyColor(translation.difficulty)" size="small">
-              {{ translation.difficulty }}
-            </v-chip>
-          </v-col>
+          <VCol cols="6">
+            <div class="text-subtitle-2 text-grey">{{ t('wordDetail.difficulty') }}</div>
+            <VChip :color="getDifficultyColor(translation.difficulty)" size="small">
+              {{ t(`difficulties.${translation.difficulty.toLowerCase()}`) }}
+            </VChip>
+          </VCol>
 
           <!-- Example Sentence -->
-          <v-col cols="12" v-if="translation.exampleSentence">
-            <div class="text-subtitle-2 text-grey">Example</div>
+          <VCol cols="12" v-if="translation.exampleSentence">
+            <div class="text-subtitle-2 text-grey">{{ t('wordDetail.example') }}</div>
             <div class="text-body-1 font-italic">"{{ translation.exampleSentence }}"</div>
-          </v-col>
+          </VCol>
 
           <!-- Pronunciation -->
-          <v-col cols="12" v-if="translation.pronunciation">
-            <div class="text-subtitle-2 text-grey">Pronunciation</div>
+          <VCol cols="12" v-if="translation.pronunciation">
+            <div class="text-subtitle-2 text-grey">{{ t('wordDetail.pronunciation') }}</div>
             <div class="text-body-1">{{ translation.pronunciation }}</div>
-          </v-col>
+          </VCol>
 
           <!-- Audio Pronunciation -->
-          <v-col cols="12" v-if="translation.audioUrl">
-            <div class="text-subtitle-2 text-grey mb-2">Listen</div>
+          <VCol cols="12" v-if="translation.audioUrl">
+            <div class="text-subtitle-2 text-grey mb-2">{{ t('wordDetail.listen') }}</div>
             <audio controls :src="translation.audioUrl" class="w-100"></audio>
-          </v-col>
+          </VCol>
 
           <!-- Synonyms -->
-          <v-col cols="12" v-if="translation.synonyms && translation.synonyms.length > 0">
-            <div class="text-subtitle-2 text-grey mb-2">Synonyms</div>
-            <v-chip-group>
-              <v-chip
+          <VCol cols="12" v-if="translation.synonyms && translation.synonyms.length > 0">
+            <div class="text-subtitle-2 text-grey mb-2">{{ t('wordDetail.synonyms') }}</div>
+            <VChipGroup>
+              <VChip
                 v-for="(synonym, index) in translation.synonyms"
                 :key="index"
                 size="small"
                 variant="outlined"
               >
                 {{ synonym }}
-              </v-chip>
-            </v-chip-group>
-          </v-col>
+              </VChip>
+            </VChipGroup>
+          </VCol>
 
           <!-- Notes -->
-          <v-col cols="12" v-if="translation.notes">
-            <div class="text-subtitle-2 text-grey">Notes</div>
+          <VCol cols="12" v-if="translation.notes">
+            <div class="text-subtitle-2 text-grey">{{ t('wordDetail.notes') }}</div>
             <div class="text-body-2">{{ translation.notes }}</div>
-          </v-col>
-        </v-row>
-      </v-card-text>
+          </VCol>
+        </VRow>
+      </VCardText>
 
-      <v-divider></v-divider>
+      <VDivider></VDivider>
 
-      <v-card-actions>
-        <v-spacer></v-spacer>
-        <v-btn
+      <VCardActions>
+        <VSpacer></VSpacer>
+        <VBtn
           :color="translation.isKnown ? 'error' : 'success'"
           variant="flat"
           @click="toggleKnownStatus"
         >
-          {{ translation.isKnown ? 'Mark as Unknown' : 'Mark as Known' }}
-        </v-btn>
-      </v-card-actions>
-    </v-card>
-  </v-dialog>
+          {{ translation.isKnown ? t('wordDetail.markAsUnknown') : t('wordDetail.markAsKnown') }}
+        </VBtn>
+      </VCardActions>
+    </VCard>
+  </VDialog>
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n'
 import { useVocabularyStore } from '@/stores/vocabulary'
+
+const { t } = useI18n()
 
 const props = defineProps({
   modelValue: Boolean,
@@ -128,8 +131,8 @@ const toggleKnownStatus = async () => {
     await vocabularyStore.toggleWordKnown(props.translation.id, newKnownState)
     props.translation.isKnown = newKnownState
   } catch (error) {
-    console.error('Failed to toggle known status:', error)
-    alert('Failed to update word status.')
+    console.error(t('vocabulary.failedToToggle'), error)
+    alert(t('vocabulary.failedToToggle'))
   }
 }
 </script>

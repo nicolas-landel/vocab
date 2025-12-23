@@ -4,13 +4,13 @@
       <VCol cols="12" sm="8" md="4">
         <VCard class="elevation-12">
           <VToolbar color="primary" dark flat>
-            <VToolbarTitle>{{ t('login.title') }}</VToolbarTitle>
+            <VToolbarTitle>{{ t('register.title') }}</VToolbarTitle>
           </VToolbar>
           <VCardText>
-            <VForm ref="loginFormRef" @submit.prevent="handleLogin">
+            <VForm ref="registerFormRef" @submit.prevent="handleRegister">
               <VTextField
                 v-model="email"
-                :label="t('login.email')"
+                :label="t('register.email')"
                 name="email"
                 prepend-icon="mdi-email"
                 type="email"
@@ -21,18 +21,35 @@
 
               <VTextField
                 v-model="password"
-                :label="t('login.password')"
+                :label="t('register.password')"
                 name="password"
                 prepend-icon="mdi-lock"
                 :type="showPassword ? 'text' : 'password'"
                 :append-inner-icon="showPassword ? 'mdi-eye' : 'mdi-eye-off'"
                 @click:append-inner="showPassword = !showPassword"
-                :rules="[rules.required]"
+                :rules="[rules.required, rules.minLength]"
+                variant="outlined"
+                class="mb-2"
+              ></VTextField>
+
+              <VTextField
+                v-model="confirmPassword"
+                :label="t('register.confirmPassword')"
+                name="confirmPassword"
+                prepend-icon="mdi-lock-check"
+                :type="showConfirmPassword ? 'text' : 'password'"
+                :append-inner-icon="showConfirmPassword ? 'mdi-eye' : 'mdi-eye-off'"
+                @click:append-inner="showConfirmPassword = !showConfirmPassword"
+                :rules="[rules.required, rules.match]"
                 variant="outlined"
               ></VTextField>
 
               <VAlert v-if="error" type="error" class="mb-4">
                 {{ error }}
+              </VAlert>
+
+              <VAlert v-if="success" type="success" class="mb-4">
+                {{ t('register.success') }}
               </VAlert>
 
               <VBtn
@@ -43,32 +60,18 @@
                 :loading="loading"
                 class="mb-4"
               >
-                {{ t('login.loginButton') }}
+                {{ t('register.registerButton') }}
               </VBtn>
 
-              <VDivider class="my-4"></VDivider>
-
-              <VBtn
-                color="white"
-                variant="outlined"
-                block
-                size="large"
-                @click="loginWithGoogle"
-                class="google-btn"
-              >
-                <VIcon start>mdi-google</VIcon>
-                {{ t('login.googleLogin') }}
-              </VBtn>
-
-              <div class="text-center mt-4">
-                <span class="text-grey">{{ t('login.noAccount') }}</span>
+              <div class="text-center">
+                <span class="text-grey">{{ t('register.hasAccount') }}</span>
                 <VBtn
                   variant="text"
                   color="primary"
-                  @click="$router.push('/register')"
+                  @click="$router.push('/login')"
                   size="small"
                 >
-                  {{ t('login.register') }}
+                  {{ t('register.login') }}
                 </VBtn>
               </div>
             </VForm>
@@ -89,43 +92,41 @@ const { t } = useI18n()
 const router = useRouter()
 const authStore = useAuthStore()
 
-const loginFormRef = ref(null)
+const registerFormRef = ref(null)
 const email = ref('')
 const password = ref('')
+const confirmPassword = ref('')
 const showPassword = ref(false)
+const showConfirmPassword = ref(false)
 const loading = ref(false)
 const error = ref('')
+const success = ref(false)
 
 const rules = {
   required: value => !!value || t('validation.required'),
-  email: value => /.+@.+\..+/.test(value) || t('validation.email')
+  email: value => /.+@.+\..+/.test(value) || t('validation.email'),
+  minLength: value => value.length >= 8 || t('validation.minLength'),
+  match: value => value === password.value || t('validation.passwordMatch')
 }
 
-const handleLogin = async () => {
-  const { valid } = await loginFormRef.value.validate()
+const handleRegister = async () => {
+  const { valid } = await registerFormRef.value.validate()
   if (!valid) return
 
   loading.value = true
   error.value = ''
+  success.value = false
 
   try {
-    await authStore.login(email.value, password.value)
-    router.push('/')
+    await authStore.register(email.value, password.value)
+    success.value = true
+    setTimeout(() => {
+      router.push('/login')
+    }, 2000)
   } catch (err) {
-    error.value = err.response?.data?.detail || t('login.error')
+    error.value = err.response?.data?.detail || t('register.error')
   } finally {
     loading.value = false
   }
 }
-
-const loginWithGoogle = () => {
-  window.location.href = `${import.meta.env.VITE_API_URL}/api/v1/auth/google/login`
-}
 </script>
-
-<style scoped>
-.google-btn {
-  text-transform: none;
-  font-weight: 500;
-}
-</style>

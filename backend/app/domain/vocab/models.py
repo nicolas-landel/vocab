@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, ForeignKey, UniqueConstraint, Enum, DateTime, Text, Boolean
+from sqlalchemy import Column, Integer, String, ForeignKey, UniqueConstraint, Enum, DateTime, Text, Boolean, ARRAY
 from sqlalchemy.orm import relationship
 from datetime import datetime
 from app.core.database import Base
@@ -34,7 +34,8 @@ class Language(Base):
 class Domain(Base):
     __tablename__ = "domains"
     
-    name = Column(String, nullable=False, unique=True)
+    code = Column(String, nullable=False, unique=True, index=True)
+    name = Column(String, nullable=False)
 
 
 class MasterWord(Base):
@@ -59,6 +60,7 @@ class Translation(Base):
     gender = Column(String, nullable=True)
     plural_text = Column(String, nullable=True)
     sentence_example = Column(Text, nullable=True)
+    synonyms = Column(ARRAY(String), nullable=True)  # Alternative translations for the same concept
     
     __table_args__ = (
         UniqueConstraint('master_word_id', 'language_code', name='unique_translation'),
@@ -73,7 +75,8 @@ class UserTranslation(Base):
     translation_id = Column(Integer, ForeignKey("translations.id", ondelete="CASCADE"), nullable=False)
     is_known = Column(Boolean, default=False)  # User marked as "already know this word"
     
-    user = relationship("User")
+    # Note: User relationship will be configured when User model is imported
+    # user = relationship("User")
     translation = relationship("Translation")
     
     __table_args__ = (

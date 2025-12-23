@@ -1,57 +1,59 @@
 <template>
-  <v-card max-width="800" class="mx-auto">
-    <v-card-title class="text-h5">Configure Your Session</v-card-title>
-    <v-card-text>
-      <v-form ref="formRef" @submit.prevent="startSession">
-        <v-row>
-          <v-col cols="12" md="6">
-            <v-select
+  <VCard max-width="800" class="mx-auto">
+    <VCardTitle class="text-h5">{{ t('sessionConfig.title') }}</VCardTitle>
+    <VCardText>
+      <VForm ref="formRef" @submit.prevent="startSession">
+        <VRow>
+          <VCol cols="12" md="6">
+            <VSelect
               v-model="config.languageTested"
               :items="languages"
               item-title="name"
               item-value="code"
-              label="Language to Test"
+              :label="t('sessionConfig.languageToTest')"
               variant="outlined"
-              :rules="[v => !!v || 'Language is required']"
-            ></v-select>
-          </v-col>
+              :rules="[v => !!v || t('sessionConfig.languageRequired')]"
+            ></VSelect>
+          </VCol>
 
-          <v-col cols="12" md="6">
-            <v-select
+          <VCol cols="12" md="6">
+            <VSelect
               v-model="config.domain"
-              :items="domains"
-              item-title="name"
-              item-value="id"
-              label="Domain"
+              :items="translatedDomains"
+              item-title="label"
+              item-value="value"
+              :label="t('sessionConfig.domain')"
               variant="outlined"
-              :rules="[v => !!v || 'Domain is required']"
-            ></v-select>
-          </v-col>
+              :rules="[v => !!v || t('sessionConfig.domainRequired')]"
+            ></VSelect>
+          </VCol>
 
-          <v-col cols="12" md="6">
-            <v-select
+          <VCol cols="12" md="6">
+            <VSelect
               v-model="config.difficulty"
-              :items="difficulties"
-              label="Difficulty"
+              :items="translatedDifficulties"
+              item-title="label"
+              item-value="value"
+              :label="t('sessionConfig.difficulty')"
               variant="outlined"
-              :rules="[v => !!v || 'Difficulty is required']"
-            ></v-select>
-          </v-col>
+              :rules="[v => !!v || t('sessionConfig.difficultyRequired')]"
+            ></VSelect>
+          </VCol>
 
-          <v-col cols="12" md="6">
-            <v-select
+          <VCol cols="12" md="6">
+            <VSelect
               v-model="config.sessionType"
               :items="sessionTypes"
               item-title="label"
               item-value="value"
-              label="Session Type"
+              :label="t('sessionConfig.sessionType')"
               variant="outlined"
-              :rules="[v => !!v || 'Session type is required']"
-            ></v-select>
-          </v-col>
-        </v-row>
+              :rules="[v => !!v || t('sessionConfig.sessionTypeRequired')]"
+            ></VSelect>
+          </VCol>
+        </VRow>
 
-        <v-btn
+        <VBtn
           type="submit"
           color="primary"
           size="large"
@@ -59,18 +61,20 @@
           class="mt-4"
           :loading="loading"
         >
-          Start Session
-        </v-btn>
-      </v-form>
-    </v-card-text>
-  </v-card>
+          {{ t('sessionConfig.startSession') }}
+        </VBtn>
+      </VForm>
+    </VCardText>
+  </VCard>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, computed, onMounted } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useSessionStore } from '@/stores/session'
 import { useVocabularyStore } from '@/stores/vocabulary'
 
+const { t } = useI18n()
 const emit = defineEmits(['start-session'])
 
 const sessionStore = useSessionStore()
@@ -80,7 +84,7 @@ const formRef = ref(null)
 const loading = ref(false)
 
 const config = ref({
-  nativeLanguage: 'fr', // Will be set from App navbar selection
+  nativeLanguage: 'fr',
   languageTested: '',
   domain: null,
   difficulty: '',
@@ -89,12 +93,42 @@ const config = ref({
 
 const languages = ref([])
 const domains = ref([])
-const difficulties = ref(['EASY', 'MEDIUM', 'HARD'])
-const sessionTypes = ref([
-  { label: 'Comprehension', value: 'comprehension' },
-  { label: 'Expression', value: 'expression' },
-  { label: 'Both', value: 'both' }
+
+const translatedDifficulties = computed(() => [
+  { label: t('difficulties.easy'), value: 'EASY' },
+  { label: t('difficulties.medium'), value: 'MEDIUM' },
+  { label: t('difficulties.hard'), value: 'HARD' }
 ])
+
+const translatedDomains = computed(() => 
+  domains.value.map(domain => ({
+    label: t(`domains.${domain.code}`),
+    value: domain.code
+  }))
+)
+
+const sessionTypes = computed(() => [
+  { label: t('sessionConfig.comprehension'), value: 'COMPREHENSION' },
+  { label: t('sessionConfig.expression'), value: 'EXPRESSION' },
+  { label: t('sessionConfig.both'), value: 'MIXED' }
+])
+
+const startSession = async () => {
+  const { valid } = await formRef.value.validate()
+  if (!valid) return
+
+  loading.value = true
+  try {
+    const sessionConfig = await sessionStore.createSessionConfig(config.value)
+    const session = await sessionStore.startSession(sessionConfig.id)
+    emit('start-session', session.id)
+  } catch (error) {
+    console.error(t('sessionConfig.failedToStart'), error)
+    alert(t('sessionConfig.failedToStart'))
+  } finally {
+    loading.value = false
+  }
+}
 
 onMounted(async () => {
   loading.value = true
@@ -114,33 +148,11 @@ onMounted(async () => {
     if (domains.value.length > 0) {
       config.value.domain = domains.value[0].id
     }
-    config.value.difficulty = difficulties.value[0]
+    config.value.difficulty = 'EASY'
   } catch (error) {
-    console.error('Failed to load configuration options:', error)
+    console.error(t('errors.failedToLoadOptions'), error)
   } finally {
     loading.value = false
   }
 })
-
-const startSession = async () => {
-  const { valid } = await formRef.value.validate()
-  if (!valid) return
-
-  loading.value = true
-  try {
-    // First create session config
-    const sessionConfig = await sessionStore.createSessionConfig(config.value)
-    
-    // Then start the session
-    const session = await sessionStore.startSession(sessionConfig.id)
-    
-    // Emit event to navigate to session
-    emit('start-session', session.id)
-  } catch (error) {
-    console.error('Failed to start session:', error)
-    alert('Failed to start session. Please try again.')
-  } finally {
-    loading.value = false
-  }
-}
 </script>

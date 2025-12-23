@@ -18,6 +18,7 @@ class LanguageSchema(LanguageBase):
 
 # Domain Schemas
 class DomainBase(BaseModel):
+    code: str
     name: str
 
 class DomainCreate(DomainBase):
@@ -37,6 +38,7 @@ class TranslationBase(BaseModel):
     gender: Optional[str] = None
     plural_text: Optional[str] = None
     sentence_example: Optional[str] = None
+    synonyms: Optional[List[str]] = None
 
 class TranslationCreate(TranslationBase):
     master_word_id: int

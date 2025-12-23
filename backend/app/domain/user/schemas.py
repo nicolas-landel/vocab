@@ -23,6 +23,9 @@ class UserResponse(UserBase):
     updated_at: datetime
     native_language: Optional[str] = None
     learning_languages: Optional[List[str]] = []
+    oauth_provider: Optional[str] = None
+    full_name: Optional[str] = None
+    picture_url: Optional[str] = None
     
     model_config = ConfigDict(from_attributes=True)
 
@@ -32,4 +35,9 @@ class Token(BaseModel):
 
 class TokenData(BaseModel):
     email: Optional[str] = None
+
+class GoogleAuthResponse(BaseModel):
+    access_token: str
+    token_type: str = "bearer"
+    user: UserResponse
 

@@ -1,28 +1,145 @@
 {
-  "config": {
-    "title": "Configure Session",
-    "source": "I speak (Source)",
-    "target": "I want to learn (Target)",
+  "nav": {
+    "appName": "VOCAB",
+    "nativeLanguage": "Native Language",
+    "profile": "Profile",
+    "logout": "Logout"
+  },
+  "login": {
+    "title": "Login",
+    "email": "Email",
+    "password": "Password",
+    "loginButton": "Login",
+    "googleLogin": "Continue with Google",
+    "noAccount": "Don't have an account?",
+    "register": "Register",
+    "error": "Login failed. Please check your credentials."
+  },
+  "register": {
+    "title": "Register",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "registerButton": "Register",
+    "hasAccount": "Already have an account?",
+    "login": "Login",
+    "success": "Registration successful! Redirecting to login...",
+    "error": "Registration failed. Please try again."
+  },
+  "auth": {
+    "processing": "Processing authentication..."
+  },
+  "validation": {
+    "required": "This field is required",
+    "email": "Please enter a valid email",
+    "minLength": "Password must be at least 8 characters",
+    "passwordMatch": "Passwords do not match"
+  },
+  "tabs": {
+    "session": "Session",
+    "vocabulary": "Vocabulary"
+  },
+  "sessionConfig": {
+    "title": "Configure Your Session",
+    "languageToTest": "Language to Test",
     "domain": "Domain",
     "difficulty": "Difficulty",
-    "type": "Type",
-    "start": "Start Session",
-    "starting": "Starting..."
+    "sessionType": "Session Type",
+    "comprehension": "Comprehension",
+    "expression": "Expression",
+    "both": "Both",
+    "startSession": "Start Session",
+    "languageRequired": "Language is required",
+    "domainRequired": "Domain is required",
+    "difficultyRequired": "Difficulty is required",
+    "sessionTypeRequired": "Session type is required",
+    "failedToStart": "Failed to start session. Please try again."
+  },
+  "vocabulary": {
+    "filterTitle": "Filter Vocabulary",
+    "languageToStudy": "Language to Study",
+    "domains": "Domains",
+    "difficulties": "Difficulties",
+    "includeKnown": "Include words I already know",
+    "loadVocabulary": "Load Vocabulary",
+    "vocabularyList": "Vocabulary List",
+    "nativeLanguage": "Native Language",
+    "translation": "Translation",
+    "domain": "Domain",
+    "difficulty": "Difficulty",
+    "actions": "Actions",
+    "noVocabulary": "No vocabulary found with the selected filters.",
+    "failedToLoad": "Failed to load vocabulary. Please try again.",
+    "failedToToggle": "Failed to update word status."
+  },
+  "wordDetail": {
+    "translation": "Translation",
+    "gender": "Gender",
+    "plural": "Plural",
+    "domain": "Domain",
+    "difficulty": "Difficulty",
+    "example": "Example",
+    "pronunciation": "Pronunciation",
+    "listen": "Listen",
+    "synonyms": "Synonyms",
+    "notes": "Notes",
+    "markAsUnknown": "Mark as Unknown",
+    "markAsKnown": "Mark as Known"
   },
   "session": {
-    "title": "Session",
-    "translate": "Translate:",
-    "domain": "Domain:",
-    "check": "Did you get it right?",
-    "correct": "Correct",
+    "progress": "Session Progress",
+    "translateWord": "Translate this word:",
+    "yourAnswer": "Your answer",
+    "iForgot": "I forgot",
+    "checkAnswer": "Check Answer",
+    "nextWord": "Next Word",
+    "correct": "Correct!",
     "incorrect": "Incorrect",
-    "reveal": "Reveal",
-    "placeholder": "Type your answer..."
+    "correctAnswer": "Correct answer",
+    "complete": "Session Complete!",
+    "successRate": "Success Rate",
+    "correctFirstTry": "Correct First Try",
+    "needsPractice": "Needs Practice",
+    "finish": "Finish",
+    "failedToComplete": "Failed to save session results."
   },
   "summary": {
-    "title": "Session Complete!",
+    "title": "Session Summary",
     "words": "Words",
     "correct": "Correct",
-    "new_session": "Start New Session"
+    "newSession": "New Session",
+    "loading": "Loading..."
+  },
+  "profile": {
+    "title": "Your Profile",
+    "loading": "Loading stats...",
+    "progress": "Progress",
+    "correctRate": "Correct Rate",
+    "wordsReviewed": "{count} words reviewed",
+    "focusWords": "Focus Words",
+    "weakWordsDesc": "Words you struggle with:",
+    "noWeakWords": "Great job! No weak words found yet.",
+    "failedToLoad": "Failed to load profile stats"
+  },
+  "difficulties": {
+    "easy": "Easy",
+    "medium": "Medium",
+    "hard": "Hard"
+  },
+  "domains": {
+    "food_dining": "Food & Dining",
+    "travel": "Travel & Transportation",
+    "daily_life": "Daily Life",
+    "work": "Work & Business",
+    "health": "Health & Body",
+    "family": "Family & Relationships",
+    "education": "Education",
+    "weather": "Weather & Nature",
+    "entertainment": "Entertainment",
+    "shopping": "Shopping"
+  },
+  "errors": {
+    "failedToLoadLanguages": "Failed to load languages",
+    "failedToLoadOptions": "Failed to load configuration options"
   }
 }

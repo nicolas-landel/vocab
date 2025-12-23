@@ -1,144 +1,146 @@
 <template>
-  <v-container>
-    <v-card v-if="!sessionStore.isSessionComplete" max-width="800" class="mx-auto">
+  <VContainer>
+    <VCard v-if="!sessionStore.isSessionComplete" max-width="800" class="mx-auto">
       <!-- Progress -->
-      <v-card-title>
+      <VCardTitle>
         <div class="d-flex justify-space-between align-center w-100">
-          <span>Session Progress</span>
+          <span>{{ t('session.progress') }}</span>
           <span class="text-body-1">
             {{ sessionStore.currentWordIndex + 1 }} / {{ sessionStore.totalWords }}
           </span>
         </div>
-      </v-card-title>
+      </VCardTitle>
 
-      <v-progress-linear
+      <VProgressLinear
         :model-value="progress"
         color="primary"
         height="8"
-      ></v-progress-linear>
+      ></VProgressLinear>
 
-      <v-card-text class="pt-8">
-        <v-row v-if="sessionStore.currentWord">
+      <VCardText class="pt-8">
+        <VRow v-if="sessionStore.currentWord">
           <!-- Word to translate -->
-          <v-col cols="12" class="text-center">
-            <div class="text-subtitle-1 text-grey mb-2">Translate this word:</div>
+          <VCol cols="12" class="text-center">
+            <div class="text-subtitle-1 text-grey mb-2">{{ t('session.translateWord') }}</div>
             <div class="text-h3 mb-6">{{ sessionStore.currentWord.text }}</div>
             
             <div v-if="sessionStore.currentWord.masterWord?.domain" class="mb-4">
-              <v-chip color="primary" variant="outlined">
-                {{ sessionStore.currentWord.masterWord.domain.name }}
-              </v-chip>
+              <VChip color="primary" variant="outlined">
+                {{ t(`domains.${sessionStore.currentWord.masterWord.domain.code}`) }}
+              </VChip>
             </div>
-          </v-col>
+          </VCol>
 
           <!-- Answer Input -->
-          <v-col cols="12">
-            <v-text-field
+          <VCol cols="12">
+            <VTextField
               v-model="userAnswer"
-              label="Your answer"
+              :label="t('session.yourAnswer')"
               variant="outlined"
               size="large"
               autofocus
               @keyup.enter="submitAnswer"
               :disabled="showResult"
-            ></v-text-field>
-          </v-col>
+            ></VTextField>
+          </VCol>
 
           <!-- Result Display -->
-          <v-col cols="12" v-if="showResult">
-            <v-alert
+          <VCol cols="12" v-if="showResult">
+            <VAlert
               :type="isCorrect ? 'success' : 'error'"
               :icon="isCorrect ? 'mdi-check-circle' : 'mdi-close-circle'"
               prominent
             >
-              <div class="text-h6">{{ isCorrect ? 'Correct!' : 'Incorrect' }}</div>
+              <div class="text-h6">{{ isCorrect ? t('session.correct') : t('session.incorrect') }}</div>
               <div v-if="!isCorrect" class="mt-2">
-                Correct answer: <strong>{{ correctAnswer }}</strong>
+                {{ t('session.correctAnswer') }}: <strong>{{ correctAnswer }}</strong>
               </div>
-            </v-alert>
-          </v-col>
+            </VAlert>
+          </VCol>
 
           <!-- Action Buttons -->
-          <v-col cols="12">
+          <VCol cols="12">
             <div class="d-flex gap-2">
-              <v-btn
+              <VBtn
                 v-if="!showResult"
                 color="warning"
                 variant="outlined"
                 @click="skipWord"
                 block
               >
-                I forgot
-              </v-btn>
+                {{ t('session.iForgot') }}
+              </VBtn>
               
-              <v-btn
+              <VBtn
                 v-if="!showResult"
                 color="primary"
                 @click="submitAnswer"
                 :disabled="!userAnswer"
                 block
               >
-                Check Answer
-              </v-btn>
+                {{ t('session.checkAnswer') }}
+              </VBtn>
 
-              <v-btn
+              <VBtn
                 v-if="showResult"
                 color="primary"
                 @click="nextWord"
                 block
               >
-                Next Word
-              </v-btn>
+                {{ t('session.nextWord') }}
+              </VBtn>
             </div>
-          </v-col>
-        </v-row>
-      </v-card-text>
-    </v-card>
+          </VCol>
+        </VRow>
+      </VCardText>
+    </VCard>
 
     <!-- Session Complete -->
-    <v-card v-else max-width="800" class="mx-auto">
-      <v-card-title class="text-center">Session Complete!</v-card-title>
-      <v-card-text>
+    <VCard v-else max-width="800" class="mx-auto">
+      <VCardTitle class="text-center">{{ t('session.complete') }}</VCardTitle>
+      <VCardText>
         <div class="text-center mb-6">
           <div class="text-h2 mb-4">{{ sessionStore.sessionResults?.successRate }}%</div>
-          <div class="text-subtitle-1 text-grey">Success Rate</div>
+          <div class="text-subtitle-1 text-grey">{{ t('session.successRate') }}</div>
         </div>
 
-        <v-row>
-          <v-col cols="12" md="6">
-            <v-card variant="outlined" color="success">
-              <v-card-text class="text-center">
+        <VRow>
+          <VCol cols="12" md="6">
+            <VCard variant="outlined" color="success">
+              <VCardText class="text-center">
                 <div class="text-h4">{{ sessionStore.sessionResults?.correctFirstTime?.length || 0 }}</div>
-                <div class="text-subtitle-2">Correct First Try</div>
-              </v-card-text>
-            </v-card>
-          </v-col>
+                <div class="text-subtitle-2">{{ t('session.correctFirstTry') }}</div>
+              </VCardText>
+            </VCard>
+          </VCol>
 
-          <v-col cols="12" md="6">
-            <v-card variant="outlined" color="error">
-              <v-card-text class="text-center">
+          <VCol cols="12" md="6">
+            <VCard variant="outlined" color="error">
+              <VCardText class="text-center">
                 <div class="text-h4">{{ sessionStore.sessionResults?.failed?.length || 0 }}</div>
-                <div class="text-subtitle-2">Needs Practice</div>
-              </v-card-text>
-            </v-card>
-          </v-col>
-        </v-row>
+                <div class="text-subtitle-2">{{ t('session.needsPractice') }}</div>
+              </VCardText>
+            </VCard>
+          </VCol>
+        </VRow>
 
         <div class="d-flex gap-2 mt-6">
-          <v-btn color="primary" @click="finishSession" block>
-            Finish
-          </v-btn>
+          <VBtn color="primary" @click="finishSession" block>
+            {{ t('session.finish') }}
+          </VBtn>
         </div>
-      </v-card-text>
-    </v-card>
-  </v-container>
+      </VCardText>
+    </VCard>
+  </VContainer>
 </template>
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useSessionStore } from '@/stores/session'
 
+const { t } = useI18n()
 const props = defineProps(['id'])
 const router = useRouter()
 const sessionStore = useSessionStore()
@@ -164,7 +166,6 @@ const submitAnswer = () => {
   if (!userAnswer.value.trim()) return
 
   // Store correct answer from current word's master word translation
-  // Assuming the word has the correct translation available
   correctAnswer.value = sessionStore.currentWord.masterWord?.text || ''
   
   // Submit answer to store
@@ -198,95 +199,8 @@ const finishSession = async () => {
     await sessionStore.completeSession()
     router.push('/')
   } catch (error) {
-    console.error('Failed to complete session:', error)
-    alert('Failed to save session results.')
+    console.error(t('session.failedToComplete'), error)
+    alert(t('session.failedToComplete'))
   }
 }
 </script>
-
-const submitCard = (correct) => {
-    results.value.push({
-        word_id: currentWord.value.id,
-        correct: correct
-    })
-
-    userInput.value = ''
-    showAnswer.value = false
-
-    if (currentIndex.value < session.value.results.length - 1) {
-        currentIndex.value++
-    } else {
-        finishSession()
-    }
-}
-
-const finishSession = async () => {
-    await sessionStore.submitResults(results.value)
-    router.push({ name: 'Summary', params: { id: props.id } })
-}
-</script>
-
-<style scoped>
-.header {
-    margin-bottom: 24px;
-}
-
-.progress-bar {
-    height: 6px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    margin-top: 8px;
-}
-
-.fill {
-    height: 100%;
-    background: var(--success);
-    transition: width 0.3s ease;
-}
-
-.flashcard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 300px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.word-display h1 {
-    font-size: 3rem;
-    margin: 16px 0;
-    background: linear-gradient(to right, var(--text-color), var(--primary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.label {
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-    color: var(--text-muted);
-}
-
-.actions {
-    display: flex;
-    gap: 16px;
-    margin-top: 24px;
-}
-
-.btn-success {
-    background: var(--success);
-}
-
-.btn-error {
-    background: var(--error);
-}
-
-.input-section {
-    width: 100%;
-    max-width: 300px;
-}
-</style>

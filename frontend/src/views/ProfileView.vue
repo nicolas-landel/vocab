@@ -1,104 +1,70 @@
 <template>
-    <div class="profile-page animate-fade-in">
-        <h1>Your Profile</h1>
+  <VContainer>
+    <VCard max-width="800" class="mx-auto">
+      <VCardTitle>{{ t('profile.title') }}</VCardTitle>
 
-        <div v-if="loading">Loading stats...</div>
+      <VCardText v-if="loading">
+        {{ t('profile.loading') }}
+      </VCardText>
 
-        <div v-else-if="stats" class="dashboard-grid">
-            <div class="card glass">
-                <h3>Progress</h3>
-                <div class="big-stat">
-                    {{ stats.correct_rate }}%
-                    <span>Correct Rate</span>
+      <VCardText v-else-if="stats">
+        <VRow>
+          <VCol cols="12" md="6">
+            <VCard variant="outlined">
+              <VCardTitle>{{ t('profile.progress') }}</VCardTitle>
+              <VCardText class="text-center">
+                <div class="text-h2 mb-2 text-primary">{{ stats.correct_rate }}%</div>
+                <div class="text-subtitle-1 text-grey mb-4">{{ t('profile.correctRate') }}</div>
+                <div class="text-body-1">
+                  {{ t('profile.wordsReviewed', { count: stats.total_words_reviewed }) }}
                 </div>
-                <div class="detail-stat">
-                    {{ stats.total_words_reviewed }} words reviewed
-                </div>
-            </div>
+              </VCardText>
+            </VCard>
+          </VCol>
 
-            <div class="card glass">
-                <h3>Focus Words</h3>
-                <p class="desc">Words you struggle with:</p>
-                <ul class="weak-list" v-if="stats.weakest_words.length">
-                    <li v-for="word in stats.weakest_words" :key="word">{{ word }}</li>
-                </ul>
-                <p v-else class="empty">Great job! No weak words found yet.</p>
-            </div>
-        </div>
-    </div>
+          <VCol cols="12" md="6">
+            <VCard variant="outlined">
+              <VCardTitle>{{ t('profile.focusWords') }}</VCardTitle>
+              <VCardText>
+                <div class="text-body-2 text-grey mb-3">{{ t('profile.weakWordsDesc') }}</div>
+                <VList v-if="stats.weakest_words.length" density="compact">
+                  <VListItem
+                    v-for="word in stats.weakest_words"
+                    :key="word"
+                    :title="word"
+                    class="text-error"
+                  ></VListItem>
+                </VList>
+                <div v-else class="text-success font-italic">
+                  {{ t('profile.noWeakWords') }}
+                </div>
+              </VCardText>
+            </VCard>
+          </VCol>
+        </VRow>
+      </VCardText>
+    </VCard>
+  </VContainer>
 </template>
 
 <script setup>
 import { ref, onMounted } from 'vue'
+import { useI18n } from 'vue-i18n'
 import axios from 'axios'
 
+const { t } = useI18n()
 const stats = ref(null)
 const loading = ref(true)
 
 onMounted(async () => {
-    try {
-        const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api'
-        const res = await axios.get(`${API_URL}/profile`)
-        stats.value = res.data
-    } catch (e) {
-        console.error(e)
-    } finally {
-        loading.value = false
-    }
+  try {
+    const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api'
+    const res = await axios.get(`${API_URL}/profile`)
+    stats.value = res.data
+  } catch (e) {
+    console.error(t('profile.failedToLoad'), e)
+  } finally {
+    loading.value = false
+  }
 })
 </script>
-
-
-<style scoped>
-.dashboard-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 24px;
-}
-
-.big-stat {
-    font-size: 3rem;
-    font-weight: 800;
-    color: var(--primary-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 16px 0;
-}
-
-.big-stat span {
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    font-weight: 500;
-}
-
-.detail-stat {
-    text-align: center;
-    color: var(--text-color);
-    font-weight: 500;
-}
-
-.weak-list {
-    list-style: none;
-    padding: 0;
-}
-
-.weak-list li {
-    padding: 8px 12px;
-    background: rgba(239, 68, 68, 0.1);
-    color: #fca5a5;
-    margin-bottom: 8px;
-    border-radius: 8px;
-    border: 1px solid rgba(239, 68, 68, 0.2);
-}
-
-.desc {
-    color: var(--text-muted);
-    margin-bottom: 16px;
-}
-
-.empty {
-    color: var(--success);
-    font-style: italic;
-}
-</style>

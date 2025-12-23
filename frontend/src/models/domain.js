@@ -7,6 +7,7 @@ export class Domain extends Model {
     return {
       id: this.uid(),
       name: this.string(''),
+      code: this.string(''),
       createdAt: this.string(''),
       updatedAt: this.string('')
     }

@@ -9,7 +9,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - /srv/vocab/postgres_data:/var/lib/postgresql/data
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U vocab_user -d vocab_db"]
       interval: 10s
@@ -19,6 +19,9 @@ services:
   backend:
     build: ./backend
     container_name: vocab_backend
+    # dns:
+    #   - 8.8.8.8
+    #   - 8.8.4.4
     ports:
       - "8000:8000"
     environment:
@@ -46,6 +49,3 @@ services:
     command: sh -c "npm install -g pnpm && pnpm install && pnpm dev --host"
     environment:
       - VITE_API_URL=http://localhost:8000
-
-volumes:
-  postgres_data:

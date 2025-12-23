@@ -1,14 +1,69 @@
 import { defineStore } from 'pinia'
-import { ref } from 'vue'
+import apiClient from '@/setup/axios'
 
-export const useAuthStore = defineStore('auth', () => {
-  // Mock auth for now as per plan (User 1)
-  const isAuthenticated = ref(true)
-  const user = ref({ id: 1, email: 'test@example.com' })
+export const useAuthStore = defineStore('auth', {
+  state: () => ({
+    user: null,
+    token: localStorage.getItem('access_token') || null,
+    isAuthenticated: false
+  }),
 
-  function login() {
-    isAuthenticated.value = true
+  getters: {
+    isLoggedIn: (state) => !!state.token && !!state.user,
+    currentUser: (state) => state.user
+  },
+
+  actions: {
+    async login(email, password) {
+      const formData = new FormData()
+      formData.append('username', email)
+      formData.append('password', password)
+
+      const response = await apiClient.post('/api/v1/auth/login', formData, {
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        }
+      })
+
+      this.token = response.data.access_token
+      localStorage.setItem('access_token', this.token)
+      
+      await this.fetchUser()
+    },
+
+    async register(email, password) {
+      await apiClient.post('/api/v1/auth/register', {
+        email,
+        password
+      })
+    },
+
+    async fetchUser() {
+      try {
+        const response = await apiClient.get('/api/v1/auth/me')
+        this.user = response.data
+        this.isAuthenticated = true
+      } catch (error) {
+        this.logout()
+        throw error
+      }
+    },
+
+    logout() {
+      this.user = null
+      this.token = null
+      this.isAuthenticated = false
+      localStorage.removeItem('access_token')
+    },
+
+    async checkAuth() {
+      if (this.token) {
+        try {
+          await this.fetchUser()
+        } catch (error) {
+          this.logout()
+        }
+      }
+    }
   }
-
-  return { isAuthenticated, user, login }
 })

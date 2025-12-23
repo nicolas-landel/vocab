@@ -31,19 +31,19 @@ export const useVocabularyStore = defineStore('vocabulary', {
 
   actions: {
     async fetchLanguages() {
-      const response = await apiClient.get('/config/languages')
+      const response = await apiClient.get('/api/config/languages')
       useRepo(Language).save(response.data)
       return response.data
     },
 
     async fetchDomains() {
-      const response = await apiClient.get('/config/domains')
+      const response = await apiClient.get('/api/config/domains')
       useRepo(Domain).save(response.data)
       return response.data
     },
 
     async fetchDifficulties() {
-      const response = await apiClient.get('/config/difficulties')
+      const response = await apiClient.get('/api/config/difficulties')
       return response.data
     },
 
@@ -55,13 +55,13 @@ export const useVocabularyStore = defineStore('vocabulary', {
         showKnown: filters.showKnown
       }
       
-      const response = await apiClient.get('/vocabulary/list', { params })
+      const response = await apiClient.get('/api/vocabulary/list', { params })
       useRepo(Translation).save(response.data)
       return response.data
     },
 
     async toggleWordKnown(translationId, isKnown) {
-      await apiClient.post(`/vocabulary/translations/${translationId}/known`, {
+      await apiClient.post(`/api/vocabulary/translations/${translationId}/known`, {
         isKnown: isKnown
       })
       
@@ -69,7 +69,7 @@ export const useVocabularyStore = defineStore('vocabulary', {
     },
 
     async getTranslationDetails(translationId) {
-      const response = await apiClient.get(`/vocabulary/translations/${translationId}`)
+      const response = await apiClient.get(`/api/vocabulary/translations/${translationId}`)
       useRepo(Translation).save(response.data)
       return response.data
     }

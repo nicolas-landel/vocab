@@ -1,28 +1,145 @@
 {
-  "config": {
-    "title": "Configurar Sesión",
-    "source": "Hablo (Origen)",
-    "target": "Quiero aprender (Destino)",
+  "nav": {
+    "appName": "VOCAB",
+    "nativeLanguage": "Idioma Nativo",
+    "profile": "Perfil",
+    "logout": "Cerrar sesión"
+  },
+  "login": {
+    "title": "Iniciar sesión",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "loginButton": "Iniciar sesión",
+    "googleLogin": "Continuar con Google",
+    "noAccount": "¿No tienes cuenta?",
+    "register": "Registrarse",
+    "error": "Error al iniciar sesión. Verifica tus credenciales."
+  },
+  "register": {
+    "title": "Registrarse",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar contraseña",
+    "registerButton": "Registrarse",
+    "hasAccount": "¿Ya tienes cuenta?",
+    "login": "Iniciar sesión",
+    "success": "¡Registro exitoso! Redirigiendo al inicio de sesión...",
+    "error": "Error al registrarse. Por favor, inténtalo de nuevo."
+  },
+  "auth": {
+    "processing": "Procesando autenticación..."
+  },
+  "validation": {
+    "required": "Este campo es obligatorio",
+    "email": "Por favor ingresa un correo electrónico válido",
+    "minLength": "La contraseña debe tener al menos 8 caracteres",
+    "passwordMatch": "Las contraseñas no coinciden"
+  },
+  "tabs": {
+    "session": "Sesión",
+    "vocabulary": "Vocabulario"
+  },
+  "sessionConfig": {
+    "title": "Configure Su Sesión",
+    "languageToTest": "Idioma a Evaluar",
     "domain": "Dominio",
     "difficulty": "Dificultad",
-    "type": "Tipo",
-    "start": "Comenzar sesión",
-    "starting": "Comenzando..."
+    "sessionType": "Tipo de Sesión",
+    "comprehension": "Comprensión",
+    "expression": "Expresión",
+    "both": "Ambos",
+    "startSession": "Iniciar Sesión",
+    "languageRequired": "El idioma es obligatorio",
+    "domainRequired": "El dominio es obligatorio",
+    "difficultyRequired": "La dificultad es obligatoria",
+    "sessionTypeRequired": "El tipo de sesión es obligatorio",
+    "failedToStart": "No se pudo iniciar la sesión. Por favor, inténtelo de nuevo."
+  },
+  "vocabulary": {
+    "filterTitle": "Filtrar Vocabulario",
+    "languageToStudy": "Idioma a Estudiar",
+    "domains": "Dominios",
+    "difficulties": "Dificultades",
+    "includeKnown": "Incluir palabras que ya conozco",
+    "loadVocabulary": "Cargar Vocabulario",
+    "vocabularyList": "Lista de Vocabulario",
+    "nativeLanguage": "Idioma Nativo",
+    "translation": "Traducción",
+    "domain": "Dominio",
+    "difficulty": "Dificultad",
+    "actions": "Acciones",
+    "noVocabulary": "No se encontró vocabulario con los filtros seleccionados.",
+    "failedToLoad": "No se pudo cargar el vocabulario. Por favor, inténtelo de nuevo.",
+    "failedToToggle": "No se pudo actualizar el estado de la palabra."
+  },
+  "wordDetail": {
+    "translation": "Traducción",
+    "gender": "Género",
+    "plural": "Plural",
+    "domain": "Dominio",
+    "difficulty": "Dificultad",
+    "example": "Ejemplo",
+    "pronunciation": "Pronunciación",
+    "listen": "Escuchar",
+    "synonyms": "Sinónimos",
+    "notes": "Notas",
+    "markAsUnknown": "Marcar como Desconocido",
+    "markAsKnown": "Marcar como Conocido"
   },
   "session": {
-    "title": "Sesión",
-    "translate": "Traducir:",
-    "domain": "Dominio:",
-    "check": "¿Lo has acertado?",
-    "correct": "Correcto",
+    "progress": "Progreso de la Sesión",
+    "translateWord": "Traduce esta palabra:",
+    "yourAnswer": "Tu respuesta",
+    "iForgot": "Lo olvidé",
+    "checkAnswer": "Verificar Respuesta",
+    "nextWord": "Siguiente Palabra",
+    "correct": "¡Correcto!",
     "incorrect": "Incorrecto",
-    "reveal": "Revelar",
-    "placeholder": "Escribe tu respuesta..."
+    "correctAnswer": "Respuesta correcta",
+    "complete": "¡Sesión Completa!",
+    "successRate": "Tasa de Éxito",
+    "correctFirstTry": "Correcto al Primer Intento",
+    "needsPractice": "Necesita Práctica",
+    "finish": "Finalizar",
+    "failedToComplete": "Error al guardar los resultados."
   },
   "summary": {
-    "title": "¡Sesión Completada!",
+    "title": "Resumen de la Sesión",
     "words": "Palabras",
     "correct": "Correctas",
-    "new_session": "Comenzar nueva sesión"
+    "newSession": "Nueva Sesión",
+    "loading": "Cargando..."
+  },
+  "profile": {
+    "title": "Tu Perfil",
+    "loading": "Cargando estadísticas...",
+    "progress": "Progreso",
+    "correctRate": "Tasa de Acierto",
+    "wordsReviewed": "{count} palabras revisadas",
+    "focusWords": "Palabras para Practicar",
+    "weakWordsDesc": "Palabras con las que tienes dificultades:",
+    "noWeakWords": "¡Buen trabajo! No se encontraron palabras débiles.",
+    "failedToLoad": "Error al cargar las estadísticas"
+  },
+  "difficulties": {
+    "easy": "Fácil",
+    "medium": "Medio",
+    "hard": "Difícil"
+  },
+  "domains": {
+    "food_dining": "Comida y Restaurantes",
+    "travel": "Viaje y Transporte",
+    "daily_life": "Vida Cotidiana",
+    "work": "Trabajo y Negocios",
+    "health": "Salud y Cuerpo",
+    "family": "Familia y Relaciones",
+    "education": "Educación",
+    "weather": "Clima y Naturaleza",
+    "entertainment": "Entretenimiento",
+    "shopping": "Compras"
+  },
+  "errors": {
+    "failedToLoadLanguages": "No se pudieron cargar los idiomas",
+    "failedToLoadOptions": "No se pudieron cargar las opciones de configuración"
   }
 }

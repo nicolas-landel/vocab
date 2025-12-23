@@ -1,82 +1,84 @@
 <template>
-  <v-container>
+  <VContainer>
     <!-- Filter Form -->
-    <v-card class="mb-6">
-      <v-card-title>Filter Vocabulary</v-card-title>
-      <v-card-text>
-        <v-form ref="filterFormRef">
-          <v-row>
-            <v-col cols="12" md="4">
-              <v-select
+    <VCard class="mb-6">
+      <VCardTitle>{{ t('vocabulary.filterTitle') }}</VCardTitle>
+      <VCardText>
+        <VForm ref="filterFormRef">
+          <VRow>
+            <VCol cols="12" md="4">
+              <VSelect
                 v-model="filters.languageCode"
                 :items="languages"
                 item-title="name"
                 item-value="code"
-                label="Language to Study"
+                :label="t('vocabulary.languageToStudy')"
                 variant="outlined"
-                :rules="[v => !!v || 'Language is required']"
-              ></v-select>
-            </v-col>
+                :rules="[v => !!v || t('sessionConfig.languageRequired')]"
+              ></VSelect>
+            </VCol>
 
-            <v-col cols="12" md="4">
-              <v-select
+            <VCol cols="12" md="4">
+              <VSelect
                 v-model="filters.domains"
-                :items="domains"
-                item-title="name"
-                item-value="id"
-                label="Domains"
+                :items="translatedDomains"
+                item-title="label"
+                item-value="value"
+                :label="t('vocabulary.domains')"
                 variant="outlined"
                 multiple
                 chips
                 closable-chips
-              ></v-select>
-            </v-col>
+              ></VSelect>
+            </VCol>
 
-            <v-col cols="12" md="4">
-              <v-select
+            <VCol cols="12" md="4">
+              <VSelect
                 v-model="filters.difficulties"
-                :items="difficulties"
-                label="Difficulties"
+                :items="translatedDifficulties"
+                item-title="title"
+                item-value="value"
+                :label="t('vocabulary.difficulties')"
                 variant="outlined"
                 multiple
                 chips
                 closable-chips
-              ></v-select>
-            </v-col>
+              ></VSelect>
+            </VCol>
 
-            <v-col cols="12">
-              <v-checkbox
+            <VCol cols="12">
+              <VCheckbox
                 v-model="filters.showKnown"
-                label="Include words I already know"
+                :label="t('vocabulary.includeKnown')"
                 hide-details
-              ></v-checkbox>
-            </v-col>
-          </v-row>
+              ></VCheckbox>
+            </VCol>
+          </VRow>
 
-          <v-btn
+          <VBtn
             color="primary"
             @click="loadVocabulary"
             :loading="loading"
             class="mt-4"
           >
-            Load Vocabulary
-          </v-btn>
-        </v-form>
-      </v-card-text>
-    </v-card>
+            {{ t('vocabulary.loadVocabulary') }}
+          </VBtn>
+        </VForm>
+      </VCardText>
+    </VCard>
 
     <!-- Vocabulary Table -->
-    <v-card v-if="translations.length > 0">
-      <v-card-title>Vocabulary List</v-card-title>
-      <v-card-text>
-        <v-table hover>
+    <VCard v-if="translations.length > 0">
+      <VCardTitle>{{ t('vocabulary.vocabularyList') }}</VCardTitle>
+      <VCardText>
+        <VTable hover>
           <thead>
             <tr>
               <th class="text-left">{{ nativeLanguageLabel }}</th>
               <th class="text-left">{{ targetLanguageLabel }}</th>
-              <th class="text-left">Domain</th>
-              <th class="text-left">Difficulty</th>
-              <th class="text-left">Actions</th>
+              <th class="text-left">{{ t('vocabulary.domain') }}</th>
+              <th class="text-left">{{ t('vocabulary.difficulty') }}</th>
+              <th class="text-left">{{ t('vocabulary.actions') }}</th>
             </tr>
           </thead>
           <tbody>
@@ -88,43 +90,45 @@
             >
               <td>{{ translation.masterWord?.text || '-' }}</td>
               <td>{{ translation.text }}</td>
-              <td>{{ translation.masterWord?.domain?.name || '-' }}</td>
+              <td>{{ translation.masterWord?.domain?.code ? t(`domains.${translation.masterWord.domain.code}`) : '-' }}</td>
               <td>
-                <v-chip :color="getDifficultyColor(translation.difficulty)" size="small">
-                  {{ translation.difficulty }}
-                </v-chip>
+                <VChip :color="getDifficultyColor(translation.difficulty)" size="small">
+                  {{ t(`difficulties.${translation.difficulty.toLowerCase()}`) }}
+                </VChip>
               </td>
               <td @click.stop>
-                <v-btn
+                <VBtn
                   :icon="translation.isKnown ? 'mdi-check-circle' : 'mdi-circle-outline'"
                   :color="translation.isKnown ? 'success' : 'grey'"
                   variant="text"
                   @click="toggleKnown(translation)"
-                ></v-btn>
+                ></VBtn>
               </td>
             </tr>
           </tbody>
-        </v-table>
-      </v-card-text>
-    </v-card>
+        </VTable>
+      </VCardText>
+    </VCard>
 
-    <v-alert v-else-if="!loading && filterApplied" type="info" class="mt-4">
-      No vocabulary found with the selected filters.
-    </v-alert>
+    <VAlert v-else-if="!loading && filterApplied" type="info" class="mt-4">
+      {{ t('vocabulary.noVocabulary') }}
+    </VAlert>
 
     <!-- Word Detail Modal -->
     <word-detail-modal
       v-model="detailDialog"
       :translation="selectedTranslation"
     />
-  </v-container>
+  </VContainer>
 </template>
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useVocabularyStore } from '@/stores/vocabulary'
 import WordDetailModal from '@/components/WordDetailModal.vue'
 
+const { t } = useI18n()
 const vocabularyStore = useVocabularyStore()
 
 const filterFormRef = ref(null)
@@ -142,33 +146,26 @@ const filters = ref({
 
 const languages = ref([])
 const domains = ref([])
-const difficulties = ref(['EASY', 'MEDIUM', 'HARD'])
+const translatedDifficulties = computed(() => [
+  { title: t('difficulties.easy'), value: 'EASY' },
+  { title: t('difficulties.medium'), value: 'MEDIUM' },
+  { title: t('difficulties.hard'), value: 'HARD' }
+])
+const translatedDomains = computed(() => 
+  domains.value.map(domain => ({
+    label: t(`domains.${domain.code}`),
+    value: domain.id
+  }))
+)
 const translations = ref([])
 
-const nativeLanguageLabel = computed(() => 'Native Language')
+const nativeLanguageLabel = computed(() => t('vocabulary.nativeLanguage'))
 const targetLanguageLabel = computed(() => {
   const lang = languages.value.find(l => l.code === filters.value.languageCode)
-  return lang?.name || 'Translation'
+  return lang?.name || t('vocabulary.translation')
 })
 
-onMounted(async () => {
-  try {
-    await Promise.all([
-      vocabularyStore.fetchLanguages(),
-      vocabularyStore.fetchDomains()
-    ])
-    
-    languages.value = vocabularyStore.languages
-    domains.value = vocabularyStore.domains
-    
-    // Set default language
-    if (languages.value.length > 0) {
-      filters.value.languageCode = languages.value[0].code
-    }
-  } catch (error) {
-    console.error('Failed to load filter options:', error)
-  }
-})
+
 
 const loadVocabulary = async () => {
   const { valid } = await filterFormRef.value.validate()
@@ -181,8 +178,8 @@ const loadVocabulary = async () => {
     const result = await vocabularyStore.fetchVocabulary(filters.value)
     translations.value = vocabularyStore.translations
   } catch (error) {
-    console.error('Failed to load vocabulary:', error)
-    alert('Failed to load vocabulary. Please try again.')
+    console.error(t('vocabulary.failedToLoad'), error)
+    alert(t('vocabulary.failedToLoad'))
   } finally {
     loading.value = false
   }
@@ -205,8 +202,8 @@ const toggleKnown = async (translation) => {
     // Update local state
     translation.isKnown = newKnownState
   } catch (error) {
-    console.error('Failed to toggle word known state:', error)
-    alert('Failed to update word status.')
+    console.error(t('vocabulary.failedToToggle'), error)
+    alert(t('vocabulary.failedToToggle'))
   }
 }
 
@@ -214,4 +211,23 @@ const openDetailModal = (translation) => {
   selectedTranslation.value = translation
   detailDialog.value = true
 }
+
+onMounted(async () => {
+  try {
+    await Promise.all([
+      vocabularyStore.fetchLanguages(),
+      vocabularyStore.fetchDomains()
+    ])
+    
+    languages.value = vocabularyStore.languages
+    domains.value = vocabularyStore.domains
+    
+    // Set default language
+    if (languages.value.length > 0) {
+      filters.value.languageCode = languages.value[0].code
+    }
+  } catch (error) {
+    console.error(t('errors.failedToLoadOptions'), error)
+  }
+})
 </script>
