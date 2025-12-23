@@ -1,0 +1,36 @@
+[
+  {
+    "language_code": "es",
+    "text": "casa",
+    "gender": "feminine",
+    "plural_text": "casas",
+    "sentence_example": "La casa es grande.",
+    "concept": "house"
+  },
+  {
+    "language_code": "es",
+    "text": "coche",
+    "gender": "masculine",
+    "plural_text": "coches",
+    "sentence_example": "Conduzco un coche.",
+    "concept": "car"
+  },
+  {
+    "language_code": "es",
+    "text": "dormir",
+    "sentence_example": "Voy a dormir.",
+    "concept": "sleep"
+  },
+  {
+    "language_code": "es",
+    "text": "comer",
+    "sentence_example": "Hay que comer.",
+    "concept": "eat"
+  },
+  {
+    "language_code": "es",
+    "text": "caminar",
+    "sentence_example": "Me gusta caminar.",
+    "concept": "walk"
+  }
+]

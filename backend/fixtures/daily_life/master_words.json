@@ -1,0 +1,37 @@
+[
+  {
+    "id": 11,
+    "concept": "house",
+    "domain_id": 3,
+    "difficulty": "EASY",
+    "word_type": "NOUN"
+  },
+  {
+    "id": 12,
+    "concept": "car",
+    "domain_id": 3,
+    "difficulty": "EASY",
+    "word_type": "NOUN"
+  },
+  {
+    "id": 13,
+    "concept": "sleep",
+    "domain_id": 3,
+    "difficulty": "EASY",
+    "word_type": "VERB"
+  },
+  {
+    "id": 14,
+    "concept": "eat",
+    "domain_id": 3,
+    "difficulty": "EASY",
+    "word_type": "VERB"
+  },
+  {
+    "id": 15,
+    "concept": "walk",
+    "domain_id": 3,
+    "difficulty": "EASY",
+    "word_type": "VERB"
+  }
+]

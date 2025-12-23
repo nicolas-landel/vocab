@@ -1,0 +1,18 @@
+[
+  {
+    "concept": "train",
+    "language_code": "fr",
+    "text": "train",
+    "gender": "masculine",
+    "plural_text": "trains",
+    "sentence_example": "Le train arrive à midi."
+  },
+  {
+    "concept": "airport",
+    "language_code": "fr",
+    "text": "aéroport",
+    "gender": "masculine",
+    "plural_text": "aéroports",
+    "sentence_example": "L'aéroport est loin."
+  }
+]

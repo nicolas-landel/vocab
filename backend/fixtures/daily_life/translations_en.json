@@ -1,0 +1,27 @@
+[
+  {
+    "language_code": "en",
+    "text": "house",
+    "concept": "house"
+  },
+  {
+    "language_code": "en",
+    "text": "car",
+    "concept": "car"
+  },
+  {
+    "language_code": "en",
+    "text": "sleep",
+    "concept": "sleep"
+  },
+  {
+    "language_code": "en",
+    "text": "eat",
+    "concept": "eat"
+  },
+  {
+    "language_code": "en",
+    "text": "walk",
+    "concept": "walk"
+  }
+]

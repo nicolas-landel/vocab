@@ -1,0 +1,27 @@
+[
+  {
+    "language_code": "en",
+    "text": "job",
+    "concept": "job"
+  },
+  {
+    "language_code": "en",
+    "text": "office",
+    "concept": "office"
+  },
+  {
+    "language_code": "en",
+    "text": "meeting",
+    "concept": "meeting"
+  },
+  {
+    "language_code": "en",
+    "text": "boss",
+    "concept": "boss"
+  },
+  {
+    "language_code": "en",
+    "text": "computer",
+    "concept": "computer"
+  }
+]

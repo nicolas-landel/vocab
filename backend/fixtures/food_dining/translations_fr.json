@@ -1,0 +1,42 @@
+[
+  {
+    "concept": "bread",
+    "language_code": "fr",
+    "text": "pain",
+    "gender": "masculine",
+    "plural_text": "pains",
+    "sentence_example": "Le pain est frais."
+  },
+  {
+    "concept": "water",
+    "language_code": "fr",
+    "text": "eau",
+    "gender": "feminine",
+    "plural_text": "eaux",
+    "sentence_example": "L'eau est froide."
+  },
+  {
+    "concept": "apple",
+    "language_code": "fr",
+    "text": "pomme",
+    "gender": "feminine",
+    "plural_text": "pommes",
+    "sentence_example": "La pomme est rouge."
+  },
+  {
+    "concept": "coffee",
+    "language_code": "fr",
+    "text": "café",
+    "gender": "masculine",
+    "plural_text": "cafés",
+    "sentence_example": "Le café est chaud."
+  },
+  {
+    "concept": "restaurant",
+    "language_code": "fr",
+    "text": "restaurant",
+    "gender": "masculine",
+    "plural_text": "restaurants",
+    "sentence_example": "Le restaurant est fermé."
+  }
+]

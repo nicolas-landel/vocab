@@ -1,0 +1,37 @@
+[
+  {
+    "id": 21,
+    "concept": "doctor",
+    "domain_id": 5,
+    "difficulty": "EASY",
+    "word_type": "NOUN"
+  },
+  {
+    "id": 22,
+    "concept": "medicine",
+    "domain_id": 5,
+    "difficulty": "EASY",
+    "word_type": "NOUN"
+  },
+  {
+    "id": 23,
+    "concept": "hospital",
+    "domain_id": 5,
+    "difficulty": "EASY",
+    "word_type": "NOUN"
+  },
+  {
+    "id": 24,
+    "concept": "body",
+    "domain_id": 5,
+    "difficulty": "EASY",
+    "word_type": "NOUN"
+  },
+  {
+    "id": 25,
+    "concept": "sick",
+    "domain_id": 5,
+    "difficulty": "EASY",
+    "word_type": "ADJECTIVE"
+  }
+]

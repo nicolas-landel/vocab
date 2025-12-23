@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "code": "food_dining",
+    "name": "Food & Dining"
+  },
+  {
+    "id": 2,
+    "code": "travel",
+    "name": "Travel & Transportation"
+  },
+  {
+    "id": 3,
+    "code": "daily_life",
+    "name": "Daily Life"
+  },
+  {
+    "id": 4,
+    "code": "work",
+    "name": "Work & Business"
+  },
+  {
+    "id": 5,
+    "code": "health",
+    "name": "Health & Body"
+  },
+  {
+    "id": 6,
+    "code": "family",
+    "name": "Family & Relationships"
+  },
+  {
+    "id": 7,
+    "code": "education",
+    "name": "Education"
+  },
+  {
+    "id": 8,
+    "code": "weather",
+    "name": "Weather & Nature"
+  },
+  {
+    "id": 9,
+    "code": "entertainment",
+    "name": "Entertainment"
+  },
+  {
+    "id": 10,
+    "code": "shopping",
+    "name": "Shopping"
+  }
+]

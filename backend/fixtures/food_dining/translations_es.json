@@ -1,0 +1,42 @@
+[
+  {
+    "concept": "bread",
+    "language_code": "es",
+    "text": "pan",
+    "gender": "masculine",
+    "plural_text": "panes",
+    "sentence_example": "El pan está caliente."
+  },
+  {
+    "concept": "water",
+    "language_code": "es",
+    "text": "agua",
+    "gender": "feminine",
+    "plural_text": "aguas",
+    "sentence_example": "El agua está fría."
+  },
+  {
+    "concept": "apple",
+    "language_code": "es",
+    "text": "manzana",
+    "gender": "feminine",
+    "plural_text": "manzanas",
+    "sentence_example": "La manzana es verde."
+  },
+  {
+    "concept": "coffee",
+    "language_code": "es",
+    "text": "café",
+    "gender": "masculine",
+    "plural_text": "cafés",
+    "sentence_example": "El café está caliente."
+  },
+  {
+    "concept": "restaurant",
+    "language_code": "es",
+    "text": "restaurante",
+    "gender": "masculine",
+    "plural_text": "restaurantes",
+    "sentence_example": "El restaurante está lleno."
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "language_code": "es",
+    "text": "trabajo",
+    "gender": "masculine",
+    "plural_text": "trabajos",
+    "sentence_example": "Me gusta mi trabajo.",
+    "concept": "job"
+  },
+  {
+    "language_code": "es",
+    "text": "oficina",
+    "gender": "feminine",
+    "plural_text": "oficinas",
+    "sentence_example": "Estoy en la oficina.",
+    "concept": "office"
+  },
+  {
+    "language_code": "es",
+    "text": "reunión",
+    "gender": "feminine",
+    "plural_text": "reuniones",
+    "sentence_example": "Tenemos una reunión.",
+    "concept": "meeting"
+  },
+  {
+    "language_code": "es",
+    "text": "jefe",
+    "gender": "masculine",
+    "plural_text": "jefes",
+    "sentence_example": "El jefe está aquí.",
+    "concept": "boss"
+  },
+  {
+    "language_code": "es",
+    "text": "ordenador",
+    "gender": "masculine",
+    "plural_text": "ordenadores",
+    "sentence_example": "Mi ordenador es rápido.",
+    "concept": "computer"
+  }
+]

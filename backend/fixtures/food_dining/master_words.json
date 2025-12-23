@@ -1,0 +1,32 @@
+[
+  {
+    "concept": "bread",
+    "domain_id": 1,
+    "difficulty": "EASY",
+    "word_type": "NOUN"
+  },
+  {
+    "concept": "water",
+    "domain_id": 1,
+    "difficulty": "EASY",
+    "word_type": "NOUN"
+  },
+  {
+    "concept": "apple",
+    "domain_id": 1,
+    "difficulty": "EASY",
+    "word_type": "NOUN"
+  },
+  {
+    "concept": "coffee",
+    "domain_id": 1,
+    "difficulty": "EASY",
+    "word_type": "NOUN"
+  },
+  {
+    "concept": "restaurant",
+    "domain_id": 1,
+    "difficulty": "EASY",
+    "word_type": "NOUN"
+  }
+]

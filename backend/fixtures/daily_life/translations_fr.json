@@ -1,0 +1,36 @@
+[
+  {
+    "language_code": "fr",
+    "text": "maison",
+    "gender": "feminine",
+    "plural_text": "maisons",
+    "sentence_example": "La maison est grande.",
+    "concept": "house"
+  },
+  {
+    "language_code": "fr",
+    "text": "voiture",
+    "gender": "feminine",
+    "plural_text": "voitures",
+    "sentence_example": "Je conduis une voiture.",
+    "concept": "car"
+  },
+  {
+    "language_code": "fr",
+    "text": "dormir",
+    "sentence_example": "Je vais dormir.",
+    "concept": "sleep"
+  },
+  {
+    "language_code": "fr",
+    "text": "manger",
+    "sentence_example": "Il faut manger.",
+    "concept": "eat"
+  },
+  {
+    "language_code": "fr",
+    "text": "marcher",
+    "sentence_example": "J'aime marcher.",
+    "concept": "walk"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "language_code": "fr",
+    "text": "travail",
+    "gender": "masculine",
+    "plural_text": "travaux",
+    "sentence_example": "J'aime mon travail.",
+    "concept": "job"
+  },
+  {
+    "language_code": "fr",
+    "text": "bureau",
+    "gender": "masculine",
+    "plural_text": "bureaux",
+    "sentence_example": "Je suis au bureau.",
+    "concept": "office"
+  },
+  {
+    "language_code": "fr",
+    "text": "réunion",
+    "gender": "feminine",
+    "plural_text": "réunions",
+    "sentence_example": "Nous avons une réunion.",
+    "concept": "meeting"
+  },
+  {
+    "language_code": "fr",
+    "text": "patron",
+    "gender": "masculine",
+    "plural_text": "patrons",
+    "sentence_example": "Le patron est là.",
+    "concept": "boss"
+  },
+  {
+    "language_code": "fr",
+    "text": "ordinateur",
+    "gender": "masculine",
+    "plural_text": "ordinateurs",
+    "sentence_example": "Mon ordinateur est rapide.",
+    "concept": "computer"
+  }
+]

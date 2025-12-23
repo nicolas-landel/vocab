@@ -1,0 +1,18 @@
+[
+  {
+    "concept": "train",
+    "language_code": "es",
+    "text": "tren",
+    "gender": "masculine",
+    "plural_text": "trenes",
+    "sentence_example": "El tren sale a las tres."
+  },
+  {
+    "concept": "airport",
+    "language_code": "es",
+    "text": "aeropuerto",
+    "gender": "masculine",
+    "plural_text": "aeropuertos",
+    "sentence_example": "El aeropuerto está lejos."
+  }
+]

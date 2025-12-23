@@ -1,0 +1,41 @@
+[
+  {
+    "language_code": "es",
+    "text": "médico",
+    "gender": "masculine",
+    "plural_text": "médicos",
+    "sentence_example": "Voy al médico.",
+    "concept": "doctor"
+  },
+  {
+    "language_code": "es",
+    "text": "medicina",
+    "gender": "feminine",
+    "plural_text": "medicinas",
+    "sentence_example": "Toma tu medicina.",
+    "concept": "medicine"
+  },
+  {
+    "language_code": "es",
+    "text": "hospital",
+    "gender": "masculine",
+    "plural_text": "hospitales",
+    "sentence_example": "Está en el hospital.",
+    "concept": "hospital"
+  },
+  {
+    "language_code": "es",
+    "text": "cuerpo",
+    "gender": "masculine",
+    "plural_text": "cuerpos",
+    "sentence_example": "El cuerpo humano.",
+    "concept": "body"
+  },
+  {
+    "language_code": "es",
+    "text": "enfermo",
+    "gender": "masculine",
+    "sentence_example": "Estoy enfermo.",
+    "concept": "sick"
+  }
+]

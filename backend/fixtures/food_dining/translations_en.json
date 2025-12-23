@@ -1,0 +1,27 @@
+[
+  {
+    "concept": "bread",
+    "language_code": "en",
+    "text": "bread"
+  },
+  {
+    "concept": "water",
+    "language_code": "en",
+    "text": "water"
+  },
+  {
+    "concept": "apple",
+    "language_code": "en",
+    "text": "apple"
+  },
+  {
+    "concept": "coffee",
+    "language_code": "en",
+    "text": "coffee"
+  },
+  {
+    "concept": "restaurant",
+    "language_code": "en",
+    "text": "restaurant"
+  }
+]

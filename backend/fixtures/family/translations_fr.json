@@ -1,0 +1,42 @@
+[
+  {
+    "language_code": "fr",
+    "text": "mère",
+    "gender": "feminine",
+    "plural_text": "mères",
+    "sentence_example": "Ma mère est gentille.",
+    "concept": "mother"
+  },
+  {
+    "language_code": "fr",
+    "text": "père",
+    "gender": "masculine",
+    "plural_text": "pères",
+    "sentence_example": "Mon père travaille.",
+    "concept": "father"
+  },
+  {
+    "language_code": "fr",
+    "text": "frère",
+    "gender": "masculine",
+    "plural_text": "frères",
+    "sentence_example": "J'ai un frère.",
+    "concept": "brother"
+  },
+  {
+    "language_code": "fr",
+    "text": "soeur",
+    "gender": "feminine",
+    "plural_text": "soeurs",
+    "sentence_example": "J'ai une soeur.",
+    "concept": "sister"
+  },
+  {
+    "language_code": "fr",
+    "text": "enfant",
+    "gender": "masculine",
+    "plural_text": "enfants",
+    "sentence_example": "L'enfant joue.",
+    "concept": "child"
+  }
+]

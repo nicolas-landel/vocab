@@ -1,0 +1,27 @@
+[
+  {
+    "language_code": "en",
+    "text": "doctor",
+    "concept": "doctor"
+  },
+  {
+    "language_code": "en",
+    "text": "medicine",
+    "concept": "medicine"
+  },
+  {
+    "language_code": "en",
+    "text": "hospital",
+    "concept": "hospital"
+  },
+  {
+    "language_code": "en",
+    "text": "body",
+    "concept": "body"
+  },
+  {
+    "language_code": "en",
+    "text": "sick",
+    "concept": "sick"
+  }
+]

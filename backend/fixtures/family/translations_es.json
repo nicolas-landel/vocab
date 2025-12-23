@@ -1,0 +1,42 @@
+[
+  {
+    "language_code": "es",
+    "text": "madre",
+    "gender": "feminine",
+    "plural_text": "madres",
+    "sentence_example": "Mi madre es amable.",
+    "concept": "mother"
+  },
+  {
+    "language_code": "es",
+    "text": "padre",
+    "gender": "masculine",
+    "plural_text": "padres",
+    "sentence_example": "Mi padre trabaja.",
+    "concept": "father"
+  },
+  {
+    "language_code": "es",
+    "text": "hermano",
+    "gender": "masculine",
+    "plural_text": "hermanos",
+    "sentence_example": "Tengo un hermano.",
+    "concept": "brother"
+  },
+  {
+    "language_code": "es",
+    "text": "hermana",
+    "gender": "feminine",
+    "plural_text": "hermanas",
+    "sentence_example": "Tengo una hermana.",
+    "concept": "sister"
+  },
+  {
+    "language_code": "es",
+    "text": "niño",
+    "gender": "masculine",
+    "plural_text": "niños",
+    "sentence_example": "El niño juega.",
+    "concept": "child"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "language_code": "en",
+    "text": "mother",
+    "concept": "mother"
+  },
+  {
+    "language_code": "en",
+    "text": "father",
+    "concept": "father"
+  },
+  {
+    "language_code": "en",
+    "text": "brother",
+    "concept": "brother"
+  },
+  {
+    "language_code": "en",
+    "text": "sister",
+    "concept": "sister"
+  },
+  {
+    "language_code": "en",
+    "text": "child",
+    "concept": "child"
+  }
+]

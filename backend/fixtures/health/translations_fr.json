@@ -1,0 +1,41 @@
+[
+  {
+    "language_code": "fr",
+    "text": "médecin",
+    "gender": "masculine",
+    "plural_text": "médecins",
+    "sentence_example": "Je vois le médecin.",
+    "concept": "doctor"
+  },
+  {
+    "language_code": "fr",
+    "text": "médicament",
+    "gender": "masculine",
+    "plural_text": "médicaments",
+    "sentence_example": "Prends ton médicament.",
+    "concept": "medicine"
+  },
+  {
+    "language_code": "fr",
+    "text": "hôpital",
+    "gender": "masculine",
+    "plural_text": "hôpitaux",
+    "sentence_example": "Il est à l'hôpital.",
+    "concept": "hospital"
+  },
+  {
+    "language_code": "fr",
+    "text": "corps",
+    "gender": "masculine",
+    "plural_text": "corps",
+    "sentence_example": "Le corps humain.",
+    "concept": "body"
+  },
+  {
+    "language_code": "fr",
+    "text": "malade",
+    "gender": "masculine",
+    "sentence_example": "Je suis malade.",
+    "concept": "sick"
+  }
+]
