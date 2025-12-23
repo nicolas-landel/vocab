@@ -1,2 +1,7 @@
-from .models import Language, Word, Translation, Difficulty, UserProgress
-from .schemas import LanguageBase, LanguageCreate, LanguageSchema, WordBase, WordCreate, WordSchema, TranslationBase, TranslationCreate
+from .models import Language, Translation, Difficulty, WordType, MasterWord, Domain, UserTranslation
+from .schemas import (
+    LanguageSchema, LanguageCreate,
+    DomainSchema, DomainCreate,
+    MasterWordSchema, MasterWordCreate,
+    TranslationSchema, TranslationCreate, TranslationDetail
+)

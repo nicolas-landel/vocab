@@ -4,7 +4,8 @@ from sqlalchemy import select, func
 from typing import List, Dict
 
 from app.core.database import get_db
-from app.domain.vocab.models import UserProgress, Word
+from app.domain.session.models import UserProgress
+from app.domain.vocab.models import Translation
 from app.domain.user.models import User
 from pydantic import BaseModel
 
@@ -32,14 +33,14 @@ async def get_user_profile(db: AsyncSession = Depends(get_db)):
     
     # Weakest words (more incorrect than correct, sorted by incorrect count)
     weakest = sorted(progress, key=lambda p: p.incorrect_count, reverse=True)[:5]
-    weakest_ids = [p.word_id for p in weakest]
+    weakest_ids = [p.translation_id for p in weakest]
     
     if weakest_ids:
-        w_query = select(Word).where(Word.id.in_(weakest_ids))
-        words = (await db.execute(w_query)).scalars().all()
+        w_query = select(Translation).where(Translation.id.in_(weakest_ids))
+        translations = (await db.execute(w_query)).scalars().all()
         # Maintain order? Hard with IN clause. Map back.
-        w_map = {w.id: w.text for w in words}
-        weakest_texts = [w_map.get(wid, "Unknown") for wid in weakest_ids]
+        w_map = {t.id: t.text for t in translations}
+        weakest_texts = [w_map.get(tid, "Unknown") for tid in weakest_ids]
     else:
         weakest_texts = []
         

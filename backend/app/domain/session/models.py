@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, ForeignKey, DateTime, Enum, Boolean
+from sqlalchemy import Column, Integer, String, ForeignKey, DateTime, Enum, Boolean, UniqueConstraint
 from sqlalchemy.orm import relationship
 from datetime import datetime
 from app.core.database import Base
@@ -11,48 +11,69 @@ class SessionType(str, enum.Enum):
     MIXED = "MIXED"
 
 
+class SessionConfig(Base):
+    """Configuration for each session - created before starting a session"""
+    __tablename__ = "session_configs"
+    
+    user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    native_language = Column(String, ForeignKey("languages.code"), nullable=False)
+    language_tested = Column(String, ForeignKey("languages.code"), nullable=False)
+    difficulty = Column(String, nullable=True)  # Can be null for mixed
+    domain = Column(String, nullable=True)  # Can be null for all domains
+    session_type = Column(Enum(SessionType), nullable=False)
+    
+    user = relationship("User", foreign_keys=[user_id])
+    native_lang = relationship("Language", foreign_keys=[native_language])
+    tested_lang = relationship("Language", foreign_keys=[language_tested])
+    session = relationship("Session", back_populates="config", uselist=False)
+
+
 class Session(Base):
     __tablename__ = "sessions"
     
-    id = Column(Integer, primary_key=True, index=True)
-    user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
+    config_id = Column(Integer, ForeignKey("session_configs.id", ondelete="CASCADE"), nullable=False, unique=True)
+    user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
     source_lang_code = Column(String, ForeignKey("languages.code"), nullable=False)
     target_lang_code = Column(String, ForeignKey("languages.code"), nullable=False)
-    domain = Column(String, nullable=True) # If null, all domains
-    difficulty = Column(String, nullable=True) # If null, mixed difficulty
+    domain = Column(String, nullable=True)  # If null, all domains
+    difficulty = Column(String, nullable=True)  # If null, mixed difficulty
     session_type = Column(Enum(SessionType), nullable=False)
-    created_at = Column(DateTime, default=datetime.utcnow)
-    score = Column(Integer, nullable=True) # Percentage or count
+    score = Column(Integer, nullable=True)  # Percentage or count
+    completed_at = Column(DateTime, nullable=True)  # When session was finished
     
-    user = relationship("app.domain.user.models.User")
-    results = relationship("SessionResult", back_populates="session")
+    config = relationship("SessionConfig", back_populates="session")
+    user = relationship("User", foreign_keys=[user_id])
+    source_language = relationship("Language", foreign_keys=[source_lang_code])
+    target_language = relationship("Language", foreign_keys=[target_lang_code])
+    results = relationship("SessionResult", back_populates="session", cascade="all, delete-orphan")
+
 
 class SessionResult(Base):
+    """Stores individual word results for each session"""
     __tablename__ = "session_results"
     
-    id = Column(Integer, primary_key=True, index=True)
-    session_id = Column(Integer, ForeignKey("sessions.id"), nullable=False)
-    word_id = Column(Integer, ForeignKey("words.id"), nullable=False)
+    session_id = Column(Integer, ForeignKey("sessions.id", ondelete="CASCADE"), nullable=False)
+    translation_id = Column(Integer, ForeignKey("translations.id", ondelete="CASCADE"), nullable=False)
     correct = Column(Boolean, nullable=False)
     
     session = relationship("Session", back_populates="results")
-    word = relationship("app.domain.vocab.models.Word")
+    translation = relationship("Translation")
 
 
 class UserProgress(Base):
+    """Tracks overall user progress for each translation"""
     __tablename__ = "user_progress"
     
-    id = Column(Integer, primary_key=True, index=True)
-    session_id = Column(Integer, ForeignKey(".id"), nullable=False, index=True)
-    translation_id = Column(Integer, ForeignKey("translations.id"), nullable=False, index=True)
+    user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True)
+    translation_id = Column(Integer, ForeignKey("translations.id", ondelete="CASCADE"), nullable=False, index=True)
     
     correct_count = Column(Integer, default=0)
     incorrect_count = Column(Integer, default=0)
     last_reviewed = Column(DateTime, default=datetime.utcnow)
     
-    user = relationship("app.domain.user.models.User") 
-    word = relationship("Word")
+    user = relationship("User")
+    translation = relationship("Translation")
     
     __table_args__ = (
-        UniqueConstraint('user_id', 'word_id', name='unique_user_word_progress'),
+        UniqueConstraint('user_id', 'translation_id', name='unique_user_translation_progress'),
     )
