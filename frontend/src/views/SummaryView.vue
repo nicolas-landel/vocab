@@ -26,7 +26,7 @@
 
 <script setup>
 import { computed, onMounted } from 'vue'
-import { useSessionStore } from '../stores/session'
+import { useSessionStore } from '@/stores/session'
 import { useRouter } from 'vue-router'
 
 const props = defineProps(['id'])

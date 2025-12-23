@@ -1,14 +1,13 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import { createORM } from 'pinia-orm'
+import { orm } from "./models/index.js";
 import router from './router'
 import './style.css'
 import App from './App.vue'
 import i18n from './setup/i18n'
-import apiClient from './setup/axios'
 import { vuetify } from './setup/vuetify'
 
-const pinia = createPinia().use(createORM())
+const pinia = createPinia().use(orm)
 const app = createApp(App)
 
 app.use(pinia)

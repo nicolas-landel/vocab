@@ -1,52 +1,35 @@
 <template>
-  <div class="home">
-    <h1>Welcome to Vocab App</h1>
-    <p>Your vocabulary learning companion</p>
-    <div class="actions">
-      <router-link to="/login" class="btn">Get Started</router-link>
-    </div>
-  </div>
+  <v-container fluid>
+    <v-tabs v-model="activeTab" bg-color="transparent" color="primary" class="mb-6">
+      <v-tab value="session">Session</v-tab>
+      <v-tab value="vocabulary">Vocabulary</v-tab>
+    </v-tabs>
+
+    <v-window v-model="activeTab">
+      <!-- Session Tab -->
+      <v-window-item value="session">
+        <session-config-form @start-session="handleStartSession" />
+      </v-window-item>
+
+      <!-- Vocabulary Tab -->
+      <v-window-item value="vocabulary">
+        <vocabulary-view />
+      </v-window-item>
+    </v-window>
+  </v-container>
 </template>
 
-<style scoped>
-.home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  text-align: center;
-  padding: 2rem;
-}
+<script setup>
+import { ref } from 'vue'
+import { useRouter } from 'vue-router'
+import SessionConfigForm from '@/components/SessionConfigForm.vue'
+import VocabularyView from '@/components/VocabularyView.vue'
 
-h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  color: #42b883;
-}
+const router = useRouter()
+const activeTab = ref('session')
 
-p {
-  font-size: 1.5rem;
-  color: #666;
-  margin-bottom: 2rem;
+const handleStartSession = (sessionId) => {
+  router.push({ name: 'SessionActive', params: { id: sessionId } })
 }
+</script>
 
-.actions {
-  display: flex;
-  gap: 1rem;
-}
-
-.btn {
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
-  background: #42b883;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: background 0.3s;
-}
-
-.btn:hover {
-  background: #35a372;
-}
-</style>

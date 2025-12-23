@@ -1,130 +1,73 @@
 <template>
-  <div class="app-container">
-    <nav class="navbar glass">
-      <router-link to="/" class="logo">VOCAB</router-link>
-      <div class="links">
-        <router-link to="/">Home</router-link>
-        <router-link to="/profile">Profile</router-link>
-        <div class="lang-switch">
-          <button @click="$i18n.locale = 'en'" :class="{ active: $i18n.locale === 'en' }">EN</button>
-          <button @click="$i18n.locale = 'fr'" :class="{ active: $i18n.locale === 'fr' }">FR</button>
-          <button @click="$i18n.locale = 'es'" :class="{ active: $i18n.locale === 'es' }">ES</button>
-        </div>
-      </div>
-    </nav>
+  <v-app>
+    <v-app-bar color="primary" elevation="0">
+      <v-toolbar-title class="ml-4">
+        <router-link to="/" class="logo text-white text-decoration-none font-weight-bold">
+          VOCAB
+        </router-link>
+      </v-toolbar-title>
 
-    <main class="main-content">
-      <RouterView v-slot="{ Component }">
-        <Transition name="fade" mode="out-in">
-          <component :is="Component" />
-        </Transition>
-      </RouterView>
-    </main>
-  </div>
+      <v-spacer></v-spacer>
+
+      <v-select
+        v-model="nativeLanguage"
+        :items="languages"
+        item-title="name"
+        item-value="code"
+        label="Native Language"
+        density="compact"
+        variant="outlined"
+        style="max-width: 200px"
+        class="mr-4"
+        hide-details
+      ></v-select>
+
+      <v-btn icon @click="goToProfile">
+        <v-icon>mdi-account</v-icon>
+      </v-btn>
+    </v-app-bar>
+
+    <v-main>
+      <RouterView />
+    </v-main>
+  </v-app>
 </template>
 
 <script setup>
+import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
+import { useVocabularyStore } from './stores/vocabulary'
 import { useAuthStore } from './stores/auth'
 
 const router = useRouter()
+const vocabularyStore = useVocabularyStore()
 const authStore = useAuthStore()
 
-const goHome = () => router.push('/')
-const goProfile = () => router.push('/profile')
+const nativeLanguage = ref('fr')
+const languages = ref([])
+
+onMounted(async () => {
+  try {
+    await vocabularyStore.fetchLanguages()
+    languages.value = vocabularyStore.languages
+    
+    // Set from user profile if available
+    if (authStore.user?.nativeLanguage) {
+      nativeLanguage.value = authStore.user.nativeLanguage
+    }
+  } catch (error) {
+    console.error('Failed to load languages:', error)
+  }
+})
+
+const goToProfile = () => {
+  router.push('/profile')
+}
 </script>
 
-
-
-<style scoped>
-.app-container {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 24px;
-  margin-bottom: 32px;
-  border-radius: var(--radius);
-}
-
-.brand {
-  font-weight: 800;
-  font-size: 1.2rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.links {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.links a {
-  text-decoration: none;
-  color: var(--text-color);
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.links a:hover,
-.links a.router-link-active {
-  color: var(--primary-color);
-}
-
-.lang-switch {
-  display: flex;
-  gap: 8px;
-  margin-left: 16px;
-}
-
-.lang-switch button {
-  background: transparent;
-  border: 1px solid var(--text-muted);
-  color: var(--text-muted);
-  padding: 2px 6px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 0.8rem;
-}
-
-.lang-switch button.active {
-  background: var(--primary-color);
-  color: white;
-  border-color: var(--primary-color);
-}
-
-.logo-icon {
-  background: var(--primary-color);
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  color: white;
-}
-
-.btn-sm {
-  padding: 8px 16px;
-  font-size: 0.9rem;
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.2s ease;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
+<style>
+.logo {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
 }
 </style>

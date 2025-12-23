@@ -1,102 +1,208 @@
 <template>
-    <div v-if="session" class="session-page animate-fade-in">
-        <div class="header">
-            <h2>{{ $t('session.title') }} {{ currentIndex + 1 }} / {{ session.results.length }}</h2>
-            <div class="progress-bar">
-                <div class="fill" :style="{ width: progress + '%' }"></div>
+  <v-container>
+    <v-card v-if="!sessionStore.isSessionComplete" max-width="800" class="mx-auto">
+      <!-- Progress -->
+      <v-card-title>
+        <div class="d-flex justify-space-between align-center w-100">
+          <span>Session Progress</span>
+          <span class="text-body-1">
+            {{ sessionStore.currentWordIndex + 1 }} / {{ sessionStore.totalWords }}
+          </span>
+        </div>
+      </v-card-title>
+
+      <v-progress-linear
+        :model-value="progress"
+        color="primary"
+        height="8"
+      ></v-progress-linear>
+
+      <v-card-text class="pt-8">
+        <v-row v-if="sessionStore.currentWord">
+          <!-- Word to translate -->
+          <v-col cols="12" class="text-center">
+            <div class="text-subtitle-1 text-grey mb-2">Translate this word:</div>
+            <div class="text-h3 mb-6">{{ sessionStore.currentWord.text }}</div>
+            
+            <div v-if="sessionStore.currentWord.masterWord?.domain" class="mb-4">
+              <v-chip color="primary" variant="outlined">
+                {{ sessionStore.currentWord.masterWord.domain.name }}
+              </v-chip>
             </div>
+          </v-col>
+
+          <!-- Answer Input -->
+          <v-col cols="12">
+            <v-text-field
+              v-model="userAnswer"
+              label="Your answer"
+              variant="outlined"
+              size="large"
+              autofocus
+              @keyup.enter="submitAnswer"
+              :disabled="showResult"
+            ></v-text-field>
+          </v-col>
+
+          <!-- Result Display -->
+          <v-col cols="12" v-if="showResult">
+            <v-alert
+              :type="isCorrect ? 'success' : 'error'"
+              :icon="isCorrect ? 'mdi-check-circle' : 'mdi-close-circle'"
+              prominent
+            >
+              <div class="text-h6">{{ isCorrect ? 'Correct!' : 'Incorrect' }}</div>
+              <div v-if="!isCorrect" class="mt-2">
+                Correct answer: <strong>{{ correctAnswer }}</strong>
+              </div>
+            </v-alert>
+          </v-col>
+
+          <!-- Action Buttons -->
+          <v-col cols="12">
+            <div class="d-flex gap-2">
+              <v-btn
+                v-if="!showResult"
+                color="warning"
+                variant="outlined"
+                @click="skipWord"
+                block
+              >
+                I forgot
+              </v-btn>
+              
+              <v-btn
+                v-if="!showResult"
+                color="primary"
+                @click="submitAnswer"
+                :disabled="!userAnswer"
+                block
+              >
+                Check Answer
+              </v-btn>
+
+              <v-btn
+                v-if="showResult"
+                color="primary"
+                @click="nextWord"
+                block
+              >
+                Next Word
+              </v-btn>
+            </div>
+          </v-col>
+        </v-row>
+      </v-card-text>
+    </v-card>
+
+    <!-- Session Complete -->
+    <v-card v-else max-width="800" class="mx-auto">
+      <v-card-title class="text-center">Session Complete!</v-card-title>
+      <v-card-text>
+        <div class="text-center mb-6">
+          <div class="text-h2 mb-4">{{ sessionStore.sessionResults?.successRate }}%</div>
+          <div class="text-subtitle-1 text-grey">Success Rate</div>
         </div>
 
-        <div class="flashcard glass">
-            <div class="word-display">
-                <span class="label">{{ $t('session.translate') }}</span>
-                <h1>{{ currentWord?.text }}</h1>
-                <span class="sub" v-if="currentWord?.domain">{{ $t('session.domain') }} {{ currentWord.domain }}</span>
-            </div>
+        <v-row>
+          <v-col cols="12" md="6">
+            <v-card variant="outlined" color="success">
+              <v-card-text class="text-center">
+                <div class="text-h4">{{ sessionStore.sessionResults?.correctFirstTime?.length || 0 }}</div>
+                <div class="text-subtitle-2">Correct First Try</div>
+              </v-card-text>
+            </v-card>
+          </v-col>
 
-            <!-- Answer Section -->
-            <div v-if="showAnswer" class="answer-reveal">
-                <p class="instruction">{{ $t('session.check') }}</p>
-                <!-- Here we would show the Correct Answer if we had it. -->
+          <v-col cols="12" md="6">
+            <v-card variant="outlined" color="error">
+              <v-card-text class="text-center">
+                <div class="text-h4">{{ sessionStore.sessionResults?.failed?.length || 0 }}</div>
+                <div class="text-subtitle-2">Needs Practice</div>
+              </v-card-text>
+            </v-card>
+          </v-col>
+        </v-row>
 
-                <div class="actions">
-                    <button @click="submitCard(false)" class="btn btn-error">{{ $t('session.incorrect') }}</button>
-                    <button @click="submitCard(true)" class="btn btn-success">{{ $t('session.correct') }}</button>
-                </div>
-            </div>
-
-            <div v-else class="input-section">
-                <input v-model="userInput" :placeholder="$t('session.placeholder')" class="input"
-                    @keyup.enter="checkAnswer" />
-                <button @click="checkAnswer" class="btn">{{ $t('session.reveal') }}</button>
-            </div>
+        <div class="d-flex gap-2 mt-6">
+          <v-btn color="primary" @click="finishSession" block>
+            Finish
+          </v-btn>
         </div>
-    </div>
-    <div v-else class="loading">Loading session...</div>
+      </v-card-text>
+    </v-card>
+  </v-container>
 </template>
 
 <script setup>
-import { computed, ref, onMounted } from 'vue'
-import { useSessionStore } from '../stores/session'
+import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
+import { useSessionStore } from '@/stores/session'
 
 const props = defineProps(['id'])
 const router = useRouter()
 const sessionStore = useSessionStore()
 
-const currentIndex = ref(0)
-const userInput = ref('')
-const showAnswer = ref(false)
-const results = ref([]) // Local accumulation of results
-
-const session = computed(() => sessionStore.currentSession)
-
-onMounted(() => {
-    if (!sessionStore.currentSessionId || sessionStore.currentSessionId != props.id) {
-        sessionStore.currentSessionId = props.id
-        // Ideally fetch if missing
-    }
-})
-
-const currentResult = computed(() => {
-    if (!session.value || !session.value.results) return null
-    return session.value.results[currentIndex.value]
-})
-
-const currentWord = computed(() => currentResult.value?.word)
+const userAnswer = ref('')
+const showResult = ref(false)
+const isCorrect = ref(false)
+const correctAnswer = ref('')
 
 const progress = computed(() => {
-    if (!session.value?.results) return 0
-    return ((currentIndex.value) / session.value.results.length) * 100
+  if (!sessionStore.totalWords) return 0
+  return (sessionStore.currentWordIndex / sessionStore.totalWords) * 100
 })
 
-const checkAnswer = () => {
-    // Basic verification logic?
-    // In real app, we might check against multiple valid translations.
-    // Here we don't have the target translation readily available in the frontend model 
-    // because Word model only has the word text itself, not the translation pair?
-    // Wait, the API returns `Session` with `results` containing `word` (the source word).
-    // We need the TARGET translation to verify!
-    // My Session API returned the stored `Result` which initially has correct=False.
-    // It seems I missed sending the Translation (answer) to the frontend?
+onMounted(async () => {
+  // If session not loaded, redirect to home
+  if (!sessionStore.currentSessionId) {
+    router.push('/')
+  }
+})
 
-    // Quick fix: The user checks it themselves (Self-assessment) OR I reveal answer.
-    // "I ll have to find the traduction one by one" - usually means system checks it.
+const submitAnswer = () => {
+  if (!userAnswer.value.trim()) return
 
-    // Issue: The backend `start_session` selects Words. It creates `SessionResult` linked to `Word`.
-    // It does NOT store the target word in `SessionResult`. Use `Translation` table to find it.
-
-    // MVP Approach: 
-    // 1. User types answer.
-    // 2. Click "Reveal".
-    // 3. User marks "Correct" or "Incorrect" (Anki style) OR System checks.
-    // Since I didn't send answer, I'll use Self-Assessment style (easier to implement now without changing backend schema heavily).
-    // Or I assume backend logic will check it on submit?
-    // But user wants "find the traduction one by one".
-
-    // Let's implement: Show Source -> User thinks/types -> Reveal -> User grades self (Premium SRS feel).
-    showAnswer.value = true
+  // Store correct answer from current word's master word translation
+  // Assuming the word has the correct translation available
+  correctAnswer.value = sessionStore.currentWord.masterWord?.text || ''
+  
+  // Submit answer to store
+  sessionStore.submitAnswer(userAnswer.value)
+  
+  // Check if answer was correct
+  const answerRecord = sessionStore.answers[sessionStore.answers.length - 1]
+  isCorrect.value = answerRecord?.correct || false
+  
+  showResult.value = true
 }
+
+const skipWord = () => {
+  sessionStore.skipWord()
+  resetInputState()
+}
+
+const nextWord = () => {
+  resetInputState()
+}
+
+const resetInputState = () => {
+  userAnswer.value = ''
+  showResult.value = false
+  isCorrect.value = false
+  correctAnswer.value = ''
+}
+
+const finishSession = async () => {
+  try {
+    await sessionStore.completeSession()
+    router.push('/')
+  } catch (error) {
+    console.error('Failed to complete session:', error)
+    alert('Failed to save session results.')
+  }
+}
+</script>
 
 const submitCard = (correct) => {
     results.value.push({
