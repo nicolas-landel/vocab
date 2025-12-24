@@ -26,6 +26,7 @@ const authStore = useAuthStore()
 
 onMounted(async () => {
   const token = route.query.token
+  const firstLogin = route.query.firstLogin === 'true'
   
   if (token) {
     // Store the token
@@ -35,7 +36,12 @@ onMounted(async () => {
     // Fetch user data
     try {
       await authStore.fetchUser()
-      router.push('/')
+      // Redirect to profile for first-time users, otherwise home
+      if (firstLogin) {
+        router.push('/profile')
+      } else {
+        router.push('/')
+      }
     } catch (error) {
       console.error('Failed to fetch user:', error)
       router.push('/login')

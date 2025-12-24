@@ -54,7 +54,7 @@ export const useSessionStore = defineStore('session', {
 
   actions: {
     async createSessionConfig(config) {
-      const response = await apiClient.post('/api/sessions/config', {
+      const response = await apiClient.post('/api/v1/sessions/config', {
         nativeLanguage: config.nativeLanguage,
         languageTested: config.languageTested,
         difficulty: config.difficulty,
@@ -72,7 +72,7 @@ export const useSessionStore = defineStore('session', {
         throw new Error('Config not found')
       }
       
-      const response = await apiClient.post('/api/sessions/start', {
+      const response = await apiClient.post('/api/v1/sessions/start', {
         configId: configId,
         sourceLangCode: this.currentConfig.nativeLanguage,
         targetLangCode: this.currentConfig.languageTested,
@@ -170,14 +170,14 @@ export const useSessionStore = defineStore('session', {
         correct: a.correct && a.attempts === 1 && !a.skipped
       }))
       
-      const response = await apiClient.post(`/api/sessions/${this.currentSessionId}/submit`, results)
+      const response = await apiClient.post(`/api/v1/sessions/${this.currentSessionId}/submit`, results)
       useRepo(Session).save(response.data)
       
       return this.sessionResults
     },
 
     async fetchSessionHistory() {
-      const response = await apiClient.get('/api/sessions/')
+      const response = await apiClient.get('/api/v1/sessions/')
       useRepo(Session).save(response.data)
       return response.data
     },

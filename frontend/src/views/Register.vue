@@ -1,8 +1,8 @@
 <template>
-  <VContainer class="fill-height" fluid>
+  <VContainer class="fill-height mt-n15" fluid>
     <VRow align="center" justify="center">
-      <VCol cols="12" sm="8" md="4">
-        <VCard class="elevation-12">
+      <VCol>
+        <VCard class="elevation-12" max-width="600">
           <VToolbar color="primary" dark flat>
             <VToolbarTitle>{{ t('register.title') }}</VToolbarTitle>
           </VToolbar>
@@ -120,9 +120,9 @@ const handleRegister = async () => {
   try {
     await authStore.register(email.value, password.value)
     success.value = true
-    setTimeout(() => {
-      router.push('/login')
-    }, 2000)
+    // Login automatically and redirect to profile
+    await authStore.login(email.value, password.value)
+    router.push('/profile')
   } catch (err) {
     error.value = err.response?.data?.detail || t('register.error')
   } finally {

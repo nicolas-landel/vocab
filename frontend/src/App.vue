@@ -38,6 +38,10 @@
       <VBtn icon @click="goToProfile" class="d-none d-md-flex">
         <VIcon>mdi-account</VIcon>
       </VBtn>
+
+      <VBtn icon @click="handleLogout" class="d-none d-md-flex" :title="t('nav.logout')">
+        <VIcon>mdi-logout</VIcon>
+      </VBtn>
     </VAppBar>
 
     <VNavigationDrawer v-model="drawer" temporary>
@@ -73,6 +77,10 @@
         <VListItem @click="goToProfileMobile" prepend-icon="mdi-account">
           <VListItemTitle>{{ t('nav.profile') }}</VListItemTitle>
         </VListItem>
+
+        <VListItem @click="handleLogoutMobile" prepend-icon="mdi-logout">
+          <VListItemTitle>{{ t('nav.logout') }}</VListItemTitle>
+        </VListItem>
       </VList>
     </VNavigationDrawer>
 
@@ -83,21 +91,29 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, watch } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useVocabularyStore } from './stores/vocabulary'
 import { useAuthStore } from './stores/auth'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const router = useRouter()
 const route = useRoute()
 const vocabularyStore = useVocabularyStore()
 const authStore = useAuthStore()
 
-const nativeLanguage = ref('fr')
+const nativeLanguage = ref('en')
 const languages = ref([])
 const drawer = ref(false)
+
+// Watch for native language changes and update i18n locale
+watch(nativeLanguage, (newLang) => {
+  locale.value = newLang
+  // Save to localStorage for persistence
+  localStorage.setItem('appLanguage', newLang)
+  authStore.setUserLanguage(newLang)
+}, { immediate: true })
 
 const activeTab = computed(() => route.query.tab || 'session')
 
@@ -120,9 +136,14 @@ onMounted(async () => {
     await vocabularyStore.fetchLanguages()
     languages.value = vocabularyStore.languages
     
-    // Set from user profile if available
-    if (authStore.user?.nativeLanguage) {
+    // Set from localStorage first, then user profile
+    const savedLanguage = localStorage.getItem('appLanguage')
+    if (savedLanguage) {
+      nativeLanguage.value = savedLanguage
+      locale.value = savedLanguage
+    } else if (authStore.user?.nativeLanguage) {
       nativeLanguage.value = authStore.user.nativeLanguage
+      locale.value = authStore.user.nativeLanguage
     }
   } catch (error) {
     console.error(t('errors.failedToLoadLanguages'), error)
@@ -131,6 +152,17 @@ onMounted(async () => {
 
 const goToProfile = () => {
   router.push('/profile')
+}
+
+const handleLogout = async () => {
+  await authStore.logout()
+  router.push('/login')
+}
+
+const handleLogoutMobile = async () => {
+  drawer.value = false
+  await authStore.logout()
+  router.push('/login')
 }
 </script>
 

@@ -1,8 +1,8 @@
 <template>
-  <VContainer class="fill-height" fluid>
-    <VRow align="center" justify="center">
-      <VCol cols="12" sm="8" md="4">
-        <VCard class="elevation-12">
+  <VContainer class="fill-height mt-n15" fluid>
+    <VRow align="center" justify="center" class="">
+      <VCol >
+        <VCard class="elevation-12" max-width="600">
           <VToolbar color="primary" dark flat>
             <VToolbarTitle>{{ t('login.title') }}</VToolbarTitle>
           </VToolbar>

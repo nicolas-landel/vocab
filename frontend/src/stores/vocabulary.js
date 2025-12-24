@@ -31,19 +31,19 @@ export const useVocabularyStore = defineStore('vocabulary', {
 
   actions: {
     async fetchLanguages() {
-      const response = await apiClient.get('/api/config/languages')
+      const response = await apiClient.get('/api/v1/config/languages')
       useRepo(Language).save(response.data)
       return response.data
     },
 
     async fetchDomains() {
-      const response = await apiClient.get('/api/config/domains')
+      const response = await apiClient.get('/api/v1/config/domains')
       useRepo(Domain).save(response.data)
       return response.data
     },
 
     async fetchDifficulties() {
-      const response = await apiClient.get('/api/config/difficulties')
+      const response = await apiClient.get('/api/v1/config/difficulties')
       return response.data
     },
 

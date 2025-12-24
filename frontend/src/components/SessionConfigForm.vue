@@ -69,22 +69,24 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useSessionStore } from '@/stores/session'
 import { useVocabularyStore } from '@/stores/vocabulary'
+import { useAuthStore } from '@/stores/auth'
 
 const { t } = useI18n()
 const emit = defineEmits(['start-session'])
 
 const sessionStore = useSessionStore()
 const vocabularyStore = useVocabularyStore()
+const authStore = useAuthStore()
 
 const formRef = ref(null)
 const loading = ref(false)
 
 const config = ref({
-  nativeLanguage: 'fr',
+  nativeLanguage: 'en',
   languageTested: '',
   domain: null,
   difficulty: '',
@@ -113,6 +115,26 @@ const sessionTypes = computed(() => [
   { label: t('sessionConfig.both'), value: 'MIXED' }
 ])
 
+const userLanguage = computed(() => {
+    const savedLanguage = authStore.getUserLanguage
+    return savedLanguage || 'en'
+})
+
+watch(
+  () => userLanguage.value,
+  (newLang) => {
+    config.value.nativeLanguage = newLang
+    if (vocabularyStore.languages.length > 0) {
+      languages.value = vocabularyStore.languages.filter(lang => lang.code !== config.value.nativeLanguage)
+      if (config.value.languageTested === config.value.nativeLanguage || !config.value.languageTested) {
+        config.value.languageTested = languages.value.length > 0 ? languages.value[0].code : ''
+      }
+    }
+    console.log("NNNNNNNNNN", newLang, config.value.nativeLanguage, languages.value, vocabularyStore.languages)
+  },
+  { immediate: true }
+)
+
 const startSession = async () => {
   const { valid } = await formRef.value.validate()
   if (!valid) return
@@ -130,6 +152,8 @@ const startSession = async () => {
   }
 }
 
+
+
 onMounted(async () => {
   loading.value = true
   try {
@@ -138,13 +162,9 @@ onMounted(async () => {
       vocabularyStore.fetchDomains()
     ])
     
-    languages.value = vocabularyStore.languages
+    // languages.value = vocabularyStore.languages.filter(lang => lang.code !== config.value.nativeLanguage)
     domains.value = vocabularyStore.domains
     
-    // Set defaults
-    if (languages.value.length > 0) {
-      config.value.languageTested = languages.value[0].code
-    }
     if (domains.value.length > 0) {
       config.value.domain = domains.value[0].id
     }
