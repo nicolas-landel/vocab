@@ -1,7 +1,16 @@
-from sqlalchemy import Column, Integer, String, DateTime, Boolean, ARRAY
+from sqlalchemy import Column, Integer, String, DateTime, Boolean, ARRAY, Enum
+import enum
 from datetime import datetime
 from app.core.database import Base
 from sqlalchemy import ForeignKey
+
+
+class LanguageLevelEnum(str, enum.Enum):
+    BEGINNER = "BEGINNER"
+    INTERMEDIATE = "INTERMEDIATE"
+    ADVANCED = "ADVANCED"
+    NATIVE = "NATIVE"
+
 
 class User(Base):
     __tablename__ = "users"
@@ -10,7 +19,6 @@ class User(Base):
     hashed_password = Column(String, nullable=True)  # Nullable for OAuth users
     is_active = Column(Boolean, default=True)
     native_language = Column(String, ForeignKey("languages.code"), nullable=True)
-    learning_languages = Column(ARRAY(String), nullable=True)
     
     # OAuth fields
     oauth_provider = Column(String, nullable=True)  # 'google', 'github', etc.
@@ -19,3 +27,11 @@ class User(Base):
     picture_url = Column(String, nullable=True)
 
 
+class UserLanguage(Base):
+    __tablename__ = "user_languages"
+    
+    user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    language_code = Column(String, ForeignKey("languages.code"), nullable=False)
+    level = Column(Enum(LanguageLevelEnum), nullable=False)
+    is_learning = Column(Boolean, default=True)
+    

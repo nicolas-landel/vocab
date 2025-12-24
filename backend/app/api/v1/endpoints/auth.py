@@ -106,6 +106,12 @@ async def get_me(current_user: User = Depends(get_current_user)):
     return current_user
 
 
+@router.post("/logout")
+async def logout(current_user: User = Depends(get_current_user)):
+    """Logout endpoint - client should clear token after calling this"""
+    return {"message": "Successfully logged out"}
+
+
 @router.get("/google/login")
 async def google_login(request: Request):
     """Initiate Google OAuth flow"""
@@ -143,6 +149,8 @@ async def google_callback(request: Request, db: AsyncSession = Depends(get_db)):
         result = await db.execute(select(User).where(User.email == email))
         user = result.scalar_one_or_none()
         
+        is_new_user = user is None
+        
         if user:
             # Update OAuth info if not set
             if not user.oauth_provider:
@@ -170,9 +178,15 @@ async def google_callback(request: Request, db: AsyncSession = Depends(get_db)):
         access_token = create_access_token(data={"sub": user.email})
         
         # Redirect to frontend with token
+        # For new users, add a flag to redirect to profile
         frontend_url = "http://localhost:5173"
+        redirect_path = "/auth/callback"
+        redirect_query = f"token={access_token}"
+        if is_new_user:
+            redirect_query += "&firstLogin=true"
+        
         return RedirectResponse(
-            url=f"{frontend_url}/auth/callback?token={access_token}"
+            url=f"{frontend_url}{redirect_path}?{redirect_query}"
         )
     
     except Exception as e:

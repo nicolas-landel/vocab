@@ -6,7 +6,6 @@ from contextlib import asynccontextmanager
 from .core.config import settings
 from .core.database import init_db
 from .api.v1.router import api_router
-from .api import config, session, profile
 
 
 @asynccontextmanager
@@ -43,9 +42,6 @@ def create_app() -> FastAPI:
 
     # Include routers
     app.include_router(api_router, prefix="/api/v1")
-    app.include_router(config.router, prefix="/api/config", tags=["config"])
-    app.include_router(session.router, prefix="/api/sessions", tags=["sessions"])
-    app.include_router(profile.router, prefix="/api/profile", tags=["profile"])
 
     @app.get("/")
     async def root():

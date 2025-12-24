@@ -14,7 +14,6 @@ class UserUpdate(BaseModel):
     email: Optional[EmailStr] = None
     password: Optional[str] = None
     native_language: Optional[str] = None
-    learning_languages: Optional[List[str]] = None
 
 class UserResponse(UserBase):
     id: int
@@ -22,7 +21,6 @@ class UserResponse(UserBase):
     created_at: datetime
     updated_at: datetime
     native_language: Optional[str] = None
-    learning_languages: Optional[List[str]] = []
     oauth_provider: Optional[str] = None
     full_name: Optional[str] = None
     picture_url: Optional[str] = None
@@ -41,3 +39,29 @@ class GoogleAuthResponse(BaseModel):
     token_type: str = "bearer"
     user: UserResponse
 
+class UserLanguageBase(BaseModel):
+    language_code: str
+    level: str  # 'BEGINNER', 'INTERMEDIATE', 'ADVANCED', 'NATIVE'
+    is_learning: bool = True
+
+class UserLanguageCreate(UserLanguageBase):
+    pass
+
+class UserLanguageUpdate(BaseModel):
+    level: Optional[str] = None
+    is_learning: Optional[bool] = None
+
+class UserLanguageResponse(UserLanguageBase):
+    id: int
+    user_id: int
+    created_at: datetime
+    updated_at: datetime
+    
+    model_config = ConfigDict(from_attributes=True)
+
+class UserProfileUpdate(BaseModel):
+    native_language: Optional[str] = None
+    full_name: Optional[str] = None
+
+class UserProfileResponse(UserResponse):
+    languages: List[UserLanguageResponse] = []
