@@ -25,7 +25,6 @@ class DomainCreate(DomainBase):
     pass
 
 class DomainSchema(DomainBase):
-    id: int
     created_at: datetime
     model_config = ConfigDict(from_attributes=True)
 
@@ -41,11 +40,11 @@ class TranslationBase(BaseModel):
     synonyms: Optional[List[str]] = None
 
 class TranslationCreate(TranslationBase):
-    master_word_id: int
+    master_word_concept: str
 
 class TranslationSchema(TranslationBase):
-    id: int
-    master_word_id: int
+    id: str
+    master_word_concept: str
     created_at: datetime
     updated_at: datetime
     model_config = ConfigDict(from_attributes=True)
@@ -59,7 +58,7 @@ class TranslationDetail(TranslationSchema):
 # MasterWord Schemas
 class MasterWordBase(BaseModel):
     concept: str
-    domain_id: int
+    domain_code: str
     difficulty: Difficulty
     word_type: Optional[WordType] = None
     image_url: Optional[str] = None
@@ -68,7 +67,6 @@ class MasterWordCreate(MasterWordBase):
     translations: List[TranslationCreate] = []
 
 class MasterWordSchema(MasterWordBase):
-    id: int
     created_at: datetime
     updated_at: datetime
     model_config = ConfigDict(from_attributes=True)
@@ -82,15 +80,15 @@ class MasterWordDetail(MasterWordSchema):
 
 # UserTranslation Schemas
 class UserTranslationBase(BaseModel):
-    translation_id: int
+    translation_id: str
     is_known: bool = False
 
 class UserTranslationCreate(UserTranslationBase):
     pass
 
 class UserTranslationSchema(UserTranslationBase):
-    id: int
-    user_id: int
+    id: str
+    user_id: str
     created_at: datetime
     model_config = ConfigDict(from_attributes=True)
 

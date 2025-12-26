@@ -33,16 +33,18 @@ export const useAuthStore = defineStore('auth', {
       await this.fetchUser()
     },
 
-    async register(email, password) {
+    async register(email, password, username) {
+      console.log('Registering user with username:', username)
       await apiClient.post('/api/v1/auth/register', {
         email,
-        password
+        password,
+        full_name: username
       })
     },
 
     async fetchUser() {
       try {
-        const response = await apiClient.get('/api/v1/auth/me')
+        const response = await apiClient.get('/api/v1/auth/current-user')
         this.user = response.data
         this.isAuthenticated = true
       } catch (error) {

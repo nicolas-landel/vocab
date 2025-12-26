@@ -56,7 +56,7 @@ async def create_domain(domain_name: str, db: AsyncSession = Depends(get_db)):
 async def create_master_word(word_in: MasterWordCreate, db: AsyncSession = Depends(get_db)):
     db_obj = MasterWord(
         concept=word_in.concept,
-        domain_id=word_in.domain_id,
+        domain_code=word_in.domain_code,
         difficulty=word_in.difficulty,
         word_type=word_in.word_type,
         image_url=word_in.image_url
@@ -70,7 +70,7 @@ async def create_master_word(word_in: MasterWordCreate, db: AsyncSession = Depen
 async def create_translation(trans_in: TranslationCreate, db: AsyncSession = Depends(get_db)):
     # Create translation for a master word
     db_obj = Translation(
-        master_word_id=trans_in.master_word_id,
+        master_word_concept=trans_in.master_word_concept,
         text=trans_in.text,
         language_code=trans_in.language_code,
         audio_url=trans_in.audio_url,

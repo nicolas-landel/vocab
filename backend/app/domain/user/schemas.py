@@ -8,15 +8,17 @@ class UserBase(BaseModel):
 
 class UserCreate(UserBase):
     password: str
+    full_name: Optional[str] = None
     native_language: Optional[str] = None
 
 class UserUpdate(BaseModel):
     email: Optional[EmailStr] = None
     password: Optional[str] = None
+    full_name: Optional[str] = None
     native_language: Optional[str] = None
 
 class UserResponse(UserBase):
-    id: int
+    id: str
     is_active: bool
     created_at: datetime
     updated_at: datetime
@@ -52,8 +54,8 @@ class UserLanguageUpdate(BaseModel):
     is_learning: Optional[bool] = None
 
 class UserLanguageResponse(UserLanguageBase):
-    id: int
-    user_id: int
+    id: str
+    user_id: str
     created_at: datetime
     updated_at: datetime
     

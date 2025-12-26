@@ -1,36 +1,31 @@
 [
   {
-    "id": 16,
     "concept": "job",
-    "domain_id": 4,
+    "domain_code": "work",
     "difficulty": "EASY",
     "word_type": "NOUN"
   },
   {
-    "id": 17,
     "concept": "office",
-    "domain_id": 4,
+    "domain_code": "work",
     "difficulty": "EASY",
     "word_type": "NOUN"
   },
   {
-    "id": 18,
     "concept": "meeting",
-    "domain_id": 4,
+    "domain_code": "work",
     "difficulty": "MEDIUM",
     "word_type": "NOUN"
   },
   {
-    "id": 19,
     "concept": "boss",
-    "domain_id": 4,
+    "domain_code": "work",
     "difficulty": "EASY",
     "word_type": "NOUN"
   },
   {
-    "id": 20,
     "concept": "computer",
-    "domain_id": 4,
+    "domain_code": "work",
     "difficulty": "EASY",
     "word_type": "NOUN"
   }

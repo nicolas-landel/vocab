@@ -18,6 +18,17 @@
                 variant="outlined"
                 class="mb-2"
               ></VTextField>
+              
+              <VTextField
+                v-model="username"
+                :label="t('register.username')"
+                name="username"
+                prepend-icon="mdi-account"
+                type="text"
+                :rules="[rules.required]"
+                variant="outlined"
+                class="mb-2"
+              ></VTextField>
 
               <VTextField
                 v-model="password"
@@ -94,6 +105,7 @@ const authStore = useAuthStore()
 
 const registerFormRef = ref(null)
 const email = ref('')
+const username = ref('')
 const password = ref('')
 const confirmPassword = ref('')
 const showPassword = ref(false)
@@ -118,7 +130,7 @@ const handleRegister = async () => {
   success.value = false
 
   try {
-    await authStore.register(email.value, password.value)
+    await authStore.register(email.value, password.value, username.value)
     success.value = true
     // Login automatically and redirect to profile
     await authStore.login(email.value, password.value)

@@ -1,1 +1,566 @@
-[]
+[
+  {
+    "concept": "teacher",
+    "language_code": "es",
+    "text": "profesor",
+    "gender": "m",
+    "plural_text": "profesores",
+    "sentence_example": "El profesor explica la lección con claridad.",
+    "synonyms": [
+      "docente",
+      "maestro"
+    ]
+  },
+  {
+    "concept": "student",
+    "language_code": "es",
+    "text": "estudiante",
+    "gender": "m",
+    "plural_text": "estudiantes",
+    "sentence_example": "El estudiante estudia cada tarde.",
+    "synonyms": [
+      "alumno",
+      "aprendiz"
+    ]
+  },
+  {
+    "concept": "school",
+    "language_code": "es",
+    "text": "escuela",
+    "gender": "f",
+    "plural_text": "escuelas",
+    "sentence_example": "Mi escuela está cerca de mi casa.",
+    "synonyms": [
+      "colegio"
+    ]
+  },
+  {
+    "concept": "classroom",
+    "language_code": "es",
+    "text": "aula",
+    "gender": "f",
+    "plural_text": "aulas",
+    "sentence_example": "El aula está en silencio durante el examen.",
+    "synonyms": [
+      "salón de clase"
+    ]
+  },
+  {
+    "concept": "lesson",
+    "language_code": "es",
+    "text": "lección",
+    "gender": "f",
+    "plural_text": "lecciones",
+    "sentence_example": "Hoy tenemos una lección de matemáticas.",
+    "synonyms": [
+      "clase"
+    ]
+  },
+  {
+    "concept": "homework",
+    "language_code": "es",
+    "text": "deberes",
+    "gender": "m",
+    "plural_text": null,
+    "sentence_example": "Terminé los deberes antes de cenar.",
+    "synonyms": [
+      "tarea"
+    ]
+  },
+  {
+    "concept": "exam",
+    "language_code": "es",
+    "text": "examen",
+    "gender": "m",
+    "plural_text": "exámenes",
+    "sentence_example": "Tengo un examen mañana por la mañana.",
+    "synonyms": [
+      "prueba"
+    ]
+  },
+  {
+    "concept": "test",
+    "language_code": "es",
+    "text": "prueba",
+    "gender": "f",
+    "plural_text": "pruebas",
+    "sentence_example": "La prueba fue más difícil de lo esperado.",
+    "synonyms": [
+      "test",
+      "examen"
+    ]
+  },
+  {
+    "concept": "grade",
+    "language_code": "es",
+    "text": "nota",
+    "gender": "f",
+    "plural_text": "notas",
+    "sentence_example": "Saqué una buena nota en historia.",
+    "synonyms": [
+      "calificación"
+    ]
+  },
+  {
+    "concept": "class",
+    "language_code": "es",
+    "text": "clase",
+    "gender": "f",
+    "plural_text": "clases",
+    "sentence_example": "La clase empieza a las nueve.",
+    "synonyms": [
+      "lección"
+    ]
+  },
+  {
+    "concept": "subject",
+    "language_code": "es",
+    "text": "asignatura",
+    "gender": "f",
+    "plural_text": "asignaturas",
+    "sentence_example": "La biología es mi asignatura favorita.",
+    "synonyms": [
+      "materia"
+    ]
+  },
+  {
+    "concept": "course",
+    "language_code": "es",
+    "text": "curso",
+    "gender": "m",
+    "plural_text": "cursos",
+    "sentence_example": "Estoy haciendo un curso en línea.",
+    "synonyms": [
+      "clase"
+    ]
+  },
+  {
+    "concept": "schedule",
+    "language_code": "es",
+    "text": "horario",
+    "gender": "m",
+    "plural_text": "horarios",
+    "sentence_example": "Mira el horario de la próxima semana.",
+    "synonyms": []
+  },
+  {
+    "concept": "break",
+    "language_code": "es",
+    "text": "descanso",
+    "gender": "m",
+    "plural_text": "descansos",
+    "sentence_example": "Tenemos un descanso a las diez y media.",
+    "synonyms": [
+      "pausa"
+    ]
+  },
+  {
+    "concept": "recess",
+    "language_code": "es",
+    "text": "recreo",
+    "gender": "m",
+    "plural_text": "recreos",
+    "sentence_example": "Los niños juegan en el patio durante el recreo.",
+    "synonyms": [
+      "descanso"
+    ]
+  },
+  {
+    "concept": "notebook",
+    "language_code": "es",
+    "text": "cuaderno",
+    "gender": "m",
+    "plural_text": "cuadernos",
+    "sentence_example": "Apúntalo en tu cuaderno.",
+    "synonyms": [
+      "libreta"
+    ]
+  },
+  {
+    "concept": "textbook",
+    "language_code": "es",
+    "text": "libro de texto",
+    "gender": "m",
+    "plural_text": "libros de texto",
+    "sentence_example": "Este libro de texto tiene muchos ejemplos.",
+    "synonyms": [
+      "manual"
+    ]
+  },
+  {
+    "concept": "pen",
+    "language_code": "es",
+    "text": "bolígrafo",
+    "gender": "m",
+    "plural_text": "bolígrafos",
+    "sentence_example": "¿Me prestas tu bolígrafo?",
+    "synonyms": [
+      "pluma"
+    ]
+  },
+  {
+    "concept": "pencil",
+    "language_code": "es",
+    "text": "lápiz",
+    "gender": "m",
+    "plural_text": "lápices",
+    "sentence_example": "Usa un lápiz para el dibujo.",
+    "synonyms": []
+  },
+  {
+    "concept": "eraser",
+    "language_code": "es",
+    "text": "goma de borrar",
+    "gender": "f",
+    "plural_text": "gomas de borrar",
+    "sentence_example": "Necesito una goma de borrar para corregir.",
+    "synonyms": [
+      "borrador"
+    ]
+  },
+  {
+    "concept": "board",
+    "language_code": "es",
+    "text": "pizarra",
+    "gender": "f",
+    "plural_text": "pizarras",
+    "sentence_example": "El profesor escribió la respuesta en la pizarra.",
+    "synonyms": [
+      "pizarrón"
+    ]
+  },
+  {
+    "concept": "desk",
+    "language_code": "es",
+    "text": "pupitre",
+    "gender": "m",
+    "plural_text": "pupitres",
+    "sentence_example": "Mi pupitre está junto a la ventana.",
+    "synonyms": [
+      "escritorio"
+    ]
+  },
+  {
+    "concept": "chair",
+    "language_code": "es",
+    "text": "silla",
+    "gender": "f",
+    "plural_text": "sillas",
+    "sentence_example": "Siéntate en tu silla, por favor.",
+    "synonyms": []
+  },
+  {
+    "concept": "library",
+    "language_code": "es",
+    "text": "biblioteca",
+    "gender": "f",
+    "plural_text": "bibliotecas",
+    "sentence_example": "Saqué un libro de la biblioteca.",
+    "synonyms": []
+  },
+  {
+    "concept": "university",
+    "language_code": "es",
+    "text": "universidad",
+    "gender": "f",
+    "plural_text": "universidades",
+    "sentence_example": "Estudia ingeniería en la universidad.",
+    "synonyms": []
+  },
+  {
+    "concept": "principal",
+    "language_code": "es",
+    "text": "director",
+    "gender": "m",
+    "plural_text": "directores",
+    "sentence_example": "El director habló con los alumnos.",
+    "synonyms": [
+      "rector"
+    ]
+  },
+  {
+    "concept": "head_teacher",
+    "language_code": "es",
+    "text": "tutor",
+    "gender": "m",
+    "plural_text": "tutores",
+    "sentence_example": "El tutor organizó una reunión con la clase.",
+    "synonyms": [
+      "profesor responsable"
+    ]
+  },
+  {
+    "concept": "classmate",
+    "language_code": "es",
+    "text": "compañero de clase",
+    "gender": "m",
+    "plural_text": "compañeros de clase",
+    "sentence_example": "Mi compañero de clase me ayudó con el ejercicio.",
+    "synonyms": [
+      "compañero"
+    ]
+  },
+  {
+    "concept": "assignment",
+    "language_code": "es",
+    "text": "tarea",
+    "gender": "f",
+    "plural_text": "tareas",
+    "sentence_example": "La tarea se entrega el viernes.",
+    "synonyms": [
+      "deberes",
+      "trabajo"
+    ]
+  },
+  {
+    "concept": "project",
+    "language_code": "es",
+    "text": "proyecto",
+    "gender": "m",
+    "plural_text": "proyectos",
+    "sentence_example": "Estamos haciendo un proyecto en grupo.",
+    "synonyms": [
+      "trabajo"
+    ]
+  },
+  {
+    "concept": "presentation",
+    "language_code": "es",
+    "text": "presentación",
+    "gender": "f",
+    "plural_text": "presentaciones",
+    "sentence_example": "Su presentación fue muy clara.",
+    "synonyms": [
+      "exposición"
+    ]
+  },
+  {
+    "concept": "research",
+    "language_code": "es",
+    "text": "investigación",
+    "gender": "f",
+    "plural_text": "investigaciones",
+    "sentence_example": "Está haciendo investigación para su tesis.",
+    "synonyms": [
+      "estudio"
+    ]
+  },
+  {
+    "concept": "notes",
+    "language_code": "es",
+    "text": "apuntes",
+    "gender": "m",
+    "plural_text": null,
+    "sentence_example": "Revisé mis apuntes antes del examen.",
+    "synonyms": [
+      "notas"
+    ]
+  },
+  {
+    "concept": "attendance",
+    "language_code": "es",
+    "text": "asistencia",
+    "gender": "f",
+    "plural_text": null,
+    "sentence_example": "La asistencia es obligatoria hoy.",
+    "synonyms": [
+      "presencia"
+    ]
+  },
+  {
+    "concept": "late",
+    "language_code": "es",
+    "text": "tarde",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "Llegó tarde a clase otra vez.",
+    "synonyms": [
+      "con retraso"
+    ]
+  },
+  {
+    "concept": "absent",
+    "language_code": "es",
+    "text": "ausente",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "Ayer estuvo ausente.",
+    "synonyms": [
+      "faltante"
+    ]
+  },
+  {
+    "concept": "to_study",
+    "language_code": "es",
+    "text": "estudiar",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "Estudio español todos los días.",
+    "synonyms": [
+      "repasar"
+    ]
+  },
+  {
+    "concept": "to_learn",
+    "language_code": "es",
+    "text": "aprender",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "Se aprende mejor con práctica.",
+    "synonyms": [
+      "asimilar"
+    ]
+  },
+  {
+    "concept": "to_teach",
+    "language_code": "es",
+    "text": "enseñar",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "Ella enseña inglés en el instituto.",
+    "synonyms": [
+      "dar clase"
+    ]
+  },
+  {
+    "concept": "to_read",
+    "language_code": "es",
+    "text": "leer",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "Me gusta leer novelas.",
+    "synonyms": []
+  },
+  {
+    "concept": "to_write",
+    "language_code": "es",
+    "text": "escribir",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "Escribe tu nombre aquí, por favor.",
+    "synonyms": [
+      "redactar"
+    ]
+  },
+  {
+    "concept": "to_repeat",
+    "language_code": "es",
+    "text": "repetir",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "¿Puedes repetir la pregunta, por favor?",
+    "synonyms": [
+      "decir de nuevo"
+    ]
+  },
+  {
+    "concept": "scholarship",
+    "language_code": "es",
+    "text": "beca",
+    "gender": "f",
+    "plural_text": "becas",
+    "sentence_example": "Consiguió una beca para estudiar en el extranjero.",
+    "synonyms": [
+      "ayuda"
+    ]
+  },
+  {
+    "concept": "tuition_fees",
+    "language_code": "es",
+    "text": "matrícula",
+    "gender": "f",
+    "plural_text": "matrículas",
+    "sentence_example": "La matrícula es cara en algunas universidades.",
+    "synonyms": [
+      "tasas"
+    ]
+  },
+  {
+    "concept": "enrollment",
+    "language_code": "es",
+    "text": "inscripción",
+    "gender": "f",
+    "plural_text": "inscripciones",
+    "sentence_example": "La inscripción empieza el lunes.",
+    "synonyms": [
+      "matriculación"
+    ]
+  },
+  {
+    "concept": "curriculum",
+    "language_code": "es",
+    "text": "plan de estudios",
+    "gender": "m",
+    "plural_text": "planes de estudios",
+    "sentence_example": "El plan de estudios incluye matemáticas y ciencias.",
+    "synonyms": [
+      "programa"
+    ]
+  },
+  {
+    "concept": "syllabus",
+    "language_code": "es",
+    "text": "temario",
+    "gender": "m",
+    "plural_text": "temarios",
+    "sentence_example": "Lee el temario antes de la primera clase.",
+    "synonyms": [
+      "programa"
+    ]
+  },
+  {
+    "concept": "degree",
+    "language_code": "es",
+    "text": "título",
+    "gender": "m",
+    "plural_text": "títulos",
+    "sentence_example": "Obtuvo un título en biología.",
+    "synonyms": [
+      "diploma"
+    ]
+  },
+  {
+    "concept": "graduation",
+    "language_code": "es",
+    "text": "graduación",
+    "gender": "f",
+    "plural_text": "graduaciones",
+    "sentence_example": "La graduación es en junio.",
+    "synonyms": [
+      "ceremonia"
+    ]
+  },
+  {
+    "concept": "internship",
+    "language_code": "es",
+    "text": "prácticas",
+    "gender": "f",
+    "plural_text": null,
+    "sentence_example": "Encontré prácticas para el verano.",
+    "synonyms": [
+      "pasantía"
+    ]
+  },
+  {
+    "concept": "lecture",
+    "language_code": "es",
+    "text": "conferencia",
+    "gender": "f",
+    "plural_text": "conferencias",
+    "sentence_example": "La conferencia duró dos horas.",
+    "synonyms": [
+      "clase magistral"
+    ]
+  },
+  {
+    "concept": "seminar",
+    "language_code": "es",
+    "text": "seminario",
+    "gender": "m",
+    "plural_text": "seminarios",
+    "sentence_example": "Asistimos a un seminario sobre tecnología educativa.",
+    "synonyms": [
+      "taller"
+    ]
+  }
+]

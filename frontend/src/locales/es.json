@@ -23,6 +23,7 @@
     "registerButton": "Registrarse",
     "hasAccount": "¿Ya tienes cuenta?",
     "login": "Iniciar sesión",
+    "username": "Nombre de usuario",
     "success": "¡Registro exitoso! Redirigiendo al inicio de sesión...",
     "error": "Error al registrarse. Por favor, inténtalo de nuevo."
   },

@@ -1,36 +1,31 @@
 [
   {
-    "id": 26,
     "concept": "mother",
-    "domain_id": 6,
+    "domain_code": "family",
     "difficulty": "EASY",
     "word_type": "NOUN"
   },
   {
-    "id": 27,
     "concept": "father",
-    "domain_id": 6,
+    "domain_code": "family",
     "difficulty": "EASY",
     "word_type": "NOUN"
   },
   {
-    "id": 28,
     "concept": "brother",
-    "domain_id": 6,
+    "domain_code": "family",
     "difficulty": "EASY",
     "word_type": "NOUN"
   },
   {
-    "id": 29,
     "concept": "sister",
-    "domain_id": 6,
+    "domain_code": "family",
     "difficulty": "EASY",
     "word_type": "NOUN"
   },
   {
-    "id": 30,
     "concept": "child",
-    "domain_id": 6,
+    "domain_code": "family",
     "difficulty": "EASY",
     "word_type": "NOUN"
   }

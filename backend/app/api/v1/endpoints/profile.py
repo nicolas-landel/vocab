@@ -18,7 +18,7 @@ from .auth import get_current_user
 router = APIRouter()
 
 
-@router.get("/me", response_model=UserProfileResponse)
+@router.get("/", response_model=UserProfileResponse)
 async def get_profile(
     current_user: User = Depends(get_current_user),
     db: AsyncSession = Depends(get_db)
@@ -47,7 +47,7 @@ async def get_profile(
     return profile_data
 
 
-@router.patch("/me", response_model=UserProfileResponse)
+@router.patch("/", response_model=UserProfileResponse)
 async def update_profile(
     profile_data: UserProfileUpdate,
     current_user: User = Depends(get_current_user),
@@ -85,7 +85,7 @@ async def update_profile(
     return profile_data
 
 
-@router.get("/me/languages", response_model=List[UserLanguageResponse])
+@router.get("/languages", response_model=List[UserLanguageResponse])
 async def get_user_languages(
     current_user: User = Depends(get_current_user),
     db: AsyncSession = Depends(get_db)
@@ -97,7 +97,7 @@ async def get_user_languages(
     return result.scalars().all()
 
 
-@router.post("/me/languages", response_model=UserLanguageResponse, status_code=status.HTTP_201_CREATED)
+@router.post("/languages", response_model=UserLanguageResponse, status_code=status.HTTP_201_CREATED)
 async def add_user_language(
     language_data: UserLanguageCreate,
     current_user: User = Depends(get_current_user),
@@ -133,7 +133,7 @@ async def add_user_language(
     return user_language
 
 
-@router.patch("/me/languages/{language_code}", response_model=UserLanguageResponse)
+@router.patch("/languages/{language_code}", response_model=UserLanguageResponse)
 async def update_user_language(
     language_code: str,
     language_data: UserLanguageUpdate,
@@ -167,7 +167,7 @@ async def update_user_language(
     return user_language
 
 
-@router.delete("/me/languages/{language_code}", status_code=status.HTTP_204_NO_CONTENT)
+@router.delete("/languages/{language_code}", status_code=status.HTTP_204_NO_CONTENT)
 async def delete_user_language(
     language_code: str,
     current_user: User = Depends(get_current_user),

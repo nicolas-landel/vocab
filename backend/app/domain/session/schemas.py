@@ -23,15 +23,15 @@ class SessionConfigUpdate(BaseModel):
     domain: Optional[str] = None
 
 class SessionConfigSchema(SessionConfigBase):
-    id: int
-    user_id: int
+    id: str
+    user_id: str
     created_at: datetime
     model_config = ConfigDict(from_attributes=True)
 
 
 # Session Schemas
 class SessionCreate(BaseModel):
-    config_id: int
+    config_id: str
     source_lang_code: str
     target_lang_code: str
     domain: Optional[str] = None
@@ -43,9 +43,9 @@ class SessionUpdate(BaseModel):
     completed_at: Optional[datetime] = None
 
 class SessionSchema(SessionCreate):
-    id: int
-    user_id: int
-    config_id: int
+    id: str
+    user_id: str
+    config_id: str
     created_at: datetime
     score: Optional[int] = None
     completed_at: Optional[datetime] = None
@@ -58,8 +58,8 @@ class SessionResultCreate(BaseModel):
     correct: bool
 
 class SessionResultSchema(SessionResultCreate):
-    id: int
-    session_id: int
+    id: str
+    session_id: str
     created_at: datetime
     model_config = ConfigDict(from_attributes=True)
 
@@ -77,7 +77,7 @@ class SessionDetail(SessionSchema):
 
 # UserProgress Schemas
 class UserProgressBase(BaseModel):
-    translation_id: int
+    translation_id: str
 
 class UserProgressCreate(UserProgressBase):
     pass
@@ -88,8 +88,8 @@ class UserProgressUpdate(BaseModel):
     last_reviewed: Optional[datetime] = None
 
 class UserProgressSchema(UserProgressBase):
-    id: int
-    user_id: int
+    id: str
+    user_id: str
     correct_count: int
     incorrect_count: int
     last_reviewed: datetime

@@ -187,7 +187,7 @@ const getLanguageName = (code) => {
 const fetchProfile = async () => {
   try {
     const token = localStorage.getItem('access_token')
-    const res = await axios.get(`${API_URL}/api/v1/profile/me`, {
+    const res = await axios.get(`${API_URL}/api/v1/profile/`, {
       headers: { Authorization: `Bearer ${token}` }
     })
     profile.value = res.data
@@ -210,7 +210,7 @@ const fetchLanguages = async () => {
 const updateProfile = async () => {
   try {
     const token = localStorage.getItem('access_token')
-    await axios.patch(`${API_URL}/api/v1/profile/me`, {
+    await axios.patch(`${API_URL}/api/v1/profile/`, {
       native_language: profile.value.native_language,
       full_name: profile.value.full_name
     }, {
@@ -226,7 +226,7 @@ const updateProfile = async () => {
 const addLanguage = async () => {
   try {
     const token = localStorage.getItem('access_token')
-    const res = await axios.post(`${API_URL}/api/v1/profile/me/languages`, newLanguage.value, {
+    const res = await axios.post(`${API_URL}/api/v1/profile/languages`, newLanguage.value, {
       headers: { Authorization: `Bearer ${token}` }
     })
     userLanguages.value.push(res.data)
@@ -241,7 +241,7 @@ const addLanguage = async () => {
 const updateLanguage = async (lang) => {
   try {
     const token = localStorage.getItem('access_token')
-    await axios.patch(`${API_URL}/api/v1/profile/me/languages/${lang.language_code}`, {
+    await axios.patch(`${API_URL}/api/v1/profile/languages/${lang.language_code}`, {
       level: lang.level,
       is_learning: lang.is_learning
     }, {
@@ -257,7 +257,7 @@ const updateLanguage = async (lang) => {
 const deleteLanguage = async (languageCode) => {
   try {
     const token = localStorage.getItem('access_token')
-    await axios.delete(`${API_URL}/api/v1/profile/me/languages/${languageCode}`, {
+    await axios.delete(`${API_URL}/api/v1/profile/languages/${languageCode}`, {
       headers: { Authorization: `Bearer ${token}` }
     })
     userLanguages.value = userLanguages.value.filter(l => l.language_code !== languageCode)

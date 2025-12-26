@@ -1,1 +1,565 @@
-[]
+[
+  {
+    "concept": "teacher",
+    "language_code": "fr",
+    "text": "professeur",
+    "gender": "m",
+    "plural_text": "professeurs",
+    "sentence_example": "Le professeur explique la leçon clairement.",
+    "synonyms": [
+      "enseignant",
+      "prof"
+    ]
+  },
+  {
+    "concept": "student",
+    "language_code": "fr",
+    "text": "étudiant",
+    "gender": "m",
+    "plural_text": "étudiants",
+    "sentence_example": "L’étudiant révise tous les soirs.",
+    "synonyms": [
+      "élève",
+      "apprenant"
+    ]
+  },
+  {
+    "concept": "school",
+    "language_code": "fr",
+    "text": "école",
+    "gender": "f",
+    "plural_text": "écoles",
+    "sentence_example": "Mon école est près de chez moi.",
+    "synonyms": [
+      "établissement scolaire"
+    ]
+  },
+  {
+    "concept": "classroom",
+    "language_code": "fr",
+    "text": "salle de classe",
+    "gender": "f",
+    "plural_text": "salles de classe",
+    "sentence_example": "La salle de classe est calme pendant l’examen.",
+    "synonyms": [
+      "classe"
+    ]
+  },
+  {
+    "concept": "lesson",
+    "language_code": "fr",
+    "text": "leçon",
+    "gender": "f",
+    "plural_text": "leçons",
+    "sentence_example": "Nous avons une leçon de maths aujourd’hui.",
+    "synonyms": [
+      "cours"
+    ]
+  },
+  {
+    "concept": "homework",
+    "language_code": "fr",
+    "text": "devoirs",
+    "gender": "m",
+    "plural_text": null,
+    "sentence_example": "J’ai terminé mes devoirs avant le dîner.",
+    "synonyms": [
+      "travail à la maison"
+    ]
+  },
+  {
+    "concept": "exam",
+    "language_code": "fr",
+    "text": "examen",
+    "gender": "m",
+    "plural_text": "examens",
+    "sentence_example": "J’ai un examen demain matin.",
+    "synonyms": [
+      "épreuve"
+    ]
+  },
+  {
+    "concept": "test",
+    "language_code": "fr",
+    "text": "test",
+    "gender": "m",
+    "plural_text": "tests",
+    "sentence_example": "Le test était plus difficile que prévu.",
+    "synonyms": [
+      "quiz"
+    ]
+  },
+  {
+    "concept": "grade",
+    "language_code": "fr",
+    "text": "note",
+    "gender": "f",
+    "plural_text": "notes",
+    "sentence_example": "J’ai eu une bonne note en histoire.",
+    "synonyms": [
+      "résultat"
+    ]
+  },
+  {
+    "concept": "class",
+    "language_code": "fr",
+    "text": "classe",
+    "gender": "f",
+    "plural_text": "classes",
+    "sentence_example": "La classe commence à neuf heures.",
+    "synonyms": [
+      "cours"
+    ]
+  },
+  {
+    "concept": "subject",
+    "language_code": "fr",
+    "text": "matière",
+    "gender": "f",
+    "plural_text": "matières",
+    "sentence_example": "Les sciences sont ma matière préférée.",
+    "synonyms": [
+      "discipline"
+    ]
+  },
+  {
+    "concept": "course",
+    "language_code": "fr",
+    "text": "cours",
+    "gender": "m",
+    "plural_text": null,
+    "sentence_example": "Elle suit un cours en ligne.",
+    "synonyms": [
+      "formation"
+    ]
+  },
+  {
+    "concept": "schedule",
+    "language_code": "fr",
+    "text": "emploi du temps",
+    "gender": "m",
+    "plural_text": "emplois du temps",
+    "sentence_example": "Regarde l’emploi du temps de la semaine prochaine.",
+    "synonyms": [
+      "planning"
+    ]
+  },
+  {
+    "concept": "break",
+    "language_code": "fr",
+    "text": "pause",
+    "gender": "f",
+    "plural_text": "pauses",
+    "sentence_example": "Nous avons une pause à dix heures et demie.",
+    "synonyms": [
+      "break"
+    ]
+  },
+  {
+    "concept": "recess",
+    "language_code": "fr",
+    "text": "récréation",
+    "gender": "f",
+    "plural_text": "récréations",
+    "sentence_example": "Les enfants jouent dehors pendant la récréation.",
+    "synonyms": [
+      "pause"
+    ]
+  },
+  {
+    "concept": "notebook",
+    "language_code": "fr",
+    "text": "cahier",
+    "gender": "m",
+    "plural_text": "cahiers",
+    "sentence_example": "Écris ça dans ton cahier.",
+    "synonyms": [
+      "carnet"
+    ]
+  },
+  {
+    "concept": "textbook",
+    "language_code": "fr",
+    "text": "manuel scolaire",
+    "gender": "m",
+    "plural_text": "manuels scolaires",
+    "sentence_example": "Ce manuel scolaire contient beaucoup d’exemples.",
+    "synonyms": [
+      "livre scolaire"
+    ]
+  },
+  {
+    "concept": "pen",
+    "language_code": "fr",
+    "text": "stylo",
+    "gender": "m",
+    "plural_text": "stylos",
+    "sentence_example": "Tu peux me prêter ton stylo ?",
+    "synonyms": []
+  },
+  {
+    "concept": "pencil",
+    "language_code": "fr",
+    "text": "crayon",
+    "gender": "m",
+    "plural_text": "crayons",
+    "sentence_example": "Utilise un crayon pour le dessin.",
+    "synonyms": [
+      "crayon à papier"
+    ]
+  },
+  {
+    "concept": "eraser",
+    "language_code": "fr",
+    "text": "gomme",
+    "gender": "f",
+    "plural_text": "gommes",
+    "sentence_example": "J’ai besoin d’une gomme pour corriger.",
+    "synonyms": []
+  },
+  {
+    "concept": "board",
+    "language_code": "fr",
+    "text": "tableau",
+    "gender": "m",
+    "plural_text": "tableaux",
+    "sentence_example": "Le professeur a écrit la réponse au tableau.",
+    "synonyms": [
+      "tableau noir",
+      "tableau blanc"
+    ]
+  },
+  {
+    "concept": "desk",
+    "language_code": "fr",
+    "text": "bureau",
+    "gender": "m",
+    "plural_text": "bureaux",
+    "sentence_example": "Mon bureau est près de la fenêtre.",
+    "synonyms": []
+  },
+  {
+    "concept": "chair",
+    "language_code": "fr",
+    "text": "chaise",
+    "gender": "f",
+    "plural_text": "chaises",
+    "sentence_example": "Assieds-toi sur ta chaise.",
+    "synonyms": []
+  },
+  {
+    "concept": "library",
+    "language_code": "fr",
+    "text": "bibliothèque",
+    "gender": "f",
+    "plural_text": "bibliothèques",
+    "sentence_example": "J’ai emprunté un livre à la bibliothèque.",
+    "synonyms": []
+  },
+  {
+    "concept": "university",
+    "language_code": "fr",
+    "text": "université",
+    "gender": "f",
+    "plural_text": "universités",
+    "sentence_example": "Il étudie l’ingénierie à l’université.",
+    "synonyms": [
+      "faculté"
+    ]
+  },
+  {
+    "concept": "principal",
+    "language_code": "fr",
+    "text": "directeur",
+    "gender": "m",
+    "plural_text": "directeurs",
+    "sentence_example": "Le directeur a parlé aux élèves.",
+    "synonyms": [
+      "chef d’établissement"
+    ]
+  },
+  {
+    "concept": "head_teacher",
+    "language_code": "fr",
+    "text": "professeur principal",
+    "gender": "m",
+    "plural_text": "professeurs principaux",
+    "sentence_example": "Le professeur principal a organisé une réunion.",
+    "synonyms": [
+      "référent"
+    ]
+  },
+  {
+    "concept": "classmate",
+    "language_code": "fr",
+    "text": "camarade de classe",
+    "gender": "m",
+    "plural_text": "camarades de classe",
+    "sentence_example": "Mon camarade de classe m’a aidé pour l’exercice.",
+    "synonyms": [
+      "copain de classe"
+    ]
+  },
+  {
+    "concept": "assignment",
+    "language_code": "fr",
+    "text": "devoir",
+    "gender": "m",
+    "plural_text": "devoirs",
+    "sentence_example": "Le devoir est à rendre vendredi.",
+    "synonyms": [
+      "travail"
+    ]
+  },
+  {
+    "concept": "project",
+    "language_code": "fr",
+    "text": "projet",
+    "gender": "m",
+    "plural_text": "projets",
+    "sentence_example": "Nous faisons un projet en groupe.",
+    "synonyms": [
+      "travail"
+    ]
+  },
+  {
+    "concept": "presentation",
+    "language_code": "fr",
+    "text": "présentation",
+    "gender": "f",
+    "plural_text": "présentations",
+    "sentence_example": "Sa présentation était très claire.",
+    "synonyms": [
+      "exposé"
+    ]
+  },
+  {
+    "concept": "research",
+    "language_code": "fr",
+    "text": "recherche",
+    "gender": "f",
+    "plural_text": "recherches",
+    "sentence_example": "Il fait des recherches pour sa thèse.",
+    "synonyms": [
+      "étude"
+    ]
+  },
+  {
+    "concept": "notes",
+    "language_code": "fr",
+    "text": "notes de cours",
+    "gender": "f",
+    "plural_text": null,
+    "sentence_example": "J’ai relu mes notes de cours avant le test.",
+    "synonyms": [
+      "annotations"
+    ]
+  },
+  {
+    "concept": "attendance",
+    "language_code": "fr",
+    "text": "présence",
+    "gender": "f",
+    "plural_text": null,
+    "sentence_example": "La présence est obligatoire aujourd’hui.",
+    "synonyms": [
+      "assiduité"
+    ]
+  },
+  {
+    "concept": "late",
+    "language_code": "fr",
+    "text": "en retard",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "Il est encore en retard en cours.",
+    "synonyms": [
+      "tard"
+    ]
+  },
+  {
+    "concept": "absent",
+    "language_code": "fr",
+    "text": "absent",
+    "gender": null,
+    "plural_text": "absents",
+    "sentence_example": "Elle était absente hier.",
+    "synonyms": [
+      "manquant"
+    ]
+  },
+  {
+    "concept": "to_study",
+    "language_code": "fr",
+    "text": "étudier",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "J’étudie l’espagnol tous les jours.",
+    "synonyms": [
+      "réviser"
+    ]
+  },
+  {
+    "concept": "to_learn",
+    "language_code": "fr",
+    "text": "apprendre",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "On apprend mieux avec de la pratique.",
+    "synonyms": [
+      "assimiler"
+    ]
+  },
+  {
+    "concept": "to_teach",
+    "language_code": "fr",
+    "text": "enseigner",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "Elle enseigne l’anglais au lycée.",
+    "synonyms": [
+      "donner des cours"
+    ]
+  },
+  {
+    "concept": "to_read",
+    "language_code": "fr",
+    "text": "lire",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "J’aime lire des romans.",
+    "synonyms": []
+  },
+  {
+    "concept": "to_write",
+    "language_code": "fr",
+    "text": "écrire",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "Écris ton nom ici, s’il te plaît.",
+    "synonyms": [
+      "rédiger"
+    ]
+  },
+  {
+    "concept": "to_repeat",
+    "language_code": "fr",
+    "text": "répéter",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "Tu peux répéter la question, s’il te plaît ?",
+    "synonyms": [
+      "redire"
+    ]
+  },
+  {
+    "concept": "scholarship",
+    "language_code": "fr",
+    "text": "bourse",
+    "gender": "f",
+    "plural_text": "bourses",
+    "sentence_example": "Elle a obtenu une bourse pour étudier à l’étranger.",
+    "synonyms": [
+      "aide financière"
+    ]
+  },
+  {
+    "concept": "tuition_fees",
+    "language_code": "fr",
+    "text": "frais de scolarité",
+    "gender": "m",
+    "plural_text": null,
+    "sentence_example": "Les frais de scolarité sont élevés dans certains pays.",
+    "synonyms": [
+      "frais d’inscription"
+    ]
+  },
+  {
+    "concept": "enrollment",
+    "language_code": "fr",
+    "text": "inscription",
+    "gender": "f",
+    "plural_text": "inscriptions",
+    "sentence_example": "Les inscriptions ouvrent lundi prochain.",
+    "synonyms": [
+      "enregistrement"
+    ]
+  },
+  {
+    "concept": "curriculum",
+    "language_code": "fr",
+    "text": "programme",
+    "gender": "m",
+    "plural_text": "programmes",
+    "sentence_example": "Le programme comprend les maths et les sciences.",
+    "synonyms": [
+      "cursus"
+    ]
+  },
+  {
+    "concept": "syllabus",
+    "language_code": "fr",
+    "text": "plan du cours",
+    "gender": "m",
+    "plural_text": "plans du cours",
+    "sentence_example": "Lis le plan du cours avant le premier cours.",
+    "synonyms": [
+      "syllabus"
+    ]
+  },
+  {
+    "concept": "degree",
+    "language_code": "fr",
+    "text": "diplôme",
+    "gender": "m",
+    "plural_text": "diplômes",
+    "sentence_example": "Il a obtenu un diplôme de biologie.",
+    "synonyms": [
+      "licence"
+    ]
+  },
+  {
+    "concept": "graduation",
+    "language_code": "fr",
+    "text": "remise des diplômes",
+    "gender": "f",
+    "plural_text": null,
+    "sentence_example": "La remise des diplômes a lieu en juin.",
+    "synonyms": [
+      "graduation"
+    ]
+  },
+  {
+    "concept": "internship",
+    "language_code": "fr",
+    "text": "stage",
+    "gender": "m",
+    "plural_text": "stages",
+    "sentence_example": "J’ai trouvé un stage pour l’été.",
+    "synonyms": [
+      "internat"
+    ]
+  },
+  {
+    "concept": "lecture",
+    "language_code": "fr",
+    "text": "conférence",
+    "gender": "f",
+    "plural_text": "conférences",
+    "sentence_example": "La conférence a duré deux heures.",
+    "synonyms": [
+      "cours magistral"
+    ]
+  },
+  {
+    "concept": "seminar",
+    "language_code": "fr",
+    "text": "séminaire",
+    "gender": "m",
+    "plural_text": "séminaires",
+    "sentence_example": "Nous avons assisté à un séminaire sur la pédagogie.",
+    "synonyms": [
+      "atelier"
+    ]
+  }
+]

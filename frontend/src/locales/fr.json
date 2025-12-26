@@ -23,6 +23,7 @@
     "registerButton": "S'inscrire",
     "hasAccount": "Déjà un compte?",
     "login": "Se connecter",
+    "username": "Nom d'utilisateur",
     "success": "Inscription réussie! Redirection vers la connexion...",
     "error": "Échec de l'inscription. Veuillez réessayer."
   },

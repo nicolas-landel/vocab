@@ -1,4 +1,5 @@
 from sqlalchemy import Column, Integer, String, DateTime, Boolean, ARRAY, Enum
+from sqlalchemy.dialects.postgresql import UUID
 import enum
 from datetime import datetime
 from app.core.database import Base
@@ -30,7 +31,7 @@ class User(Base):
 class UserLanguage(Base):
     __tablename__ = "user_languages"
     
-    user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    user_id = Column(UUID(as_uuid=True), ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
     language_code = Column(String, ForeignKey("languages.code"), nullable=False)
     level = Column(Enum(LanguageLevelEnum), nullable=False)
     is_learning = Column(Boolean, default=True)

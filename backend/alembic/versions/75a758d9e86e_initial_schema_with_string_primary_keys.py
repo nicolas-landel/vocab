@@ -1,8 +1,8 @@
-"""initial_schema
+"""initial schema with string primary keys
 
-Revision ID: 27346effd368
+Revision ID: 75a758d9e86e
 Revises: 
-Create Date: 2025-12-23 19:59:50.954091
+Create Date: 2025-12-26 10:21:16.006406
 
 """
 from typing import Sequence, Union
@@ -12,7 +12,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision: str = '27346effd368'
+revision: str = '75a758d9e86e'
 down_revision: Union[str, Sequence[str], None] = None
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
@@ -24,13 +24,11 @@ def upgrade() -> None:
     op.create_table('domains',
     sa.Column('code', sa.String(), nullable=False),
     sa.Column('name', sa.String(), nullable=False),
-    sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('created_at', sa.DateTime(), nullable=True),
     sa.Column('updated_at', sa.DateTime(), nullable=True),
-    sa.PrimaryKeyConstraint('id')
+    sa.PrimaryKeyConstraint('code')
     )
-    op.create_index(op.f('ix_domains_code'), 'domains', ['code'], unique=True)
-    op.create_index(op.f('ix_domains_id'), 'domains', ['id'], unique=False)
+    op.create_index(op.f('ix_domains_code'), 'domains', ['code'], unique=False)
     op.create_table('languages',
     sa.Column('code', sa.String(), nullable=False),
     sa.Column('name', sa.String(), nullable=False),
@@ -41,25 +39,26 @@ def upgrade() -> None:
     op.create_index(op.f('ix_languages_code'), 'languages', ['code'], unique=False)
     op.create_table('master_words',
     sa.Column('concept', sa.String(), nullable=False),
-    sa.Column('domain_id', sa.Integer(), nullable=False),
+    sa.Column('domain_code', sa.String(), nullable=False),
     sa.Column('difficulty', sa.Enum('EASY', 'MEDIUM', 'HARD', name='difficulty'), nullable=False),
     sa.Column('image_url', sa.String(), nullable=True),
     sa.Column('word_type', sa.Enum('NOUN', 'VERB', 'ADJECTIVE', 'ADVERB', 'OTHER', name='wordtype'), nullable=True),
-    sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('created_at', sa.DateTime(), nullable=True),
     sa.Column('updated_at', sa.DateTime(), nullable=True),
-    sa.ForeignKeyConstraint(['domain_id'], ['domains.id'], ),
-    sa.PrimaryKeyConstraint('id')
+    sa.ForeignKeyConstraint(['domain_code'], ['domains.code'], ),
+    sa.PrimaryKeyConstraint('concept')
     )
     op.create_index(op.f('ix_master_words_concept'), 'master_words', ['concept'], unique=False)
-    op.create_index(op.f('ix_master_words_id'), 'master_words', ['id'], unique=False)
     op.create_table('users',
     sa.Column('email', sa.String(), nullable=False),
-    sa.Column('hashed_password', sa.String(), nullable=False),
+    sa.Column('hashed_password', sa.String(), nullable=True),
     sa.Column('is_active', sa.Boolean(), nullable=True),
     sa.Column('native_language', sa.String(), nullable=True),
-    sa.Column('learning_languages', sa.ARRAY(sa.String()), nullable=True),
-    sa.Column('id', sa.Integer(), nullable=False),
+    sa.Column('oauth_provider', sa.String(), nullable=True),
+    sa.Column('oauth_id', sa.String(), nullable=True),
+    sa.Column('full_name', sa.String(), nullable=True),
+    sa.Column('picture_url', sa.String(), nullable=True),
+    sa.Column('id', sa.UUID(), nullable=False),
     sa.Column('created_at', sa.DateTime(), nullable=True),
     sa.Column('updated_at', sa.DateTime(), nullable=True),
     sa.ForeignKeyConstraint(['native_language'], ['languages.code'], ),
@@ -68,13 +67,13 @@ def upgrade() -> None:
     op.create_index(op.f('ix_users_email'), 'users', ['email'], unique=True)
     op.create_index(op.f('ix_users_id'), 'users', ['id'], unique=False)
     op.create_table('session_configs',
-    sa.Column('user_id', sa.Integer(), nullable=False),
+    sa.Column('user_id', sa.UUID(), nullable=False),
     sa.Column('native_language', sa.String(), nullable=False),
     sa.Column('language_tested', sa.String(), nullable=False),
     sa.Column('difficulty', sa.String(), nullable=True),
     sa.Column('domain', sa.String(), nullable=True),
     sa.Column('session_type', sa.Enum('COMPREHENSION', 'EXPRESSION', 'MIXED', name='sessiontype'), nullable=False),
-    sa.Column('id', sa.Integer(), nullable=False),
+    sa.Column('id', sa.UUID(), nullable=False),
     sa.Column('created_at', sa.DateTime(), nullable=True),
     sa.Column('updated_at', sa.DateTime(), nullable=True),
     sa.ForeignKeyConstraint(['language_tested'], ['languages.code'], ),
@@ -84,7 +83,7 @@ def upgrade() -> None:
     )
     op.create_index(op.f('ix_session_configs_id'), 'session_configs', ['id'], unique=False)
     op.create_table('translations',
-    sa.Column('master_word_id', sa.Integer(), nullable=False),
+    sa.Column('master_word_concept', sa.String(), nullable=False),
     sa.Column('text', sa.String(), nullable=False),
     sa.Column('language_code', sa.String(), nullable=False),
     sa.Column('audio_url', sa.String(), nullable=True),
@@ -92,18 +91,31 @@ def upgrade() -> None:
     sa.Column('plural_text', sa.String(), nullable=True),
     sa.Column('sentence_example', sa.Text(), nullable=True),
     sa.Column('synonyms', sa.ARRAY(sa.String()), nullable=True),
-    sa.Column('id', sa.Integer(), nullable=False),
+    sa.Column('id', sa.UUID(), nullable=False),
     sa.Column('created_at', sa.DateTime(), nullable=True),
     sa.Column('updated_at', sa.DateTime(), nullable=True),
     sa.ForeignKeyConstraint(['language_code'], ['languages.code'], ),
-    sa.ForeignKeyConstraint(['master_word_id'], ['master_words.id'], ondelete='CASCADE'),
+    sa.ForeignKeyConstraint(['master_word_concept'], ['master_words.concept'], ondelete='CASCADE'),
     sa.PrimaryKeyConstraint('id'),
-    sa.UniqueConstraint('master_word_id', 'language_code', name='unique_translation')
+    sa.UniqueConstraint('master_word_concept', 'language_code', name='unique_translation')
     )
     op.create_index(op.f('ix_translations_id'), 'translations', ['id'], unique=False)
+    op.create_table('user_languages',
+    sa.Column('user_id', sa.UUID(), nullable=False),
+    sa.Column('language_code', sa.String(), nullable=False),
+    sa.Column('level', sa.Enum('BEGINNER', 'INTERMEDIATE', 'ADVANCED', 'NATIVE', name='languagelevelenum'), nullable=False),
+    sa.Column('is_learning', sa.Boolean(), nullable=True),
+    sa.Column('id', sa.UUID(), nullable=False),
+    sa.Column('created_at', sa.DateTime(), nullable=True),
+    sa.Column('updated_at', sa.DateTime(), nullable=True),
+    sa.ForeignKeyConstraint(['language_code'], ['languages.code'], ),
+    sa.ForeignKeyConstraint(['user_id'], ['users.id'], ondelete='CASCADE'),
+    sa.PrimaryKeyConstraint('id')
+    )
+    op.create_index(op.f('ix_user_languages_id'), 'user_languages', ['id'], unique=False)
     op.create_table('sessions',
-    sa.Column('config_id', sa.Integer(), nullable=False),
-    sa.Column('user_id', sa.Integer(), nullable=False),
+    sa.Column('config_id', sa.UUID(), nullable=False),
+    sa.Column('user_id', sa.UUID(), nullable=False),
     sa.Column('source_lang_code', sa.String(), nullable=False),
     sa.Column('target_lang_code', sa.String(), nullable=False),
     sa.Column('domain', sa.String(), nullable=True),
@@ -111,7 +123,7 @@ def upgrade() -> None:
     sa.Column('session_type', sa.Enum('COMPREHENSION', 'EXPRESSION', 'MIXED', name='sessiontype'), nullable=False),
     sa.Column('score', sa.Integer(), nullable=True),
     sa.Column('completed_at', sa.DateTime(), nullable=True),
-    sa.Column('id', sa.Integer(), nullable=False),
+    sa.Column('id', sa.UUID(), nullable=False),
     sa.Column('created_at', sa.DateTime(), nullable=True),
     sa.Column('updated_at', sa.DateTime(), nullable=True),
     sa.ForeignKeyConstraint(['config_id'], ['session_configs.id'], ondelete='CASCADE'),
@@ -123,12 +135,12 @@ def upgrade() -> None:
     )
     op.create_index(op.f('ix_sessions_id'), 'sessions', ['id'], unique=False)
     op.create_table('user_progress',
-    sa.Column('user_id', sa.Integer(), nullable=False),
-    sa.Column('translation_id', sa.Integer(), nullable=False),
+    sa.Column('user_id', sa.UUID(), nullable=False),
+    sa.Column('translation_id', sa.UUID(), nullable=False),
     sa.Column('correct_count', sa.Integer(), nullable=True),
     sa.Column('incorrect_count', sa.Integer(), nullable=True),
     sa.Column('last_reviewed', sa.DateTime(), nullable=True),
-    sa.Column('id', sa.Integer(), nullable=False),
+    sa.Column('id', sa.UUID(), nullable=False),
     sa.Column('created_at', sa.DateTime(), nullable=True),
     sa.Column('updated_at', sa.DateTime(), nullable=True),
     sa.ForeignKeyConstraint(['translation_id'], ['translations.id'], ondelete='CASCADE'),
@@ -140,10 +152,10 @@ def upgrade() -> None:
     op.create_index(op.f('ix_user_progress_translation_id'), 'user_progress', ['translation_id'], unique=False)
     op.create_index(op.f('ix_user_progress_user_id'), 'user_progress', ['user_id'], unique=False)
     op.create_table('user_translations',
-    sa.Column('user_id', sa.Integer(), nullable=False),
-    sa.Column('translation_id', sa.Integer(), nullable=False),
+    sa.Column('user_id', sa.UUID(), nullable=False),
+    sa.Column('translation_id', sa.UUID(), nullable=False),
     sa.Column('is_known', sa.Boolean(), nullable=True),
-    sa.Column('id', sa.Integer(), nullable=False),
+    sa.Column('id', sa.UUID(), nullable=False),
     sa.Column('created_at', sa.DateTime(), nullable=True),
     sa.Column('updated_at', sa.DateTime(), nullable=True),
     sa.ForeignKeyConstraint(['translation_id'], ['translations.id'], ondelete='CASCADE'),
@@ -153,10 +165,10 @@ def upgrade() -> None:
     )
     op.create_index(op.f('ix_user_translations_id'), 'user_translations', ['id'], unique=False)
     op.create_table('session_results',
-    sa.Column('session_id', sa.Integer(), nullable=False),
-    sa.Column('translation_id', sa.Integer(), nullable=False),
+    sa.Column('session_id', sa.UUID(), nullable=False),
+    sa.Column('translation_id', sa.UUID(), nullable=False),
     sa.Column('correct', sa.Boolean(), nullable=False),
-    sa.Column('id', sa.Integer(), nullable=False),
+    sa.Column('id', sa.UUID(), nullable=False),
     sa.Column('created_at', sa.DateTime(), nullable=True),
     sa.Column('updated_at', sa.DateTime(), nullable=True),
     sa.ForeignKeyConstraint(['session_id'], ['sessions.id'], ondelete='CASCADE'),
@@ -180,6 +192,8 @@ def downgrade() -> None:
     op.drop_table('user_progress')
     op.drop_index(op.f('ix_sessions_id'), table_name='sessions')
     op.drop_table('sessions')
+    op.drop_index(op.f('ix_user_languages_id'), table_name='user_languages')
+    op.drop_table('user_languages')
     op.drop_index(op.f('ix_translations_id'), table_name='translations')
     op.drop_table('translations')
     op.drop_index(op.f('ix_session_configs_id'), table_name='session_configs')
@@ -187,12 +201,10 @@ def downgrade() -> None:
     op.drop_index(op.f('ix_users_id'), table_name='users')
     op.drop_index(op.f('ix_users_email'), table_name='users')
     op.drop_table('users')
-    op.drop_index(op.f('ix_master_words_id'), table_name='master_words')
     op.drop_index(op.f('ix_master_words_concept'), table_name='master_words')
     op.drop_table('master_words')
     op.drop_index(op.f('ix_languages_code'), table_name='languages')
     op.drop_table('languages')
-    op.drop_index(op.f('ix_domains_id'), table_name='domains')
     op.drop_index(op.f('ix_domains_code'), table_name='domains')
     op.drop_table('domains')
     # ### end Alembic commands ###

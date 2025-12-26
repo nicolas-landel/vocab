@@ -23,6 +23,7 @@
     "registerButton": "Register",
     "hasAccount": "Already have an account?",
     "login": "Login",
+    "username": "Username",
     "success": "Registration successful! Redirecting to login...",
     "error": "Registration failed. Please try again."
   },

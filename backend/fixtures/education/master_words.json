@@ -1,1 +1,366 @@
-[]
+[
+  {
+    "concept": "teacher",
+    "domain_code": "education",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "student",
+    "domain_code": "education",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "school",
+    "domain_code": "education",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "classroom",
+    "domain_code": "education",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "lesson",
+    "domain_code": "education",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "homework",
+    "domain_code": "education",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "exam",
+    "domain_code": "education",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "test",
+    "domain_code": "education",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "grade",
+    "domain_code": "education",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "class",
+    "domain_code": "education",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "subject",
+    "domain_code": "education",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "course",
+    "domain_code": "education",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "schedule",
+    "domain_code": "education",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "break",
+    "domain_code": "education",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "recess",
+    "domain_code": "education",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "notebook",
+    "domain_code": "education",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "textbook",
+    "domain_code": "education",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "pen",
+    "domain_code": "education",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "pencil",
+    "domain_code": "education",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "eraser",
+    "domain_code": "education",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "board",
+    "domain_code": "education",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "desk",
+    "domain_code": "education",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "chair",
+    "domain_code": "education",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "library",
+    "domain_code": "education",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "university",
+    "domain_code": "education",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "principal",
+    "domain_code": "education",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "head_teacher",
+    "domain_code": "education",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "classmate",
+    "domain_code": "education",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "assignment",
+    "domain_code": "education",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "project",
+    "domain_code": "education",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "presentation",
+    "domain_code": "education",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "research",
+    "domain_code": "education",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "notes",
+    "domain_code": "education",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "attendance",
+    "domain_code": "education",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "late",
+    "domain_code": "education",
+    "difficulty": "MEDIUM",
+    "word_type": "ADJECTIVE",
+    "image_url": null
+  },
+  {
+    "concept": "absent",
+    "domain_code": "education",
+    "difficulty": "MEDIUM",
+    "word_type": "ADJECTIVE",
+    "image_url": null
+  },
+  {
+    "concept": "to_study",
+    "domain_code": "education",
+    "difficulty": "MEDIUM",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "to_learn",
+    "domain_code": "education",
+    "difficulty": "MEDIUM",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "to_teach",
+    "domain_code": "education",
+    "difficulty": "MEDIUM",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "to_read",
+    "domain_code": "education",
+    "difficulty": "MEDIUM",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "to_write",
+    "domain_code": "education",
+    "difficulty": "MEDIUM",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "to_repeat",
+    "domain_code": "education",
+    "difficulty": "MEDIUM",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "scholarship",
+    "domain_code": "education",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "tuition_fees",
+    "domain_code": "education",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "enrollment",
+    "domain_code": "education",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "curriculum",
+    "domain_code": "education",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "syllabus",
+    "domain_code": "education",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "degree",
+    "domain_code": "education",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "graduation",
+    "domain_code": "education",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "internship",
+    "domain_code": "education",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "lecture",
+    "domain_code": "education",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "seminar",
+    "domain_code": "education",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  }
+]

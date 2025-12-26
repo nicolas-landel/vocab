@@ -1,31 +1,31 @@
 [
   {
     "concept": "train",
-    "domain_id": 2,
+    "domain_code": "travel",
     "difficulty": "EASY",
     "word_type": "NOUN"
   },
   {
     "concept": "airport",
-    "domain_id": 2,
+    "domain_code": "travel",
     "difficulty": "MEDIUM",
     "word_type": "NOUN"
   },
   {
     "concept": "ticket",
-    "domain_id": 2,
+    "domain_code": "travel",
     "difficulty": "EASY",
     "word_type": "NOUN"
   },
   {
     "concept": "car",
-    "domain_id": 2,
+    "domain_code": "travel",
     "difficulty": "EASY",
     "word_type": "NOUN"
   },
   {
     "concept": "hotel",
-    "domain_id": 2,
+    "domain_code": "travel",
     "difficulty": "EASY",
     "word_type": "NOUN"
   }

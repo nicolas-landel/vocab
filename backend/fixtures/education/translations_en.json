@@ -1,1 +1,575 @@
-[]
+[
+  {
+    "concept": "teacher",
+    "language_code": "en",
+    "text": "teacher",
+    "gender": null,
+    "plural_text": "teachers",
+    "sentence_example": "The teacher explains the lesson clearly.",
+    "synonyms": [
+      "educator",
+      "instructor"
+    ]
+  },
+  {
+    "concept": "student",
+    "language_code": "en",
+    "text": "student",
+    "gender": null,
+    "plural_text": "students",
+    "sentence_example": "The student studies every evening.",
+    "synonyms": [
+      "pupil",
+      "learner"
+    ]
+  },
+  {
+    "concept": "school",
+    "language_code": "en",
+    "text": "school",
+    "gender": null,
+    "plural_text": "schools",
+    "sentence_example": "My school is near my house.",
+    "synonyms": [
+      "academy"
+    ]
+  },
+  {
+    "concept": "classroom",
+    "language_code": "en",
+    "text": "classroom",
+    "gender": null,
+    "plural_text": "classrooms",
+    "sentence_example": "The classroom is quiet during the exam.",
+    "synonyms": [
+      "class"
+    ]
+  },
+  {
+    "concept": "lesson",
+    "language_code": "en",
+    "text": "lesson",
+    "gender": null,
+    "plural_text": "lessons",
+    "sentence_example": "We have a math lesson today.",
+    "synonyms": [
+      "class",
+      "lecture"
+    ]
+  },
+  {
+    "concept": "homework",
+    "language_code": "en",
+    "text": "homework",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "I finished my homework before dinner.",
+    "synonyms": [
+      "assignment"
+    ]
+  },
+  {
+    "concept": "exam",
+    "language_code": "en",
+    "text": "exam",
+    "gender": null,
+    "plural_text": "exams",
+    "sentence_example": "I have an exam tomorrow morning.",
+    "synonyms": [
+      "test"
+    ]
+  },
+  {
+    "concept": "test",
+    "language_code": "en",
+    "text": "test",
+    "gender": null,
+    "plural_text": "tests",
+    "sentence_example": "The test was harder than I expected.",
+    "synonyms": [
+      "quiz",
+      "exam"
+    ]
+  },
+  {
+    "concept": "grade",
+    "language_code": "en",
+    "text": "grade",
+    "gender": null,
+    "plural_text": "grades",
+    "sentence_example": "I got a good grade in history.",
+    "synonyms": [
+      "mark",
+      "score"
+    ]
+  },
+  {
+    "concept": "class",
+    "language_code": "en",
+    "text": "class",
+    "gender": null,
+    "plural_text": "classes",
+    "sentence_example": "Our class starts at nine.",
+    "synonyms": [
+      "lesson"
+    ]
+  },
+  {
+    "concept": "subject",
+    "language_code": "en",
+    "text": "subject",
+    "gender": null,
+    "plural_text": "subjects",
+    "sentence_example": "Science is my favorite subject.",
+    "synonyms": [
+      "topic",
+      "field"
+    ]
+  },
+  {
+    "concept": "course",
+    "language_code": "en",
+    "text": "course",
+    "gender": null,
+    "plural_text": "courses",
+    "sentence_example": "She is taking an online course.",
+    "synonyms": [
+      "class",
+      "program"
+    ]
+  },
+  {
+    "concept": "schedule",
+    "language_code": "en",
+    "text": "schedule",
+    "gender": null,
+    "plural_text": "schedules",
+    "sentence_example": "Check the schedule for next week.",
+    "synonyms": [
+      "timetable"
+    ]
+  },
+  {
+    "concept": "break",
+    "language_code": "en",
+    "text": "break",
+    "gender": null,
+    "plural_text": "breaks",
+    "sentence_example": "We have a short break at ten thirty.",
+    "synonyms": [
+      "pause"
+    ]
+  },
+  {
+    "concept": "recess",
+    "language_code": "en",
+    "text": "recess",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "Kids play outside during recess.",
+    "synonyms": [
+      "break"
+    ]
+  },
+  {
+    "concept": "notebook",
+    "language_code": "en",
+    "text": "notebook",
+    "gender": null,
+    "plural_text": "notebooks",
+    "sentence_example": "Write it down in your notebook.",
+    "synonyms": [
+      "exercise book"
+    ]
+  },
+  {
+    "concept": "textbook",
+    "language_code": "en",
+    "text": "textbook",
+    "gender": null,
+    "plural_text": "textbooks",
+    "sentence_example": "This textbook has many examples.",
+    "synonyms": [
+      "coursebook"
+    ]
+  },
+  {
+    "concept": "pen",
+    "language_code": "en",
+    "text": "pen",
+    "gender": null,
+    "plural_text": "pens",
+    "sentence_example": "Can I borrow your pen?",
+    "synonyms": []
+  },
+  {
+    "concept": "pencil",
+    "language_code": "en",
+    "text": "pencil",
+    "gender": null,
+    "plural_text": "pencils",
+    "sentence_example": "Use a pencil for the drawing.",
+    "synonyms": []
+  },
+  {
+    "concept": "eraser",
+    "language_code": "en",
+    "text": "eraser",
+    "gender": null,
+    "plural_text": "erasers",
+    "sentence_example": "I need an eraser to fix my mistake.",
+    "synonyms": [
+      "rubber"
+    ]
+  },
+  {
+    "concept": "board",
+    "language_code": "en",
+    "text": "board",
+    "gender": null,
+    "plural_text": "boards",
+    "sentence_example": "The teacher wrote the answer on the board.",
+    "synonyms": [
+      "blackboard",
+      "whiteboard"
+    ]
+  },
+  {
+    "concept": "desk",
+    "language_code": "en",
+    "text": "desk",
+    "gender": null,
+    "plural_text": "desks",
+    "sentence_example": "My desk is next to the window.",
+    "synonyms": []
+  },
+  {
+    "concept": "chair",
+    "language_code": "en",
+    "text": "chair",
+    "gender": null,
+    "plural_text": "chairs",
+    "sentence_example": "Please sit on your chair.",
+    "synonyms": []
+  },
+  {
+    "concept": "library",
+    "language_code": "en",
+    "text": "library",
+    "gender": null,
+    "plural_text": "libraries",
+    "sentence_example": "I borrowed a book from the library.",
+    "synonyms": []
+  },
+  {
+    "concept": "university",
+    "language_code": "en",
+    "text": "university",
+    "gender": null,
+    "plural_text": "universities",
+    "sentence_example": "He studies engineering at the university.",
+    "synonyms": [
+      "college"
+    ]
+  },
+  {
+    "concept": "principal",
+    "language_code": "en",
+    "text": "principal",
+    "gender": null,
+    "plural_text": "principals",
+    "sentence_example": "The principal spoke to the students.",
+    "synonyms": [
+      "headmaster",
+      "headmistress"
+    ]
+  },
+  {
+    "concept": "head_teacher",
+    "language_code": "en",
+    "text": "head teacher",
+    "gender": null,
+    "plural_text": "head teachers",
+    "sentence_example": "The head teacher called a meeting.",
+    "synonyms": [
+      "school director"
+    ]
+  },
+  {
+    "concept": "classmate",
+    "language_code": "en",
+    "text": "classmate",
+    "gender": null,
+    "plural_text": "classmates",
+    "sentence_example": "My classmate helped me with the exercise.",
+    "synonyms": [
+      "schoolmate"
+    ]
+  },
+  {
+    "concept": "assignment",
+    "language_code": "en",
+    "text": "assignment",
+    "gender": null,
+    "plural_text": "assignments",
+    "sentence_example": "The assignment is due on Friday.",
+    "synonyms": [
+      "homework",
+      "task"
+    ]
+  },
+  {
+    "concept": "project",
+    "language_code": "en",
+    "text": "project",
+    "gender": null,
+    "plural_text": "projects",
+    "sentence_example": "We are working on a group project.",
+    "synonyms": [
+      "work"
+    ]
+  },
+  {
+    "concept": "presentation",
+    "language_code": "en",
+    "text": "presentation",
+    "gender": null,
+    "plural_text": "presentations",
+    "sentence_example": "Her presentation was very clear.",
+    "synonyms": [
+      "talk"
+    ]
+  },
+  {
+    "concept": "research",
+    "language_code": "en",
+    "text": "research",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "He is doing research for his thesis.",
+    "synonyms": [
+      "study",
+      "investigation"
+    ]
+  },
+  {
+    "concept": "notes",
+    "language_code": "en",
+    "text": "notes",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "I reviewed my notes before the test.",
+    "synonyms": [
+      "annotations"
+    ]
+  },
+  {
+    "concept": "attendance",
+    "language_code": "en",
+    "text": "attendance",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "Attendance is mandatory today.",
+    "synonyms": [
+      "presence"
+    ]
+  },
+  {
+    "concept": "late",
+    "language_code": "en",
+    "text": "late",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "He was late for class again.",
+    "synonyms": [
+      "tardy"
+    ]
+  },
+  {
+    "concept": "absent",
+    "language_code": "en",
+    "text": "absent",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "She was absent yesterday.",
+    "synonyms": [
+      "missing"
+    ]
+  },
+  {
+    "concept": "to_study",
+    "language_code": "en",
+    "text": "to study",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "I study French every day.",
+    "synonyms": [
+      "revise",
+      "learn"
+    ]
+  },
+  {
+    "concept": "to_learn",
+    "language_code": "en",
+    "text": "to learn",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "It is easy to learn with practice.",
+    "synonyms": [
+      "pick up"
+    ]
+  },
+  {
+    "concept": "to_teach",
+    "language_code": "en",
+    "text": "to teach",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "She teaches English at school.",
+    "synonyms": [
+      "instruct"
+    ]
+  },
+  {
+    "concept": "to_read",
+    "language_code": "en",
+    "text": "to read",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "I like to read novels.",
+    "synonyms": []
+  },
+  {
+    "concept": "to_write",
+    "language_code": "en",
+    "text": "to write",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "Please write your name here.",
+    "synonyms": [
+      "compose"
+    ]
+  },
+  {
+    "concept": "to_repeat",
+    "language_code": "en",
+    "text": "to repeat",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "Could you repeat the question, please?",
+    "synonyms": [
+      "say again"
+    ]
+  },
+  {
+    "concept": "scholarship",
+    "language_code": "en",
+    "text": "scholarship",
+    "gender": null,
+    "plural_text": "scholarships",
+    "sentence_example": "She received a scholarship to study abroad.",
+    "synonyms": [
+      "grant"
+    ]
+  },
+  {
+    "concept": "tuition_fees",
+    "language_code": "en",
+    "text": "tuition fees",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "Tuition fees are expensive in some countries.",
+    "synonyms": [
+      "tuition"
+    ]
+  },
+  {
+    "concept": "enrollment",
+    "language_code": "en",
+    "text": "enrollment",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "Enrollment opens next Monday.",
+    "synonyms": [
+      "registration"
+    ]
+  },
+  {
+    "concept": "curriculum",
+    "language_code": "en",
+    "text": "curriculum",
+    "gender": null,
+    "plural_text": "curricula",
+    "sentence_example": "The curriculum includes math and science.",
+    "synonyms": [
+      "program",
+      "syllabus"
+    ]
+  },
+  {
+    "concept": "syllabus",
+    "language_code": "en",
+    "text": "syllabus",
+    "gender": null,
+    "plural_text": "syllabi",
+    "sentence_example": "Read the syllabus before the first class.",
+    "synonyms": [
+      "course outline"
+    ]
+  },
+  {
+    "concept": "degree",
+    "language_code": "en",
+    "text": "degree",
+    "gender": null,
+    "plural_text": "degrees",
+    "sentence_example": "He earned a degree in biology.",
+    "synonyms": [
+      "diploma"
+    ]
+  },
+  {
+    "concept": "graduation",
+    "language_code": "en",
+    "text": "graduation",
+    "gender": null,
+    "plural_text": null,
+    "sentence_example": "Graduation is in June.",
+    "synonyms": [
+      "commencement"
+    ]
+  },
+  {
+    "concept": "internship",
+    "language_code": "en",
+    "text": "internship",
+    "gender": null,
+    "plural_text": "internships",
+    "sentence_example": "I found an internship for the summer.",
+    "synonyms": [
+      "placement"
+    ]
+  },
+  {
+    "concept": "lecture",
+    "language_code": "en",
+    "text": "lecture",
+    "gender": null,
+    "plural_text": "lectures",
+    "sentence_example": "The lecture lasted two hours.",
+    "synonyms": [
+      "talk"
+    ]
+  },
+  {
+    "concept": "seminar",
+    "language_code": "en",
+    "text": "seminar",
+    "gender": null,
+    "plural_text": "seminars",
+    "sentence_example": "We attended a seminar on education technology.",
+    "synonyms": [
+      "workshop"
+    ]
+  }
+]

@@ -1,4 +1,5 @@
 from sqlalchemy import Column, Integer, String, ForeignKey, DateTime, Enum, Boolean, UniqueConstraint
+from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import relationship
 from datetime import datetime
 from app.core.database import Base
@@ -15,7 +16,7 @@ class SessionConfig(Base):
     """Configuration for each session - created before starting a session"""
     __tablename__ = "session_configs"
     
-    user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    user_id = Column(UUID(as_uuid=True), ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
     native_language = Column(String, ForeignKey("languages.code"), nullable=False)
     language_tested = Column(String, ForeignKey("languages.code"), nullable=False)
     difficulty = Column(String, nullable=True)  # Can be null for mixed
@@ -31,8 +32,8 @@ class SessionConfig(Base):
 class Session(Base):
     __tablename__ = "sessions"
     
-    config_id = Column(Integer, ForeignKey("session_configs.id", ondelete="CASCADE"), nullable=False, unique=True)
-    user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    config_id = Column(UUID(as_uuid=True), ForeignKey("session_configs.id", ondelete="CASCADE"), nullable=False, unique=True)
+    user_id = Column(UUID(as_uuid=True), ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
     source_lang_code = Column(String, ForeignKey("languages.code"), nullable=False)
     target_lang_code = Column(String, ForeignKey("languages.code"), nullable=False)
     domain = Column(String, nullable=True)  # If null, all domains
@@ -52,8 +53,8 @@ class SessionResult(Base):
     """Stores individual word results for each session"""
     __tablename__ = "session_results"
     
-    session_id = Column(Integer, ForeignKey("sessions.id", ondelete="CASCADE"), nullable=False)
-    translation_id = Column(Integer, ForeignKey("translations.id", ondelete="CASCADE"), nullable=False)
+    session_id = Column(UUID(as_uuid=True), ForeignKey("sessions.id", ondelete="CASCADE"), nullable=False)
+    translation_id = Column(UUID(as_uuid=True), ForeignKey("translations.id", ondelete="CASCADE"), nullable=False)
     correct = Column(Boolean, nullable=False)
     
     session = relationship("Session", back_populates="results")
@@ -64,8 +65,8 @@ class UserProgress(Base):
     """Tracks overall user progress for each translation"""
     __tablename__ = "user_progress"
     
-    user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True)
-    translation_id = Column(Integer, ForeignKey("translations.id", ondelete="CASCADE"), nullable=False, index=True)
+    user_id = Column(UUID(as_uuid=True), ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True)
+    translation_id = Column(UUID(as_uuid=True), ForeignKey("translations.id", ondelete="CASCADE"), nullable=False, index=True)
     
     correct_count = Column(Integer, default=0)
     incorrect_count = Column(Integer, default=0)

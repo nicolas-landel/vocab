@@ -66,3 +66,24 @@ ACCESS_TOKEN_EXPIRE_MINUTES=30
 When running, visit:
 - Swagger UI: http://localhost:8000/docs
 - ReDoc: http://localhost:8000/redoc
+
+
+## Useful commands
+
+```
+docker compose exec backend alembic revision --autogenerate -m "initial_schema_with_uuid"
+
+docker compose exec backend alembic upgrade head
+
+docker compose exec db psql -U vocab_user -d vocab_db -c "\d users"
+
+docker compose exec backend python -m scripts.seed_database -d education
+```
+
+TODO
+- refacto front uuid!!!
+- register process
+- prevent ddos
+- check safety login & calls
+
+
