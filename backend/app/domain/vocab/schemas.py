@@ -1,6 +1,7 @@
 from pydantic import BaseModel, ConfigDict
 from typing import List, Optional
 from datetime import datetime
+from uuid import UUID
 from .models import Difficulty, WordType
 
 
@@ -43,7 +44,7 @@ class TranslationCreate(TranslationBase):
     master_word_concept: str
 
 class TranslationSchema(TranslationBase):
-    id: str
+    id: UUID
     master_word_concept: str
     created_at: datetime
     updated_at: datetime
@@ -80,15 +81,15 @@ class MasterWordDetail(MasterWordSchema):
 
 # UserTranslation Schemas
 class UserTranslationBase(BaseModel):
-    translation_id: str
+    translation_id: UUID
     is_known: bool = False
 
 class UserTranslationCreate(UserTranslationBase):
     pass
 
 class UserTranslationSchema(UserTranslationBase):
-    id: str
-    user_id: str
+    id: UUID
+    user_id: UUID
     created_at: datetime
     model_config = ConfigDict(from_attributes=True)
 

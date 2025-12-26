@@ -12,7 +12,7 @@ from ....core.database import get_db
 from ....core.security import verify_password, get_password_hash, create_access_token, decode_access_token
 from ....core.config import settings
 from ....domain.user.models import User
-from ....domain.user.schemas import UserCreate, UserResponse, Token, GoogleAuthResponse
+from ....domain.user.schemas import UserCreate, UserResponse, Token, GoogleAuthResponse, LoginRequest
 
 
 router = APIRouter()
@@ -61,7 +61,6 @@ async def get_current_user(
 
 @router.post("/register", response_model=UserResponse)
 async def register(user_data: UserCreate, db: AsyncSession = Depends(get_db)):
-    # Check if user exists
     result = await db.execute(select(User).where(User.email == user_data.email))
     if result.scalar_one_or_none():
         raise HTTPException(
@@ -69,9 +68,8 @@ async def register(user_data: UserCreate, db: AsyncSession = Depends(get_db)):
             detail="Email already registered"
         )
     
-    # Create user
     hashed_password = get_password_hash(user_data.password)
-    user = User(email=user_data.email, hashed_password=hashed_password)
+    user = User(email=user_data.email, hashed_password=hashed_password, full_name=user_data.full_name)
     db.add(user)
     await db.commit()
     await db.refresh(user)
@@ -81,23 +79,20 @@ async def register(user_data: UserCreate, db: AsyncSession = Depends(get_db)):
 
 @router.post("/login", response_model=Token)
 async def login(
-    form_data: OAuth2PasswordRequestForm = Depends(),
+    credentials: LoginRequest,
     db: AsyncSession = Depends(get_db)
 ):
-    # Get user
-    result = await db.execute(select(User).where(User.email == form_data.username))
+    result = await db.execute(select(User).where(User.email == credentials.email))
     user = result.scalar_one_or_none()
     
-    if not user or not verify_password(form_data.password, user.hashed_password):
+    if not user or not verify_password(credentials.password, user.hashed_password):
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Incorrect email or password",
             headers={"WWW-Authenticate": "Bearer"},
         )
     
-    # Create access token
     access_token = create_access_token(data={"sub": user.email})
-    
     return {"access_token": access_token, "token_type": "bearer"}
 
 

@@ -1,6 +1,7 @@
 from pydantic import BaseModel, EmailStr, ConfigDict
 from typing import Optional, List
 from datetime import datetime
+from uuid import UUID
 
 
 class UserBase(BaseModel):
@@ -11,6 +12,10 @@ class UserCreate(UserBase):
     full_name: Optional[str] = None
     native_language: Optional[str] = None
 
+class LoginRequest(BaseModel):
+    email: EmailStr
+    password: str
+
 class UserUpdate(BaseModel):
     email: Optional[EmailStr] = None
     password: Optional[str] = None
@@ -18,7 +23,7 @@ class UserUpdate(BaseModel):
     native_language: Optional[str] = None
 
 class UserResponse(UserBase):
-    id: str
+    id: UUID
     is_active: bool
     created_at: datetime
     updated_at: datetime
@@ -54,8 +59,8 @@ class UserLanguageUpdate(BaseModel):
     is_learning: Optional[bool] = None
 
 class UserLanguageResponse(UserLanguageBase):
-    id: str
-    user_id: str
+    id: UUID
+    user_id: UUID
     created_at: datetime
     updated_at: datetime
     

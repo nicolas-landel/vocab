@@ -10,7 +10,7 @@
       </VToolbarTitle>
 
       <VTabs
-        v-if="route.path === '/'"
+        v-if="authStore.isLoggedIn"
         :model-value="activeTab"
         @update:model-value="switchTab"
         bg-color="transparent"
@@ -35,11 +35,23 @@
         ></VSelect>
       </div>
 
-      <VBtn icon @click="goToProfile" class="d-none d-md-flex">
+      <VBtn 
+        v-if="authStore.isLoggedIn"
+        icon
+        @click="goToProfile"
+        class="d-none d-md-flex"
+        :variant="route.path === '/profile' ? 'tonal' : 'text'"
+      >
         <VIcon>mdi-account</VIcon>
       </VBtn>
 
-      <VBtn icon @click="handleLogout" class="d-none d-md-flex" :title="t('nav.logout')">
+      <VBtn 
+        v-if="authStore.isLoggedIn"
+        icon
+        @click="handleLogout"
+        class="d-none d-md-flex"
+        :title="t('nav.logout')"
+      >
         <VIcon>mdi-logout</VIcon>
       </VBtn>
     </VAppBar>
@@ -50,15 +62,15 @@
         
         <VDivider></VDivider>
 
-        <VListItem v-if="route.path === '/'" @click="switchTabMobile('session')" :class="{ 'bg-primary': activeTab === 'session' }">
+        <VListItem v-if="authStore.isLoggedIn" @click="switchTabMobile('session')" :class="{ 'bg-primary': activeTab === 'session' }">
           <VListItemTitle>{{ t('tabs.session') }}</VListItemTitle>
         </VListItem>
 
-        <VListItem v-if="route.path === '/'" @click="switchTabMobile('vocabulary')" :class="{ 'bg-primary': activeTab === 'vocabulary' }">
+        <VListItem v-if="authStore.isLoggedIn" @click="switchTabMobile('vocabulary')" :class="{ 'bg-primary': activeTab === 'vocabulary' }">
           <VListItemTitle>{{ t('tabs.vocabulary') }}</VListItemTitle>
         </VListItem>
 
-        <VDivider v-if="route.path === '/'"></VDivider>
+        <VDivider v-if="authStore.isLoggedIn"></VDivider>
 
         <VListItem>
           <VSelect
@@ -74,11 +86,15 @@
           ></VSelect>
         </VListItem>
 
-        <VListItem @click="goToProfileMobile" prepend-icon="mdi-account">
+        <VListItem 
+          @click="goToProfileMobile"
+          prepend-icon="mdi-account"
+          :class="{ 'bg-primary': route.path === '/profile' }"
+        >
           <VListItemTitle>{{ t('nav.profile') }}</VListItemTitle>
         </VListItem>
 
-        <VListItem @click="handleLogoutMobile" prepend-icon="mdi-logout">
+        <VListItem v-if="authStore.isLoggedIn" @click="handleLogoutMobile" prepend-icon="mdi-logout">
           <VListItemTitle>{{ t('nav.logout') }}</VListItemTitle>
         </VListItem>
       </VList>
@@ -115,7 +131,17 @@ watch(nativeLanguage, (newLang) => {
   authStore.setUserLanguage(newLang)
 }, { immediate: true })
 
-const activeTab = computed(() => route.query.tab || 'session')
+const activeTab = computed(() => {
+  // If on home page, use tab query parameter
+  if (route.path === '/') {
+    return route.query.tab || 'session'
+  }
+  // If on session or vocabulary related pages, determine active tab
+  if (route.path.includes('/session') || route.path.includes('/summary')) {
+    return 'session'
+  }
+  return ''
+})
 
 const switchTab = (tab) => {
   router.push({ path: '/', query: { tab } })

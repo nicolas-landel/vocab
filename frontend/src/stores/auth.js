@@ -17,24 +17,18 @@ export const useAuthStore = defineStore('auth', {
 
   actions: {
     async login(email, password) {
-      const formData = new FormData()
-      formData.append('username', email)
-      formData.append('password', password)
-
-      const response = await apiClient.post('/api/v1/auth/login', formData, {
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded'
-        }
+      const response = await apiClient.post('/api/v1/auth/login', {
+        email,
+        password
       })
 
-      this.token = response.data.access_token
+      this.token = response.data.accessToken
       localStorage.setItem('access_token', this.token)
       
       await this.fetchUser()
     },
 
     async register(email, password, username) {
-      console.log('Registering user with username:', username)
       await apiClient.post('/api/v1/auth/register', {
         email,
         password,

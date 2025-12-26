@@ -3,6 +3,7 @@ from typing import List, Optional
 from datetime import datetime
 from .models import SessionType
 from app.domain.vocab.schemas import TranslationDetail
+from uuid import UUID
 
 
 # SessionConfig Schemas
@@ -23,15 +24,15 @@ class SessionConfigUpdate(BaseModel):
     domain: Optional[str] = None
 
 class SessionConfigSchema(SessionConfigBase):
-    id: str
-    user_id: str
+    id: UUID
+    user_id: UUID
     created_at: datetime
     model_config = ConfigDict(from_attributes=True)
 
 
 # Session Schemas
 class SessionCreate(BaseModel):
-    config_id: str
+    config_id: UUID
     source_lang_code: str
     target_lang_code: str
     domain: Optional[str] = None
@@ -43,9 +44,9 @@ class SessionUpdate(BaseModel):
     completed_at: Optional[datetime] = None
 
 class SessionSchema(SessionCreate):
-    id: str
-    user_id: str
-    config_id: str
+    id: UUID
+    user_id: UUID
+    config_id: UUID
     created_at: datetime
     score: Optional[int] = None
     completed_at: Optional[datetime] = None
@@ -54,12 +55,12 @@ class SessionSchema(SessionCreate):
 
 # SessionResult Schemas
 class SessionResultCreate(BaseModel):
-    translation_id: int
+    translation_id: UUID
     correct: bool
 
 class SessionResultSchema(SessionResultCreate):
-    id: str
-    session_id: str
+    id: UUID
+    session_id: UUID
     created_at: datetime
     model_config = ConfigDict(from_attributes=True)
 
@@ -77,7 +78,7 @@ class SessionDetail(SessionSchema):
 
 # UserProgress Schemas
 class UserProgressBase(BaseModel):
-    translation_id: str
+    translation_id: UUID
 
 class UserProgressCreate(UserProgressBase):
     pass
@@ -88,8 +89,8 @@ class UserProgressUpdate(BaseModel):
     last_reviewed: Optional[datetime] = None
 
 class UserProgressSchema(UserProgressBase):
-    id: str
-    user_id: str
+    id: UUID
+    user_id: UUID
     correct_count: int
     incorrect_count: int
     last_reviewed: datetime

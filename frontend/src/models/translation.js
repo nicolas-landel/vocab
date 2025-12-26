@@ -8,7 +8,7 @@ export class Translation extends Model {
   static fields() {
     return {
       id: this.uid(),
-      masterWordId: this.number(null),
+      masterWordConcept: this.number(null),
       text: this.string(''),
       languageCode: this.string(''),
       audioUrl: this.string(null).nullable(),
@@ -22,7 +22,7 @@ export class Translation extends Model {
       isKnown: this.boolean(false),
       
       // Relationships
-      masterWord: this.belongsTo(MasterWord, 'masterWordId'),
+      masterWord: this.belongsTo(MasterWord, 'masterWordConcept'),
       language: this.belongsTo(Language, 'languageCode', 'code')
     }
   }

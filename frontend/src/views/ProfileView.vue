@@ -24,23 +24,23 @@
               </VCol>
               <VCol cols="12" md="6">
                 <VTextField
-                  v-model="profile.full_name"
+                  v-model="profile.fullName"
                   :label="t('profile.fullName')"
                   variant="outlined"
                   density="compact"
-                  @blur="updateProfile"
+                  @update:model-value="debouncedUpdateProfile"
                 ></VTextField>
               </VCol>
               <VCol cols="12" md="6">
                 <VSelect
-                  v-model="profile.native_language"
+                  v-model="profile.nativeLanguage"
                   :items="languages"
                   item-title="name"
                   item-value="code"
                   :label="t('profile.nativeLanguage')"
                   variant="outlined"
                   density="compact"
-                  @update:model-value="updateProfile"
+                  @update:model-value="debouncedUpdateProfile"
                 ></VSelect>
               </VCol>
             </VRow>
@@ -54,12 +54,12 @@
             <VList v-if="userLanguages.length">
               <VListItem
                 v-for="lang in userLanguages"
-                :key="lang.language_code"
+                :key="lang.languageCode"
                 class="mb-2"
               >
                 <VRow align="center">
                   <VCol cols="12" sm="4">
-                    <strong>{{ getLanguageName(lang.language_code) }}</strong>
+                    <strong>{{ getLanguageName(lang.languageCode) }}</strong>
                   </VCol>
                   <VCol cols="12" sm="4">
                     <VSelect
@@ -74,7 +74,7 @@
                   </VCol>
                   <VCol cols="12" sm="3">
                     <VCheckbox
-                      v-model="lang.is_learning"
+                      v-model="lang.isLearning"
                       :label="t('profile.isLearning')"
                       hide-details
                       @update:model-value="updateLanguage(lang)"
@@ -86,7 +86,7 @@
                       size="small"
                       color="error"
                       variant="text"
-                      @click="deleteLanguage(lang.language_code)"
+                      @click="deleteLanguage(lang.languageCode)"
                     ></VBtn>
                   </VCol>
                 </VRow>
@@ -101,7 +101,7 @@
             <VRow align="center">
               <VCol cols="12" sm="5">
                 <VSelect
-                  v-model="newLanguage.language_code"
+                  v-model="newLanguage.languageCode"
                   :items="availableLanguages"
                   item-title="name"
                   item-value="code"
@@ -126,7 +126,7 @@
                   color="primary"
                   block
                   @click="addLanguage"
-                  :disabled="!newLanguage.language_code || !newLanguage.level"
+                  :disabled="!newLanguage.languageCode || !newLanguage.level"
                 >
                   {{ t('profile.add') }}
                 </VBtn>
@@ -149,21 +149,23 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
-import axios from 'axios'
+import apiClient from "@/setup/axios"
+  import { debounce } from "lodash";
+
 
 const { t } = useI18n()
 const loading = ref(true)
 const profile = ref({
   email: '',
-  full_name: '',
-  native_language: null
+  fullName: '',
+  nativeLanguage: null
 })
 const userLanguages = ref([])
 const languages = ref([])
 const newLanguage = ref({
-  language_code: '',
+  languageCode: '',
   level: 'BEGINNER',
-  is_learning: true
+  isLearning: true
 })
 const successMessage = ref('')
 const errorMessage = ref('')
@@ -173,9 +175,9 @@ const levels = ['BEGINNER', 'INTERMEDIATE', 'ADVANCED', 'NATIVE']
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
 
 const availableLanguages = computed(() => {
-  const userLangCodes = userLanguages.value.map(l => l.language_code)
+  const userLangCodes = userLanguages.value.map(l => l.languageCode)
   return languages.value.filter(lang => 
-    !userLangCodes.includes(lang.code) && lang.code !== profile.value.native_language
+    !userLangCodes.includes(lang.code) && lang.code !== profile.value.nativeLanguage
   )
 })
 
@@ -186,10 +188,7 @@ const getLanguageName = (code) => {
 
 const fetchProfile = async () => {
   try {
-    const token = localStorage.getItem('access_token')
-    const res = await axios.get(`${API_URL}/api/v1/profile/`, {
-      headers: { Authorization: `Bearer ${token}` }
-    })
+    const res = await apiClient.get('/api/v1/profile/')
     profile.value = res.data
     userLanguages.value = res.data.languages || []
   } catch (e) {
@@ -200,7 +199,7 @@ const fetchProfile = async () => {
 
 const fetchLanguages = async () => {
   try {
-    const res = await axios.get(`${API_URL}/api/v1/config/languages`)
+    const res = await apiClient.get('/api/v1/config/languages')
     languages.value = res.data
   } catch (e) {
     console.error('Failed to load languages:', e)
@@ -209,12 +208,9 @@ const fetchLanguages = async () => {
 
 const updateProfile = async () => {
   try {
-    const token = localStorage.getItem('access_token')
-    await axios.patch(`${API_URL}/api/v1/profile/`, {
-      native_language: profile.value.native_language,
-      full_name: profile.value.full_name
-    }, {
-      headers: { Authorization: `Bearer ${token}` }
+    await apiClient.patch('/api/v1/profile/', {
+      nativeLanguage: profile.value.nativeLanguage,
+      fullName: profile.value.fullName
     })
     successMessage.value = t('profile.updated')
   } catch (e) {
@@ -223,14 +219,14 @@ const updateProfile = async () => {
   }
 }
 
+// Create debounced version once
+const debouncedUpdateProfile = debounce(updateProfile, 400)
+
 const addLanguage = async () => {
   try {
-    const token = localStorage.getItem('access_token')
-    const res = await axios.post(`${API_URL}/api/v1/profile/languages`, newLanguage.value, {
-      headers: { Authorization: `Bearer ${token}` }
-    })
+    const res = await apiClient.post('/api/v1/profile/languages', newLanguage.value)
     userLanguages.value.push(res.data)
-    newLanguage.value = { language_code: '', level: 'BEGINNER', is_learning: true }
+    newLanguage.value = { languageCode: '', level: 'BEGINNER', isLearning: true }
     successMessage.value = t('profile.languageAdded')
   } catch (e) {
     errorMessage.value = e.response?.data?.detail || t('profile.addFailed')
@@ -240,12 +236,9 @@ const addLanguage = async () => {
 
 const updateLanguage = async (lang) => {
   try {
-    const token = localStorage.getItem('access_token')
-    await axios.patch(`${API_URL}/api/v1/profile/languages/${lang.language_code}`, {
+    await apiClient.patch(`/api/v1/profile/languages/${lang.languageCode}`, {
       level: lang.level,
-      is_learning: lang.is_learning
-    }, {
-      headers: { Authorization: `Bearer ${token}` }
+      isLearning: lang.isLearning
     })
     successMessage.value = t('profile.languageUpdated')
   } catch (e) {
@@ -256,11 +249,8 @@ const updateLanguage = async (lang) => {
 
 const deleteLanguage = async (languageCode) => {
   try {
-    const token = localStorage.getItem('access_token')
-    await axios.delete(`${API_URL}/api/v1/profile/languages/${languageCode}`, {
-      headers: { Authorization: `Bearer ${token}` }
-    })
-    userLanguages.value = userLanguages.value.filter(l => l.language_code !== languageCode)
+    await apiClient.delete(`/api/v1/profile/languages/${languageCode}`)
+    userLanguages.value = userLanguages.value.filter(l => l.languageCode !== languageCode)
     successMessage.value = t('profile.languageDeleted')
   } catch (e) {
     errorMessage.value = t('profile.deleteFailed')

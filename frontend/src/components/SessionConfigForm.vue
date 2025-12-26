@@ -130,7 +130,6 @@ watch(
         config.value.languageTested = languages.value.length > 0 ? languages.value[0].code : ''
       }
     }
-    console.log("NNNNNNNNNN", newLang, config.value.nativeLanguage, languages.value, vocabularyStore.languages)
   },
   { immediate: true }
 )
