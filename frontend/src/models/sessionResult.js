@@ -8,8 +8,8 @@ export class SessionResult extends Model {
   static fields() {
     return {
       id: this.uid(),
-      sessionId: this.number(null),
-      translationId: this.number(null),
+      sessionId: this.string(null),
+      translationId: this.string(null),
       correct: this.boolean(false),
       createdAt: this.string(''),
       

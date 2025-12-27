@@ -1,12 +1,12 @@
 <template>
   <VContainer class="fill-height mt-n15" fluid>
     <VRow align="center" justify="center" class="">
-      <VCol >
-        <VCard class="elevation-12" max-width="600">
+      <VCol :cols="12" sm="8" md="6" lg="4" class="">
+        <VCard class="elevation-12">
           <VToolbar color="primary" dark flat>
             <VToolbarTitle>{{ t('login.title') }}</VToolbarTitle>
           </VToolbar>
-          <VCardText>
+          <VCardText class="pa-3">
             <VForm ref="loginFormRef" @submit.prevent="handleLogin">
               <VTextField
                 v-model="email"

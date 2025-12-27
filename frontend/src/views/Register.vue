@@ -1,8 +1,8 @@
 <template>
   <VContainer class="fill-height mt-n15" fluid>
     <VRow align="center" justify="center">
-      <VCol>
-        <VCard class="elevation-12" max-width="600">
+      <VCol :cols="12" sm="8" md="6" lg="4" class="">
+        <VCard class="elevation-12">
           <VToolbar color="primary" dark flat>
             <VToolbarTitle>{{ t('register.title') }}</VToolbarTitle>
           </VToolbar>

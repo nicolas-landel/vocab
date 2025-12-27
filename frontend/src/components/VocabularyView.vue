@@ -212,22 +212,22 @@ const openDetailModal = (translation) => {
   detailDialog.value = true
 }
 
-onMounted(async () => {
-  try {
-    await Promise.all([
-      vocabularyStore.fetchLanguages(),
-      vocabularyStore.fetchDomains()
-    ])
+// onMounted(async () => {
+//   try {
+//     await Promise.all([
+//       vocabularyStore.fetchLanguages(),
+//       vocabularyStore.fetchDomains()
+//     ])
     
-    languages.value = vocabularyStore.languages
-    domains.value = vocabularyStore.domains
+//     languages.value = vocabularyStore.languages
+//     domains.value = vocabularyStore.domains
     
-    // Set default language
-    if (languages.value.length > 0) {
-      filters.value.languageCode = languages.value[0].code
-    }
-  } catch (error) {
-    console.error(t('errors.failedToLoadOptions'), error)
-  }
-})
+//     // Set default language
+//     if (languages.value.length > 0) {
+//       filters.value.languageCode = languages.value[0].code
+//     }
+//   } catch (error) {
+//     console.error(t('errors.failedToLoadOptions'), error)
+//   }
+// })
 </script>

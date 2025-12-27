@@ -81,8 +81,7 @@ docker compose exec backend python -m scripts.seed_database -d education
 ```
 
 TODO
-- refacto front uuid!!!
-- register process
+- Todo router app logic -> children of this route + main component has onMounted to fetch all logic
 - prevent ddos
 - check safety login & calls
 

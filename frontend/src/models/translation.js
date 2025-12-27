@@ -8,7 +8,7 @@ export class Translation extends Model {
   static fields() {
     return {
       id: this.uid(),
-      masterWordConcept: this.number(null),
+      masterWordConcept: this.string(''),
       text: this.string(''),
       languageCode: this.string(''),
       audioUrl: this.string(null).nullable(),

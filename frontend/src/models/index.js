@@ -8,6 +8,7 @@ import { SessionConfig } from "./sessionConfig.js";
 import { Session } from "./session.js";
 import { SessionResult } from "./sessionResult.js";
 import { UserProgress } from "./userProgress.js";
+import { UserLanguage } from "./userLanguage.js";
 
 // Create ORM instance and register models
 export const orm = createORM({
@@ -20,7 +21,8 @@ export const orm = createORM({
     SessionConfig,
     Session,
     SessionResult,
-    UserProgress
+    UserProgress,
+    UserLanguage
   ],
 });
 
@@ -33,5 +35,6 @@ export {
   SessionConfig,
   Session,
   SessionResult,
-  UserProgress
+  UserProgress,
+  UserLanguage
 };

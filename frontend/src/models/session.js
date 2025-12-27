@@ -9,8 +9,8 @@ export class Session extends Model {
   static fields() {
     return {
       id: this.uid(),
-      configId: this.number(null),
-      userId: this.number(null),
+      configId: this.string(null),
+      userId: this.string(null),
       sourceLangCode: this.string(''),
       targetLangCode: this.string(''),
       domain: this.string(null).nullable(),

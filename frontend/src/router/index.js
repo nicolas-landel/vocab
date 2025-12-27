@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { useAuthStore } from '@/stores/auth'
+import HomeChildren from './home-children/children.js'
 
 const routes = [
   {
@@ -21,8 +22,7 @@ const routes = [
   },
   {
     path: '/',
-    name: 'Home',
-    component: () => import('@/views/Home.vue'),
+    children: HomeChildren,
     meta: { requiresAuth: true }
   },
   {
@@ -31,20 +31,6 @@ const routes = [
     component: () => import('@/views/ProfileView.vue'),
     meta: { requiresAuth: true }
   },
-  {
-    path: '/session/:id',
-    name: 'SessionActive',
-    component: () => import('@/views/SessionView.vue'),
-    props: true,
-    meta: { requiresAuth: true }
-  },
-  {
-    path: '/summary/:id',
-    name: 'Summary',
-    component: () => import('@/views/SummaryView.vue'),
-    props: true,
-    meta: { requiresAuth: true }
-  }
 ]
 
 const router = createRouter({

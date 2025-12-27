@@ -8,7 +8,7 @@ export class User extends Model {
       id: this.uid(),
       email: this.string(''),
       isActive: this.boolean(true),
-      nativeLanguage: this.string(null).nullable(),
+      nativeLanguage: this.string(""),
       learningLanguages: this.attr([]),
       createdAt: this.string(''),
       updatedAt: this.string('')

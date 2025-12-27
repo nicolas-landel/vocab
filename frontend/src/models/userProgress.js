@@ -8,8 +8,8 @@ export class UserProgress extends Model {
   static fields() {
     return {
       id: this.uid(),
-      userId: this.number(null),
-      translationId: this.number(null),
+      userId: this.string(null),
+      translationId: this.string(null),
       correctCount: this.number(0),
       incorrectCount: this.number(0),
       lastReviewed: this.string(''),

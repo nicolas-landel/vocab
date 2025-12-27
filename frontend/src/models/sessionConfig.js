@@ -8,7 +8,7 @@ export class SessionConfig extends Model {
   static fields() {
     return {
       id: this.uid(),
-      userId: this.number(null),
+      userId: this.string(null),
       nativeLanguage: this.string(''),
       languageTested: this.string(''),
       difficulty: this.string(null).nullable(),

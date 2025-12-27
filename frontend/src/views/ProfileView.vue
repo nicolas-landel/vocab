@@ -97,8 +97,8 @@
             </div>
 
             <!-- Add Language Form -->
-            <VDivider class="my-4"></VDivider>
-            <VRow align="center">
+            <VDivider v-if="availableLanguages.length" class="my-4"></VDivider>
+            <VRow v-if="availableLanguages.length" align="center">
               <VCol cols="12" sm="5">
                 <VSelect
                   v-model="newLanguage.languageCode"
@@ -149,19 +149,19 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
-import apiClient from "@/setup/axios"
-  import { debounce } from "lodash";
-
+import { useProfileStore } from '@/stores/profile'
+import { useVocabularyStore } from '@/stores/vocabulary'
+import { debounce } from 'lodash'
 
 const { t } = useI18n()
-const loading = ref(true)
-const profile = ref({
-  email: '',
-  fullName: '',
-  nativeLanguage: null
-})
-const userLanguages = ref([])
+const profileStore = useProfileStore()
+const vocabularyStore = useVocabularyStore()
+
+const loading = ref(false)
+const profile = computed(() => profileStore.profile)
+const userLanguages = computed(() => profileStore.getUserLanguage)
 const languages = ref([])
+
 const newLanguage = ref({
   languageCode: '',
   level: 'BEGINNER',
@@ -170,97 +170,64 @@ const newLanguage = ref({
 const successMessage = ref('')
 const errorMessage = ref('')
 
-const levels = ['BEGINNER', 'INTERMEDIATE', 'ADVANCED', 'NATIVE']
-
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
+const levels = ['BEGINNER', 'INTERMEDIATE', 'ADVANCED']
 
 const availableLanguages = computed(() => {
-  const userLangCodes = userLanguages.value.map(l => l.languageCode)
-  return languages.value.filter(lang => 
-    !userLangCodes.includes(lang.code) && lang.code !== profile.value.nativeLanguage
-  )
+  return profileStore.availableLanguages(languages.value)
 })
 
 const getLanguageName = (code) => {
-  const lang = languages.value.find(l => l.code === code)
-  return lang ? lang.name : code
-}
-
-const fetchProfile = async () => {
-  try {
-    const res = await apiClient.get('/api/v1/profile/')
-    profile.value = res.data
-    userLanguages.value = res.data.languages || []
-  } catch (e) {
-    errorMessage.value = t('profile.failedToLoad')
-    console.error('Failed to load profile:', e)
-  }
-}
-
-const fetchLanguages = async () => {
-  try {
-    const res = await apiClient.get('/api/v1/config/languages')
-    languages.value = res.data
-  } catch (e) {
-    console.error('Failed to load languages:', e)
-  }
+  return profileStore.getLanguageName(code, languages.value)
 }
 
 const updateProfile = async () => {
   try {
-    await apiClient.patch('/api/v1/profile/', {
+    await profileStore.updateProfile({
       nativeLanguage: profile.value.nativeLanguage,
       fullName: profile.value.fullName
     })
     successMessage.value = t('profile.updated')
   } catch (e) {
     errorMessage.value = t('profile.updateFailed')
-    console.error('Failed to update profile:', e)
   }
 }
 
-// Create debounced version once
 const debouncedUpdateProfile = debounce(updateProfile, 400)
 
 const addLanguage = async () => {
   try {
-    const res = await apiClient.post('/api/v1/profile/languages', newLanguage.value)
-    userLanguages.value.push(res.data)
+    await profileStore.addLanguage(newLanguage.value)
     newLanguage.value = { languageCode: '', level: 'BEGINNER', isLearning: true }
     successMessage.value = t('profile.languageAdded')
   } catch (e) {
-    errorMessage.value = e.response?.data?.detail || t('profile.addFailed')
-    console.error('Failed to add language:', e)
+    errorMessage.value = profileStore.error || t('profile.addFailed')
   }
 }
 
 const updateLanguage = async (lang) => {
   try {
-    await apiClient.patch(`/api/v1/profile/languages/${lang.languageCode}`, {
+    await profileStore.updateLanguage(lang.languageCode, {
       level: lang.level,
       isLearning: lang.isLearning
     })
     successMessage.value = t('profile.languageUpdated')
   } catch (e) {
     errorMessage.value = t('profile.updateFailed')
-    console.error('Failed to update language:', e)
   }
 }
 
 const deleteLanguage = async (languageCode) => {
   try {
-    await apiClient.delete(`/api/v1/profile/languages/${languageCode}`)
-    userLanguages.value = userLanguages.value.filter(l => l.languageCode !== languageCode)
+    await profileStore.deleteLanguage(languageCode)
     successMessage.value = t('profile.languageDeleted')
   } catch (e) {
     errorMessage.value = t('profile.deleteFailed')
-    console.error('Failed to delete language:', e)
   }
 }
 
 onMounted(async () => {
-  loading.value = true
-  await Promise.all([fetchProfile(), fetchLanguages()])
-  loading.value = false
+  await vocabularyStore.fetchLanguages()
+  languages.value = vocabularyStore.languages
+  await profileStore.fetchProfile()
 })
 </script>

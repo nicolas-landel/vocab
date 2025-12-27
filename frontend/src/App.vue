@@ -126,9 +126,8 @@ const drawer = ref(false)
 // Watch for native language changes and update i18n locale
 watch(nativeLanguage, (newLang) => {
   locale.value = newLang
-  // Save to localStorage for persistence
   localStorage.setItem('appLanguage', newLang)
-  authStore.setUserLanguage(newLang)
+  authStore.setAppLanguage(newLang)
 }, { immediate: true })
 
 const activeTab = computed(() => {

@@ -6,13 +6,13 @@ export const useAuthStore = defineStore('auth', {
     user: null,
     token: localStorage.getItem('access_token') || null,
     isAuthenticated: false,
-    userLanguage: 'en'
+    appLanguage: 'en'
   }),
 
   getters: {
     isLoggedIn: (state) => !!state.token && !!state.user,
     currentUser: (state) => state.user,
-    getUserLanguage: (state) => state.userLanguage
+    getAppLanguage: (state) => state.appLanguage
   },
 
   actions: {
@@ -63,8 +63,8 @@ export const useAuthStore = defineStore('auth', {
         }
       }
     },
-    setUserLanguage(languageCode) {
-      this.userLanguage = languageCode
+    setAppLanguage(languageCode) {
+      this.appLanguage = languageCode
     }
   }
 })
