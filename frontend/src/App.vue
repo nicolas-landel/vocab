@@ -1,5 +1,6 @@
 <template>
   <VApp>
+    <AppNotification />
     <VAppBar color="primary" elevation="0">
       <VAppBarNavIcon @click="drawer = !drawer" class="d-md-none"></VAppBarNavIcon>
       
@@ -110,8 +111,9 @@
 import { ref, computed, onMounted, watch } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
-import { useVocabularyStore } from './stores/vocabulary'
-import { useAuthStore } from './stores/auth'
+import { useVocabularyStore } from '@/stores/vocabulary'
+import { useAuthStore } from '@/stores/auth'
+import AppNotification from '@/components/AppNotification.vue'
 
 const { t, locale } = useI18n()
 const router = useRouter()
