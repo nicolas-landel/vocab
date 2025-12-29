@@ -1,0 +1,225 @@
+[
+  {
+    "concept": "sun",
+    "language_code": "es",
+    "text": "sol",
+    "gender": "m",
+    "sentence_example": "El sol está brillando."
+  },
+  {
+    "concept": "moon",
+    "language_code": "es",
+    "text": "luna",
+    "gender": "f",
+    "sentence_example": "Mira la luna esta noche."
+  },
+  {
+    "concept": "star",
+    "language_code": "es",
+    "text": "estrella",
+    "gender": "f",
+    "plural_text": "estrellas",
+    "sentence_example": "Vi una estrella fugaz."
+  },
+  {
+    "concept": "sky",
+    "language_code": "es",
+    "text": "cielo",
+    "gender": "m",
+    "sentence_example": "El cielo es azul."
+  },
+  {
+    "concept": "tree",
+    "language_code": "es",
+    "text": "árbol",
+    "gender": "m",
+    "plural_text": "árboles",
+    "sentence_example": "El árbol es muy alto."
+  },
+  {
+    "concept": "flower",
+    "language_code": "es",
+    "text": "flor",
+    "gender": "f",
+    "plural_text": "flores",
+    "sentence_example": "Esta flor huele bien."
+  },
+  {
+    "concept": "grass",
+    "language_code": "es",
+    "text": "hierba",
+    "gender": "f",
+    "sentence_example": "No pise la hierba."
+  },
+  {
+    "concept": "water",
+    "language_code": "es",
+    "text": "agua",
+    "gender": "f",
+    "sentence_example": "Beba mucha agua."
+  },
+  {
+    "concept": "rain",
+    "language_code": "es",
+    "text": "lluvia",
+    "gender": "f",
+    "sentence_example": "Me gusta el sonido de la lluvia."
+  },
+  {
+    "concept": "wind",
+    "language_code": "es",
+    "text": "viento",
+    "gender": "m",
+    "sentence_example": "El viento sopla fuerte."
+  },
+  {
+    "concept": "river",
+    "language_code": "es",
+    "text": "río",
+    "gender": "m",
+    "plural_text": "ríos",
+    "sentence_example": "El río fluye hacia el mar."
+  },
+  {
+    "concept": "mountain",
+    "language_code": "es",
+    "text": "montaña",
+    "gender": "f",
+    "plural_text": "montañas",
+    "sentence_example": "Escalar la montaña es difícil."
+  },
+  {
+    "concept": "ocean",
+    "language_code": "es",
+    "text": "océano",
+    "gender": "m",
+    "plural_text": "océanos",
+    "sentence_example": "El océano es vasto."
+  },
+  {
+    "concept": "forest",
+    "language_code": "es",
+    "text": "bosque",
+    "gender": "m",
+    "plural_text": "bosques",
+    "sentence_example": "Los animales viven en el bosque."
+  },
+  {
+    "concept": "desert",
+    "language_code": "es",
+    "text": "desierto",
+    "gender": "m",
+    "plural_text": "desiertos",
+    "sentence_example": "El desierto es seco."
+  },
+  {
+    "concept": "season",
+    "language_code": "es",
+    "text": "estación",
+    "gender": "f",
+    "plural_text": "estaciones",
+    "sentence_example": "Mi estación favorita es el verano."
+  },
+  {
+    "concept": "climate",
+    "language_code": "es",
+    "text": "clima",
+    "gender": "m",
+    "sentence_example": "El clima está cambiando."
+  },
+  {
+    "concept": "animal",
+    "language_code": "es",
+    "text": "animal",
+    "gender": "m",
+    "plural_text": "animales",
+    "sentence_example": "El zoológico tiene muchos animales."
+  },
+  {
+    "concept": "plant",
+    "language_code": "es",
+    "text": "planta",
+    "gender": "f",
+    "plural_text": "plantas",
+    "sentence_example": "Riega la planta regularmente."
+  },
+  {
+    "concept": "earth",
+    "language_code": "es",
+    "text": "tierra",
+    "gender": "f",
+    "sentence_example": "Vivimos en la Tierra."
+  },
+  {
+    "concept": "ecosystem",
+    "language_code": "es",
+    "text": "ecosistema",
+    "gender": "m",
+    "plural_text": "ecosistemas",
+    "sentence_example": "El ecosistema es frágil."
+  },
+  {
+    "concept": "biodiversity",
+    "language_code": "es",
+    "text": "biodiversidad",
+    "gender": "f",
+    "sentence_example": "La biodiversidad es importante para la naturaleza."
+  },
+  {
+    "concept": "pollution",
+    "language_code": "es",
+    "text": "contaminación",
+    "gender": "f",
+    "sentence_example": "La contaminación daña el medio ambiente."
+  },
+  {
+    "concept": "atmosphere",
+    "language_code": "es",
+    "text": "atmósfera",
+    "gender": "f",
+    "sentence_example": "La atmósfera nos protege."
+  },
+  {
+    "concept": "geology",
+    "language_code": "es",
+    "text": "geología",
+    "gender": "f",
+    "sentence_example": "Estudie la geología del área."
+  },
+  {
+    "concept": "photosynthesis",
+    "language_code": "es",
+    "text": "fotosíntesis",
+    "gender": "f",
+    "sentence_example": "Las plantas usan la fotosíntesis para hacer comida."
+  },
+  {
+    "concept": "erosion",
+    "language_code": "es",
+    "text": "erosión",
+    "gender": "f",
+    "sentence_example": "La erosión cambia el paisaje."
+  },
+  {
+    "concept": "conservation",
+    "language_code": "es",
+    "text": "conservación",
+    "gender": "f",
+    "sentence_example": "La conservación de la naturaleza es vital."
+  },
+  {
+    "concept": "sustainability",
+    "language_code": "es",
+    "text": "sostenibilidad",
+    "gender": "f",
+    "sentence_example": "La sostenibilidad asegura recursos para el futuro."
+  },
+  {
+    "concept": "habitat",
+    "language_code": "es",
+    "text": "hábitat",
+    "gender": "m",
+    "plural_text": "hábitats",
+    "sentence_example": "Protege el hábitat del animal."
+  }
+]

@@ -1,1 +1,182 @@
-[]
+[
+  {
+    "concept": "shop",
+    "language_code": "en",
+    "text": "shop",
+    "sentence_example": "I went to the shop."
+  },
+  {
+    "concept": "money",
+    "language_code": "en",
+    "text": "money",
+    "sentence_example": "I have no money."
+  },
+  {
+    "concept": "price",
+    "language_code": "en",
+    "text": "price",
+    "sentence_example": "What is the price?"
+  },
+  {
+    "concept": "to_buy",
+    "language_code": "en",
+    "text": "to buy",
+    "sentence_example": "I want to buy a shirt."
+  },
+  {
+    "concept": "to_sell",
+    "language_code": "en",
+    "text": "to sell",
+    "sentence_example": "He wants to sell his car."
+  },
+  {
+    "concept": "market",
+    "language_code": "en",
+    "text": "market",
+    "sentence_example": "Fresh fruit at the market."
+  },
+  {
+    "concept": "bag",
+    "language_code": "en",
+    "text": "bag",
+    "sentence_example": "Put it in the bag."
+  },
+  {
+    "concept": "cheap",
+    "language_code": "en",
+    "text": "cheap",
+    "sentence_example": "This is very cheap."
+  },
+  {
+    "concept": "expensive",
+    "language_code": "en",
+    "text": "expensive",
+    "sentence_example": "That watch is expensive."
+  },
+  {
+    "concept": "cash",
+    "language_code": "en",
+    "text": "cash",
+    "sentence_example": "Pay with cash."
+  },
+  {
+    "concept": "store",
+    "language_code": "en",
+    "text": "store",
+    "sentence_example": "The store is closed."
+  },
+  {
+    "concept": "mall",
+    "language_code": "en",
+    "text": "mall",
+    "sentence_example": "Let's go to the mall."
+  },
+  {
+    "concept": "customer",
+    "language_code": "en",
+    "text": "customer",
+    "sentence_example": "The customer is always right."
+  },
+  {
+    "concept": "sale",
+    "language_code": "en",
+    "text": "sale",
+    "sentence_example": "It is on sale."
+  },
+  {
+    "concept": "discount",
+    "language_code": "en",
+    "text": "discount",
+    "sentence_example": "Is there a discount?"
+  },
+  {
+    "concept": "credit_card",
+    "language_code": "en",
+    "text": "credit card",
+    "sentence_example": "I pay with credit card."
+  },
+  {
+    "concept": "receipt",
+    "language_code": "en",
+    "text": "receipt",
+    "sentence_example": "Keep the receipt."
+  },
+  {
+    "concept": "wallet",
+    "language_code": "en",
+    "text": "wallet",
+    "sentence_example": "I lost my wallet."
+  },
+  {
+    "concept": "to_pay",
+    "language_code": "en",
+    "text": "to pay",
+    "sentence_example": "Who will pay?"
+  },
+  {
+    "concept": "to_spend",
+    "language_code": "en",
+    "text": "to spend",
+    "sentence_example": "Don't spend too much."
+  },
+  {
+    "concept": "bargain",
+    "language_code": "en",
+    "text": "bargain",
+    "sentence_example": "This is a real bargain."
+  },
+  {
+    "concept": "purchase",
+    "language_code": "en",
+    "text": "purchase",
+    "sentence_example": "Thank you for your purchase."
+  },
+  {
+    "concept": "refund",
+    "language_code": "en",
+    "text": "refund",
+    "sentence_example": "Can I get a refund?"
+  },
+  {
+    "concept": "warranty",
+    "language_code": "en",
+    "text": "warranty",
+    "sentence_example": "It is under warranty."
+  },
+  {
+    "concept": "delivery",
+    "language_code": "en",
+    "text": "delivery",
+    "sentence_example": "Free delivery."
+  },
+  {
+    "concept": "brand",
+    "language_code": "en",
+    "text": "brand",
+    "sentence_example": "I like this brand."
+  },
+  {
+    "concept": "quality",
+    "language_code": "en",
+    "text": "quality",
+    "sentence_example": "Good quality."
+  },
+  {
+    "concept": "luxury",
+    "language_code": "en",
+    "text": "luxury",
+    "sentence_example": "Luxury goods are expensive."
+  },
+  {
+    "concept": "to_afford",
+    "language_code": "en",
+    "text": "to afford",
+    "sentence_example": "I can't afford it."
+  },
+  {
+    "concept": "to_exchange",
+    "language_code": "en",
+    "text": "to exchange",
+    "sentence_example": "I want to exchange this."
+  }
+]

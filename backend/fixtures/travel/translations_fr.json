@@ -1,18 +1,227 @@
 [
   {
+    "concept": "car",
+    "language_code": "fr",
+    "text": "voiture",
+    "gender": "f",
+    "plural_text": "voitures",
+    "sentence_example": "Je conduis une voiture."
+  },
+  {
+    "concept": "bus",
+    "language_code": "fr",
+    "text": "bus",
+    "gender": "m",
+    "plural_text": "bus",
+    "sentence_example": "Prends le bus."
+  },
+  {
     "concept": "train",
     "language_code": "fr",
     "text": "train",
-    "gender": "masculine",
+    "gender": "m",
     "plural_text": "trains",
-    "sentence_example": "Le train arrive à midi."
+    "sentence_example": "Le train est rapide."
+  },
+  {
+    "concept": "plane",
+    "language_code": "fr",
+    "text": "avion",
+    "gender": "m",
+    "plural_text": "avions",
+    "sentence_example": "Je vole en avion."
+  },
+  {
+    "concept": "hotel",
+    "language_code": "fr",
+    "text": "hôtel",
+    "gender": "m",
+    "plural_text": "hôtels",
+    "sentence_example": "Nous restons à l'hôtel."
+  },
+  {
+    "concept": "ticket",
+    "language_code": "fr",
+    "text": "billet",
+    "gender": "m",
+    "plural_text": "billets",
+    "sentence_example": "Achète un billet."
+  },
+  {
+    "concept": "passport",
+    "language_code": "fr",
+    "text": "passeport",
+    "gender": "m",
+    "plural_text": "passeports",
+    "sentence_example": "Montrez votre passeport."
+  },
+  {
+    "concept": "bag",
+    "language_code": "fr",
+    "text": "sac",
+    "gender": "m",
+    "plural_text": "sacs",
+    "sentence_example": "Fais ton sac."
+  },
+  {
+    "concept": "map",
+    "language_code": "fr",
+    "text": "carte",
+    "gender": "f",
+    "plural_text": "cartes",
+    "sentence_example": "Regarde la carte."
+  },
+  {
+    "concept": "to_travel",
+    "language_code": "fr",
+    "text": "voyager",
+    "sentence_example": "J'aime voyager."
   },
   {
     "concept": "airport",
     "language_code": "fr",
     "text": "aéroport",
-    "gender": "masculine",
+    "gender": "m",
     "plural_text": "aéroports",
-    "sentence_example": "L'aéroport est loin."
+    "sentence_example": "Va à l'aéroport."
+  },
+  {
+    "concept": "station",
+    "language_code": "fr",
+    "text": "gare",
+    "gender": "f",
+    "plural_text": "gares",
+    "sentence_example": "Rejoignez-moi à la gare."
+  },
+  {
+    "concept": "luggage",
+    "language_code": "fr",
+    "text": "bagages",
+    "gender": "m",
+    "sentence_example": "Où sont mes bagages ?"
+  },
+  {
+    "concept": "tourist",
+    "language_code": "fr",
+    "text": "touriste",
+    "gender": "m",
+    "plural_text": "touristes",
+    "sentence_example": "C'est un touriste."
+  },
+  {
+    "concept": "vacation",
+    "language_code": "fr",
+    "text": "vacances",
+    "gender": "f",
+    "sentence_example": "Nous sommes en vacances."
+  },
+  {
+    "concept": "trip",
+    "language_code": "fr",
+    "text": "voyage",
+    "gender": "m",
+    "plural_text": "voyages",
+    "sentence_example": "Bon voyage."
+  },
+  {
+    "concept": "beach",
+    "language_code": "fr",
+    "text": "plage",
+    "gender": "f",
+    "plural_text": "plages",
+    "sentence_example": "Allons à la plage."
+  },
+  {
+    "concept": "mountain",
+    "language_code": "fr",
+    "text": "montagne",
+    "gender": "f",
+    "plural_text": "montagnes",
+    "sentence_example": "J'aime l'escalade en montagne."
+  },
+  {
+    "concept": "to_visit",
+    "language_code": "fr",
+    "text": "visiter",
+    "sentence_example": "Je veux visiter Paris."
+  },
+  {
+    "concept": "to_arrive",
+    "language_code": "fr",
+    "text": "arriver",
+    "sentence_example": "Quand arrivons-nous ?"
+  },
+  {
+    "concept": "customs",
+    "language_code": "fr",
+    "text": "douane",
+    "gender": "f",
+    "sentence_example": "Passez la douane."
+  },
+  {
+    "concept": "visa",
+    "language_code": "fr",
+    "text": "visa",
+    "gender": "m",
+    "plural_text": "visas",
+    "sentence_example": "J'ai besoin d'un visa."
+  },
+  {
+    "concept": "flight",
+    "language_code": "fr",
+    "text": "vol",
+    "gender": "m",
+    "plural_text": "vols",
+    "sentence_example": "Mon vol a été retardé."
+  },
+  {
+    "concept": "passenger",
+    "language_code": "fr",
+    "text": "passager",
+    "gender": "m",
+    "plural_text": "passagers",
+    "sentence_example": "Le passager dort."
+  },
+  {
+    "concept": "accommodation",
+    "language_code": "fr",
+    "text": "logement",
+    "gender": "m",
+    "sentence_example": "Nous avons trouvé un logement bon marché."
+  },
+  {
+    "concept": "itinerary",
+    "language_code": "fr",
+    "text": "itinéraire",
+    "gender": "m",
+    "plural_text": "itinéraires",
+    "sentence_example": "Vérifiez l'itinéraire."
+  },
+  {
+    "concept": "reservation",
+    "language_code": "fr",
+    "text": "réservation",
+    "gender": "f",
+    "plural_text": "réservations",
+    "sentence_example": "Faites une réservation."
+  },
+  {
+    "concept": "foreign",
+    "language_code": "fr",
+    "text": "étranger",
+    "sentence_example": "Il parle une langue étrangère."
+  },
+  {
+    "concept": "culture_shock",
+    "language_code": "fr",
+    "text": "choc culturel",
+    "gender": "m",
+    "sentence_example": "Elle a vécu un choc culturel."
+  },
+  {
+    "concept": "to_depart",
+    "language_code": "fr",
+    "text": "partir",
+    "sentence_example": "Le train est sur le point de partir."
   }
 ]

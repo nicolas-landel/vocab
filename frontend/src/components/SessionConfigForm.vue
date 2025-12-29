@@ -76,6 +76,7 @@ import { useVocabularyStore } from '@/stores/vocabulary'
 import { useAuthStore } from '@/stores/auth'
 import { UserLanguage } from "@/models"
 import { useRepo } from 'pinia-orm'
+import { useNotificationsStore } from '@/stores/notification'
 
 
 const { t } = useI18n()
@@ -85,6 +86,7 @@ const sessionStore = useSessionStore()
 const vocabularyStore = useVocabularyStore()
 const authStore = useAuthStore()
 const userLanguageRepo = useRepo(UserLanguage)
+const notificationsStore = useNotificationsStore()
 
 const formRef = ref(null)
 const loading = ref(false)
@@ -94,7 +96,7 @@ const config = ref({
   languageTested: '',
   domain: null,
   difficulty: '',
-  sessionType: 'comprehension'
+  sessionType: 'MIXED'
 })
 
 const languages = ref([])
@@ -110,7 +112,7 @@ const translatedDomains = computed(() =>
   domains.value.map(domain => ({
     label: t(`domains.${domain.code}`),
     value: domain.code
-  }))
+  })).concat({ label: t('domains.all'), value: 'ALL' })
 )
 
 const sessionTypes = computed(() => [
@@ -124,37 +126,57 @@ const userAppLanguage = computed(() => {
     return savedLanguage || 'en'
 })
 
+const availableTestLanguages = computed(() => {
+  const nativeLang = config.value.nativeLanguage
+  const userLanguages = userLanguageRepo.query().all()
+  console.log('User languages from repo:', userLanguages)
+  // Prefer user's learning languages
+  if (userLanguages.length > 0) {
+    return userLanguages
+      .filter(lang => lang.languageCode !== nativeLang)
+      .map(lang => ({
+        code: lang.languageCode,
+        name: vocabularyStore.getLanguageName(lang.languageCode)
+      }))
+  }
+  
+  // Fallback to all available languages
+  const allLanguages = vocabularyStore.languages || []
+  return allLanguages.filter(lang => lang.code !== nativeLang)
+})
+
 watch(
   () => userAppLanguage.value,
   (newLang) => {
     config.value.nativeLanguage = newLang
-    const userLanguages = userLanguageRepo.query().all()
-    if (userLanguages.length > 0) {
-      languages.value = userLanguages
-        .filter(lang => lang.languageCode !== config.value.nativeLanguage)
-        .map(lang => ({
-          code: lang.languageCode,
-          name: vocabularyStore.getLanguageName(lang.languageCode)
-        }))
-      if (config.value.languageTested === config.value.nativeLanguage || !config.value.languageTested) {
-        config.value.languageTested = languages.value.length > 0 ? languages.value[0].code : ''
-      }
-    } else {
-      languages.value = vocabularyStore.languages
-        .filter(lang => lang.code !== config.value.nativeLanguage)
-      if (config.value.languageTested === config.value.nativeLanguage || !config.value.languageTested) {
-        config.value.languageTested = languages.value.length > 0 ? languages.value[0].code : ''
-      }
+    
+    // Auto-select first available language if current selection is invalid
+    if (config.value.languageTested === config.value.nativeLanguage || 
+        !config.value.languageTested ||
+        !availableTestLanguages.value.find(l => l.code === config.value.languageTested)) {
+      config.value.languageTested = availableTestLanguages.value.length > 0 
+        ? availableTestLanguages.value[0].code 
+        : ''
     }
-
   },
   { immediate: true }
+)
+
+watch(
+  () => availableTestLanguages.value,
+  (newLanguages) => {
+    languages.value = newLanguages
+    
+    // Update selected language if it's no longer available
+    if (!newLanguages.find(l => l.code === config.value.languageTested)) {
+      config.value.languageTested = newLanguages.length > 0 ? newLanguages[0].code : ''
+    }
+  }, { immediate: true }
 )
 
 const startSession = async () => {
   const { valid } = await formRef.value.validate()
   if (!valid) return
-
   loading.value = true
   try {
     const sessionConfig = await sessionStore.createSessionConfig(config.value)
@@ -162,7 +184,11 @@ const startSession = async () => {
     emit('start-session', session.id)
   } catch (error) {
     console.error(t('sessionConfig.failedToStart'), error)
-    alert(t('sessionConfig.failedToStart'))
+    notificationsStore.notify({
+      title: t('sessionConfig.errorTitle'),
+      message: t('sessionConfig.failedToStart'),
+      type: 'error'
+    })
   } finally {
     loading.value = false
   }

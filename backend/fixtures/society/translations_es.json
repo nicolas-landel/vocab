@@ -1,0 +1,224 @@
+[
+  {
+    "concept": "country",
+    "language_code": "es",
+    "text": "país",
+    "gender": "m",
+    "plural_text": "países",
+    "sentence_example": "Amo a mi país."
+  },
+  {
+    "concept": "city",
+    "language_code": "es",
+    "text": "ciudad",
+    "gender": "f",
+    "plural_text": "ciudades",
+    "sentence_example": "Nueva York es una gran ciudad."
+  },
+  {
+    "concept": "people",
+    "language_code": "es",
+    "text": "gente",
+    "gender": "f",
+    "sentence_example": "Hay mucha gente aquí."
+  },
+  {
+    "concept": "money",
+    "language_code": "es",
+    "text": "dinero",
+    "gender": "m",
+    "sentence_example": "El tiempo es dinero."
+  },
+  {
+    "concept": "work",
+    "language_code": "es",
+    "text": "trabajo",
+    "gender": "m",
+    "sentence_example": "Voy al trabajo todos los días."
+  },
+  {
+    "concept": "school",
+    "language_code": "es",
+    "text": "escuela",
+    "gender": "f",
+    "plural_text": "escuelas",
+    "sentence_example": "Los niños van a la escuela."
+  },
+  {
+    "concept": "law",
+    "language_code": "es",
+    "text": "ley",
+    "gender": "f",
+    "plural_text": "leyes",
+    "sentence_example": "Debemos obedecer la ley."
+  },
+  {
+    "concept": "government",
+    "language_code": "es",
+    "text": "gobierno",
+    "gender": "m",
+    "plural_text": "gobiernos",
+    "sentence_example": "El gobierno hace las leyes."
+  },
+  {
+    "concept": "culture",
+    "language_code": "es",
+    "text": "cultura",
+    "gender": "f",
+    "plural_text": "culturas",
+    "sentence_example": "Cada país tiene su propia cultura."
+  },
+  {
+    "concept": "community",
+    "language_code": "es",
+    "text": "comunidad",
+    "gender": "f",
+    "plural_text": "comunidades",
+    "sentence_example": "Tenemos una comunidad fuerte."
+  },
+  {
+    "concept": "history",
+    "language_code": "es",
+    "text": "historia",
+    "gender": "f",
+    "sentence_example": "La historia nos enseña sobre el pasado."
+  },
+  {
+    "concept": "tradition",
+    "language_code": "es",
+    "text": "tradición",
+    "gender": "f",
+    "plural_text": "tradiciones",
+    "sentence_example": "Es una tradición familiar."
+  },
+  {
+    "concept": "security",
+    "language_code": "es",
+    "text": "seguridad",
+    "gender": "f",
+    "sentence_example": "La seguridad nacional es importante."
+  },
+  {
+    "concept": "justice",
+    "language_code": "es",
+    "text": "justicia",
+    "gender": "f",
+    "sentence_example": "Exigimos justicia."
+  },
+  {
+    "concept": "business",
+    "language_code": "es",
+    "text": "negocio",
+    "gender": "m",
+    "plural_text": "negocios",
+    "sentence_example": "Él dirige un pequeño negocio."
+  },
+  {
+    "concept": "politics",
+    "language_code": "es",
+    "text": "política",
+    "gender": "f",
+    "sentence_example": "La política puede ser complicada."
+  },
+  {
+    "concept": "democracy",
+    "language_code": "es",
+    "text": "democracia",
+    "gender": "f",
+    "sentence_example": "Votar es parte de la democracia."
+  },
+  {
+    "concept": "economy",
+    "language_code": "es",
+    "text": "economía",
+    "gender": "f",
+    "sentence_example": "La economía está creciendo."
+  },
+  {
+    "concept": "religion",
+    "language_code": "es",
+    "text": "religión",
+    "gender": "f",
+    "plural_text": "religiones",
+    "sentence_example": "La libertad de religión es un derecho."
+  },
+  {
+    "concept": "education",
+    "language_code": "es",
+    "text": "educación",
+    "gender": "f",
+    "sentence_example": "La educación es la clave del éxito."
+  },
+  {
+    "concept": "welfare",
+    "language_code": "es",
+    "text": "bienestar",
+    "gender": "m",
+    "sentence_example": "El bienestar social ayuda a los pobres."
+  },
+  {
+    "concept": "citizen",
+    "language_code": "es",
+    "text": "ciudadano",
+    "gender": "m",
+    "plural_text": "ciudadanos",
+    "sentence_example": "Todo ciudadano tiene derechos."
+  },
+  {
+    "concept": "equality",
+    "language_code": "es",
+    "text": "igualdad",
+    "gender": "f",
+    "sentence_example": "Luchamos por la igualdad."
+  },
+  {
+    "concept": "freedom",
+    "language_code": "es",
+    "text": "libertad",
+    "gender": "f",
+    "sentence_example": "La libertad conlleva responsabilidad."
+  },
+  {
+    "concept": "poverty",
+    "language_code": "es",
+    "text": "pobreza",
+    "gender": "f",
+    "sentence_example": "Debemos acabar con la pobreza."
+  },
+  {
+    "concept": "tax",
+    "language_code": "es",
+    "text": "impuesto",
+    "gender": "m",
+    "plural_text": "impuestos",
+    "sentence_example": "Todos tienen que pagar impuestos."
+  },
+  {
+    "concept": "election",
+    "language_code": "es",
+    "text": "elección",
+    "gender": "f",
+    "plural_text": "elecciones",
+    "sentence_example": "La elección es la próxima semana."
+  },
+  {
+    "concept": "policy",
+    "language_code": "es",
+    "text": "política",
+    "gender": "f",
+    "plural_text": "políticas",
+    "sentence_example": "La empresa tiene una nueva política."
+  },
+  {
+    "concept": "urban",
+    "language_code": "es",
+    "text": "urbano",
+    "sentence_example": "Las áreas urbanas están llenas de gente."
+  },
+  {
+    "concept": "rural",
+    "language_code": "es",
+    "text": "rural",
+    "sentence_example": "La vida rural es tranquila."
+  }
+]

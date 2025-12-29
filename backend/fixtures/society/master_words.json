@@ -1,0 +1,212 @@
+[
+  {
+    "concept": "country",
+    "domain_code": "society",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "city",
+    "domain_code": "society",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "people",
+    "domain_code": "society",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "money",
+    "domain_code": "society",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "work",
+    "domain_code": "society",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "school",
+    "domain_code": "society",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "law",
+    "domain_code": "society",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "government",
+    "domain_code": "society",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "culture",
+    "domain_code": "society",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "community",
+    "domain_code": "society",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "history",
+    "domain_code": "society",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "tradition",
+    "domain_code": "society",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "security",
+    "domain_code": "society",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "justice",
+    "domain_code": "society",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "business",
+    "domain_code": "society",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "politics",
+    "domain_code": "society",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "democracy",
+    "domain_code": "society",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "economy",
+    "domain_code": "society",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "religion",
+    "domain_code": "society",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "education",
+    "domain_code": "society",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "welfare",
+    "domain_code": "society",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "citizen",
+    "domain_code": "society",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "equality",
+    "domain_code": "society",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "freedom",
+    "domain_code": "society",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "poverty",
+    "domain_code": "society",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "tax",
+    "domain_code": "society",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "election",
+    "domain_code": "society",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "policy",
+    "domain_code": "society",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "urban",
+    "domain_code": "society",
+    "difficulty": "HARD",
+    "word_type": "ADJECTIVE",
+    "image_url": null
+  },
+  {
+    "concept": "rural",
+    "domain_code": "society",
+    "difficulty": "HARD",
+    "word_type": "ADJECTIVE",
+    "image_url": null
+  }
+]

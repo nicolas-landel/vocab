@@ -3,30 +3,210 @@
     "concept": "mother",
     "domain_code": "family",
     "difficulty": "EASY",
-    "word_type": "NOUN"
+    "word_type": "NOUN",
+    "image_url": null
   },
   {
     "concept": "father",
     "domain_code": "family",
     "difficulty": "EASY",
-    "word_type": "NOUN"
+    "word_type": "NOUN",
+    "image_url": null
   },
   {
     "concept": "brother",
     "domain_code": "family",
     "difficulty": "EASY",
-    "word_type": "NOUN"
+    "word_type": "NOUN",
+    "image_url": null
   },
   {
     "concept": "sister",
     "domain_code": "family",
     "difficulty": "EASY",
-    "word_type": "NOUN"
+    "word_type": "NOUN",
+    "image_url": null
   },
   {
     "concept": "child",
     "domain_code": "family",
     "difficulty": "EASY",
-    "word_type": "NOUN"
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "son",
+    "domain_code": "family",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "daughter",
+    "domain_code": "family",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "parent",
+    "domain_code": "family",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "baby",
+    "domain_code": "family",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "friend",
+    "domain_code": "family",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "grandmother",
+    "domain_code": "family",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "grandfather",
+    "domain_code": "family",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "aunt",
+    "domain_code": "family",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "uncle",
+    "domain_code": "family",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "cousin",
+    "domain_code": "family",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "husband",
+    "domain_code": "family",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "wife",
+    "domain_code": "family",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "wedding",
+    "domain_code": "family",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "nephew",
+    "domain_code": "family",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "niece",
+    "domain_code": "family",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "grandchild",
+    "domain_code": "family",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "stepfather",
+    "domain_code": "family",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "stepmother",
+    "domain_code": "family",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "mother_in_law",
+    "domain_code": "family",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "father_in_law",
+    "domain_code": "family",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "relative",
+    "domain_code": "family",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "orphan",
+    "domain_code": "family",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "ancestor",
+    "domain_code": "family",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "generation",
+    "domain_code": "family",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "relationship",
+    "domain_code": "family",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
   }
 ]

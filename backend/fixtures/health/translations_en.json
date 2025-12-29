@@ -1,27 +1,182 @@
 [
   {
+    "concept": "doctor",
     "language_code": "en",
     "text": "doctor",
-    "concept": "doctor"
+    "sentence_example": "The doctor is nice."
   },
   {
-    "language_code": "en",
-    "text": "medicine",
-    "concept": "medicine"
-  },
-  {
+    "concept": "hospital",
     "language_code": "en",
     "text": "hospital",
-    "concept": "hospital"
+    "sentence_example": "The hospital is large."
   },
   {
+    "concept": "medicine",
     "language_code": "en",
-    "text": "body",
-    "concept": "body"
+    "text": "medicine",
+    "sentence_example": "Take your medicine."
   },
   {
+    "concept": "sick",
     "language_code": "en",
     "text": "sick",
-    "concept": "sick"
+    "sentence_example": "I feel sick."
+  },
+  {
+    "concept": "head",
+    "language_code": "en",
+    "text": "head",
+    "sentence_example": "My head hurts."
+  },
+  {
+    "concept": "body",
+    "language_code": "en",
+    "text": "body",
+    "sentence_example": "Exercise is good for the body."
+  },
+  {
+    "concept": "hand",
+    "language_code": "en",
+    "text": "hand",
+    "sentence_example": "Wash your hands."
+  },
+  {
+    "concept": "leg",
+    "language_code": "en",
+    "text": "leg",
+    "sentence_example": "He broke his leg."
+  },
+  {
+    "concept": "eye",
+    "language_code": "en",
+    "text": "eye",
+    "sentence_example": "Close your eyes."
+  },
+  {
+    "concept": "mouth",
+    "language_code": "en",
+    "text": "mouth",
+    "sentence_example": "Open your mouth."
+  },
+  {
+    "concept": "nurse",
+    "language_code": "en",
+    "text": "nurse",
+    "sentence_example": "The nurse helped me."
+  },
+  {
+    "concept": "pharmacy",
+    "language_code": "en",
+    "text": "pharmacy",
+    "sentence_example": "Go to the pharmacy."
+  },
+  {
+    "concept": "headache",
+    "language_code": "en",
+    "text": "headache",
+    "sentence_example": "I have a headache."
+  },
+  {
+    "concept": "stomach",
+    "language_code": "en",
+    "text": "stomach",
+    "sentence_example": "My stomach is full."
+  },
+  {
+    "concept": "heart",
+    "language_code": "en",
+    "text": "heart",
+    "sentence_example": "My heart is beating fast."
+  },
+  {
+    "concept": "fever",
+    "language_code": "en",
+    "text": "fever",
+    "sentence_example": "He has a high fever."
+  },
+  {
+    "concept": "pain",
+    "language_code": "en",
+    "text": "pain",
+    "sentence_example": "I feel pain in my back."
+  },
+  {
+    "concept": "blood",
+    "language_code": "en",
+    "text": "blood",
+    "sentence_example": "Blood is red."
+  },
+  {
+    "concept": "dentist",
+    "language_code": "en",
+    "text": "dentist",
+    "sentence_example": "I have an appointment with the dentist."
+  },
+  {
+    "concept": "to_hurt",
+    "language_code": "en",
+    "text": "to hurt",
+    "sentence_example": "Does it hurt?"
+  },
+  {
+    "concept": "surgery",
+    "language_code": "en",
+    "text": "surgery",
+    "sentence_example": "She needs surgery."
+  },
+  {
+    "concept": "disease",
+    "language_code": "en",
+    "text": "disease",
+    "sentence_example": "Cancer is a serious disease."
+  },
+  {
+    "concept": "symptom",
+    "language_code": "en",
+    "text": "symptom",
+    "sentence_example": "Fever is a symptom of the flu."
+  },
+  {
+    "concept": "treatment",
+    "language_code": "en",
+    "text": "treatment",
+    "sentence_example": "The treatment is working."
+  },
+  {
+    "concept": "ambulance",
+    "language_code": "en",
+    "text": "ambulance",
+    "sentence_example": "Call an ambulance."
+  },
+  {
+    "concept": "emergency",
+    "language_code": "en",
+    "text": "emergency",
+    "sentence_example": "This is an emergency."
+  },
+  {
+    "concept": "vaccine",
+    "language_code": "en",
+    "text": "vaccine",
+    "sentence_example": "Get your vaccine."
+  },
+  {
+    "concept": "muscle",
+    "language_code": "en",
+    "text": "muscle",
+    "sentence_example": "He has big muscles."
+  },
+  {
+    "concept": "bone",
+    "language_code": "en",
+    "text": "bone",
+    "sentence_example": "Dogs like bones."
+  },
+  {
+    "concept": "mental_health",
+    "language_code": "en",
+    "text": "mental health",
+    "sentence_example": "Mental health is important."
   }
 ]

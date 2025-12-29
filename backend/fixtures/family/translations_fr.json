@@ -1,42 +1,242 @@
 [
   {
+    "concept": "mother",
     "language_code": "fr",
     "text": "mère",
-    "gender": "feminine",
+    "gender": "f",
     "plural_text": "mères",
-    "sentence_example": "Ma mère est gentille.",
-    "concept": "mother"
+    "sentence_example": "Ma mère est gentille."
   },
   {
+    "concept": "father",
     "language_code": "fr",
     "text": "père",
-    "gender": "masculine",
+    "gender": "m",
     "plural_text": "pères",
-    "sentence_example": "Mon père travaille.",
-    "concept": "father"
+    "sentence_example": "Mon père travaille dur."
   },
   {
+    "concept": "brother",
     "language_code": "fr",
     "text": "frère",
-    "gender": "masculine",
+    "gender": "m",
     "plural_text": "frères",
-    "sentence_example": "J'ai un frère.",
-    "concept": "brother"
+    "sentence_example": "J'ai un frère."
   },
   {
+    "concept": "sister",
     "language_code": "fr",
-    "text": "soeur",
-    "gender": "feminine",
-    "plural_text": "soeurs",
-    "sentence_example": "J'ai une soeur.",
-    "concept": "sister"
+    "text": "sœur",
+    "gender": "f",
+    "plural_text": "sœurs",
+    "sentence_example": "Ma sœur est plus âgée que moi."
   },
   {
+    "concept": "child",
     "language_code": "fr",
     "text": "enfant",
-    "gender": "masculine",
+    "gender": "m",
     "plural_text": "enfants",
-    "sentence_example": "L'enfant joue.",
-    "concept": "child"
+    "sentence_example": "L'enfant joue."
+  },
+  {
+    "concept": "son",
+    "language_code": "fr",
+    "text": "fils",
+    "gender": "m",
+    "plural_text": "fils",
+    "sentence_example": "C'est mon fils."
+  },
+  {
+    "concept": "daughter",
+    "language_code": "fr",
+    "text": "fille",
+    "gender": "f",
+    "plural_text": "filles",
+    "sentence_example": "C'est ma fille."
+  },
+  {
+    "concept": "parent",
+    "language_code": "fr",
+    "text": "parent",
+    "gender": "m",
+    "plural_text": "parents",
+    "sentence_example": "Mes parents sont en visite."
+  },
+  {
+    "concept": "baby",
+    "language_code": "fr",
+    "text": "bébé",
+    "gender": "m",
+    "plural_text": "bébés",
+    "sentence_example": "Le bébé dort."
+  },
+  {
+    "concept": "friend",
+    "language_code": "fr",
+    "text": "ami",
+    "gender": "m",
+    "plural_text": "amis",
+    "sentence_example": "C'est mon meilleur ami."
+  },
+  {
+    "concept": "grandmother",
+    "language_code": "fr",
+    "text": "grand-mère",
+    "gender": "f",
+    "plural_text": "grands-mères",
+    "sentence_example": "Ma grand-mère fait de bons biscuits."
+  },
+  {
+    "concept": "grandfather",
+    "language_code": "fr",
+    "text": "grand-père",
+    "gender": "m",
+    "plural_text": "grands-pères",
+    "sentence_example": "Mon grand-père aime pêcher."
+  },
+  {
+    "concept": "aunt",
+    "language_code": "fr",
+    "text": "tante",
+    "gender": "f",
+    "plural_text": "tantes",
+    "sentence_example": "Ma tante habite en ville."
+  },
+  {
+    "concept": "uncle",
+    "language_code": "fr",
+    "text": "oncle",
+    "gender": "m",
+    "plural_text": "oncles",
+    "sentence_example": "Mon oncle est drôle."
+  },
+  {
+    "concept": "cousin",
+    "language_code": "fr",
+    "text": "cousin",
+    "gender": "m",
+    "plural_text": "cousins",
+    "sentence_example": "Mon cousin a mon âge."
+  },
+  {
+    "concept": "husband",
+    "language_code": "fr",
+    "text": "mari",
+    "gender": "m",
+    "plural_text": "maris",
+    "sentence_example": "Son mari est médecin."
+  },
+  {
+    "concept": "wife",
+    "language_code": "fr",
+    "text": "femme",
+    "gender": "f",
+    "plural_text": "femmes",
+    "sentence_example": "Sa femme est enseignante."
+  },
+  {
+    "concept": "wedding",
+    "language_code": "fr",
+    "text": "mariage",
+    "gender": "m",
+    "plural_text": "mariages",
+    "sentence_example": "Le mariage était magnifique."
+  },
+  {
+    "concept": "nephew",
+    "language_code": "fr",
+    "text": "neveu",
+    "gender": "m",
+    "plural_text": "neveux",
+    "sentence_example": "Mon neveu aime les voitures."
+  },
+  {
+    "concept": "niece",
+    "language_code": "fr",
+    "text": "nièce",
+    "gender": "f",
+    "plural_text": "nièces",
+    "sentence_example": "Ma nièce aime les poupées."
+  },
+  {
+    "concept": "grandchild",
+    "language_code": "fr",
+    "text": "petit-enfant",
+    "gender": "m",
+    "plural_text": "petits-enfants",
+    "sentence_example": "Ils aiment leur petit-enfant."
+  },
+  {
+    "concept": "stepfather",
+    "language_code": "fr",
+    "text": "beau-père",
+    "gender": "m",
+    "plural_text": "beaux-pères",
+    "sentence_example": "Mon beau-père est gentil."
+  },
+  {
+    "concept": "stepmother",
+    "language_code": "fr",
+    "text": "belle-mère",
+    "gender": "f",
+    "plural_text": "belles-mères",
+    "sentence_example": "Ma belle-mère cuisine bien."
+  },
+  {
+    "concept": "mother_in_law",
+    "language_code": "fr",
+    "text": "belle-mère",
+    "gender": "f",
+    "plural_text": "belles-mères",
+    "sentence_example": "Ma belle-mère est en visite."
+  },
+  {
+    "concept": "father_in_law",
+    "language_code": "fr",
+    "text": "beau-père",
+    "gender": "m",
+    "plural_text": "beaux-pères",
+    "sentence_example": "Mon beau-père aime le sport."
+  },
+  {
+    "concept": "relative",
+    "language_code": "fr",
+    "text": "parent",
+    "gender": "m",
+    "plural_text": "parents",
+    "sentence_example": "Tous mes parents étaient là."
+  },
+  {
+    "concept": "orphan",
+    "language_code": "fr",
+    "text": "orphelin",
+    "gender": "m",
+    "plural_text": "orphelins",
+    "sentence_example": "L'orphelin a trouvé un nouveau foyer."
+  },
+  {
+    "concept": "ancestor",
+    "language_code": "fr",
+    "text": "ancêtre",
+    "gender": "m",
+    "plural_text": "ancêtres",
+    "sentence_example": "Nos ancêtres venaient d'Europe."
+  },
+  {
+    "concept": "generation",
+    "language_code": "fr",
+    "text": "génération",
+    "gender": "f",
+    "plural_text": "générations",
+    "sentence_example": "La jeune génération est douée en technologie."
+  },
+  {
+    "concept": "relationship",
+    "language_code": "fr",
+    "text": "relation",
+    "gender": "f",
+    "plural_text": "relations",
+    "sentence_example": "Ils ont une bonne relation."
   }
 ]

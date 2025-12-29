@@ -1,0 +1,212 @@
+[
+  {
+    "concept": "art",
+    "domain_code": "arts",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "music",
+    "domain_code": "arts",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "movie",
+    "domain_code": "arts",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "book",
+    "domain_code": "arts",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "song",
+    "domain_code": "arts",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "to_draw",
+    "domain_code": "arts",
+    "difficulty": "EASY",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "to_sing",
+    "domain_code": "arts",
+    "difficulty": "EASY",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "to_dance",
+    "domain_code": "arts",
+    "difficulty": "EASY",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "color",
+    "domain_code": "arts",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "picture",
+    "domain_code": "arts",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "painting",
+    "domain_code": "arts",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "sculpture",
+    "domain_code": "arts",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "theater",
+    "domain_code": "arts",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "museum",
+    "domain_code": "arts",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "camera",
+    "domain_code": "arts",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "instrument",
+    "domain_code": "arts",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "concert",
+    "domain_code": "arts",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "artist",
+    "domain_code": "arts",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "author",
+    "domain_code": "arts",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "design",
+    "domain_code": "arts",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "architecture",
+    "domain_code": "arts",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "literature",
+    "domain_code": "arts",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "poetry",
+    "domain_code": "arts",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "exhibition",
+    "domain_code": "arts",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "gallery",
+    "domain_code": "arts",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "masterpiece",
+    "domain_code": "arts",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "symphony",
+    "domain_code": "arts",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "canvas",
+    "domain_code": "arts",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "aesthetic",
+    "domain_code": "arts",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "creativity",
+    "domain_code": "arts",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  }
+]

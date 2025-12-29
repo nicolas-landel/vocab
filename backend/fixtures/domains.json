@@ -38,5 +38,25 @@
   {
     "code": "shopping",
     "name": "Shopping"
+  },
+  {
+    "code": "technology",
+    "name": "Technology & Internet"
+  },
+  {
+    "code": "nature",
+    "name": "Nature & Environment"
+  },
+  {
+    "code": "sports",
+    "name": "Sports & Fitness"
+  },
+  {
+    "code": "arts",
+    "name": "Arts & Culture"
+  },
+  {
+    "code": "society",
+    "name": "Society & Politics"
   }
 ]

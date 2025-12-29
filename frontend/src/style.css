@@ -106,3 +106,7 @@ h1, h2, h3 {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
+
+.capitalize-text {
+  text-transform: capitalize !important;
+}

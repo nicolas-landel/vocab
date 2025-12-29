@@ -1,27 +1,182 @@
 [
   {
+    "concept": "house",
     "language_code": "en",
     "text": "house",
-    "concept": "house"
+    "sentence_example": "I live in a big house."
   },
   {
+    "concept": "room",
     "language_code": "en",
-    "text": "car",
-    "concept": "car"
+    "text": "room",
+    "sentence_example": "This is my room."
   },
   {
+    "concept": "bed",
     "language_code": "en",
-    "text": "sleep",
-    "concept": "sleep"
+    "text": "bed",
+    "sentence_example": "The bed is comfortable."
   },
   {
+    "concept": "table",
     "language_code": "en",
-    "text": "eat",
-    "concept": "eat"
+    "text": "table",
+    "sentence_example": "Dinner is on the table."
   },
   {
+    "concept": "chair",
     "language_code": "en",
-    "text": "walk",
-    "concept": "walk"
+    "text": "chair",
+    "sentence_example": "Sit on the chair."
+  },
+  {
+    "concept": "clock",
+    "language_code": "en",
+    "text": "clock",
+    "sentence_example": "Look at the clock."
+  },
+  {
+    "concept": "to_sleep",
+    "language_code": "en",
+    "text": "to sleep",
+    "sentence_example": "I need to sleep."
+  },
+  {
+    "concept": "to_eat",
+    "language_code": "en",
+    "text": "to eat",
+    "sentence_example": "It is time to eat."
+  },
+  {
+    "concept": "to_drink",
+    "language_code": "en",
+    "text": "to drink",
+    "sentence_example": "I want to drink water."
+  },
+  {
+    "concept": "clothes",
+    "language_code": "en",
+    "text": "clothes",
+    "sentence_example": "Put on your clothes."
+  },
+  {
+    "concept": "kitchen",
+    "language_code": "en",
+    "text": "kitchen",
+    "sentence_example": "She is in the kitchen."
+  },
+  {
+    "concept": "bathroom",
+    "language_code": "en",
+    "text": "bathroom",
+    "sentence_example": "The bathroom is clean."
+  },
+  {
+    "concept": "living_room",
+    "language_code": "en",
+    "text": "living room",
+    "sentence_example": "We watch TV in the living room."
+  },
+  {
+    "concept": "furniture",
+    "language_code": "en",
+    "text": "furniture",
+    "sentence_example": "We have new furniture."
+  },
+  {
+    "concept": "gardening",
+    "language_code": "en",
+    "text": "gardening",
+    "sentence_example": "He loves gardening."
+  },
+  {
+    "concept": "cleaning",
+    "language_code": "en",
+    "text": "cleaning",
+    "sentence_example": "Cleaning the house takes time."
+  },
+  {
+    "concept": "cooking",
+    "language_code": "en",
+    "text": "cooking",
+    "sentence_example": "I enjoy cooking."
+  },
+  {
+    "concept": "laundry",
+    "language_code": "en",
+    "text": "laundry",
+    "sentence_example": "Do the laundry today."
+  },
+  {
+    "concept": "groceries",
+    "language_code": "en",
+    "text": "groceries",
+    "sentence_example": "I need to buy groceries."
+  },
+  {
+    "concept": "to_wake_up",
+    "language_code": "en",
+    "text": "to wake up",
+    "sentence_example": "I wake up at seven."
+  },
+  {
+    "concept": "routine",
+    "language_code": "en",
+    "text": "routine",
+    "sentence_example": "My daily routine is simple."
+  },
+  {
+    "concept": "chore",
+    "language_code": "en",
+    "text": "chore",
+    "sentence_example": "Washing dishes is a chore."
+  },
+  {
+    "concept": "maintenance",
+    "language_code": "en",
+    "text": "maintenance",
+    "sentence_example": "Car maintenance is expensive."
+  },
+  {
+    "concept": "appliance",
+    "language_code": "en",
+    "text": "appliance",
+    "sentence_example": "The kitchen appliance is broken."
+  },
+  {
+    "concept": "utilities",
+    "language_code": "en",
+    "text": "utilities",
+    "sentence_example": "Pay the utilities bill."
+  },
+  {
+    "concept": "leisure",
+    "language_code": "en",
+    "text": "leisure",
+    "sentence_example": "Enjoy your leisure time."
+  },
+  {
+    "concept": "lifestyle",
+    "language_code": "en",
+    "text": "lifestyle",
+    "sentence_example": "She leads a healthy lifestyle."
+  },
+  {
+    "concept": "habit",
+    "language_code": "en",
+    "text": "habit",
+    "sentence_example": "Smoking is a bad habit."
+  },
+  {
+    "concept": "hygiene",
+    "language_code": "en",
+    "text": "hygiene",
+    "sentence_example": "Good hygiene prevents illness."
+  },
+  {
+    "concept": "schedule",
+    "language_code": "en",
+    "text": "schedule",
+    "sentence_example": "Check your schedule."
   }
 ]

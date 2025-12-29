@@ -1,1 +1,212 @@
-[]
+[
+  {
+    "concept": "shop",
+    "domain_code": "shopping",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "money",
+    "domain_code": "shopping",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "price",
+    "domain_code": "shopping",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "to_buy",
+    "domain_code": "shopping",
+    "difficulty": "EASY",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "to_sell",
+    "domain_code": "shopping",
+    "difficulty": "EASY",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "market",
+    "domain_code": "shopping",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "bag",
+    "domain_code": "shopping",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "cheap",
+    "domain_code": "shopping",
+    "difficulty": "EASY",
+    "word_type": "ADJECTIVE",
+    "image_url": null
+  },
+  {
+    "concept": "expensive",
+    "domain_code": "shopping",
+    "difficulty": "EASY",
+    "word_type": "ADJECTIVE",
+    "image_url": null
+  },
+  {
+    "concept": "cash",
+    "domain_code": "shopping",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "store",
+    "domain_code": "shopping",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "mall",
+    "domain_code": "shopping",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "customer",
+    "domain_code": "shopping",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "sale",
+    "domain_code": "shopping",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "discount",
+    "domain_code": "shopping",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "credit_card",
+    "domain_code": "shopping",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "receipt",
+    "domain_code": "shopping",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "wallet",
+    "domain_code": "shopping",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "to_pay",
+    "domain_code": "shopping",
+    "difficulty": "MEDIUM",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "to_spend",
+    "domain_code": "shopping",
+    "difficulty": "MEDIUM",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "bargain",
+    "domain_code": "shopping",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "purchase",
+    "domain_code": "shopping",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "refund",
+    "domain_code": "shopping",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "warranty",
+    "domain_code": "shopping",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "delivery",
+    "domain_code": "shopping",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "brand",
+    "domain_code": "shopping",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "quality",
+    "domain_code": "shopping",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "luxury",
+    "domain_code": "shopping",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "to_afford",
+    "domain_code": "shopping",
+    "difficulty": "HARD",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "to_exchange",
+    "domain_code": "shopping",
+    "difficulty": "HARD",
+    "word_type": "VERB",
+    "image_url": null
+  }
+]

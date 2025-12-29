@@ -1,0 +1,212 @@
+[
+  {
+    "concept": "computer",
+    "domain_code": "technology",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "internet",
+    "domain_code": "technology",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "phone",
+    "domain_code": "technology",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "screen",
+    "domain_code": "technology",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "keyboard",
+    "domain_code": "technology",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "mouse",
+    "domain_code": "technology",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "app",
+    "domain_code": "technology",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "website",
+    "domain_code": "technology",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "battery",
+    "domain_code": "technology",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "camera",
+    "domain_code": "technology",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "software",
+    "domain_code": "technology",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "hardware",
+    "domain_code": "technology",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "server",
+    "domain_code": "technology",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "database",
+    "domain_code": "technology",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "network",
+    "domain_code": "technology",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "password",
+    "domain_code": "technology",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "file",
+    "domain_code": "technology",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "folder",
+    "domain_code": "technology",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "to_download",
+    "domain_code": "technology",
+    "difficulty": "MEDIUM",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "to_upload",
+    "domain_code": "technology",
+    "difficulty": "MEDIUM",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "algorithm",
+    "domain_code": "technology",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "encryption",
+    "domain_code": "technology",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "artificial_intelligence",
+    "domain_code": "technology",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "cloud_computing",
+    "domain_code": "technology",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "cybersecurity",
+    "domain_code": "technology",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "bandwidth",
+    "domain_code": "technology",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "latency",
+    "domain_code": "technology",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "protocol",
+    "domain_code": "technology",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "operating_system",
+    "domain_code": "technology",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "api",
+    "domain_code": "technology",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  }
+]

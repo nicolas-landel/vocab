@@ -54,7 +54,8 @@
     "domainRequired": "Le domaine est obligatoire",
     "difficultyRequired": "La difficulté est obligatoire",
     "sessionTypeRequired": "Le type de session est obligatoire",
-    "failedToStart": "Impossible de démarrer la session. Veuillez réessayer."
+    "failedToStart": "Impossible de démarrer la session. Veuillez réessayer.",
+    "errorTitle": "Erreur à l'initialisation de la session"
   },
   "vocabulary": {
     "filterTitle": "Filtrer le Vocabulaire",
@@ -102,6 +103,7 @@
     "correctFirstTry": "Correct du Premier Coup",
     "needsPractice": "Nécessite de la Pratique",
     "finish": "Terminer",
+    "validate": "Valider",
     "failedToComplete": "Échec de l'enregistrement des résultats."
   },
   "summary": {
@@ -154,7 +156,8 @@
     "education": "Éducation",
     "weather": "Météo & Nature",
     "entertainment": "Divertissement",
-    "shopping": "Shopping"
+    "shopping": "Shopping",
+    "all": "Tous les Domaines"
   },
   "errors": {
     "failedToLoadLanguages": "Impossible de charger les langues",

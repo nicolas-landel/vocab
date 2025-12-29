@@ -1,0 +1,212 @@
+[
+  {
+    "concept": "ball",
+    "domain_code": "sports",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "team",
+    "domain_code": "sports",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "game",
+    "domain_code": "sports",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "player",
+    "domain_code": "sports",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "score",
+    "domain_code": "sports",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "to_run",
+    "domain_code": "sports",
+    "difficulty": "EASY",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "to_jump",
+    "domain_code": "sports",
+    "difficulty": "EASY",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "to_swim",
+    "domain_code": "sports",
+    "difficulty": "EASY",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "football",
+    "domain_code": "sports",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "tennis",
+    "domain_code": "sports",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "match",
+    "domain_code": "sports",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "coach",
+    "domain_code": "sports",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "stadium",
+    "domain_code": "sports",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "goal",
+    "domain_code": "sports",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "referee",
+    "domain_code": "sports",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "training",
+    "domain_code": "sports",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "championship",
+    "domain_code": "sports",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "medal",
+    "domain_code": "sports",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "to_win",
+    "domain_code": "sports",
+    "difficulty": "MEDIUM",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "to_lose",
+    "domain_code": "sports",
+    "difficulty": "MEDIUM",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "tournament",
+    "domain_code": "sports",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "athlete",
+    "domain_code": "sports",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "opponent",
+    "domain_code": "sports",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "victory",
+    "domain_code": "sports",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "defeat",
+    "domain_code": "sports",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "strategy",
+    "domain_code": "sports",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "endurance",
+    "domain_code": "sports",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "equipment",
+    "domain_code": "sports",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "performance",
+    "domain_code": "sports",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "fitness",
+    "domain_code": "sports",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  }
+]

@@ -1,42 +1,229 @@
 [
   {
+    "concept": "job",
     "language_code": "fr",
     "text": "travail",
-    "gender": "masculine",
-    "plural_text": "travaux",
-    "sentence_example": "J'aime mon travail.",
-    "concept": "job"
+    "gender": "m",
+    "sentence_example": "J'ai un nouveau travail."
   },
   {
+    "concept": "office",
     "language_code": "fr",
     "text": "bureau",
-    "gender": "masculine",
+    "gender": "m",
     "plural_text": "bureaux",
-    "sentence_example": "Je suis au bureau.",
-    "concept": "office"
+    "sentence_example": "Le bureau est au centre-ville."
   },
   {
-    "language_code": "fr",
-    "text": "réunion",
-    "gender": "feminine",
-    "plural_text": "réunions",
-    "sentence_example": "Nous avons une réunion.",
-    "concept": "meeting"
-  },
-  {
+    "concept": "boss",
     "language_code": "fr",
     "text": "patron",
-    "gender": "masculine",
+    "gender": "m",
     "plural_text": "patrons",
-    "sentence_example": "Le patron est là.",
-    "concept": "boss"
+    "sentence_example": "Mon patron est très occupé."
   },
   {
+    "concept": "worker",
+    "language_code": "fr",
+    "text": "travailleur",
+    "gender": "m",
+    "plural_text": "travailleurs",
+    "sentence_example": "C'est un travailleur acharné."
+  },
+  {
+    "concept": "salary",
+    "language_code": "fr",
+    "text": "salaire",
+    "gender": "m",
+    "plural_text": "salaires",
+    "sentence_example": "Le salaire est bon."
+  },
+  {
+    "concept": "to_work",
+    "language_code": "fr",
+    "text": "travailler",
+    "sentence_example": "Je dois travailler tard."
+  },
+  {
+    "concept": "meeting",
+    "language_code": "fr",
+    "text": "réunion",
+    "gender": "f",
+    "plural_text": "réunions",
+    "sentence_example": "Nous avons une réunion à dix heures."
+  },
+  {
+    "concept": "company",
+    "language_code": "fr",
+    "text": "entreprise",
+    "gender": "f",
+    "plural_text": "entreprises",
+    "sentence_example": "Elle travaille pour une grande entreprise."
+  },
+  {
+    "concept": "computer",
     "language_code": "fr",
     "text": "ordinateur",
-    "gender": "masculine",
+    "gender": "m",
     "plural_text": "ordinateurs",
-    "sentence_example": "Mon ordinateur est rapide.",
-    "concept": "computer"
+    "sentence_example": "J'utilise un ordinateur pour travailler."
+  },
+  {
+    "concept": "email",
+    "language_code": "fr",
+    "text": "e-mail",
+    "gender": "m",
+    "plural_text": "e-mails",
+    "sentence_example": "Envoyez-moi un e-mail."
+  },
+  {
+    "concept": "manager",
+    "language_code": "fr",
+    "text": "directeur",
+    "gender": "m",
+    "plural_text": "directeurs",
+    "sentence_example": "Le directeur est responsable."
+  },
+  {
+    "concept": "colleague",
+    "language_code": "fr",
+    "text": "collègue",
+    "gender": "m",
+    "plural_text": "collègues",
+    "sentence_example": "J'aime mes collègues."
+  },
+  {
+    "concept": "career",
+    "language_code": "fr",
+    "text": "carrière",
+    "gender": "f",
+    "plural_text": "carrières",
+    "sentence_example": "Elle a une carrière réussie."
+  },
+  {
+    "concept": "interview",
+    "language_code": "fr",
+    "text": "entretien",
+    "gender": "m",
+    "plural_text": "entretiens",
+    "sentence_example": "Bonne chance pour votre entretien."
+  },
+  {
+    "concept": "resume",
+    "language_code": "fr",
+    "text": "CV",
+    "gender": "m",
+    "plural_text": "CV",
+    "sentence_example": "Envoyez votre CV."
+  },
+  {
+    "concept": "project",
+    "language_code": "fr",
+    "text": "projet",
+    "gender": "m",
+    "plural_text": "projets",
+    "sentence_example": "Le projet est dû la semaine prochaine."
+  },
+  {
+    "concept": "contract",
+    "language_code": "fr",
+    "text": "contrat",
+    "gender": "m",
+    "plural_text": "contrats",
+    "sentence_example": "Signez le contrat."
+  },
+  {
+    "concept": "client",
+    "language_code": "fr",
+    "text": "client",
+    "gender": "m",
+    "plural_text": "clients",
+    "sentence_example": "Le client est content."
+  },
+  {
+    "concept": "to_hire",
+    "language_code": "fr",
+    "text": "embaucher",
+    "sentence_example": "Ils veulent embaucher du nouveau personnel."
+  },
+  {
+    "concept": "to_fire",
+    "language_code": "fr",
+    "text": "licencier",
+    "sentence_example": "Il a été licencié hier."
+  },
+  {
+    "concept": "promotion",
+    "language_code": "fr",
+    "text": "promotion",
+    "gender": "f",
+    "plural_text": "promotions",
+    "sentence_example": "Félicitations pour votre promotion."
+  },
+  {
+    "concept": "retirement",
+    "language_code": "fr",
+    "text": "retraite",
+    "gender": "f",
+    "sentence_example": "Il planifie sa retraite."
+  },
+  {
+    "concept": "unemployment",
+    "language_code": "fr",
+    "text": "chômage",
+    "gender": "m",
+    "sentence_example": "Le chômage est élevé."
+  },
+  {
+    "concept": "internship",
+    "language_code": "fr",
+    "text": "stage",
+    "gender": "m",
+    "plural_text": "stages",
+    "sentence_example": "Elle fait un stage."
+  },
+  {
+    "concept": "entrepreneur",
+    "language_code": "fr",
+    "text": "entrepreneur",
+    "gender": "m",
+    "plural_text": "entrepreneurs",
+    "sentence_example": "L'entrepreneur a lancé une nouvelle entreprise."
+  },
+  {
+    "concept": "negotiation",
+    "language_code": "fr",
+    "text": "négociation",
+    "gender": "f",
+    "plural_text": "négociations",
+    "sentence_example": "La négociation a duré des heures."
+  },
+  {
+    "concept": "deadline",
+    "language_code": "fr",
+    "text": "date limite",
+    "gender": "f",
+    "plural_text": "dates limites",
+    "sentence_example": "Je dois respecter la date limite."
+  },
+  {
+    "concept": "efficiency",
+    "language_code": "fr",
+    "text": "efficacité",
+    "gender": "f",
+    "sentence_example": "Nous devons améliorer l'efficacité."
+  },
+  {
+    "concept": "productivity",
+    "language_code": "fr",
+    "text": "productivité",
+    "gender": "f",
+    "sentence_example": "La productivité a augmenté."
+  },
+  {
+    "concept": "to_resign",
+    "language_code": "fr",
+    "text": "démissionner",
+    "sentence_example": "Elle a décidé de démissionner."
   }
 ]

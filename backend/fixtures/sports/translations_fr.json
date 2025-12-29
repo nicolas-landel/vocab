@@ -1,0 +1,227 @@
+[
+  {
+    "concept": "ball",
+    "language_code": "fr",
+    "text": "balle",
+    "gender": "f",
+    "plural_text": "balles",
+    "sentence_example": "Lance la balle."
+  },
+  {
+    "concept": "team",
+    "language_code": "fr",
+    "text": "équipe",
+    "gender": "f",
+    "plural_text": "équipes",
+    "sentence_example": "Notre équipe a gagné le match."
+  },
+  {
+    "concept": "game",
+    "language_code": "fr",
+    "text": "jeu",
+    "gender": "m",
+    "plural_text": "jeux",
+    "sentence_example": "Le jeu commence à cinq heures."
+  },
+  {
+    "concept": "player",
+    "language_code": "fr",
+    "text": "joueur",
+    "gender": "m",
+    "plural_text": "joueurs",
+    "sentence_example": "C'est un bon joueur."
+  },
+  {
+    "concept": "score",
+    "language_code": "fr",
+    "text": "score",
+    "gender": "m",
+    "sentence_example": "Quel est le score ?"
+  },
+  {
+    "concept": "to_run",
+    "language_code": "fr",
+    "text": "courir",
+    "sentence_example": "Je cours dans le parc tous les matins."
+  },
+  {
+    "concept": "to_jump",
+    "language_code": "fr",
+    "text": "sauter",
+    "sentence_example": "Peux-tu sauter haut ?"
+  },
+  {
+    "concept": "to_swim",
+    "language_code": "fr",
+    "text": "nager",
+    "sentence_example": "J'aime nager dans la piscine."
+  },
+  {
+    "concept": "football",
+    "language_code": "fr",
+    "text": "football",
+    "gender": "m",
+    "sentence_example": "Ils jouent au football."
+  },
+  {
+    "concept": "tennis",
+    "language_code": "fr",
+    "text": "tennis",
+    "gender": "m",
+    "sentence_example": "Le tennis nécessite une raquette."
+  },
+  {
+    "concept": "match",
+    "language_code": "fr",
+    "text": "match",
+    "gender": "m",
+    "plural_text": "matchs",
+    "sentence_example": "Nous avons regardé le match à la télé."
+  },
+  {
+    "concept": "coach",
+    "language_code": "fr",
+    "text": "entraîneur",
+    "gender": "m",
+    "plural_text": "entraîneurs",
+    "sentence_example": "L'entraîneur entraîne les joueurs."
+  },
+  {
+    "concept": "stadium",
+    "language_code": "fr",
+    "text": "stade",
+    "gender": "m",
+    "plural_text": "stades",
+    "sentence_example": "Le stade était plein."
+  },
+  {
+    "concept": "goal",
+    "language_code": "fr",
+    "text": "but",
+    "gender": "m",
+    "plural_text": "buts",
+    "sentence_example": "Il a marqué un but."
+  },
+  {
+    "concept": "referee",
+    "language_code": "fr",
+    "text": "arbitre",
+    "gender": "m",
+    "plural_text": "arbitres",
+    "sentence_example": "L'arbitre a sifflé."
+  },
+  {
+    "concept": "training",
+    "language_code": "fr",
+    "text": "entraînement",
+    "gender": "m",
+    "plural_text": "entraînements",
+    "sentence_example": "L'entraînement est difficile."
+  },
+  {
+    "concept": "championship",
+    "language_code": "fr",
+    "text": "championnat",
+    "gender": "m",
+    "plural_text": "championnats",
+    "sentence_example": "Ils ont gagné le championnat."
+  },
+  {
+    "concept": "medal",
+    "language_code": "fr",
+    "text": "médaille",
+    "gender": "f",
+    "plural_text": "médailles",
+    "sentence_example": "Elle a gagné une médaille d'or."
+  },
+  {
+    "concept": "to_win",
+    "language_code": "fr",
+    "text": "gagner",
+    "sentence_example": "Tout le monde veut gagner."
+  },
+  {
+    "concept": "to_lose",
+    "language_code": "fr",
+    "text": "perdre",
+    "sentence_example": "C'est triste de perdre."
+  },
+  {
+    "concept": "tournament",
+    "language_code": "fr",
+    "text": "tournoi",
+    "gender": "m",
+    "plural_text": "tournois",
+    "sentence_example": "Le tournoi dure toute la semaine."
+  },
+  {
+    "concept": "athlete",
+    "language_code": "fr",
+    "text": "athlète",
+    "gender": "m",
+    "plural_text": "athlètes",
+    "sentence_example": "L'athlète est très fort."
+  },
+  {
+    "concept": "opponent",
+    "language_code": "fr",
+    "text": "adversaire",
+    "gender": "m",
+    "plural_text": "adversaires",
+    "sentence_example": "Respectez votre adversaire."
+  },
+  {
+    "concept": "victory",
+    "language_code": "fr",
+    "text": "victoire",
+    "gender": "f",
+    "plural_text": "victoires",
+    "sentence_example": "Nous avons célébré la victoire."
+  },
+  {
+    "concept": "defeat",
+    "language_code": "fr",
+    "text": "défaite",
+    "gender": "f",
+    "plural_text": "défaites",
+    "sentence_example": "Ils ont accepté la défaite."
+  },
+  {
+    "concept": "strategy",
+    "language_code": "fr",
+    "text": "stratégie",
+    "gender": "f",
+    "plural_text": "stratégies",
+    "sentence_example": "L'équipe a besoin d'une bonne stratégie."
+  },
+  {
+    "concept": "endurance",
+    "language_code": "fr",
+    "text": "endurance",
+    "gender": "f",
+    "sentence_example": "Les marathoniens ont besoin d'endurance."
+  },
+  {
+    "concept": "equipment",
+    "language_code": "fr",
+    "text": "équipement",
+    "gender": "m",
+    "plural_text": "équipements",
+    "sentence_example": "L'équipement sportif peut être cher."
+  },
+  {
+    "concept": "performance",
+    "language_code": "fr",
+    "text": "performance",
+    "gender": "f",
+    "plural_text": "performances",
+    "sentence_example": "Sa performance était excellente."
+  },
+  {
+    "concept": "fitness",
+    "language_code": "fr",
+    "text": "forme physique",
+    "gender": "f",
+    "sentence_example": "La forme physique est importante."
+  }
+]

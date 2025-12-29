@@ -1,27 +1,182 @@
 [
   {
+    "concept": "job",
     "language_code": "en",
     "text": "job",
-    "concept": "job"
+    "sentence_example": "I have a new job."
   },
   {
+    "concept": "office",
     "language_code": "en",
     "text": "office",
-    "concept": "office"
+    "sentence_example": "The office is downtown."
   },
   {
-    "language_code": "en",
-    "text": "meeting",
-    "concept": "meeting"
-  },
-  {
+    "concept": "boss",
     "language_code": "en",
     "text": "boss",
-    "concept": "boss"
+    "sentence_example": "My boss is very busy."
   },
   {
+    "concept": "worker",
+    "language_code": "en",
+    "text": "worker",
+    "sentence_example": "He is a hard worker."
+  },
+  {
+    "concept": "salary",
+    "language_code": "en",
+    "text": "salary",
+    "sentence_example": "The salary is good."
+  },
+  {
+    "concept": "to_work",
+    "language_code": "en",
+    "text": "to work",
+    "sentence_example": "I have to work late."
+  },
+  {
+    "concept": "meeting",
+    "language_code": "en",
+    "text": "meeting",
+    "sentence_example": "We have a meeting at ten."
+  },
+  {
+    "concept": "company",
+    "language_code": "en",
+    "text": "company",
+    "sentence_example": "She works for a large company."
+  },
+  {
+    "concept": "computer",
     "language_code": "en",
     "text": "computer",
-    "concept": "computer"
+    "sentence_example": "I use a computer for work."
+  },
+  {
+    "concept": "email",
+    "language_code": "en",
+    "text": "email",
+    "sentence_example": "Send me an email."
+  },
+  {
+    "concept": "manager",
+    "language_code": "en",
+    "text": "manager",
+    "sentence_example": "The manager is in charge."
+  },
+  {
+    "concept": "colleague",
+    "language_code": "en",
+    "text": "colleague",
+    "sentence_example": "I like my colleagues."
+  },
+  {
+    "concept": "career",
+    "language_code": "en",
+    "text": "career",
+    "sentence_example": "She has a successful career."
+  },
+  {
+    "concept": "interview",
+    "language_code": "en",
+    "text": "interview",
+    "sentence_example": "Good luck with your interview."
+  },
+  {
+    "concept": "resume",
+    "language_code": "en",
+    "text": "resume",
+    "sentence_example": "Send your resume."
+  },
+  {
+    "concept": "project",
+    "language_code": "en",
+    "text": "project",
+    "sentence_example": "The project is due next week."
+  },
+  {
+    "concept": "contract",
+    "language_code": "en",
+    "text": "contract",
+    "sentence_example": "Sign the contract."
+  },
+  {
+    "concept": "client",
+    "language_code": "en",
+    "text": "client",
+    "sentence_example": "The client is happy."
+  },
+  {
+    "concept": "to_hire",
+    "language_code": "en",
+    "text": "to hire",
+    "sentence_example": "They want to hire new staff."
+  },
+  {
+    "concept": "to_fire",
+    "language_code": "en",
+    "text": "to fire",
+    "sentence_example": "He was fired yesterday."
+  },
+  {
+    "concept": "promotion",
+    "language_code": "en",
+    "text": "promotion",
+    "sentence_example": "Congratulations on your promotion."
+  },
+  {
+    "concept": "retirement",
+    "language_code": "en",
+    "text": "retirement",
+    "sentence_example": "He is planning his retirement."
+  },
+  {
+    "concept": "unemployment",
+    "language_code": "en",
+    "text": "unemployment",
+    "sentence_example": "Unemployment is high."
+  },
+  {
+    "concept": "internship",
+    "language_code": "en",
+    "text": "internship",
+    "sentence_example": "She is doing an internship."
+  },
+  {
+    "concept": "entrepreneur",
+    "language_code": "en",
+    "text": "entrepreneur",
+    "sentence_example": "The entrepreneur started a new business."
+  },
+  {
+    "concept": "negotiation",
+    "language_code": "en",
+    "text": "negotiation",
+    "sentence_example": "The negotiation took hours."
+  },
+  {
+    "concept": "deadline",
+    "language_code": "en",
+    "text": "deadline",
+    "sentence_example": "I have to meet the deadline."
+  },
+  {
+    "concept": "efficiency",
+    "language_code": "en",
+    "text": "efficiency",
+    "sentence_example": "We need to improve efficiency."
+  },
+  {
+    "concept": "productivity",
+    "language_code": "en",
+    "text": "productivity",
+    "sentence_example": "Productivity has increased."
+  },
+  {
+    "concept": "to_resign",
+    "language_code": "en",
+    "text": "to resign",
+    "sentence_example": "She decided to resign."
   }
 ]

@@ -1,12 +1,11 @@
 <template>
   <VContainer>
     <VCard v-if="!sessionStore.isSessionComplete" max-width="800" class="mx-auto">
-      <!-- Progress -->
       <VCardTitle>
         <div class="d-flex justify-space-between align-center w-100">
           <span>{{ t('session.progress') }}</span>
           <span class="text-body-1">
-            {{ sessionStore.currentWordIndex + 1 }} / {{ sessionStore.totalWords }}
+            {{ progress.toFixed(0) }}%
           </span>
         </div>
       </VCardTitle>
@@ -18,21 +17,23 @@
       ></VProgressLinear>
 
       <VCardText class="pt-8">
-        <VRow v-if="sessionStore.currentWord">
-          <!-- Word to translate -->
+        <div v-if="currentWord">
           <VCol cols="12" class="text-center">
-            <div class="text-subtitle-1 text-grey mb-2">{{ t('session.translateWord') }}</div>
-            <div class="text-h3 mb-6">{{ sessionStore.currentWord.text }}</div>
+            <div class="text-subtitle-1 text-grey mb-2">
+              {{ t('session.translateWord') }}
+            </div>
+            <div class="text-h3 mb-6 capitalize-text">
+              {{ getTextToTranslate }}
+            </div>
             
-            <div v-if="sessionStore.currentWord.masterWord?.domain" class="mb-4">
+            <!-- <div v-if="currentWord.masterWord?.domain" class="mb-4">
               <VChip color="primary" variant="outlined">
                 {{ t(`domains.${sessionStore.currentWord.masterWord.domain.code}`) }}
               </VChip>
-            </div>
+            </div> -->
           </VCol>
 
-          <!-- Answer Input -->
-          <VCol cols="12">
+          <VCol>
             <VTextField
               v-model="userAnswer"
               :label="t('session.yourAnswer')"
@@ -40,9 +41,21 @@
               size="large"
               autofocus
               @keyup.enter="submitAnswer"
-              :disabled="showResult"
             ></VTextField>
+
           </VCol>
+          <VCol>
+            <VBtn
+              color="primary"
+              @click="submitAnswer"
+              :disabled="!userAnswer"
+              block
+            >
+              {{ t('session.validate') }}
+            </VBtn>
+          </VCol>
+          
+
 
           <!-- Result Display -->
           <VCol cols="12" v-if="showResult">
@@ -58,40 +71,20 @@
             </VAlert>
           </VCol>
 
-          <!-- Action Buttons -->
           <VCol cols="12">
             <div class="d-flex gap-2">
               <VBtn
                 v-if="!showResult"
-                color="warning"
-                variant="outlined"
+                variant="text"
+                class="text-decoration-underline"
                 @click="skipWord"
                 block
               >
                 {{ t('session.iForgot') }}
               </VBtn>
-              
-              <VBtn
-                v-if="!showResult"
-                color="primary"
-                @click="submitAnswer"
-                :disabled="!userAnswer"
-                block
-              >
-                {{ t('session.checkAnswer') }}
-              </VBtn>
-
-              <VBtn
-                v-if="showResult"
-                color="primary"
-                @click="nextWord"
-                block
-              >
-                {{ t('session.nextWord') }}
-              </VBtn>
             </div>
           </VCol>
-        </VRow>
+        </div>
       </VCardText>
     </VCard>
 
@@ -100,7 +93,7 @@
       <VCardTitle class="text-center">{{ t('session.complete') }}</VCardTitle>
       <VCardText>
         <div class="text-center mb-6">
-          <div class="text-h2 mb-4">{{ sessionStore.sessionResults?.successRate }}%</div>
+          <div class="text-h2 mb-4">{{ sessionStore.sessionWords?.successRate }}%</div>
           <div class="text-subtitle-1 text-grey">{{ t('session.successRate') }}</div>
         </div>
 
@@ -108,7 +101,7 @@
           <VCol cols="12" md="6">
             <VCard variant="outlined" color="success">
               <VCardText class="text-center">
-                <div class="text-h4">{{ sessionStore.sessionResults?.correctFirstTime?.length || 0 }}</div>
+                <div class="text-h4">{{ sessionStore.sessionWords?.correctFirstTime?.length || 0 }}</div>
                 <div class="text-subtitle-2">{{ t('session.correctFirstTry') }}</div>
               </VCardText>
             </VCard>
@@ -117,7 +110,7 @@
           <VCol cols="12" md="6">
             <VCard variant="outlined" color="error">
               <VCardText class="text-center">
-                <div class="text-h4">{{ sessionStore.sessionResults?.failed?.length || 0 }}</div>
+                <div class="text-h4">{{ sessionStore.sessionWords?.failed?.length || 0 }}</div>
                 <div class="text-subtitle-2">{{ t('session.needsPractice') }}</div>
               </VCardText>
             </VCard>
@@ -139,34 +132,55 @@ import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useSessionStore } from '@/stores/session'
+import { SessionWord } from "@/models"
+import { useRepo } from "pinia-orm"
 
 const { t } = useI18n()
 const props = defineProps(['id'])
 const router = useRouter()
 const sessionStore = useSessionStore()
+const sessionWordRepo = useRepo(SessionWord)
 
+const currentWord = ref(null)
+const currentIndex = ref(0)
 const userAnswer = ref('')
-const showResult = ref(false)
-const isCorrect = ref(false)
-const correctAnswer = ref('')
+// const showResult = ref(false)
+// const isCorrect = ref(false)
+// const correctAnswer = ref('')
+
+const answeredWords = computed(() => {
+  return sessionWordRepo.query()
+    .where('sessionId', sessionStore.currentSessionId)
+    .whereNotNull('userAnswer')
+    .get()
+})
+
+const allWords = computed(() => {
+  return sessionWordRepo.query()
+    .where('sessionId', sessionStore.currentSessionId)
+    .with('translationTo')
+    .with('translationFrom')
+    .get()
+})
 
 const progress = computed(() => {
-  if (!sessionStore.totalWords) return 0
-  return (sessionStore.currentWordIndex / sessionStore.totalWords) * 100
+  console.log("pppppppp", answeredWords.value, allWords.value)
+  if (allWords.value.length === 0) return 0
+  return (answeredWords.value.length / allWords.value.length) * 100
 })
 
-onMounted(async () => {
-  // If session not loaded, redirect to home
-  if (!sessionStore.currentSessionId) {
-    router.push('/')
-  }
+const getTextToTranslate = computed(() => {
+  if (!currentWord.value) return ''
+  // Assuming we want to show the text from the 'translationFrom' relationship
+  return currentWord.value.translationFrom?.text || ''
 })
+
 
 const submitAnswer = () => {
+  console.log("Submitting answer for word:", userAnswer.value)
   if (!userAnswer.value.trim()) return
 
-  // Store correct answer from current word's master word translation
-  correctAnswer.value = sessionStore.currentWord.masterWord?.text || ''
+  correctAnswer.value = currentWord.value.translation?.text || ''
   
   // Submit answer to store
   sessionStore.submitAnswer(userAnswer.value)
@@ -203,4 +217,19 @@ const finishSession = async () => {
     alert(t('session.failedToComplete'))
   }
 }
+
+onMounted(async () => {
+  if (!sessionStore.currentSessionId) {
+    router.push('/')
+  }
+  currentWord.value = allWords.value[currentIndex.value]
+  console.log("Current Word:", currentWord.value)
+})
 </script>
+
+<style scoped>
+
+.capitalize-text {
+  text-transform: capitalize !important;
+}
+</style>

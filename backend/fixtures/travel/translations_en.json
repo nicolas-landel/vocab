@@ -1,12 +1,182 @@
 [
   {
+    "concept": "car",
+    "language_code": "en",
+    "text": "car",
+    "sentence_example": "I drive a car."
+  },
+  {
+    "concept": "bus",
+    "language_code": "en",
+    "text": "bus",
+    "sentence_example": "Take the bus."
+  },
+  {
     "concept": "train",
     "language_code": "en",
-    "text": "train"
+    "text": "train",
+    "sentence_example": "The train is fast."
+  },
+  {
+    "concept": "plane",
+    "language_code": "en",
+    "text": "plane",
+    "sentence_example": "I fly by plane."
+  },
+  {
+    "concept": "hotel",
+    "language_code": "en",
+    "text": "hotel",
+    "sentence_example": "We stay at a hotel."
+  },
+  {
+    "concept": "ticket",
+    "language_code": "en",
+    "text": "ticket",
+    "sentence_example": "Buy a ticket."
+  },
+  {
+    "concept": "passport",
+    "language_code": "en",
+    "text": "passport",
+    "sentence_example": "Show your passport."
+  },
+  {
+    "concept": "bag",
+    "language_code": "en",
+    "text": "bag",
+    "sentence_example": "Pack your bag."
+  },
+  {
+    "concept": "map",
+    "language_code": "en",
+    "text": "map",
+    "sentence_example": "Look at the map."
+  },
+  {
+    "concept": "to_travel",
+    "language_code": "en",
+    "text": "to travel",
+    "sentence_example": "I love to travel."
   },
   {
     "concept": "airport",
     "language_code": "en",
-    "text": "airport"
+    "text": "airport",
+    "sentence_example": "Go to the airport."
+  },
+  {
+    "concept": "station",
+    "language_code": "en",
+    "text": "station",
+    "sentence_example": "Meet me at the station."
+  },
+  {
+    "concept": "luggage",
+    "language_code": "en",
+    "text": "luggage",
+    "sentence_example": "Where is my luggage?"
+  },
+  {
+    "concept": "tourist",
+    "language_code": "en",
+    "text": "tourist",
+    "sentence_example": "He is a tourist."
+  },
+  {
+    "concept": "vacation",
+    "language_code": "en",
+    "text": "vacation",
+    "sentence_example": "We are on vacation."
+  },
+  {
+    "concept": "trip",
+    "language_code": "en",
+    "text": "trip",
+    "sentence_example": "Have a nice trip."
+  },
+  {
+    "concept": "beach",
+    "language_code": "en",
+    "text": "beach",
+    "sentence_example": "Let's go to the beach."
+  },
+  {
+    "concept": "mountain",
+    "language_code": "en",
+    "text": "mountain",
+    "sentence_example": "I like mountain climbing."
+  },
+  {
+    "concept": "to_visit",
+    "language_code": "en",
+    "text": "to visit",
+    "sentence_example": "I want to visit Paris."
+  },
+  {
+    "concept": "to_arrive",
+    "language_code": "en",
+    "text": "to arrive",
+    "sentence_example": "When do we arrive?"
+  },
+  {
+    "concept": "customs",
+    "language_code": "en",
+    "text": "customs",
+    "sentence_example": "Go through customs."
+  },
+  {
+    "concept": "visa",
+    "language_code": "en",
+    "text": "visa",
+    "sentence_example": "I need a visa."
+  },
+  {
+    "concept": "flight",
+    "language_code": "en",
+    "text": "flight",
+    "sentence_example": "My flight was delayed."
+  },
+  {
+    "concept": "passenger",
+    "language_code": "en",
+    "text": "passenger",
+    "sentence_example": "The passenger is sleeping."
+  },
+  {
+    "concept": "accommodation",
+    "language_code": "en",
+    "text": "accommodation",
+    "sentence_example": "We found cheap accommodation."
+  },
+  {
+    "concept": "itinerary",
+    "language_code": "en",
+    "text": "itinerary",
+    "sentence_example": "Check the itinerary."
+  },
+  {
+    "concept": "reservation",
+    "language_code": "en",
+    "text": "reservation",
+    "sentence_example": "Make a reservation."
+  },
+  {
+    "concept": "foreign",
+    "language_code": "en",
+    "text": "foreign",
+    "sentence_example": "He speaks a foreign language."
+  },
+  {
+    "concept": "culture_shock",
+    "language_code": "en",
+    "text": "culture shock",
+    "sentence_example": "She experienced culture shock."
+  },
+  {
+    "concept": "to_depart",
+    "language_code": "en",
+    "text": "to depart",
+    "sentence_example": "The train is about to depart."
   }
 ]

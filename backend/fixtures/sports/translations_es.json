@@ -1,0 +1,226 @@
+[
+  {
+    "concept": "ball",
+    "language_code": "es",
+    "text": "pelota",
+    "gender": "f",
+    "plural_text": "pelotas",
+    "sentence_example": "Patea la pelota."
+  },
+  {
+    "concept": "team",
+    "language_code": "es",
+    "text": "equipo",
+    "gender": "m",
+    "plural_text": "equipos",
+    "sentence_example": "Nuestro equipo ganó el partido."
+  },
+  {
+    "concept": "game",
+    "language_code": "es",
+    "text": "juego",
+    "gender": "m",
+    "plural_text": "juegos",
+    "sentence_example": "El juego comienza a las cinco."
+  },
+  {
+    "concept": "player",
+    "language_code": "es",
+    "text": "jugador",
+    "gender": "m",
+    "plural_text": "jugadores",
+    "sentence_example": "Él es un buen jugador."
+  },
+  {
+    "concept": "score",
+    "language_code": "es",
+    "text": "puntuación",
+    "gender": "f",
+    "sentence_example": "¿Cuál es la puntuación?"
+  },
+  {
+    "concept": "to_run",
+    "language_code": "es",
+    "text": "correr",
+    "sentence_example": "Corro en el parque todas las mañanas."
+  },
+  {
+    "concept": "to_jump",
+    "language_code": "es",
+    "text": "saltar",
+    "sentence_example": "¿Puedes saltar alto?"
+  },
+  {
+    "concept": "to_swim",
+    "language_code": "es",
+    "text": "nadar",
+    "sentence_example": "Me gusta nadar en la piscina."
+  },
+  {
+    "concept": "football",
+    "language_code": "es",
+    "text": "fútbol",
+    "gender": "m",
+    "sentence_example": "Ellos están jugando fútbol."
+  },
+  {
+    "concept": "tennis",
+    "language_code": "es",
+    "text": "tenis",
+    "gender": "m",
+    "sentence_example": "El tenis requiere una raqueta."
+  },
+  {
+    "concept": "match",
+    "language_code": "es",
+    "text": "partido",
+    "gender": "m",
+    "plural_text": "partidos",
+    "sentence_example": "Vimos el partido en la televisión."
+  },
+  {
+    "concept": "coach",
+    "language_code": "es",
+    "text": "entrenador",
+    "gender": "m",
+    "plural_text": "entrenadores",
+    "sentence_example": "El entrenador entrena a los jugadores."
+  },
+  {
+    "concept": "stadium",
+    "language_code": "es",
+    "text": "estadio",
+    "gender": "m",
+    "plural_text": "estadios",
+    "sentence_example": "El estadio estaba lleno."
+  },
+  {
+    "concept": "goal",
+    "language_code": "es",
+    "text": "gol",
+    "gender": "m",
+    "plural_text": "goles",
+    "sentence_example": "Él marcó un gol."
+  },
+  {
+    "concept": "referee",
+    "language_code": "es",
+    "text": "árbitro",
+    "gender": "m",
+    "plural_text": "árbitros",
+    "sentence_example": "El árbitro tocó el silbato."
+  },
+  {
+    "concept": "training",
+    "language_code": "es",
+    "text": "entrenamiento",
+    "gender": "m",
+    "plural_text": "entrenamientos",
+    "sentence_example": "El entrenamiento es trabajo duro."
+  },
+  {
+    "concept": "championship",
+    "language_code": "es",
+    "text": "campeonato",
+    "gender": "m",
+    "plural_text": "campeonatos",
+    "sentence_example": "Ellos ganaron el campeonato."
+  },
+  {
+    "concept": "medal",
+    "language_code": "es",
+    "text": "medalla",
+    "gender": "f",
+    "plural_text": "medallas",
+    "sentence_example": "Ella ganó una medalla de oro."
+  },
+  {
+    "concept": "to_win",
+    "language_code": "es",
+    "text": "ganar",
+    "sentence_example": "Todos quieren ganar."
+  },
+  {
+    "concept": "to_lose",
+    "language_code": "es",
+    "text": "perder",
+    "sentence_example": "Es triste perder."
+  },
+  {
+    "concept": "tournament",
+    "language_code": "es",
+    "text": "torneo",
+    "gender": "m",
+    "plural_text": "torneos",
+    "sentence_example": "El torneo dura toda la semana."
+  },
+  {
+    "concept": "athlete",
+    "language_code": "es",
+    "text": "atleta",
+    "gender": "m",
+    "plural_text": "atletas",
+    "sentence_example": "El atleta es muy fuerte."
+  },
+  {
+    "concept": "opponent",
+    "language_code": "es",
+    "text": "oponente",
+    "gender": "m",
+    "plural_text": "oponentes",
+    "sentence_example": "Respeta a tu oponente."
+  },
+  {
+    "concept": "victory",
+    "language_code": "es",
+    "text": "victoria",
+    "gender": "f",
+    "plural_text": "victorias",
+    "sentence_example": "Celebramos la victoria."
+  },
+  {
+    "concept": "defeat",
+    "language_code": "es",
+    "text": "derrota",
+    "gender": "f",
+    "plural_text": "derrotas",
+    "sentence_example": "Ellos aceptaron la derrota."
+  },
+  {
+    "concept": "strategy",
+    "language_code": "es",
+    "text": "estrategia",
+    "gender": "f",
+    "plural_text": "estrategias",
+    "sentence_example": "El equipo necesita una buena estrategia."
+  },
+  {
+    "concept": "endurance",
+    "language_code": "es",
+    "text": "resistencia",
+    "gender": "f",
+    "sentence_example": "Los corredores de maratón necesitan resistencia."
+  },
+  {
+    "concept": "equipment",
+    "language_code": "es",
+    "text": "equipo",
+    "gender": "m",
+    "plural_text": "equipos",
+    "sentence_example": "El equipo deportivo puede ser caro."
+  },
+  {
+    "concept": "performance",
+    "language_code": "es",
+    "text": "rendimiento",
+    "gender": "m",
+    "sentence_example": "Su rendimiento fue excelente."
+  },
+  {
+    "concept": "fitness",
+    "language_code": "es",
+    "text": "aptitud física",
+    "gender": "f",
+    "sentence_example": "La aptitud física es importante."
+  }
+]

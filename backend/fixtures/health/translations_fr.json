@@ -1,41 +1,235 @@
 [
   {
+    "concept": "doctor",
     "language_code": "fr",
     "text": "médecin",
-    "gender": "masculine",
+    "gender": "m",
     "plural_text": "médecins",
-    "sentence_example": "Je vois le médecin.",
-    "concept": "doctor"
+    "sentence_example": "Le médecin est gentil."
   },
   {
-    "language_code": "fr",
-    "text": "médicament",
-    "gender": "masculine",
-    "plural_text": "médicaments",
-    "sentence_example": "Prends ton médicament.",
-    "concept": "medicine"
-  },
-  {
+    "concept": "hospital",
     "language_code": "fr",
     "text": "hôpital",
-    "gender": "masculine",
+    "gender": "m",
     "plural_text": "hôpitaux",
-    "sentence_example": "Il est à l'hôpital.",
-    "concept": "hospital"
+    "sentence_example": "L'hôpital est grand."
   },
   {
+    "concept": "medicine",
     "language_code": "fr",
-    "text": "corps",
-    "gender": "masculine",
-    "plural_text": "corps",
-    "sentence_example": "Le corps humain.",
-    "concept": "body"
+    "text": "médicament",
+    "gender": "m",
+    "plural_text": "médicaments",
+    "sentence_example": "Prends ton médicament."
   },
   {
+    "concept": "sick",
     "language_code": "fr",
     "text": "malade",
-    "gender": "masculine",
-    "sentence_example": "Je suis malade.",
-    "concept": "sick"
+    "sentence_example": "Je me sens malade."
+  },
+  {
+    "concept": "head",
+    "language_code": "fr",
+    "text": "tête",
+    "gender": "f",
+    "plural_text": "têtes",
+    "sentence_example": "J'ai mal à la tête."
+  },
+  {
+    "concept": "body",
+    "language_code": "fr",
+    "text": "corps",
+    "gender": "m",
+    "plural_text": "corps",
+    "sentence_example": "L'exercice est bon pour le corps."
+  },
+  {
+    "concept": "hand",
+    "language_code": "fr",
+    "text": "main",
+    "gender": "f",
+    "plural_text": "mains",
+    "sentence_example": "Lave-toi les mains."
+  },
+  {
+    "concept": "leg",
+    "language_code": "fr",
+    "text": "jambe",
+    "gender": "f",
+    "plural_text": "jambes",
+    "sentence_example": "Il s'est cassé la jambe."
+  },
+  {
+    "concept": "eye",
+    "language_code": "fr",
+    "text": "œil",
+    "gender": "m",
+    "plural_text": "yeux",
+    "sentence_example": "Ferme les yeux."
+  },
+  {
+    "concept": "mouth",
+    "language_code": "fr",
+    "text": "bouche",
+    "gender": "f",
+    "plural_text": "bouches",
+    "sentence_example": "Ouvre la bouche."
+  },
+  {
+    "concept": "nurse",
+    "language_code": "fr",
+    "text": "infirmière",
+    "gender": "f",
+    "plural_text": "infirmières",
+    "sentence_example": "L'infirmière m'a aidé."
+  },
+  {
+    "concept": "pharmacy",
+    "language_code": "fr",
+    "text": "pharmacie",
+    "gender": "f",
+    "plural_text": "pharmacies",
+    "sentence_example": "Va à la pharmacie."
+  },
+  {
+    "concept": "headache",
+    "language_code": "fr",
+    "text": "mal de tête",
+    "gender": "m",
+    "plural_text": "maux de tête",
+    "sentence_example": "J'ai un mal de tête."
+  },
+  {
+    "concept": "stomach",
+    "language_code": "fr",
+    "text": "estomac",
+    "gender": "m",
+    "plural_text": "estomacs",
+    "sentence_example": "Mon estomac est plein."
+  },
+  {
+    "concept": "heart",
+    "language_code": "fr",
+    "text": "cœur",
+    "gender": "m",
+    "plural_text": "cœurs",
+    "sentence_example": "Mon cœur bat vite."
+  },
+  {
+    "concept": "fever",
+    "language_code": "fr",
+    "text": "fièvre",
+    "gender": "f",
+    "sentence_example": "Il a une forte fièvre."
+  },
+  {
+    "concept": "pain",
+    "language_code": "fr",
+    "text": "douleur",
+    "gender": "f",
+    "plural_text": "douleurs",
+    "sentence_example": "Je ressens une douleur dans le dos."
+  },
+  {
+    "concept": "blood",
+    "language_code": "fr",
+    "text": "sang",
+    "gender": "m",
+    "sentence_example": "Le sang est rouge."
+  },
+  {
+    "concept": "dentist",
+    "language_code": "fr",
+    "text": "dentiste",
+    "gender": "m",
+    "plural_text": "dentistes",
+    "sentence_example": "J'ai un rendez-vous chez le dentiste."
+  },
+  {
+    "concept": "to_hurt",
+    "language_code": "fr",
+    "text": "faire mal",
+    "sentence_example": "Ça fait mal ?"
+  },
+  {
+    "concept": "surgery",
+    "language_code": "fr",
+    "text": "chirurgie",
+    "gender": "f",
+    "plural_text": "chirurgies",
+    "sentence_example": "Elle a besoin d'une chirurgie."
+  },
+  {
+    "concept": "disease",
+    "language_code": "fr",
+    "text": "maladie",
+    "gender": "f",
+    "plural_text": "maladies",
+    "sentence_example": "Le cancer est une maladie grave."
+  },
+  {
+    "concept": "symptom",
+    "language_code": "fr",
+    "text": "symptôme",
+    "gender": "m",
+    "plural_text": "symptômes",
+    "sentence_example": "La fièvre est un symptôme de la grippe."
+  },
+  {
+    "concept": "treatment",
+    "language_code": "fr",
+    "text": "traitement",
+    "gender": "m",
+    "plural_text": "traitements",
+    "sentence_example": "Le traitement fonctionne."
+  },
+  {
+    "concept": "ambulance",
+    "language_code": "fr",
+    "text": "ambulance",
+    "gender": "f",
+    "plural_text": "ambulances",
+    "sentence_example": "Appelez une ambulance."
+  },
+  {
+    "concept": "emergency",
+    "language_code": "fr",
+    "text": "urgence",
+    "gender": "f",
+    "plural_text": "urgences",
+    "sentence_example": "C'est une urgence."
+  },
+  {
+    "concept": "vaccine",
+    "language_code": "fr",
+    "text": "vaccin",
+    "gender": "m",
+    "plural_text": "vaccins",
+    "sentence_example": "Fais-toi vacciner."
+  },
+  {
+    "concept": "muscle",
+    "language_code": "fr",
+    "text": "muscle",
+    "gender": "m",
+    "plural_text": "muscles",
+    "sentence_example": "Il a de gros muscles."
+  },
+  {
+    "concept": "bone",
+    "language_code": "fr",
+    "text": "os",
+    "gender": "m",
+    "plural_text": "os",
+    "sentence_example": "Les chiens aiment les os."
+  },
+  {
+    "concept": "mental_health",
+    "language_code": "fr",
+    "text": "santé mentale",
+    "gender": "f",
+    "sentence_example": "La santé mentale est importante."
   }
 ]

@@ -1,27 +1,182 @@
 [
   {
+    "concept": "mother",
     "language_code": "en",
     "text": "mother",
-    "concept": "mother"
+    "sentence_example": "My mother is kind."
   },
   {
+    "concept": "father",
     "language_code": "en",
     "text": "father",
-    "concept": "father"
+    "sentence_example": "My father works hard."
   },
   {
+    "concept": "brother",
     "language_code": "en",
     "text": "brother",
-    "concept": "brother"
+    "sentence_example": "I have one brother."
   },
   {
+    "concept": "sister",
     "language_code": "en",
     "text": "sister",
-    "concept": "sister"
+    "sentence_example": "My sister is older than me."
   },
   {
+    "concept": "child",
     "language_code": "en",
     "text": "child",
-    "concept": "child"
+    "sentence_example": "The child is playing."
+  },
+  {
+    "concept": "son",
+    "language_code": "en",
+    "text": "son",
+    "sentence_example": "He is my son."
+  },
+  {
+    "concept": "daughter",
+    "language_code": "en",
+    "text": "daughter",
+    "sentence_example": "She is my daughter."
+  },
+  {
+    "concept": "parent",
+    "language_code": "en",
+    "text": "parent",
+    "sentence_example": "My parents are visiting."
+  },
+  {
+    "concept": "baby",
+    "language_code": "en",
+    "text": "baby",
+    "sentence_example": "The baby is sleeping."
+  },
+  {
+    "concept": "friend",
+    "language_code": "en",
+    "text": "friend",
+    "sentence_example": "He is my best friend."
+  },
+  {
+    "concept": "grandmother",
+    "language_code": "en",
+    "text": "grandmother",
+    "sentence_example": "My grandmother makes good cookies."
+  },
+  {
+    "concept": "grandfather",
+    "language_code": "en",
+    "text": "grandfather",
+    "sentence_example": "My grandfather loves fishing."
+  },
+  {
+    "concept": "aunt",
+    "language_code": "en",
+    "text": "aunt",
+    "sentence_example": "My aunt lives in the city."
+  },
+  {
+    "concept": "uncle",
+    "language_code": "en",
+    "text": "uncle",
+    "sentence_example": "My uncle is funny."
+  },
+  {
+    "concept": "cousin",
+    "language_code": "en",
+    "text": "cousin",
+    "sentence_example": "My cousin is my age."
+  },
+  {
+    "concept": "husband",
+    "language_code": "en",
+    "text": "husband",
+    "sentence_example": "Her husband is a doctor."
+  },
+  {
+    "concept": "wife",
+    "language_code": "en",
+    "text": "wife",
+    "sentence_example": "His wife is a teacher."
+  },
+  {
+    "concept": "wedding",
+    "language_code": "en",
+    "text": "wedding",
+    "sentence_example": "The wedding was beautiful."
+  },
+  {
+    "concept": "nephew",
+    "language_code": "en",
+    "text": "nephew",
+    "sentence_example": "My nephew likes cars."
+  },
+  {
+    "concept": "niece",
+    "language_code": "en",
+    "text": "niece",
+    "sentence_example": "My niece likes dolls."
+  },
+  {
+    "concept": "grandchild",
+    "language_code": "en",
+    "text": "grandchild",
+    "sentence_example": "They love their grandchild."
+  },
+  {
+    "concept": "stepfather",
+    "language_code": "en",
+    "text": "stepfather",
+    "sentence_example": "My stepfather is nice."
+  },
+  {
+    "concept": "stepmother",
+    "language_code": "en",
+    "text": "stepmother",
+    "sentence_example": "My stepmother cooks well."
+  },
+  {
+    "concept": "mother_in_law",
+    "language_code": "en",
+    "text": "mother-in-law",
+    "sentence_example": "My mother-in-law is visiting."
+  },
+  {
+    "concept": "father_in_law",
+    "language_code": "en",
+    "text": "father-in-law",
+    "sentence_example": "My father-in-law likes sports."
+  },
+  {
+    "concept": "relative",
+    "language_code": "en",
+    "text": "relative",
+    "sentence_example": "All my relatives were there."
+  },
+  {
+    "concept": "orphan",
+    "language_code": "en",
+    "text": "orphan",
+    "sentence_example": "The orphan found a new home."
+  },
+  {
+    "concept": "ancestor",
+    "language_code": "en",
+    "text": "ancestor",
+    "sentence_example": "Our ancestors came from Europe."
+  },
+  {
+    "concept": "generation",
+    "language_code": "en",
+    "text": "generation",
+    "sentence_example": "The younger generation is tech-savvy."
+  },
+  {
+    "concept": "relationship",
+    "language_code": "en",
+    "text": "relationship",
+    "sentence_example": "They have a good relationship."
   }
 ]

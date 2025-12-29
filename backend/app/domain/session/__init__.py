@@ -1,2 +1,2 @@
-from .models import Session, SessionResult 
-from .schemas import SessionCreate, SessionResultCreate, SessionSchema, SessionResultSchema
+from .models import Session, SessionWord 
+from .schemas import SessionCreate, SessionWordCreate, SessionSchema, SessionWordSchema

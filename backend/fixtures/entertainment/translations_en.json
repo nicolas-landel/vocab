@@ -1,1 +1,182 @@
-[]
+[
+  {
+    "concept": "movie",
+    "language_code": "en",
+    "text": "movie",
+    "sentence_example": "I watched a movie."
+  },
+  {
+    "concept": "music",
+    "language_code": "en",
+    "text": "music",
+    "sentence_example": "I like listening to music."
+  },
+  {
+    "concept": "game",
+    "language_code": "en",
+    "text": "game",
+    "sentence_example": "Let's play a game."
+  },
+  {
+    "concept": "book",
+    "language_code": "en",
+    "text": "book",
+    "sentence_example": "Read a book."
+  },
+  {
+    "concept": "fun",
+    "language_code": "en",
+    "text": "fun",
+    "sentence_example": "This is fun."
+  },
+  {
+    "concept": "to_play",
+    "language_code": "en",
+    "text": "to play",
+    "sentence_example": "Children love to play."
+  },
+  {
+    "concept": "to_sing",
+    "language_code": "en",
+    "text": "to sing",
+    "sentence_example": "Can you sing?"
+  },
+  {
+    "concept": "to_dance",
+    "language_code": "en",
+    "text": "to dance",
+    "sentence_example": "I want to dance."
+  },
+  {
+    "concept": "tv",
+    "language_code": "en",
+    "text": "TV",
+    "sentence_example": "Turn on the TV."
+  },
+  {
+    "concept": "radio",
+    "language_code": "en",
+    "text": "radio",
+    "sentence_example": "Listen to the radio."
+  },
+  {
+    "concept": "theater",
+    "language_code": "en",
+    "text": "theater",
+    "sentence_example": "We went to the theater."
+  },
+  {
+    "concept": "concert",
+    "language_code": "en",
+    "text": "concert",
+    "sentence_example": "The concert was loud."
+  },
+  {
+    "concept": "museum",
+    "language_code": "en",
+    "text": "museum",
+    "sentence_example": "Visit the museum."
+  },
+  {
+    "concept": "party",
+    "language_code": "en",
+    "text": "party",
+    "sentence_example": "Are you going to the party?"
+  },
+  {
+    "concept": "festival",
+    "language_code": "en",
+    "text": "festival",
+    "sentence_example": "The music festival is annual."
+  },
+  {
+    "concept": "actor",
+    "language_code": "en",
+    "text": "actor",
+    "sentence_example": "He is a famous actor."
+  },
+  {
+    "concept": "artist",
+    "language_code": "en",
+    "text": "artist",
+    "sentence_example": "She is a talented artist."
+  },
+  {
+    "concept": "hobby",
+    "language_code": "en",
+    "text": "hobby",
+    "sentence_example": "My hobby is reading."
+  },
+  {
+    "concept": "video_game",
+    "language_code": "en",
+    "text": "video game",
+    "sentence_example": "He plays video games all day."
+  },
+  {
+    "concept": "to_relax",
+    "language_code": "en",
+    "text": "to relax",
+    "sentence_example": "I need to relax."
+  },
+  {
+    "concept": "exhibition",
+    "language_code": "en",
+    "text": "exhibition",
+    "sentence_example": "The art exhibition is open."
+  },
+  {
+    "concept": "performance",
+    "language_code": "en",
+    "text": "performance",
+    "sentence_example": "Great performance!"
+  },
+  {
+    "concept": "audience",
+    "language_code": "en",
+    "text": "audience",
+    "sentence_example": "The audience clapped."
+  },
+  {
+    "concept": "stage",
+    "language_code": "en",
+    "text": "stage",
+    "sentence_example": "He is on stage."
+  },
+  {
+    "concept": "ticket_office",
+    "language_code": "en",
+    "text": "ticket office",
+    "sentence_example": "Buy tickets at the ticket office."
+  },
+  {
+    "concept": "screen",
+    "language_code": "en",
+    "text": "screen",
+    "sentence_example": "Look at the screen."
+  },
+  {
+    "concept": "orchestra",
+    "language_code": "en",
+    "text": "orchestra",
+    "sentence_example": "The orchestra played beautifully."
+  },
+  {
+    "concept": "celebrity",
+    "language_code": "en",
+    "text": "celebrity",
+    "sentence_example": "She is a celebrity."
+  },
+  {
+    "concept": "entertainment",
+    "language_code": "en",
+    "text": "entertainment",
+    "sentence_example": "This is good entertainment."
+  },
+  {
+    "concept": "atmosphere",
+    "language_code": "en",
+    "text": "atmosphere",
+    "sentence_example": "The atmosphere was festive."
+  }
+]

@@ -1,22 +1,22 @@
 import { defineStore } from 'pinia'
 import { useRepo } from 'pinia-orm'
 import apiClient from '@/setup/axios'
-import { Session, SessionConfig, SessionResult } from '@/models'
+import { Session, SessionConfig, SessionWord } from '@/models'
 
 export const useSessionStore = defineStore('session', {
   state: () => ({
     currentSessionId: null,
     currentConfigId: null,
-    sessionWords: [],
-    currentWordIndex: 0,
-    answers: []
+    // sessionWords: [],
+    // currentWordIndex: 0,
+    // answers: []
   }),
 
   getters: {
     currentSession: (state) => {
       if (!state.currentSessionId) return null
       return useRepo(Session).with('results', (query) => {
-        query.with('translation')
+        query.with('translationTo').with('translationFrom')
       }).find(state.currentSessionId)
     },
 
@@ -25,31 +25,33 @@ export const useSessionStore = defineStore('session', {
       return useRepo(SessionConfig).find(state.currentConfigId)
     },
 
-    currentWord: (state) => {
-      if (!state.sessionWords || state.currentWordIndex >= state.sessionWords.length) {
-        return null
-      }
-      return state.sessionWords[state.currentWordIndex]
-    },
+    // currentWord: (state) => {
+    //   if (!state.sessionWords || state.currentWordIndex >= state.sessionWords.length) {
+    //     return null
+    //   }
+    //   return state.sessionWords[state.currentWordIndex]
+    // },
 
-    totalWords: (state) => state.sessionWords.length,
+    // totalWords: (state) => useRepo(SessionWord).query()
+    //   .where('sessionId', state.currentSessionId)
+    //   .count(),
     
-    isSessionComplete: (state) => state.currentWordIndex >= state.sessionWords.length,
+    // isSessionComplete: (state) => state.currentWordIndex >= state.sessionWords.length,
     
-    sessionResults: (state) => {
-      if (!state.answers.length) return null
+    // sessionWords: (state) => {
+    //   if (!state.answers.length) return null
       
-      const correctFirstTime = state.answers.filter(a => a.correct && a.attempts === 1)
-      const failed = state.answers.filter(a => !a.correct || a.attempts > 1 || a.skipped)
-      const successRate = (correctFirstTime.length / state.answers.length) * 100
+    //   const correctFirstTime = state.answers.filter(a => a.correct && a.attempts === 1)
+    //   const failed = state.answers.filter(a => !a.correct || a.attempts > 1 || a.skipped)
+    //   const successRate = (correctFirstTime.length / state.answers.length) * 100
       
-      return {
-        correctFirstTime,
-        failed,
-        successRate: Math.round(successRate),
-        total: state.answers.length
-      }
-    }
+    //   return {
+    //     correctFirstTime,
+    //     failed,
+    //     successRate: Math.round(successRate),
+    //     total: state.answers.length
+    //   }
+    // }
   },
 
   actions: {
@@ -81,63 +83,62 @@ export const useSessionStore = defineStore('session', {
         sessionType: this.currentConfig.sessionType
       })
       
-      // Save to ORM
       useRepo(Session).save(response.data)
-      useRepo(SessionResult).save(response.data.results)
+      useRepo(SessionWord).save(response.data.results)
       
       this.currentSessionId = response.data.id
-      this.sessionWords = response.data.results.map(r => ({
-        ...r.translation,
-        sessionResultId: r.id,
-        attempts: 0,
-        skipped: false
-      }))
-      this.currentWordIndex = 0
-      this.answers = []
+      // this.sessionWords = response.data.results.map(r => ({
+      //   ...r.translation,
+      //   sessionWordId: r.id,
+      //   attempts: 0,
+      //   skipped: false
+      // }))
+      // this.currentWordIndex = 0
+      // this.answers = []
       
       return response.data
     },
 
-    submitAnswer(userAnswer) {
-      if (!this.currentWord) return
+    // submitAnswer(userAnswer) {
+    //   if (!this.currentWord) return
       
-      const word = this.currentWord
-      const isCorrect = userAnswer.toLowerCase().trim() === word.text.toLowerCase().trim()
-      word.attempts++
+    //   const word = this.currentWord
+    //   const isCorrect = userAnswer.toLowerCase().trim() === word.text.toLowerCase().trim()
+    //   word.attempts++
       
-      const existingAnswer = this.answers.find(a => a.translationId === word.id)
+    //   const existingAnswer = this.answers.find(a => a.translationId === word.id)
       
-      if (existingAnswer) {
-        // Word was shown again after failure
-        existingAnswer.attempts++
-        if (isCorrect) {
-          existingAnswer.correct = true
-          this.currentWordIndex++
-        } else {
-          // Move to end of list to try again
-          const failedWord = this.sessionWords.splice(this.currentWordIndex, 1)[0]
-          this.sessionWords.push(failedWord)
-        }
-      } else {
-        // First attempt at this word
-        this.answers.push({
-          translationId: word.id,
-          sessionResultId: word.sessionResultId,
-          correct: isCorrect,
-          attempts: 1,
-          skipped: false,
-          userAnswer
-        })
+    //   if (existingAnswer) {
+    //     // Word was shown again after failure
+    //     existingAnswer.attempts++
+    //     if (isCorrect) {
+    //       existingAnswer.correct = true
+    //       this.currentWordIndex++
+    //     } else {
+    //       // Move to end of list to try again
+    //       const failedWord = this.sessionWords.splice(this.currentWordIndex, 1)[0]
+    //       this.sessionWords.push(failedWord)
+    //     }
+    //   } else {
+    //     // First attempt at this word
+    //     this.answers.push({
+    //       translationId: word.id,
+    //       sessionWordId: word.sessionWordId,
+    //       correct: isCorrect,
+    //       attempts: 1,
+    //       skipped: false,
+    //       userAnswer
+    //     })
         
-        if (isCorrect) {
-          this.currentWordIndex++
-        } else {
-          // Move to end of list to try again
-          const failedWord = this.sessionWords.splice(this.currentWordIndex, 1)[0]
-          this.sessionWords.push(failedWord)
-        }
-      }
-    },
+    //     if (isCorrect) {
+    //       this.currentWordIndex++
+    //     } else {
+    //       // Move to end of list to try again
+    //       const failedWord = this.sessionWords.splice(this.currentWordIndex, 1)[0]
+    //       this.sessionWords.push(failedWord)
+    //     }
+    //   }
+    // },
 
     skipWord() {
       if (!this.currentWord) return
@@ -151,7 +152,7 @@ export const useSessionStore = defineStore('session', {
       if (!existingAnswer) {
         this.answers.push({
           translationId: word.id,
-          sessionResultId: word.sessionResultId,
+          sessionWordId: word.sessionWordId,
           correct: false,
           attempts: 1,
           skipped: true,
@@ -173,7 +174,7 @@ export const useSessionStore = defineStore('session', {
       const response = await apiClient.post(`/api/v1/sessions/${this.currentSessionId}/submit`, results)
       useRepo(Session).save(response.data)
       
-      return this.sessionResults
+      return this.sessionWords
     },
 
     async fetchSessionHistory() {

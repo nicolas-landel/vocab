@@ -53,26 +53,37 @@ class SessionSchema(SessionCreate):
     model_config = ConfigDict(from_attributes=True)
 
 
-# SessionResult Schemas
-class SessionResultCreate(BaseModel):
-    translation_id: UUID
-    correct: bool
+# SessionWord Schemas
+class SessionWordCreate(BaseModel):
+    translation_from_id: UUID
+    translation_to_id: UUID
+    from_language: str
+    to_language: str
+    correct: Optional[bool] = None
+    user_answer: Optional[str] = None
 
-class SessionResultSchema(SessionResultCreate):
+class SessionWordSchema(SessionWordCreate):
     id: UUID
     session_id: UUID
+    translation_from_id: UUID
+    translation_to_id: UUID
+    from_language: str
+    to_language: str
+    correct: Optional[bool] = None
+    user_answer: Optional[str] = None
     created_at: datetime
     model_config = ConfigDict(from_attributes=True)
 
-class SessionResultDetail(SessionResultSchema):
+class SessionWordDetail(SessionWordSchema):
     """Extended result with translation details"""
-    translation: TranslationDetail
+    translation_from: TranslationDetail
+    translation_to: TranslationDetail
     model_config = ConfigDict(from_attributes=True)
 
 
 # Session with Results
 class SessionDetail(SessionSchema):
-    results: List[SessionResultDetail] = []
+    results: List[SessionWordDetail] = []
     model_config = ConfigDict(from_attributes=True)
 
 

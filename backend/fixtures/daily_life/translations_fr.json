@@ -1,36 +1,221 @@
 [
   {
+    "concept": "house",
     "language_code": "fr",
     "text": "maison",
-    "gender": "feminine",
+    "gender": "f",
     "plural_text": "maisons",
-    "sentence_example": "La maison est grande.",
-    "concept": "house"
+    "sentence_example": "J'habite dans une grande maison."
   },
   {
+    "concept": "room",
     "language_code": "fr",
-    "text": "voiture",
-    "gender": "feminine",
-    "plural_text": "voitures",
-    "sentence_example": "Je conduis une voiture.",
-    "concept": "car"
+    "text": "chambre",
+    "gender": "f",
+    "plural_text": "chambres",
+    "sentence_example": "C'est ma chambre."
   },
   {
+    "concept": "bed",
+    "language_code": "fr",
+    "text": "lit",
+    "gender": "m",
+    "plural_text": "lits",
+    "sentence_example": "Le lit est confortable."
+  },
+  {
+    "concept": "table",
+    "language_code": "fr",
+    "text": "table",
+    "gender": "f",
+    "plural_text": "tables",
+    "sentence_example": "Le dîner est sur la table."
+  },
+  {
+    "concept": "chair",
+    "language_code": "fr",
+    "text": "chaise",
+    "gender": "f",
+    "plural_text": "chaises",
+    "sentence_example": "Assieds-toi sur la chaise."
+  },
+  {
+    "concept": "clock",
+    "language_code": "fr",
+    "text": "horloge",
+    "gender": "f",
+    "plural_text": "horloges",
+    "sentence_example": "Regarde l'horloge."
+  },
+  {
+    "concept": "to_sleep",
     "language_code": "fr",
     "text": "dormir",
-    "sentence_example": "Je vais dormir.",
-    "concept": "sleep"
+    "sentence_example": "J'ai besoin de dormir."
   },
   {
+    "concept": "to_eat",
     "language_code": "fr",
     "text": "manger",
-    "sentence_example": "Il faut manger.",
-    "concept": "eat"
+    "sentence_example": "C'est l'heure de manger."
   },
   {
+    "concept": "to_drink",
     "language_code": "fr",
-    "text": "marcher",
-    "sentence_example": "J'aime marcher.",
-    "concept": "walk"
+    "text": "boire",
+    "sentence_example": "Je veux boire de l'eau."
+  },
+  {
+    "concept": "clothes",
+    "language_code": "fr",
+    "text": "vêtements",
+    "gender": "m",
+    "sentence_example": "Mets tes vêtements."
+  },
+  {
+    "concept": "kitchen",
+    "language_code": "fr",
+    "text": "cuisine",
+    "gender": "f",
+    "plural_text": "cuisines",
+    "sentence_example": "Elle est dans la cuisine."
+  },
+  {
+    "concept": "bathroom",
+    "language_code": "fr",
+    "text": "salle de bain",
+    "gender": "f",
+    "plural_text": "salles de bain",
+    "sentence_example": "La salle de bain est propre."
+  },
+  {
+    "concept": "living_room",
+    "language_code": "fr",
+    "text": "salon",
+    "gender": "m",
+    "plural_text": "salons",
+    "sentence_example": "Nous regardons la télé dans le salon."
+  },
+  {
+    "concept": "furniture",
+    "language_code": "fr",
+    "text": "meubles",
+    "gender": "m",
+    "sentence_example": "Nous avons de nouveaux meubles."
+  },
+  {
+    "concept": "gardening",
+    "language_code": "fr",
+    "text": "jardinage",
+    "gender": "m",
+    "sentence_example": "Il aime le jardinage."
+  },
+  {
+    "concept": "cleaning",
+    "language_code": "fr",
+    "text": "ménage",
+    "gender": "m",
+    "sentence_example": "Le ménage prend du temps."
+  },
+  {
+    "concept": "cooking",
+    "language_code": "fr",
+    "text": "cuisine",
+    "gender": "f",
+    "sentence_example": "J'aime la cuisine."
+  },
+  {
+    "concept": "laundry",
+    "language_code": "fr",
+    "text": "lessive",
+    "gender": "f",
+    "sentence_example": "Fais la lessive aujourd'hui."
+  },
+  {
+    "concept": "groceries",
+    "language_code": "fr",
+    "text": "courses",
+    "gender": "f",
+    "sentence_example": "Je dois faire les courses."
+  },
+  {
+    "concept": "to_wake_up",
+    "language_code": "fr",
+    "text": "se réveiller",
+    "sentence_example": "Je me réveille à sept heures."
+  },
+  {
+    "concept": "routine",
+    "language_code": "fr",
+    "text": "routine",
+    "gender": "f",
+    "plural_text": "routines",
+    "sentence_example": "Ma routine quotidienne est simple."
+  },
+  {
+    "concept": "chore",
+    "language_code": "fr",
+    "text": "corvée",
+    "gender": "f",
+    "plural_text": "corvées",
+    "sentence_example": "Faire la vaisselle est une corvée."
+  },
+  {
+    "concept": "maintenance",
+    "language_code": "fr",
+    "text": "entretien",
+    "gender": "m",
+    "sentence_example": "L'entretien de la voiture est cher."
+  },
+  {
+    "concept": "appliance",
+    "language_code": "fr",
+    "text": "appareil",
+    "gender": "m",
+    "plural_text": "appareils",
+    "sentence_example": "L'appareil de cuisine est cassé."
+  },
+  {
+    "concept": "utilities",
+    "language_code": "fr",
+    "text": "charges",
+    "gender": "f",
+    "sentence_example": "Payez la facture des charges."
+  },
+  {
+    "concept": "leisure",
+    "language_code": "fr",
+    "text": "loisirs",
+    "gender": "m",
+    "sentence_example": "Profitez de vos loisirs."
+  },
+  {
+    "concept": "lifestyle",
+    "language_code": "fr",
+    "text": "mode de vie",
+    "gender": "m",
+    "sentence_example": "Elle mène un mode de vie sain."
+  },
+  {
+    "concept": "habit",
+    "language_code": "fr",
+    "text": "habitude",
+    "gender": "f",
+    "plural_text": "habitudes",
+    "sentence_example": "Fumer est une mauvaise habitude."
+  },
+  {
+    "concept": "hygiene",
+    "language_code": "fr",
+    "text": "hygiène",
+    "gender": "f",
+    "sentence_example": "Une bonne hygiène prévient les maladies."
+  },
+  {
+    "concept": "schedule",
+    "language_code": "fr",
+    "text": "emploi du temps",
+    "gender": "m",
+    "sentence_example": "Vérifiez votre emploi du temps."
   }
 ]

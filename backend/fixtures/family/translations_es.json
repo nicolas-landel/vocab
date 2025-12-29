@@ -1,42 +1,242 @@
 [
   {
+    "concept": "mother",
     "language_code": "es",
     "text": "madre",
-    "gender": "feminine",
+    "gender": "f",
     "plural_text": "madres",
-    "sentence_example": "Mi madre es amable.",
-    "concept": "mother"
+    "sentence_example": "Mi madre es amable."
   },
   {
+    "concept": "father",
     "language_code": "es",
     "text": "padre",
-    "gender": "masculine",
+    "gender": "m",
     "plural_text": "padres",
-    "sentence_example": "Mi padre trabaja.",
-    "concept": "father"
+    "sentence_example": "Mi padre trabaja duro."
   },
   {
+    "concept": "brother",
     "language_code": "es",
     "text": "hermano",
-    "gender": "masculine",
+    "gender": "m",
     "plural_text": "hermanos",
-    "sentence_example": "Tengo un hermano.",
-    "concept": "brother"
+    "sentence_example": "Tengo un hermano."
   },
   {
+    "concept": "sister",
     "language_code": "es",
     "text": "hermana",
-    "gender": "feminine",
+    "gender": "f",
     "plural_text": "hermanas",
-    "sentence_example": "Tengo una hermana.",
-    "concept": "sister"
+    "sentence_example": "Mi hermana es mayor que yo."
   },
   {
+    "concept": "child",
     "language_code": "es",
     "text": "niño",
-    "gender": "masculine",
+    "gender": "m",
     "plural_text": "niños",
-    "sentence_example": "El niño juega.",
-    "concept": "child"
+    "sentence_example": "El niño está jugando."
+  },
+  {
+    "concept": "son",
+    "language_code": "es",
+    "text": "hijo",
+    "gender": "m",
+    "plural_text": "hijos",
+    "sentence_example": "Él es mi hijo."
+  },
+  {
+    "concept": "daughter",
+    "language_code": "es",
+    "text": "hija",
+    "gender": "f",
+    "plural_text": "hijas",
+    "sentence_example": "Ella es mi hija."
+  },
+  {
+    "concept": "parent",
+    "language_code": "es",
+    "text": "padre",
+    "gender": "m",
+    "plural_text": "padres",
+    "sentence_example": "Mis padres están de visita."
+  },
+  {
+    "concept": "baby",
+    "language_code": "es",
+    "text": "bebé",
+    "gender": "m",
+    "plural_text": "bebés",
+    "sentence_example": "El bebé está durmiendo."
+  },
+  {
+    "concept": "friend",
+    "language_code": "es",
+    "text": "amigo",
+    "gender": "m",
+    "plural_text": "amigos",
+    "sentence_example": "Él es mi mejor amigo."
+  },
+  {
+    "concept": "grandmother",
+    "language_code": "es",
+    "text": "abuela",
+    "gender": "f",
+    "plural_text": "abuelas",
+    "sentence_example": "Mi abuela hace buenas galletas."
+  },
+  {
+    "concept": "grandfather",
+    "language_code": "es",
+    "text": "abuelo",
+    "gender": "m",
+    "plural_text": "abuelos",
+    "sentence_example": "A mi abuelo le gusta pescar."
+  },
+  {
+    "concept": "aunt",
+    "language_code": "es",
+    "text": "tía",
+    "gender": "f",
+    "plural_text": "tías",
+    "sentence_example": "Mi tía vive en la ciudad."
+  },
+  {
+    "concept": "uncle",
+    "language_code": "es",
+    "text": "tío",
+    "gender": "m",
+    "plural_text": "tíos",
+    "sentence_example": "Mi tío es divertido."
+  },
+  {
+    "concept": "cousin",
+    "language_code": "es",
+    "text": "primo",
+    "gender": "m",
+    "plural_text": "primos",
+    "sentence_example": "Mi primo tiene mi edad."
+  },
+  {
+    "concept": "husband",
+    "language_code": "es",
+    "text": "esposo",
+    "gender": "m",
+    "plural_text": "esposos",
+    "sentence_example": "Su esposo es médico."
+  },
+  {
+    "concept": "wife",
+    "language_code": "es",
+    "text": "esposa",
+    "gender": "f",
+    "plural_text": "esposas",
+    "sentence_example": "Su esposa es maestra."
+  },
+  {
+    "concept": "wedding",
+    "language_code": "es",
+    "text": "boda",
+    "gender": "f",
+    "plural_text": "bodas",
+    "sentence_example": "La boda fue hermosa."
+  },
+  {
+    "concept": "nephew",
+    "language_code": "es",
+    "text": "sobrino",
+    "gender": "m",
+    "plural_text": "sobrinos",
+    "sentence_example": "A mi sobrino le gustan los coches."
+  },
+  {
+    "concept": "niece",
+    "language_code": "es",
+    "text": "sobrina",
+    "gender": "f",
+    "plural_text": "sobrinas",
+    "sentence_example": "A mi sobrina le gustan las muñecas."
+  },
+  {
+    "concept": "grandchild",
+    "language_code": "es",
+    "text": "nieto",
+    "gender": "m",
+    "plural_text": "nietos",
+    "sentence_example": "Aman a su nieto."
+  },
+  {
+    "concept": "stepfather",
+    "language_code": "es",
+    "text": "padrastro",
+    "gender": "m",
+    "plural_text": "padrastros",
+    "sentence_example": "Mi padrastro es amable."
+  },
+  {
+    "concept": "stepmother",
+    "language_code": "es",
+    "text": "madrastra",
+    "gender": "f",
+    "plural_text": "madrastras",
+    "sentence_example": "Mi madrastra cocina bien."
+  },
+  {
+    "concept": "mother_in_law",
+    "language_code": "es",
+    "text": "suegra",
+    "gender": "f",
+    "plural_text": "suegras",
+    "sentence_example": "Mi suegra está de visita."
+  },
+  {
+    "concept": "father_in_law",
+    "language_code": "es",
+    "text": "suegro",
+    "gender": "m",
+    "plural_text": "suegros",
+    "sentence_example": "A mi suegro le gustan los deportes."
+  },
+  {
+    "concept": "relative",
+    "language_code": "es",
+    "text": "pariente",
+    "gender": "m",
+    "plural_text": "parientes",
+    "sentence_example": "Todos mis parientes estaban allí."
+  },
+  {
+    "concept": "orphan",
+    "language_code": "es",
+    "text": "huérfano",
+    "gender": "m",
+    "plural_text": "huérfanos",
+    "sentence_example": "El huérfano encontró un nuevo hogar."
+  },
+  {
+    "concept": "ancestor",
+    "language_code": "es",
+    "text": "antepasado",
+    "gender": "m",
+    "plural_text": "antepasados",
+    "sentence_example": "Nuestros antepasados vinieron de Europa."
+  },
+  {
+    "concept": "generation",
+    "language_code": "es",
+    "text": "generación",
+    "gender": "f",
+    "plural_text": "generaciones",
+    "sentence_example": "La generación joven es experta en tecnología."
+  },
+  {
+    "concept": "relationship",
+    "language_code": "es",
+    "text": "relación",
+    "gender": "f",
+    "plural_text": "relaciones",
+    "sentence_example": "Tienen una buena relación."
   }
 ]

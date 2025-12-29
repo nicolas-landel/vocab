@@ -1,1 +1,212 @@
-[]
+[
+  {
+    "concept": "movie",
+    "domain_code": "entertainment",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "music",
+    "domain_code": "entertainment",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "game",
+    "domain_code": "entertainment",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "book",
+    "domain_code": "entertainment",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "fun",
+    "domain_code": "entertainment",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "to_play",
+    "domain_code": "entertainment",
+    "difficulty": "EASY",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "to_sing",
+    "domain_code": "entertainment",
+    "difficulty": "EASY",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "to_dance",
+    "domain_code": "entertainment",
+    "difficulty": "EASY",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "tv",
+    "domain_code": "entertainment",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "radio",
+    "domain_code": "entertainment",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "theater",
+    "domain_code": "entertainment",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "concert",
+    "domain_code": "entertainment",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "museum",
+    "domain_code": "entertainment",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "party",
+    "domain_code": "entertainment",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "festival",
+    "domain_code": "entertainment",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "actor",
+    "domain_code": "entertainment",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "artist",
+    "domain_code": "entertainment",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "hobby",
+    "domain_code": "entertainment",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "video_game",
+    "domain_code": "entertainment",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "to_relax",
+    "domain_code": "entertainment",
+    "difficulty": "MEDIUM",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "exhibition",
+    "domain_code": "entertainment",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "performance",
+    "domain_code": "entertainment",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "audience",
+    "domain_code": "entertainment",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "stage",
+    "domain_code": "entertainment",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "ticket_office",
+    "domain_code": "entertainment",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "screen",
+    "domain_code": "entertainment",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "orchestra",
+    "domain_code": "entertainment",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "celebrity",
+    "domain_code": "entertainment",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "entertainment",
+    "domain_code": "entertainment",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "atmosphere",
+    "domain_code": "entertainment",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  }
+]

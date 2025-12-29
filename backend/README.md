@@ -81,7 +81,9 @@ docker compose exec backend python -m scripts.seed_database -d education
 ```
 
 TODO
-- Todo router app logic -> children of this route + main component has onMounted to fetch all logic
+- isKnown logic 
+- type of session (comprehension, etc)
+- start session
 - prevent ddos
 - check safety login & calls
 

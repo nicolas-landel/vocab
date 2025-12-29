@@ -1,0 +1,182 @@
+[
+  {
+    "concept": "country",
+    "language_code": "en",
+    "text": "country",
+    "sentence_example": "I love my country."
+  },
+  {
+    "concept": "city",
+    "language_code": "en",
+    "text": "city",
+    "sentence_example": "New York is a big city."
+  },
+  {
+    "concept": "people",
+    "language_code": "en",
+    "text": "people",
+    "sentence_example": "There are many people here."
+  },
+  {
+    "concept": "money",
+    "language_code": "en",
+    "text": "money",
+    "sentence_example": "Time is money."
+  },
+  {
+    "concept": "work",
+    "language_code": "en",
+    "text": "work",
+    "sentence_example": "I go to work every day."
+  },
+  {
+    "concept": "school",
+    "language_code": "en",
+    "text": "school",
+    "sentence_example": "Children go to school."
+  },
+  {
+    "concept": "law",
+    "language_code": "en",
+    "text": "law",
+    "sentence_example": "We must obey the law."
+  },
+  {
+    "concept": "government",
+    "language_code": "en",
+    "text": "government",
+    "sentence_example": "The government makes laws."
+  },
+  {
+    "concept": "culture",
+    "language_code": "en",
+    "text": "culture",
+    "sentence_example": "Every country has its own culture."
+  },
+  {
+    "concept": "community",
+    "language_code": "en",
+    "text": "community",
+    "sentence_example": "We have a strong community."
+  },
+  {
+    "concept": "history",
+    "language_code": "en",
+    "text": "history",
+    "sentence_example": "History teaches us about the past."
+  },
+  {
+    "concept": "tradition",
+    "language_code": "en",
+    "text": "tradition",
+    "sentence_example": "It is a family tradition."
+  },
+  {
+    "concept": "security",
+    "language_code": "en",
+    "text": "security",
+    "sentence_example": "National security is important."
+  },
+  {
+    "concept": "justice",
+    "language_code": "en",
+    "text": "justice",
+    "sentence_example": "We demand justice."
+  },
+  {
+    "concept": "business",
+    "language_code": "en",
+    "text": "business",
+    "sentence_example": "He runs a small business."
+  },
+  {
+    "concept": "politics",
+    "language_code": "en",
+    "text": "politics",
+    "sentence_example": "Politics can be complicated."
+  },
+  {
+    "concept": "democracy",
+    "language_code": "en",
+    "text": "democracy",
+    "sentence_example": "Voting is part of democracy."
+  },
+  {
+    "concept": "economy",
+    "language_code": "en",
+    "text": "economy",
+    "sentence_example": "The economy is growing."
+  },
+  {
+    "concept": "religion",
+    "language_code": "en",
+    "text": "religion",
+    "sentence_example": "Freedom of religion is a right."
+  },
+  {
+    "concept": "education",
+    "language_code": "en",
+    "text": "education",
+    "sentence_example": "Education is the key to success."
+  },
+  {
+    "concept": "welfare",
+    "language_code": "en",
+    "text": "welfare",
+    "sentence_example": "Social welfare helps the poor."
+  },
+  {
+    "concept": "citizen",
+    "language_code": "en",
+    "text": "citizen",
+    "sentence_example": "Every citizen has rights."
+  },
+  {
+    "concept": "equality",
+    "language_code": "en",
+    "text": "equality",
+    "sentence_example": "We strive for equality."
+  },
+  {
+    "concept": "freedom",
+    "language_code": "en",
+    "text": "freedom",
+    "sentence_example": "Freedom comes with responsibility."
+  },
+  {
+    "concept": "poverty",
+    "language_code": "en",
+    "text": "poverty",
+    "sentence_example": "We must end poverty."
+  },
+  {
+    "concept": "tax",
+    "language_code": "en",
+    "text": "tax",
+    "sentence_example": "Everyone has to pay tax."
+  },
+  {
+    "concept": "election",
+    "language_code": "en",
+    "text": "election",
+    "sentence_example": "The election is next week."
+  },
+  {
+    "concept": "policy",
+    "language_code": "en",
+    "text": "policy",
+    "sentence_example": "The company has a new policy."
+  },
+  {
+    "concept": "urban",
+    "language_code": "en",
+    "text": "urban",
+    "sentence_example": "Urban areas are crowded."
+  },
+  {
+    "concept": "rural",
+    "language_code": "en",
+    "text": "rural",
+    "sentence_example": "Rural life is quiet."
+  }
+]

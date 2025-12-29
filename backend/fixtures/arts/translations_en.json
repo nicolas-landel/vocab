@@ -1,0 +1,182 @@
+[
+  {
+    "concept": "art",
+    "language_code": "en",
+    "text": "art",
+    "sentence_example": "I study modern art."
+  },
+  {
+    "concept": "music",
+    "language_code": "en",
+    "text": "music",
+    "sentence_example": "Music makes me happy."
+  },
+  {
+    "concept": "movie",
+    "language_code": "en",
+    "text": "movie",
+    "sentence_example": "Let's watch a movie."
+  },
+  {
+    "concept": "book",
+    "language_code": "en",
+    "text": "book",
+    "sentence_example": "Read this book."
+  },
+  {
+    "concept": "song",
+    "language_code": "en",
+    "text": "song",
+    "sentence_example": "This is my favorite song."
+  },
+  {
+    "concept": "to_draw",
+    "language_code": "en",
+    "text": "to draw",
+    "sentence_example": "He likes to draw animals."
+  },
+  {
+    "concept": "to_sing",
+    "language_code": "en",
+    "text": "to sing",
+    "sentence_example": "She can sing very well."
+  },
+  {
+    "concept": "to_dance",
+    "language_code": "en",
+    "text": "to dance",
+    "sentence_example": "They love to dance."
+  },
+  {
+    "concept": "color",
+    "language_code": "en",
+    "text": "color",
+    "sentence_example": "What is your favorite color?"
+  },
+  {
+    "concept": "picture",
+    "language_code": "en",
+    "text": "picture",
+    "sentence_example": "Take a picture of the sunset."
+  },
+  {
+    "concept": "painting",
+    "language_code": "en",
+    "text": "painting",
+    "sentence_example": "The painting is beautiful."
+  },
+  {
+    "concept": "sculpture",
+    "language_code": "en",
+    "text": "sculpture",
+    "sentence_example": "The sculpture is made of stone."
+  },
+  {
+    "concept": "theater",
+    "language_code": "en",
+    "text": "theater",
+    "sentence_example": "We went to the theater last night."
+  },
+  {
+    "concept": "museum",
+    "language_code": "en",
+    "text": "museum",
+    "sentence_example": "The museum is closed on Mondays."
+  },
+  {
+    "concept": "camera",
+    "language_code": "en",
+    "text": "camera",
+    "sentence_example": "I bought a new camera."
+  },
+  {
+    "concept": "instrument",
+    "language_code": "en",
+    "text": "instrument",
+    "sentence_example": "Do you play a musical instrument?"
+  },
+  {
+    "concept": "concert",
+    "language_code": "en",
+    "text": "concert",
+    "sentence_example": "The concert was loud."
+  },
+  {
+    "concept": "artist",
+    "language_code": "en",
+    "text": "artist",
+    "sentence_example": "Picasso was a famous artist."
+  },
+  {
+    "concept": "author",
+    "language_code": "en",
+    "text": "author",
+    "sentence_example": "Who is the author of this book?"
+  },
+  {
+    "concept": "design",
+    "language_code": "en",
+    "text": "design",
+    "sentence_example": "I like the design of this house."
+  },
+  {
+    "concept": "architecture",
+    "language_code": "en",
+    "text": "architecture",
+    "sentence_example": "Modern architecture is interesting."
+  },
+  {
+    "concept": "literature",
+    "language_code": "en",
+    "text": "literature",
+    "sentence_example": "I study English literature."
+  },
+  {
+    "concept": "poetry",
+    "language_code": "en",
+    "text": "poetry",
+    "sentence_example": "Poetry can be very moving."
+  },
+  {
+    "concept": "exhibition",
+    "language_code": "en",
+    "text": "exhibition",
+    "sentence_example": "There is a new art exhibition."
+  },
+  {
+    "concept": "gallery",
+    "language_code": "en",
+    "text": "gallery",
+    "sentence_example": "Let's visit the art gallery."
+  },
+  {
+    "concept": "masterpiece",
+    "language_code": "en",
+    "text": "masterpiece",
+    "sentence_example": "This painting is a masterpiece."
+  },
+  {
+    "concept": "symphony",
+    "language_code": "en",
+    "text": "symphony",
+    "sentence_example": "Beethoven wrote nine symphonies."
+  },
+  {
+    "concept": "canvas",
+    "language_code": "en",
+    "text": "canvas",
+    "sentence_example": "The artist paints on canvas."
+  },
+  {
+    "concept": "aesthetic",
+    "language_code": "en",
+    "text": "aesthetic",
+    "sentence_example": "The room nas a minimalist aesthetic."
+  },
+  {
+    "concept": "creativity",
+    "language_code": "en",
+    "text": "creativity",
+    "sentence_example": "Creativity is essential for art."
+  }
+]

@@ -3,30 +3,210 @@
     "concept": "doctor",
     "domain_code": "health",
     "difficulty": "EASY",
-    "word_type": "NOUN"
-  },
-  {
-    "concept": "medicine",
-    "domain_code": "health",
-    "difficulty": "EASY",
-    "word_type": "NOUN"
+    "word_type": "NOUN",
+    "image_url": null
   },
   {
     "concept": "hospital",
     "domain_code": "health",
     "difficulty": "EASY",
-    "word_type": "NOUN"
+    "word_type": "NOUN",
+    "image_url": null
   },
   {
-    "concept": "body",
+    "concept": "medicine",
     "domain_code": "health",
     "difficulty": "EASY",
-    "word_type": "NOUN"
+    "word_type": "NOUN",
+    "image_url": null
   },
   {
     "concept": "sick",
     "domain_code": "health",
     "difficulty": "EASY",
-    "word_type": "ADJECTIVE"
+    "word_type": "ADJECTIVE",
+    "image_url": null
+  },
+  {
+    "concept": "head",
+    "domain_code": "health",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "body",
+    "domain_code": "health",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "hand",
+    "domain_code": "health",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "leg",
+    "domain_code": "health",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "eye",
+    "domain_code": "health",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "mouth",
+    "domain_code": "health",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "nurse",
+    "domain_code": "health",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "pharmacy",
+    "domain_code": "health",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "headache",
+    "domain_code": "health",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "stomach",
+    "domain_code": "health",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "heart",
+    "domain_code": "health",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "fever",
+    "domain_code": "health",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "pain",
+    "domain_code": "health",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "blood",
+    "domain_code": "health",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "dentist",
+    "domain_code": "health",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "to_hurt",
+    "domain_code": "health",
+    "difficulty": "MEDIUM",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "surgery",
+    "domain_code": "health",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "disease",
+    "domain_code": "health",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "symptom",
+    "domain_code": "health",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "treatment",
+    "domain_code": "health",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "ambulance",
+    "domain_code": "health",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "emergency",
+    "domain_code": "health",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "vaccine",
+    "domain_code": "health",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "muscle",
+    "domain_code": "health",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "bone",
+    "domain_code": "health",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "mental_health",
+    "domain_code": "health",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
   }
 ]

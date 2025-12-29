@@ -1,0 +1,182 @@
+[
+  {
+    "concept": "sun",
+    "language_code": "en",
+    "text": "sun",
+    "sentence_example": "The sun is shining."
+  },
+  {
+    "concept": "moon",
+    "language_code": "en",
+    "text": "moon",
+    "sentence_example": "Look at the moon tonight."
+  },
+  {
+    "concept": "star",
+    "language_code": "en",
+    "text": "star",
+    "sentence_example": "I saw a shooting star."
+  },
+  {
+    "concept": "sky",
+    "language_code": "en",
+    "text": "sky",
+    "sentence_example": "The sky is blue."
+  },
+  {
+    "concept": "tree",
+    "language_code": "en",
+    "text": "tree",
+    "sentence_example": "The tree is very tall."
+  },
+  {
+    "concept": "flower",
+    "language_code": "en",
+    "text": "flower",
+    "sentence_example": "This flower smells nice."
+  },
+  {
+    "concept": "grass",
+    "language_code": "en",
+    "text": "grass",
+    "sentence_example": "Keep off the grass."
+  },
+  {
+    "concept": "water",
+    "language_code": "en",
+    "text": "water",
+    "sentence_example": "Drink plenty of water."
+  },
+  {
+    "concept": "rain",
+    "language_code": "en",
+    "text": "rain",
+    "sentence_example": "I like the sound of rain."
+  },
+  {
+    "concept": "wind",
+    "language_code": "en",
+    "text": "wind",
+    "sentence_example": "The wind is blowing hard."
+  },
+  {
+    "concept": "river",
+    "language_code": "en",
+    "text": "river",
+    "sentence_example": "The river flows to the sea."
+  },
+  {
+    "concept": "mountain",
+    "language_code": "en",
+    "text": "mountain",
+    "sentence_example": "Climbing the mountain is hard."
+  },
+  {
+    "concept": "ocean",
+    "language_code": "en",
+    "text": "ocean",
+    "sentence_example": "The ocean is vast."
+  },
+  {
+    "concept": "forest",
+    "language_code": "en",
+    "text": "forest",
+    "sentence_example": "Animals live in the forest."
+  },
+  {
+    "concept": "desert",
+    "language_code": "en",
+    "text": "desert",
+    "sentence_example": "The desert is dry."
+  },
+  {
+    "concept": "season",
+    "language_code": "en",
+    "text": "season",
+    "sentence_example": "My favorite season is summer."
+  },
+  {
+    "concept": "climate",
+    "language_code": "en",
+    "text": "climate",
+    "sentence_example": "The climate is changing."
+  },
+  {
+    "concept": "animal",
+    "language_code": "en",
+    "text": "animal",
+    "sentence_example": "The zoo has many animals."
+  },
+  {
+    "concept": "plant",
+    "language_code": "en",
+    "text": "plant",
+    "sentence_example": "Water the plant regularly."
+  },
+  {
+    "concept": "earth",
+    "language_code": "en",
+    "text": "earth",
+    "sentence_example": "We live on Earth."
+  },
+  {
+    "concept": "ecosystem",
+    "language_code": "en",
+    "text": "ecosystem",
+    "sentence_example": "The ecosystem is fragile."
+  },
+  {
+    "concept": "biodiversity",
+    "language_code": "en",
+    "text": "biodiversity",
+    "sentence_example": "Biodiversity is important for nature."
+  },
+  {
+    "concept": "pollution",
+    "language_code": "en",
+    "text": "pollution",
+    "sentence_example": "Pollution harms the environment."
+  },
+  {
+    "concept": "atmosphere",
+    "language_code": "en",
+    "text": "atmosphere",
+    "sentence_example": "The atmosphere protects us."
+  },
+  {
+    "concept": "geology",
+    "language_code": "en",
+    "text": "geology",
+    "sentence_example": "Study the geology of the area."
+  },
+  {
+    "concept": "photosynthesis",
+    "language_code": "en",
+    "text": "photosynthesis",
+    "sentence_example": "Plants use photosynthesis to make food."
+  },
+  {
+    "concept": "erosion",
+    "language_code": "en",
+    "text": "erosion",
+    "sentence_example": "Erosion changes the landscape."
+  },
+  {
+    "concept": "conservation",
+    "language_code": "en",
+    "text": "conservation",
+    "sentence_example": "Nature conservation is vital."
+  },
+  {
+    "concept": "sustainability",
+    "language_code": "en",
+    "text": "sustainability",
+    "sentence_example": "Sustainability ensures resources for the future."
+  },
+  {
+    "concept": "habitat",
+    "language_code": "en",
+    "text": "habitat",
+    "sentence_example": "Protect the animal's habitat."
+  }
+]

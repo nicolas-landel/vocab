@@ -1,0 +1,182 @@
+[
+  {
+    "concept": "computer",
+    "language_code": "en",
+    "text": "computer",
+    "sentence_example": "I use my computer for work."
+  },
+  {
+    "concept": "internet",
+    "language_code": "en",
+    "text": "internet",
+    "sentence_example": "The internet is very fast today."
+  },
+  {
+    "concept": "phone",
+    "language_code": "en",
+    "text": "phone",
+    "sentence_example": "My phone battery is low."
+  },
+  {
+    "concept": "screen",
+    "language_code": "en",
+    "text": "screen",
+    "sentence_example": "The screen is cracked."
+  },
+  {
+    "concept": "keyboard",
+    "language_code": "en",
+    "text": "keyboard",
+    "sentence_example": "I need a new keyboard."
+  },
+  {
+    "concept": "mouse",
+    "language_code": "en",
+    "text": "mouse",
+    "sentence_example": "Click the button with the mouse."
+  },
+  {
+    "concept": "app",
+    "language_code": "en",
+    "text": "app",
+    "sentence_example": "Download the app from the store."
+  },
+  {
+    "concept": "website",
+    "language_code": "en",
+    "text": "website",
+    "sentence_example": "Visit our website for more info."
+  },
+  {
+    "concept": "battery",
+    "language_code": "en",
+    "text": "battery",
+    "sentence_example": "The battery lasts all day."
+  },
+  {
+    "concept": "camera",
+    "language_code": "en",
+    "text": "camera",
+    "sentence_example": "The camera takes good photos."
+  },
+  {
+    "concept": "software",
+    "language_code": "en",
+    "text": "software",
+    "sentence_example": "Update your software regularly."
+  },
+  {
+    "concept": "hardware",
+    "language_code": "en",
+    "text": "hardware",
+    "sentence_example": "The computer hardware is old."
+  },
+  {
+    "concept": "server",
+    "language_code": "en",
+    "text": "server",
+    "sentence_example": "The server is down."
+  },
+  {
+    "concept": "database",
+    "language_code": "en",
+    "text": "database",
+    "sentence_example": "The database stores all the user data."
+  },
+  {
+    "concept": "network",
+    "language_code": "en",
+    "text": "network",
+    "sentence_example": "Connect to the network."
+  },
+  {
+    "concept": "password",
+    "language_code": "en",
+    "text": "password",
+    "sentence_example": "Enter your password."
+  },
+  {
+    "concept": "file",
+    "language_code": "en",
+    "text": "file",
+    "sentence_example": "Save the file."
+  },
+  {
+    "concept": "folder",
+    "language_code": "en",
+    "text": "folder",
+    "sentence_example": "Put the document in the folder."
+  },
+  {
+    "concept": "to_download",
+    "language_code": "en",
+    "text": "to download",
+    "sentence_example": "I need to download this file."
+  },
+  {
+    "concept": "to_upload",
+    "language_code": "en",
+    "text": "to upload",
+    "sentence_example": "Upload your photo here."
+  },
+  {
+    "concept": "algorithm",
+    "language_code": "en",
+    "text": "algorithm",
+    "sentence_example": "The algorithm recommends videos."
+  },
+  {
+    "concept": "encryption",
+    "language_code": "en",
+    "text": "encryption",
+    "sentence_example": "Encryption protects your messages."
+  },
+  {
+    "concept": "artificial_intelligence",
+    "language_code": "en",
+    "text": "artificial intelligence",
+    "sentence_example": "Artificial intelligence is changing the world."
+  },
+  {
+    "concept": "cloud_computing",
+    "language_code": "en",
+    "text": "cloud computing",
+    "sentence_example": "Many companies use cloud computing."
+  },
+  {
+    "concept": "cybersecurity",
+    "language_code": "en",
+    "text": "cybersecurity",
+    "sentence_example": "Cybersecurity is important for online safety."
+  },
+  {
+    "concept": "bandwidth",
+    "language_code": "en",
+    "text": "bandwidth",
+    "sentence_example": "Streaming requires high bandwidth."
+  },
+  {
+    "concept": "latency",
+    "language_code": "en",
+    "text": "latency",
+    "sentence_example": "Low latency is good for gaming."
+  },
+  {
+    "concept": "protocol",
+    "language_code": "en",
+    "text": "protocol",
+    "sentence_example": "Follow the security protocol."
+  },
+  {
+    "concept": "operating_system",
+    "language_code": "en",
+    "text": "operating system",
+    "sentence_example": "Which operating system do you use?"
+  },
+  {
+    "concept": "api",
+    "language_code": "en",
+    "text": "API",
+    "sentence_example": "The developer used the API to connect the services."
+  }
+]

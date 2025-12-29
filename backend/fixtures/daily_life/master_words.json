@@ -3,30 +3,210 @@
     "concept": "house",
     "domain_code": "daily_life",
     "difficulty": "EASY",
-    "word_type": "NOUN"
+    "word_type": "NOUN",
+    "image_url": null
   },
   {
-    "concept": "car",
+    "concept": "room",
     "domain_code": "daily_life",
     "difficulty": "EASY",
-    "word_type": "NOUN"
+    "word_type": "NOUN",
+    "image_url": null
   },
   {
-    "concept": "sleep",
+    "concept": "bed",
     "domain_code": "daily_life",
     "difficulty": "EASY",
-    "word_type": "VERB"
+    "word_type": "NOUN",
+    "image_url": null
   },
   {
-    "concept": "eat",
+    "concept": "table",
     "domain_code": "daily_life",
     "difficulty": "EASY",
-    "word_type": "VERB"
+    "word_type": "NOUN",
+    "image_url": null
   },
   {
-    "concept": "walk",
+    "concept": "chair",
     "domain_code": "daily_life",
     "difficulty": "EASY",
-    "word_type": "VERB"
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "clock",
+    "domain_code": "daily_life",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "to_sleep",
+    "domain_code": "daily_life",
+    "difficulty": "EASY",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "to_eat",
+    "domain_code": "daily_life",
+    "difficulty": "EASY",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "to_drink",
+    "domain_code": "daily_life",
+    "difficulty": "EASY",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "clothes",
+    "domain_code": "daily_life",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "kitchen",
+    "domain_code": "daily_life",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "bathroom",
+    "domain_code": "daily_life",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "living_room",
+    "domain_code": "daily_life",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "furniture",
+    "domain_code": "daily_life",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "gardening",
+    "domain_code": "daily_life",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "cleaning",
+    "domain_code": "daily_life",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "cooking",
+    "domain_code": "daily_life",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "laundry",
+    "domain_code": "daily_life",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "groceries",
+    "domain_code": "daily_life",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "to_wake_up",
+    "domain_code": "daily_life",
+    "difficulty": "MEDIUM",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "routine",
+    "domain_code": "daily_life",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "chore",
+    "domain_code": "daily_life",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "maintenance",
+    "domain_code": "daily_life",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "appliance",
+    "domain_code": "daily_life",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "utilities",
+    "domain_code": "daily_life",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "leisure",
+    "domain_code": "daily_life",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "lifestyle",
+    "domain_code": "daily_life",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "habit",
+    "domain_code": "daily_life",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "hygiene",
+    "domain_code": "daily_life",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "schedule",
+    "domain_code": "daily_life",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
   }
 ]

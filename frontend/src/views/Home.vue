@@ -22,12 +22,14 @@ import { useI18n } from 'vue-i18n'
 import { useSessionStore } from '@/stores/session'
 import { useVocabularyStore } from '@/stores/vocabulary'
 import { useAuthStore } from '@/stores/auth'
+import { useProfileStore } from '@/stores/profile'
 
 const { t } = useI18n()
 
 const sessionStore = useSessionStore()
 const vocabularyStore = useVocabularyStore()
 const authStore = useAuthStore()
+const profileStore = useProfileStore()
 
 const router = useRouter()
 const route = useRoute()
@@ -36,7 +38,8 @@ const loading = ref(true)
 const activeTab = computed(() => route.query.tab || 'session')
 
 const handleStartSession = (sessionId) => {
-  router.push({ name: 'SessionActive', params: { id: sessionId } })
+  console.log('Starting session with ID:', sessionId)
+  router.push({ name: 'sessionActive', params: { id: sessionId } })
 }
 
 onMounted(async () => {
@@ -45,7 +48,7 @@ onMounted(async () => {
     await Promise.all([
       vocabularyStore.fetchLanguages(),
       vocabularyStore.fetchDomains(),
-      
+      profileStore.fetchUserLanguages()
     ])
   
   } catch (error) {

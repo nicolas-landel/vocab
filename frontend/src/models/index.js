@@ -6,7 +6,7 @@ import { Translation } from "./translation.js";
 import { User } from "./user.js";
 import { SessionConfig } from "./sessionConfig.js";
 import { Session } from "./session.js";
-import { SessionResult } from "./sessionResult.js";
+import { SessionWord } from "./sessionWord.js";
 import { UserProgress } from "./userProgress.js";
 import { UserLanguage } from "./userLanguage.js";
 
@@ -20,7 +20,7 @@ export const orm = createORM({
     User,
     SessionConfig,
     Session,
-    SessionResult,
+    SessionWord,
     UserProgress,
     UserLanguage
   ],
@@ -34,7 +34,7 @@ export {
   User,
   SessionConfig,
   Session,
-  SessionResult,
+  SessionWord,
   UserProgress,
   UserLanguage
 };

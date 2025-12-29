@@ -1,41 +1,237 @@
 [
   {
+    "concept": "doctor",
     "language_code": "es",
     "text": "médico",
-    "gender": "masculine",
+    "gender": "m",
     "plural_text": "médicos",
-    "sentence_example": "Voy al médico.",
-    "concept": "doctor"
+    "sentence_example": "El médico es amable."
   },
   {
-    "language_code": "es",
-    "text": "medicina",
-    "gender": "feminine",
-    "plural_text": "medicinas",
-    "sentence_example": "Toma tu medicina.",
-    "concept": "medicine"
-  },
-  {
+    "concept": "hospital",
     "language_code": "es",
     "text": "hospital",
-    "gender": "masculine",
+    "gender": "m",
     "plural_text": "hospitales",
-    "sentence_example": "Está en el hospital.",
-    "concept": "hospital"
+    "sentence_example": "El hospital es grande."
   },
   {
+    "concept": "medicine",
     "language_code": "es",
-    "text": "cuerpo",
-    "gender": "masculine",
-    "plural_text": "cuerpos",
-    "sentence_example": "El cuerpo humano.",
-    "concept": "body"
+    "text": "medicina",
+    "gender": "f",
+    "plural_text": "medicinas",
+    "sentence_example": "Toma tu medicina."
   },
   {
+    "concept": "sick",
     "language_code": "es",
     "text": "enfermo",
-    "gender": "masculine",
-    "sentence_example": "Estoy enfermo.",
-    "concept": "sick"
+    "gender": "m",
+    "plural_text": "enfermos",
+    "sentence_example": "Me siento enfermo."
+  },
+  {
+    "concept": "head",
+    "language_code": "es",
+    "text": "cabeza",
+    "gender": "f",
+    "plural_text": "cabezas",
+    "sentence_example": "Me duele la cabeza."
+  },
+  {
+    "concept": "body",
+    "language_code": "es",
+    "text": "cuerpo",
+    "gender": "m",
+    "plural_text": "cuerpos",
+    "sentence_example": "El ejercicio es bueno para el cuerpo."
+  },
+  {
+    "concept": "hand",
+    "language_code": "es",
+    "text": "mano",
+    "gender": "f",
+    "plural_text": "manos",
+    "sentence_example": "Lávate las manos."
+  },
+  {
+    "concept": "leg",
+    "language_code": "es",
+    "text": "pierna",
+    "gender": "f",
+    "plural_text": "piernas",
+    "sentence_example": "Se rompió la pierna."
+  },
+  {
+    "concept": "eye",
+    "language_code": "es",
+    "text": "ojo",
+    "gender": "m",
+    "plural_text": "ojos",
+    "sentence_example": "Cierra los ojos."
+  },
+  {
+    "concept": "mouth",
+    "language_code": "es",
+    "text": "boca",
+    "gender": "f",
+    "plural_text": "bocas",
+    "sentence_example": "Abre la boca."
+  },
+  {
+    "concept": "nurse",
+    "language_code": "es",
+    "text": "enfermera",
+    "gender": "f",
+    "plural_text": "enfermeras",
+    "sentence_example": "La enfermera me ayudó."
+  },
+  {
+    "concept": "pharmacy",
+    "language_code": "es",
+    "text": "farmacia",
+    "gender": "f",
+    "plural_text": "farmacias",
+    "sentence_example": "Ve a la farmacia."
+  },
+  {
+    "concept": "headache",
+    "language_code": "es",
+    "text": "dolor de cabeza",
+    "gender": "m",
+    "plural_text": "dolores de cabeza",
+    "sentence_example": "Tengo dolor de cabeza."
+  },
+  {
+    "concept": "stomach",
+    "language_code": "es",
+    "text": "estómago",
+    "gender": "m",
+    "plural_text": "estómagos",
+    "sentence_example": "Mi estómago está lleno."
+  },
+  {
+    "concept": "heart",
+    "language_code": "es",
+    "text": "corazón",
+    "gender": "m",
+    "plural_text": "corazones",
+    "sentence_example": "Mi corazón late rápido."
+  },
+  {
+    "concept": "fever",
+    "language_code": "es",
+    "text": "fiebre",
+    "gender": "f",
+    "sentence_example": "Él tiene fiebre alta."
+  },
+  {
+    "concept": "pain",
+    "language_code": "es",
+    "text": "dolor",
+    "gender": "m",
+    "plural_text": "dolores",
+    "sentence_example": "Siento dolor en la espalda."
+  },
+  {
+    "concept": "blood",
+    "language_code": "es",
+    "text": "sangre",
+    "gender": "f",
+    "sentence_example": "La sangre es roja."
+  },
+  {
+    "concept": "dentist",
+    "language_code": "es",
+    "text": "dentista",
+    "gender": "m",
+    "plural_text": "dentistas",
+    "sentence_example": "Tengo una cita con el dentista."
+  },
+  {
+    "concept": "to_hurt",
+    "language_code": "es",
+    "text": "doler",
+    "sentence_example": "¿Te duele?"
+  },
+  {
+    "concept": "surgery",
+    "language_code": "es",
+    "text": "cirugía",
+    "gender": "f",
+    "plural_text": "cirugías",
+    "sentence_example": "Ella necesita cirugía."
+  },
+  {
+    "concept": "disease",
+    "language_code": "es",
+    "text": "enfermedad",
+    "gender": "f",
+    "plural_text": "enfermedades",
+    "sentence_example": "El cáncer es una enfermedad grave."
+  },
+  {
+    "concept": "symptom",
+    "language_code": "es",
+    "text": "síntoma",
+    "gender": "m",
+    "plural_text": "síntomas",
+    "sentence_example": "La fiebre es un síntoma de la gripe."
+  },
+  {
+    "concept": "treatment",
+    "language_code": "es",
+    "text": "tratamiento",
+    "gender": "m",
+    "plural_text": "tratamientos",
+    "sentence_example": "El tratamiento está funcionando."
+  },
+  {
+    "concept": "ambulance",
+    "language_code": "es",
+    "text": "ambulancia",
+    "gender": "f",
+    "plural_text": "ambulancias",
+    "sentence_example": "Llama a una ambulancia."
+  },
+  {
+    "concept": "emergency",
+    "language_code": "es",
+    "text": "emergencia",
+    "gender": "f",
+    "plural_text": "emergencias",
+    "sentence_example": "Esta es una emergencia."
+  },
+  {
+    "concept": "vaccine",
+    "language_code": "es",
+    "text": "vacuna",
+    "gender": "f",
+    "plural_text": "vacunas",
+    "sentence_example": "Ponte tu vacuna."
+  },
+  {
+    "concept": "muscle",
+    "language_code": "es",
+    "text": "músculo",
+    "gender": "m",
+    "plural_text": "músculos",
+    "sentence_example": "Él tiene músculos grandes."
+  },
+  {
+    "concept": "bone",
+    "language_code": "es",
+    "text": "hueso",
+    "gender": "m",
+    "plural_text": "huesos",
+    "sentence_example": "A los perros les gustan los huesos."
+  },
+  {
+    "concept": "mental_health",
+    "language_code": "es",
+    "text": "salud mental",
+    "gender": "f",
+    "sentence_example": "La salud mental es importante."
   }
 ]

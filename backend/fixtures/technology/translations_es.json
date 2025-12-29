@@ -1,0 +1,229 @@
+[
+  {
+    "concept": "computer",
+    "language_code": "es",
+    "text": "ordenador",
+    "gender": "m",
+    "plural_text": "ordenadores",
+    "sentence_example": "Uso mi ordenador para trabajar."
+  },
+  {
+    "concept": "internet",
+    "language_code": "es",
+    "text": "internet",
+    "gender": "m",
+    "sentence_example": "Internet es muy rápido hoy."
+  },
+  {
+    "concept": "phone",
+    "language_code": "es",
+    "text": "teléfono",
+    "gender": "m",
+    "plural_text": "teléfonos",
+    "sentence_example": "La batería de mi teléfono está baja."
+  },
+  {
+    "concept": "screen",
+    "language_code": "es",
+    "text": "pantalla",
+    "gender": "f",
+    "plural_text": "pantallas",
+    "sentence_example": "La pantalla está rota."
+  },
+  {
+    "concept": "keyboard",
+    "language_code": "es",
+    "text": "teclado",
+    "gender": "m",
+    "plural_text": "teclados",
+    "sentence_example": "Necesito un teclado nuevo."
+  },
+  {
+    "concept": "mouse",
+    "language_code": "es",
+    "text": "ratón",
+    "gender": "m",
+    "plural_text": "ratones",
+    "sentence_example": "Haz clic en el botón con el ratón."
+  },
+  {
+    "concept": "app",
+    "language_code": "es",
+    "text": "aplicación",
+    "gender": "f",
+    "plural_text": "aplicaciones",
+    "sentence_example": "Descarga la aplicación de la tienda."
+  },
+  {
+    "concept": "website",
+    "language_code": "es",
+    "text": "sitio web",
+    "gender": "m",
+    "plural_text": "sitios web",
+    "sentence_example": "Visita nuestro sitio web para más información."
+  },
+  {
+    "concept": "battery",
+    "language_code": "es",
+    "text": "batería",
+    "gender": "f",
+    "plural_text": "baterías",
+    "sentence_example": "La batería dura todo el día."
+  },
+  {
+    "concept": "camera",
+    "language_code": "es",
+    "text": "cámara",
+    "gender": "f",
+    "plural_text": "cámaras",
+    "sentence_example": "La cámara saca buenas fotos."
+  },
+  {
+    "concept": "software",
+    "language_code": "es",
+    "text": "software",
+    "gender": "m",
+    "sentence_example": "Actualiza tu software regularmente."
+  },
+  {
+    "concept": "hardware",
+    "language_code": "es",
+    "text": "hardware",
+    "gender": "m",
+    "sentence_example": "El hardware del ordenador es viejo."
+  },
+  {
+    "concept": "server",
+    "language_code": "es",
+    "text": "servidor",
+    "gender": "m",
+    "plural_text": "servidores",
+    "sentence_example": "El servidor está caído."
+  },
+  {
+    "concept": "database",
+    "language_code": "es",
+    "text": "base de datos",
+    "gender": "f",
+    "plural_text": "bases de datos",
+    "sentence_example": "La base de datos almacena todos los datos de los usuarios."
+  },
+  {
+    "concept": "network",
+    "language_code": "es",
+    "text": "red",
+    "gender": "f",
+    "plural_text": "redes",
+    "sentence_example": "Conéctate a la red."
+  },
+  {
+    "concept": "password",
+    "language_code": "es",
+    "text": "contraseña",
+    "gender": "f",
+    "plural_text": "contraseñas",
+    "sentence_example": "Introduce tu contraseña."
+  },
+  {
+    "concept": "file",
+    "language_code": "es",
+    "text": "archivo",
+    "gender": "m",
+    "plural_text": "archivos",
+    "sentence_example": "Guarda el archivo."
+  },
+  {
+    "concept": "folder",
+    "language_code": "es",
+    "text": "carpeta",
+    "gender": "f",
+    "plural_text": "carpetas",
+    "sentence_example": "Pon el documento en la carpeta."
+  },
+  {
+    "concept": "to_download",
+    "language_code": "es",
+    "text": "descargar",
+    "sentence_example": "Necesito descargar este archivo."
+  },
+  {
+    "concept": "to_upload",
+    "language_code": "es",
+    "text": "subir",
+    "sentence_example": "Sube tu foto aquí."
+  },
+  {
+    "concept": "algorithm",
+    "language_code": "es",
+    "text": "algoritmo",
+    "gender": "m",
+    "plural_text": "algoritmos",
+    "sentence_example": "El algoritmo recomienda vídeos."
+  },
+  {
+    "concept": "encryption",
+    "language_code": "es",
+    "text": "cifrado",
+    "gender": "m",
+    "sentence_example": "El cifrado protege tus mensajes."
+  },
+  {
+    "concept": "artificial_intelligence",
+    "language_code": "es",
+    "text": "inteligencia artificial",
+    "gender": "f",
+    "sentence_example": "La inteligencia artificial está cambiando el mundo."
+  },
+  {
+    "concept": "cloud_computing",
+    "language_code": "es",
+    "text": "computación en la nube",
+    "gender": "f",
+    "sentence_example": "Muchas empresas usan computación en la nube."
+  },
+  {
+    "concept": "cybersecurity",
+    "language_code": "es",
+    "text": "ciberseguridad",
+    "gender": "f",
+    "sentence_example": "La ciberseguridad es importante para la seguridad en línea."
+  },
+  {
+    "concept": "bandwidth",
+    "language_code": "es",
+    "text": "ancho de banda",
+    "gender": "m",
+    "sentence_example": "El streaming requiere mucho ancho de banda."
+  },
+  {
+    "concept": "latency",
+    "language_code": "es",
+    "text": "latencia",
+    "gender": "f",
+    "sentence_example": "Baja latencia es buena para los juegos."
+  },
+  {
+    "concept": "protocol",
+    "language_code": "es",
+    "text": "protocolo",
+    "gender": "m",
+    "plural_text": "protocolos",
+    "sentence_example": "Sigue el protocolo de seguridad."
+  },
+  {
+    "concept": "operating_system",
+    "language_code": "es",
+    "text": "sistema operativo",
+    "gender": "m",
+    "plural_text": "sistemas operativos",
+    "sentence_example": "¿Qué sistema operativo usas?"
+  },
+  {
+    "concept": "api",
+    "language_code": "es",
+    "text": "API",
+    "gender": "f",
+    "plural_text": "APIs",
+    "sentence_example": "El desarrollador usó la API para conectar los servicios."
+  }
+]

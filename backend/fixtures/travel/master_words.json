@@ -1,32 +1,212 @@
 [
   {
-    "concept": "train",
-    "domain_code": "travel",
-    "difficulty": "EASY",
-    "word_type": "NOUN"
-  },
-  {
-    "concept": "airport",
-    "domain_code": "travel",
-    "difficulty": "MEDIUM",
-    "word_type": "NOUN"
-  },
-  {
-    "concept": "ticket",
-    "domain_code": "travel",
-    "difficulty": "EASY",
-    "word_type": "NOUN"
-  },
-  {
     "concept": "car",
     "domain_code": "travel",
     "difficulty": "EASY",
-    "word_type": "NOUN"
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "bus",
+    "domain_code": "travel",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "train",
+    "domain_code": "travel",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "plane",
+    "domain_code": "travel",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
   },
   {
     "concept": "hotel",
     "domain_code": "travel",
     "difficulty": "EASY",
-    "word_type": "NOUN"
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "ticket",
+    "domain_code": "travel",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "passport",
+    "domain_code": "travel",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "bag",
+    "domain_code": "travel",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "map",
+    "domain_code": "travel",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "to_travel",
+    "domain_code": "travel",
+    "difficulty": "EASY",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "airport",
+    "domain_code": "travel",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "station",
+    "domain_code": "travel",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "luggage",
+    "domain_code": "travel",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "tourist",
+    "domain_code": "travel",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "vacation",
+    "domain_code": "travel",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "trip",
+    "domain_code": "travel",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "beach",
+    "domain_code": "travel",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "mountain",
+    "domain_code": "travel",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "to_visit",
+    "domain_code": "travel",
+    "difficulty": "MEDIUM",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "to_arrive",
+    "domain_code": "travel",
+    "difficulty": "MEDIUM",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "customs",
+    "domain_code": "travel",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "visa",
+    "domain_code": "travel",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "flight",
+    "domain_code": "travel",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "passenger",
+    "domain_code": "travel",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "accommodation",
+    "domain_code": "travel",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "itinerary",
+    "domain_code": "travel",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "reservation",
+    "domain_code": "travel",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "foreign",
+    "domain_code": "travel",
+    "difficulty": "HARD",
+    "word_type": "ADJECTIVE",
+    "image_url": null
+  },
+  {
+    "concept": "culture_shock",
+    "domain_code": "travel",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "to_depart",
+    "domain_code": "travel",
+    "difficulty": "HARD",
+    "word_type": "VERB",
+    "image_url": null
   }
 ]

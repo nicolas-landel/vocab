@@ -1,1 +1,222 @@
-[]
+[
+  {
+    "concept": "shop",
+    "language_code": "es",
+    "text": "tienda",
+    "gender": "f",
+    "plural_text": "tiendas",
+    "sentence_example": "Fui a la tienda."
+  },
+  {
+    "concept": "money",
+    "language_code": "es",
+    "text": "dinero",
+    "gender": "m",
+    "sentence_example": "No tengo dinero."
+  },
+  {
+    "concept": "price",
+    "language_code": "es",
+    "text": "precio",
+    "gender": "m",
+    "plural_text": "precios",
+    "sentence_example": "¿Cuál es el precio?"
+  },
+  {
+    "concept": "to_buy",
+    "language_code": "es",
+    "text": "comprar",
+    "sentence_example": "Quiero comprar una camisa."
+  },
+  {
+    "concept": "to_sell",
+    "language_code": "es",
+    "text": "vender",
+    "sentence_example": "Él quiere vender su coche."
+  },
+  {
+    "concept": "market",
+    "language_code": "es",
+    "text": "mercado",
+    "gender": "m",
+    "plural_text": "mercados",
+    "sentence_example": "Fruta fresca en el mercado."
+  },
+  {
+    "concept": "bag",
+    "language_code": "es",
+    "text": "bolsa",
+    "gender": "f",
+    "plural_text": "bolsas",
+    "sentence_example": "Ponlo en la bolsa."
+  },
+  {
+    "concept": "cheap",
+    "language_code": "es",
+    "text": "barato",
+    "sentence_example": "Esto es muy barato."
+  },
+  {
+    "concept": "expensive",
+    "language_code": "es",
+    "text": "caro",
+    "sentence_example": "Ese reloj es caro."
+  },
+  {
+    "concept": "cash",
+    "language_code": "es",
+    "text": "efectivo",
+    "gender": "m",
+    "sentence_example": "Pagar en efectivo."
+  },
+  {
+    "concept": "store",
+    "language_code": "es",
+    "text": "tienda",
+    "gender": "f",
+    "plural_text": "tiendas",
+    "sentence_example": "La tienda está cerrada."
+  },
+  {
+    "concept": "mall",
+    "language_code": "es",
+    "text": "centro comercial",
+    "gender": "m",
+    "plural_text": "centros comerciales",
+    "sentence_example": "Vamos al centro comercial."
+  },
+  {
+    "concept": "customer",
+    "language_code": "es",
+    "text": "cliente",
+    "gender": "m",
+    "plural_text": "clientes",
+    "sentence_example": "El cliente siempre tiene la razón."
+  },
+  {
+    "concept": "sale",
+    "language_code": "es",
+    "text": "oferta",
+    "gender": "f",
+    "plural_text": "ofertas",
+    "sentence_example": "Está en oferta."
+  },
+  {
+    "concept": "discount",
+    "language_code": "es",
+    "text": "descuento",
+    "gender": "m",
+    "plural_text": "descuentos",
+    "sentence_example": "¿Hay algún descuento?"
+  },
+  {
+    "concept": "credit_card",
+    "language_code": "es",
+    "text": "tarjeta de crédito",
+    "gender": "f",
+    "plural_text": "tarjetas de crédito",
+    "sentence_example": "Pago con tarjeta de crédito."
+  },
+  {
+    "concept": "receipt",
+    "language_code": "es",
+    "text": "recibo",
+    "gender": "m",
+    "plural_text": "recibos",
+    "sentence_example": "Guarda el recibo."
+  },
+  {
+    "concept": "wallet",
+    "language_code": "es",
+    "text": "billetera",
+    "gender": "f",
+    "plural_text": "billeteras",
+    "sentence_example": "Perdí mi billetera."
+  },
+  {
+    "concept": "to_pay",
+    "language_code": "es",
+    "text": "pagar",
+    "sentence_example": "¿Quién va a pagar?"
+  },
+  {
+    "concept": "to_spend",
+    "language_code": "es",
+    "text": "gastar",
+    "sentence_example": "No gastes demasiado."
+  },
+  {
+    "concept": "bargain",
+    "language_code": "es",
+    "text": "ganga",
+    "gender": "f",
+    "plural_text": "gangas",
+    "sentence_example": "Esto es una verdadera ganga."
+  },
+  {
+    "concept": "purchase",
+    "language_code": "es",
+    "text": "compra",
+    "gender": "f",
+    "plural_text": "compras",
+    "sentence_example": "Gracias por su compra."
+  },
+  {
+    "concept": "refund",
+    "language_code": "es",
+    "text": "reembolso",
+    "gender": "m",
+    "plural_text": "reembolsos",
+    "sentence_example": "¿Puedo obtener un reembolso?"
+  },
+  {
+    "concept": "warranty",
+    "language_code": "es",
+    "text": "garantía",
+    "gender": "f",
+    "plural_text": "garantías",
+    "sentence_example": "Está bajo garantía."
+  },
+  {
+    "concept": "delivery",
+    "language_code": "es",
+    "text": "entrega",
+    "gender": "f",
+    "plural_text": "entregas",
+    "sentence_example": "Entrega gratis."
+  },
+  {
+    "concept": "brand",
+    "language_code": "es",
+    "text": "marca",
+    "gender": "f",
+    "plural_text": "marcas",
+    "sentence_example": "Me gusta esta marca."
+  },
+  {
+    "concept": "quality",
+    "language_code": "es",
+    "text": "calidad",
+    "gender": "f",
+    "sentence_example": "Buena calidad."
+  },
+  {
+    "concept": "luxury",
+    "language_code": "es",
+    "text": "lujo",
+    "gender": "m",
+    "sentence_example": "Los artículos de lujo son caros."
+  },
+  {
+    "concept": "to_afford",
+    "language_code": "es",
+    "text": "permitirse",
+    "sentence_example": "No puedo permitírmelo."
+  },
+  {
+    "concept": "to_exchange",
+    "language_code": "es",
+    "text": "cambiar",
+    "sentence_example": "Quiero cambiar esto."
+  }
+]

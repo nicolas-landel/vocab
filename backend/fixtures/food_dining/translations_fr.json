@@ -1,42 +1,226 @@
 [
   {
-    "concept": "bread",
+    "concept": "food",
     "language_code": "fr",
-    "text": "pain",
-    "gender": "masculine",
-    "plural_text": "pains",
-    "sentence_example": "Le pain est frais."
+    "text": "nourriture",
+    "gender": "f",
+    "sentence_example": "J'aime la bonne nourriture."
   },
   {
     "concept": "water",
     "language_code": "fr",
     "text": "eau",
-    "gender": "feminine",
-    "plural_text": "eaux",
-    "sentence_example": "L'eau est froide."
+    "gender": "f",
+    "sentence_example": "Buvez beaucoup d'eau."
+  },
+  {
+    "concept": "bread",
+    "language_code": "fr",
+    "text": "pain",
+    "gender": "m",
+    "sentence_example": "Je mange du pain au petit-déjeuner."
+  },
+  {
+    "concept": "fruit",
+    "language_code": "fr",
+    "text": "fruit",
+    "gender": "m",
+    "plural_text": "fruits",
+    "sentence_example": "Les fruits sont sains."
   },
   {
     "concept": "apple",
     "language_code": "fr",
     "text": "pomme",
-    "gender": "feminine",
+    "gender": "f",
     "plural_text": "pommes",
-    "sentence_example": "La pomme est rouge."
+    "sentence_example": "Une pomme par jour éloigne le médecin."
   },
   {
-    "concept": "coffee",
+    "concept": "banana",
     "language_code": "fr",
-    "text": "café",
-    "gender": "masculine",
-    "plural_text": "cafés",
-    "sentence_example": "Le café est chaud."
+    "text": "banane",
+    "gender": "f",
+    "plural_text": "bananes",
+    "sentence_example": "Les singes aiment les bananes."
+  },
+  {
+    "concept": "meat",
+    "language_code": "fr",
+    "text": "viande",
+    "gender": "f",
+    "sentence_example": "Il mange de la viande."
+  },
+  {
+    "concept": "fish",
+    "language_code": "fr",
+    "text": "poisson",
+    "gender": "m",
+    "plural_text": "poissons",
+    "sentence_example": "Le poisson est bon pour vous."
+  },
+  {
+    "concept": "milk",
+    "language_code": "fr",
+    "text": "lait",
+    "gender": "m",
+    "sentence_example": "Je bois du lait."
+  },
+  {
+    "concept": "egg",
+    "language_code": "fr",
+    "text": "œuf",
+    "gender": "m",
+    "plural_text": "œufs",
+    "sentence_example": "J'ai mangé un œuf au petit-déjeuner."
   },
   {
     "concept": "restaurant",
     "language_code": "fr",
     "text": "restaurant",
-    "gender": "masculine",
+    "gender": "m",
     "plural_text": "restaurants",
-    "sentence_example": "Le restaurant est fermé."
+    "sentence_example": "Allons au restaurant."
+  },
+  {
+    "concept": "menu",
+    "language_code": "fr",
+    "text": "menu",
+    "gender": "m",
+    "plural_text": "menus",
+    "sentence_example": "Puis-je voir le menu ?"
+  },
+  {
+    "concept": "waiter",
+    "language_code": "fr",
+    "text": "serveur",
+    "gender": "m",
+    "plural_text": "serveurs",
+    "sentence_example": "Le serveur est attentif."
+  },
+  {
+    "concept": "breakfast",
+    "language_code": "fr",
+    "text": "petit-déjeuner",
+    "gender": "m",
+    "sentence_example": "Le petit-déjeuner est le repas le plus important."
+  },
+  {
+    "concept": "lunch",
+    "language_code": "fr",
+    "text": "déjeuner",
+    "gender": "m",
+    "sentence_example": "Qu'y a-t-il pour le déjeuner ?"
+  },
+  {
+    "concept": "dinner",
+    "language_code": "fr",
+    "text": "dîner",
+    "gender": "m",
+    "sentence_example": "Le dîner est prêt."
+  },
+  {
+    "concept": "beer",
+    "language_code": "fr",
+    "text": "bière",
+    "gender": "f",
+    "plural_text": "bières",
+    "sentence_example": "Il a commandé une bière."
+  },
+  {
+    "concept": "wine",
+    "language_code": "fr",
+    "text": "vin",
+    "gender": "m",
+    "sentence_example": "Le vin rouge va avec la viande."
+  },
+  {
+    "concept": "coffee",
+    "language_code": "fr",
+    "text": "café",
+    "gender": "m",
+    "sentence_example": "J'ai besoin de café pour me réveiller."
+  },
+  {
+    "concept": "tea",
+    "language_code": "fr",
+    "text": "thé",
+    "gender": "m",
+    "sentence_example": "Préférez-vous le thé ou le café ?"
+  },
+  {
+    "concept": "vegetable",
+    "language_code": "fr",
+    "text": "légume",
+    "gender": "m",
+    "plural_text": "légumes",
+    "sentence_example": "Mange tes légumes."
+  },
+  {
+    "concept": "chef",
+    "language_code": "fr",
+    "text": "chef",
+    "gender": "m",
+    "plural_text": "chefs",
+    "sentence_example": "Le chef est célèbre."
+  },
+  {
+    "concept": "recipe",
+    "language_code": "fr",
+    "text": "recette",
+    "gender": "f",
+    "plural_text": "recettes",
+    "sentence_example": "J'ai besoin de la recette."
+  },
+  {
+    "concept": "ingredient",
+    "language_code": "fr",
+    "text": "ingrédient",
+    "gender": "m",
+    "plural_text": "ingrédients",
+    "sentence_example": "Les ingrédients frais sont la clé."
+  },
+  {
+    "concept": "spicy",
+    "language_code": "fr",
+    "text": "épicé",
+    "sentence_example": "J'aime la nourriture épicée."
+  },
+  {
+    "concept": "dessert",
+    "language_code": "fr",
+    "text": "dessert",
+    "gender": "m",
+    "plural_text": "desserts",
+    "sentence_example": "Gâteau au chocolat pour le dessert."
+  },
+  {
+    "concept": "appetizer",
+    "language_code": "fr",
+    "text": "apéritif",
+    "gender": "m",
+    "plural_text": "apéritifs",
+    "sentence_example": "Nous avons commandé un apéritif."
+  },
+  {
+    "concept": "bill",
+    "language_code": "fr",
+    "text": "addition",
+    "gender": "f",
+    "sentence_example": "Puis-je avoir l'addition s'il vous plaît ?"
+  },
+  {
+    "concept": "tip",
+    "language_code": "fr",
+    "text": "pourboire",
+    "gender": "m",
+    "plural_text": "pourboires",
+    "sentence_example": "Laissez un pourboire au serveur."
+  },
+  {
+    "concept": "vegetarian",
+    "language_code": "fr",
+    "text": "végétarien",
+    "sentence_example": "Je suis végétarien."
   }
 ]

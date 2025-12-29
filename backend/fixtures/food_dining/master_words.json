@@ -1,32 +1,212 @@
 [
   {
-    "concept": "bread",
+    "concept": "food",
     "domain_code": "food_dining",
     "difficulty": "EASY",
-    "word_type": "NOUN"
+    "word_type": "NOUN",
+    "image_url": null
   },
   {
     "concept": "water",
     "domain_code": "food_dining",
     "difficulty": "EASY",
-    "word_type": "NOUN"
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "bread",
+    "domain_code": "food_dining",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "fruit",
+    "domain_code": "food_dining",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
   },
   {
     "concept": "apple",
     "domain_code": "food_dining",
     "difficulty": "EASY",
-    "word_type": "NOUN"
+    "word_type": "NOUN",
+    "image_url": null
   },
   {
-    "concept": "coffee",
+    "concept": "banana",
     "domain_code": "food_dining",
     "difficulty": "EASY",
-    "word_type": "NOUN"
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "meat",
+    "domain_code": "food_dining",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "fish",
+    "domain_code": "food_dining",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "milk",
+    "domain_code": "food_dining",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "egg",
+    "domain_code": "food_dining",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
   },
   {
     "concept": "restaurant",
     "domain_code": "food_dining",
-    "difficulty": "EASY",
-    "word_type": "NOUN"
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "menu",
+    "domain_code": "food_dining",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "waiter",
+    "domain_code": "food_dining",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "breakfast",
+    "domain_code": "food_dining",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "lunch",
+    "domain_code": "food_dining",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "dinner",
+    "domain_code": "food_dining",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "beer",
+    "domain_code": "food_dining",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "wine",
+    "domain_code": "food_dining",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "coffee",
+    "domain_code": "food_dining",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "tea",
+    "domain_code": "food_dining",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "vegetable",
+    "domain_code": "food_dining",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "chef",
+    "domain_code": "food_dining",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "recipe",
+    "domain_code": "food_dining",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "ingredient",
+    "domain_code": "food_dining",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "spicy",
+    "domain_code": "food_dining",
+    "difficulty": "HARD",
+    "word_type": "ADJECTIVE",
+    "image_url": null
+  },
+  {
+    "concept": "dessert",
+    "domain_code": "food_dining",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "appetizer",
+    "domain_code": "food_dining",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "bill",
+    "domain_code": "food_dining",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "tip",
+    "domain_code": "food_dining",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "vegetarian",
+    "domain_code": "food_dining",
+    "difficulty": "HARD",
+    "word_type": "ADJECTIVE",
+    "image_url": null
   }
 ]

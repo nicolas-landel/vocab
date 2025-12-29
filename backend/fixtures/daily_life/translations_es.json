@@ -1,36 +1,221 @@
 [
   {
+    "concept": "house",
     "language_code": "es",
     "text": "casa",
-    "gender": "feminine",
+    "gender": "f",
     "plural_text": "casas",
-    "sentence_example": "La casa es grande.",
-    "concept": "house"
+    "sentence_example": "Vivo en una casa grande."
   },
   {
+    "concept": "room",
     "language_code": "es",
-    "text": "coche",
-    "gender": "masculine",
-    "plural_text": "coches",
-    "sentence_example": "Conduzco un coche.",
-    "concept": "car"
+    "text": "habitación",
+    "gender": "f",
+    "plural_text": "habitaciones",
+    "sentence_example": "Esta es mi habitación."
   },
   {
+    "concept": "bed",
+    "language_code": "es",
+    "text": "cama",
+    "gender": "f",
+    "plural_text": "camas",
+    "sentence_example": "La cama es cómoda."
+  },
+  {
+    "concept": "table",
+    "language_code": "es",
+    "text": "mesa",
+    "gender": "f",
+    "plural_text": "mesas",
+    "sentence_example": "La cena está en la mesa."
+  },
+  {
+    "concept": "chair",
+    "language_code": "es",
+    "text": "silla",
+    "gender": "f",
+    "plural_text": "sillas",
+    "sentence_example": "Siéntate en la silla."
+  },
+  {
+    "concept": "clock",
+    "language_code": "es",
+    "text": "reloj",
+    "gender": "m",
+    "plural_text": "relojes",
+    "sentence_example": "Mira el reloj."
+  },
+  {
+    "concept": "to_sleep",
     "language_code": "es",
     "text": "dormir",
-    "sentence_example": "Voy a dormir.",
-    "concept": "sleep"
+    "sentence_example": "Necesito dormir."
   },
   {
+    "concept": "to_eat",
     "language_code": "es",
     "text": "comer",
-    "sentence_example": "Hay que comer.",
-    "concept": "eat"
+    "sentence_example": "Es hora de comer."
   },
   {
+    "concept": "to_drink",
     "language_code": "es",
-    "text": "caminar",
-    "sentence_example": "Me gusta caminar.",
-    "concept": "walk"
+    "text": "beber",
+    "sentence_example": "Quiero beber agua."
+  },
+  {
+    "concept": "clothes",
+    "language_code": "es",
+    "text": "ropa",
+    "gender": "f",
+    "sentence_example": "Ponte tu ropa."
+  },
+  {
+    "concept": "kitchen",
+    "language_code": "es",
+    "text": "cocina",
+    "gender": "f",
+    "plural_text": "cocinas",
+    "sentence_example": "Ella está en la cocina."
+  },
+  {
+    "concept": "bathroom",
+    "language_code": "es",
+    "text": "baño",
+    "gender": "m",
+    "plural_text": "baños",
+    "sentence_example": "El baño está limpio."
+  },
+  {
+    "concept": "living_room",
+    "language_code": "es",
+    "text": "sala de estar",
+    "gender": "f",
+    "plural_text": "salas de estar",
+    "sentence_example": "Vemos la televisión en la sala de estar."
+  },
+  {
+    "concept": "furniture",
+    "language_code": "es",
+    "text": "muebles",
+    "gender": "m",
+    "sentence_example": "Tenemos muebles nuevos."
+  },
+  {
+    "concept": "gardening",
+    "language_code": "es",
+    "text": "jardinería",
+    "gender": "f",
+    "sentence_example": "Le encanta la jardinería."
+  },
+  {
+    "concept": "cleaning",
+    "language_code": "es",
+    "text": "limpieza",
+    "gender": "f",
+    "sentence_example": "La limpieza de la casa toma tiempo."
+  },
+  {
+    "concept": "cooking",
+    "language_code": "es",
+    "text": "cocina",
+    "gender": "f",
+    "sentence_example": "Disfruto de la cocina."
+  },
+  {
+    "concept": "laundry",
+    "language_code": "es",
+    "text": "lavandería",
+    "gender": "f",
+    "sentence_example": "Haz la lavandería hoy."
+  },
+  {
+    "concept": "groceries",
+    "language_code": "es",
+    "text": "comestibles",
+    "gender": "m",
+    "sentence_example": "Necesito comprar comestibles."
+  },
+  {
+    "concept": "to_wake_up",
+    "language_code": "es",
+    "text": "despertarse",
+    "sentence_example": "Me despierto a las siete."
+  },
+  {
+    "concept": "routine",
+    "language_code": "es",
+    "text": "rutina",
+    "gender": "f",
+    "plural_text": "rutinas",
+    "sentence_example": "Mi rutina diaria es simple."
+  },
+  {
+    "concept": "chore",
+    "language_code": "es",
+    "text": "tarea",
+    "gender": "f",
+    "plural_text": "tareas",
+    "sentence_example": "Lavar los platos es una tarea."
+  },
+  {
+    "concept": "maintenance",
+    "language_code": "es",
+    "text": "mantenimiento",
+    "gender": "m",
+    "sentence_example": "El mantenimiento del coche es caro."
+  },
+  {
+    "concept": "appliance",
+    "language_code": "es",
+    "text": "electrodoméstico",
+    "gender": "m",
+    "plural_text": "electrodomésticos",
+    "sentence_example": "El electrodoméstico de cocina está roto."
+  },
+  {
+    "concept": "utilities",
+    "language_code": "es",
+    "text": "servicios públicos",
+    "gender": "m",
+    "sentence_example": "Paga la factura de los servicios públicos."
+  },
+  {
+    "concept": "leisure",
+    "language_code": "es",
+    "text": "ocio",
+    "gender": "m",
+    "sentence_example": "Disfruta de tu tiempo de ocio."
+  },
+  {
+    "concept": "lifestyle",
+    "language_code": "es",
+    "text": "estilo de vida",
+    "gender": "m",
+    "sentence_example": "Ella lleva un estilo de vida saludable."
+  },
+  {
+    "concept": "habit",
+    "language_code": "es",
+    "text": "hábito",
+    "gender": "m",
+    "plural_text": "hábitos",
+    "sentence_example": "Fumar es un mal hábito."
+  },
+  {
+    "concept": "hygiene",
+    "language_code": "es",
+    "text": "higiene",
+    "gender": "f",
+    "sentence_example": "Una buena higiene previene enfermedades."
+  },
+  {
+    "concept": "schedule",
+    "language_code": "es",
+    "text": "horario",
+    "gender": "m",
+    "sentence_example": "Revisa tu horario."
   }
 ]

@@ -1,0 +1,182 @@
+[
+  {
+    "concept": "ball",
+    "language_code": "en",
+    "text": "ball",
+    "sentence_example": "Kick the ball."
+  },
+  {
+    "concept": "team",
+    "language_code": "en",
+    "text": "team",
+    "sentence_example": "Our team won the game."
+  },
+  {
+    "concept": "game",
+    "language_code": "en",
+    "text": "game",
+    "sentence_example": "The game starts at five."
+  },
+  {
+    "concept": "player",
+    "language_code": "en",
+    "text": "player",
+    "sentence_example": "He is a good player."
+  },
+  {
+    "concept": "score",
+    "language_code": "en",
+    "text": "score",
+    "sentence_example": "What is the score?"
+  },
+  {
+    "concept": "to_run",
+    "language_code": "en",
+    "text": "to run",
+    "sentence_example": "I run in the park every morning."
+  },
+  {
+    "concept": "to_jump",
+    "language_code": "en",
+    "text": "to jump",
+    "sentence_example": "Can you jump high?"
+  },
+  {
+    "concept": "to_swim",
+    "language_code": "en",
+    "text": "to swim",
+    "sentence_example": "I like to swim in the pool."
+  },
+  {
+    "concept": "football",
+    "language_code": "en",
+    "text": "football",
+    "sentence_example": "They are playing football."
+  },
+  {
+    "concept": "tennis",
+    "language_code": "en",
+    "text": "tennis",
+    "sentence_example": "Tennis requires a racket."
+  },
+  {
+    "concept": "match",
+    "language_code": "en",
+    "text": "match",
+    "sentence_example": "We watched the match on TV."
+  },
+  {
+    "concept": "coach",
+    "language_code": "en",
+    "text": "coach",
+    "sentence_example": "The coach trains the players."
+  },
+  {
+    "concept": "stadium",
+    "language_code": "en",
+    "text": "stadium",
+    "sentence_example": "The stadium was full."
+  },
+  {
+    "concept": "goal",
+    "language_code": "en",
+    "text": "goal",
+    "sentence_example": "He scored a goal."
+  },
+  {
+    "concept": "referee",
+    "language_code": "en",
+    "text": "referee",
+    "sentence_example": "The referee blew the whistle."
+  },
+  {
+    "concept": "training",
+    "language_code": "en",
+    "text": "training",
+    "sentence_example": "Training is hard work."
+  },
+  {
+    "concept": "championship",
+    "language_code": "en",
+    "text": "championship",
+    "sentence_example": "They won the championship."
+  },
+  {
+    "concept": "medal",
+    "language_code": "en",
+    "text": "medal",
+    "sentence_example": "She won a gold medal."
+  },
+  {
+    "concept": "to_win",
+    "language_code": "en",
+    "text": "to win",
+    "sentence_example": "Everyone wants to win."
+  },
+  {
+    "concept": "to_lose",
+    "language_code": "en",
+    "text": "to lose",
+    "sentence_example": "It is sad to lose."
+  },
+  {
+    "concept": "tournament",
+    "language_code": "en",
+    "text": "tournament",
+    "sentence_example": "The tournament lasts all week."
+  },
+  {
+    "concept": "athlete",
+    "language_code": "en",
+    "text": "athlete",
+    "sentence_example": "The athlete is very strong."
+  },
+  {
+    "concept": "opponent",
+    "language_code": "en",
+    "text": "opponent",
+    "sentence_example": "Respect your opponent."
+  },
+  {
+    "concept": "victory",
+    "language_code": "en",
+    "text": "victory",
+    "sentence_example": "We celebrated the victory."
+  },
+  {
+    "concept": "defeat",
+    "language_code": "en",
+    "text": "defeat",
+    "sentence_example": "They accepted the defeat."
+  },
+  {
+    "concept": "strategy",
+    "language_code": "en",
+    "text": "strategy",
+    "sentence_example": "The team needs a good strategy."
+  },
+  {
+    "concept": "endurance",
+    "language_code": "en",
+    "text": "endurance",
+    "sentence_example": "Marathon runners need endurance."
+  },
+  {
+    "concept": "equipment",
+    "language_code": "en",
+    "text": "equipment",
+    "sentence_example": "Sports equipment can be expensive."
+  },
+  {
+    "concept": "performance",
+    "language_code": "en",
+    "text": "performance",
+    "sentence_example": "His performance was excellent."
+  },
+  {
+    "concept": "fitness",
+    "language_code": "en",
+    "text": "fitness",
+    "sentence_example": "Physical fitness is important."
+  }
+]

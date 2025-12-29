@@ -1,1 +1,227 @@
-[]
+[
+  {
+    "concept": "movie",
+    "language_code": "fr",
+    "text": "film",
+    "gender": "m",
+    "plural_text": "films",
+    "sentence_example": "J'ai regardé un film."
+  },
+  {
+    "concept": "music",
+    "language_code": "fr",
+    "text": "musique",
+    "gender": "f",
+    "sentence_example": "J'aime écouter de la musique."
+  },
+  {
+    "concept": "game",
+    "language_code": "fr",
+    "text": "jeu",
+    "gender": "m",
+    "plural_text": "jeux",
+    "sentence_example": "Jouons à un jeu."
+  },
+  {
+    "concept": "book",
+    "language_code": "fr",
+    "text": "livre",
+    "gender": "m",
+    "plural_text": "livres",
+    "sentence_example": "Lis un livre."
+  },
+  {
+    "concept": "fun",
+    "language_code": "fr",
+    "text": "plaisir",
+    "gender": "m",
+    "sentence_example": "C'est amusant."
+  },
+  {
+    "concept": "to_play",
+    "language_code": "fr",
+    "text": "jouer",
+    "sentence_example": "Les enfants aiment jouer."
+  },
+  {
+    "concept": "to_sing",
+    "language_code": "fr",
+    "text": "chanter",
+    "sentence_example": "Peux-tu chanter ?"
+  },
+  {
+    "concept": "to_dance",
+    "language_code": "fr",
+    "text": "danser",
+    "sentence_example": "Je veux danser."
+  },
+  {
+    "concept": "tv",
+    "language_code": "fr",
+    "text": "télé",
+    "gender": "f",
+    "sentence_example": "Allume la télé."
+  },
+  {
+    "concept": "radio",
+    "language_code": "fr",
+    "text": "radio",
+    "gender": "f",
+    "sentence_example": "Écoute la radio."
+  },
+  {
+    "concept": "theater",
+    "language_code": "fr",
+    "text": "théâtre",
+    "gender": "m",
+    "plural_text": "théâtres",
+    "sentence_example": "Nous sommes allés au théâtre."
+  },
+  {
+    "concept": "concert",
+    "language_code": "fr",
+    "text": "concert",
+    "gender": "m",
+    "plural_text": "concerts",
+    "sentence_example": "Le concert était bruyant."
+  },
+  {
+    "concept": "museum",
+    "language_code": "fr",
+    "text": "musée",
+    "gender": "m",
+    "plural_text": "musées",
+    "sentence_example": "Visitez le musée."
+  },
+  {
+    "concept": "party",
+    "language_code": "fr",
+    "text": "fête",
+    "gender": "f",
+    "plural_text": "fêtes",
+    "sentence_example": "Vas-tu à la fête ?"
+  },
+  {
+    "concept": "festival",
+    "language_code": "fr",
+    "text": "festival",
+    "gender": "m",
+    "plural_text": "festivals",
+    "sentence_example": "Le festival de musique est annuel."
+  },
+  {
+    "concept": "actor",
+    "language_code": "fr",
+    "text": "acteur",
+    "gender": "m",
+    "plural_text": "acteurs",
+    "sentence_example": "C'est un acteur célèbre."
+  },
+  {
+    "concept": "artist",
+    "language_code": "fr",
+    "text": "artiste",
+    "gender": "m",
+    "plural_text": "artistes",
+    "sentence_example": "C'est une artiste talentueuse."
+  },
+  {
+    "concept": "hobby",
+    "language_code": "fr",
+    "text": "passe-temps",
+    "gender": "m",
+    "plural_text": "passe-temps",
+    "sentence_example": "Mon passe-temps est la lecture."
+  },
+  {
+    "concept": "video_game",
+    "language_code": "fr",
+    "text": "jeu vidéo",
+    "gender": "m",
+    "plural_text": "jeux vidéo",
+    "sentence_example": "Il joue aux jeux vidéo toute la journée."
+  },
+  {
+    "concept": "to_relax",
+    "language_code": "fr",
+    "text": "se détendre",
+    "sentence_example": "J'ai besoin de me détendre."
+  },
+  {
+    "concept": "exhibition",
+    "language_code": "fr",
+    "text": "exposition",
+    "gender": "f",
+    "plural_text": "expositions",
+    "sentence_example": "L'exposition d'art est ouverte."
+  },
+  {
+    "concept": "performance",
+    "language_code": "fr",
+    "text": "performance",
+    "gender": "f",
+    "plural_text": "performances",
+    "sentence_example": "Super performance !"
+  },
+  {
+    "concept": "audience",
+    "language_code": "fr",
+    "text": "public",
+    "gender": "m",
+    "sentence_example": "Le public a applaudi."
+  },
+  {
+    "concept": "stage",
+    "language_code": "fr",
+    "text": "scène",
+    "gender": "f",
+    "plural_text": "scènes",
+    "sentence_example": "Il est sur scène."
+  },
+  {
+    "concept": "ticket_office",
+    "language_code": "fr",
+    "text": "guichet",
+    "gender": "m",
+    "plural_text": "guichets",
+    "sentence_example": "Achetez des billets au guichet."
+  },
+  {
+    "concept": "screen",
+    "language_code": "fr",
+    "text": "écran",
+    "gender": "m",
+    "plural_text": "écrans",
+    "sentence_example": "Regarde l'écran."
+  },
+  {
+    "concept": "orchestra",
+    "language_code": "fr",
+    "text": "orchestre",
+    "gender": "m",
+    "plural_text": "orchestres",
+    "sentence_example": "L'orchestre a joué magnifiquement."
+  },
+  {
+    "concept": "celebrity",
+    "language_code": "fr",
+    "text": "célébrité",
+    "gender": "f",
+    "plural_text": "célébrités",
+    "sentence_example": "C'est une célébrité."
+  },
+  {
+    "concept": "entertainment",
+    "language_code": "fr",
+    "text": "divertissement",
+    "gender": "m",
+    "sentence_example": "C'est un bon divertissement."
+  },
+  {
+    "concept": "atmosphere",
+    "language_code": "fr",
+    "text": "ambiance",
+    "gender": "f",
+    "sentence_example": "L'ambiance était festive."
+  }
+]

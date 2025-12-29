@@ -1,0 +1,227 @@
+[
+  {
+    "concept": "art",
+    "language_code": "es",
+    "text": "arte",
+    "gender": "m",
+    "sentence_example": "Estudio arte moderno."
+  },
+  {
+    "concept": "music",
+    "language_code": "es",
+    "text": "música",
+    "gender": "f",
+    "sentence_example": "La música me hace feliz."
+  },
+  {
+    "concept": "movie",
+    "language_code": "es",
+    "text": "película",
+    "gender": "f",
+    "plural_text": "películas",
+    "sentence_example": "Vamos a ver una película."
+  },
+  {
+    "concept": "book",
+    "language_code": "es",
+    "text": "libro",
+    "gender": "m",
+    "plural_text": "libros",
+    "sentence_example": "Lee este libro."
+  },
+  {
+    "concept": "song",
+    "language_code": "es",
+    "text": "canción",
+    "gender": "f",
+    "plural_text": "canciones",
+    "sentence_example": "Esta es mi canción favorita."
+  },
+  {
+    "concept": "to_draw",
+    "language_code": "es",
+    "text": "dibujar",
+    "sentence_example": "Le gusta dibujar animales."
+  },
+  {
+    "concept": "to_sing",
+    "language_code": "es",
+    "text": "cantar",
+    "sentence_example": "Ella canta muy bien."
+  },
+  {
+    "concept": "to_dance",
+    "language_code": "es",
+    "text": "bailar",
+    "sentence_example": "A ellos les encanta bailar."
+  },
+  {
+    "concept": "color",
+    "language_code": "es",
+    "text": "color",
+    "gender": "m",
+    "plural_text": "colores",
+    "sentence_example": "¿Cuál es tu color favorito?"
+  },
+  {
+    "concept": "picture",
+    "language_code": "es",
+    "text": "foto",
+    "gender": "f",
+    "plural_text": "fotos",
+    "sentence_example": "Toma una foto del atardecer."
+  },
+  {
+    "concept": "painting",
+    "language_code": "es",
+    "text": "pintura",
+    "gender": "f",
+    "plural_text": "pinturas",
+    "sentence_example": "La pintura es hermosa."
+  },
+  {
+    "concept": "sculpture",
+    "language_code": "es",
+    "text": "escultura",
+    "gender": "f",
+    "plural_text": "esculturas",
+    "sentence_example": "La escultura está hecha de piedra."
+  },
+  {
+    "concept": "theater",
+    "language_code": "es",
+    "text": "teatro",
+    "gender": "m",
+    "sentence_example": "Fuimos al teatro anoche."
+  },
+  {
+    "concept": "museum",
+    "language_code": "es",
+    "text": "museo",
+    "gender": "m",
+    "plural_text": "museos",
+    "sentence_example": "El museo está cerrado los lunes."
+  },
+  {
+    "concept": "camera",
+    "language_code": "es",
+    "text": "cámara",
+    "gender": "f",
+    "plural_text": "cámaras",
+    "sentence_example": "Compré una cámara nueva."
+  },
+  {
+    "concept": "instrument",
+    "language_code": "es",
+    "text": "instrumento",
+    "gender": "m",
+    "plural_text": "instrumentos",
+    "sentence_example": "¿Tocas algún instrumento musical?"
+  },
+  {
+    "concept": "concert",
+    "language_code": "es",
+    "text": "concierto",
+    "gender": "m",
+    "plural_text": "conciertos",
+    "sentence_example": "El concierto fue ruidoso."
+  },
+  {
+    "concept": "artist",
+    "language_code": "es",
+    "text": "artista",
+    "gender": "m",
+    "plural_text": "artistas",
+    "sentence_example": "Picasso fue un artista famoso."
+  },
+  {
+    "concept": "author",
+    "language_code": "es",
+    "text": "autor",
+    "gender": "m",
+    "plural_text": "autores",
+    "sentence_example": "¿Quién es el autor de este libro?"
+  },
+  {
+    "concept": "design",
+    "language_code": "es",
+    "text": "diseño",
+    "gender": "m",
+    "sentence_example": "Me gusta el diseño de esta casa."
+  },
+  {
+    "concept": "architecture",
+    "language_code": "es",
+    "text": "arquitectura",
+    "gender": "f",
+    "sentence_example": "La arquitectura moderna es interesante."
+  },
+  {
+    "concept": "literature",
+    "language_code": "es",
+    "text": "literatura",
+    "gender": "f",
+    "sentence_example": "Estudio literatura inglesa."
+  },
+  {
+    "concept": "poetry",
+    "language_code": "es",
+    "text": "poesía",
+    "gender": "f",
+    "sentence_example": "La poesía puede ser muy conmovedora."
+  },
+  {
+    "concept": "exhibition",
+    "language_code": "es",
+    "text": "exposición",
+    "gender": "f",
+    "plural_text": "exposiciones",
+    "sentence_example": "Hay una nueva exposición de arte."
+  },
+  {
+    "concept": "gallery",
+    "language_code": "es",
+    "text": "galería",
+    "gender": "f",
+    "plural_text": "galerías",
+    "sentence_example": "Visitemos la galería de arte."
+  },
+  {
+    "concept": "masterpiece",
+    "language_code": "es",
+    "text": "obra maestra",
+    "gender": "f",
+    "plural_text": "obras maestras",
+    "sentence_example": "Esta pintura es una obra maestra."
+  },
+  {
+    "concept": "symphony",
+    "language_code": "es",
+    "text": "sinfonía",
+    "gender": "f",
+    "plural_text": "sinfonías",
+    "sentence_example": "Beethoven escribió nueve sinfonías."
+  },
+  {
+    "concept": "canvas",
+    "language_code": "es",
+    "text": "lienzo",
+    "gender": "m",
+    "plural_text": "lienzos",
+    "sentence_example": "El artista pinta sobre el lienzo."
+  },
+  {
+    "concept": "aesthetic",
+    "language_code": "es",
+    "text": "estética",
+    "gender": "f",
+    "sentence_example": "La habitación tiene una estética minimalista."
+  },
+  {
+    "concept": "creativity",
+    "language_code": "es",
+    "text": "creatividad",
+    "gender": "f",
+    "sentence_example": "La creatividad es esencial para el arte."
+  }
+]

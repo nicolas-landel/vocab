@@ -46,19 +46,24 @@ class Session(Base):
     user = relationship("User", foreign_keys=[user_id])
     source_language = relationship("Language", foreign_keys=[source_lang_code])
     target_language = relationship("Language", foreign_keys=[target_lang_code])
-    results = relationship("SessionResult", back_populates="session", cascade="all, delete-orphan")
+    results = relationship("SessionWord", back_populates="session", cascade="all, delete-orphan")
 
 
-class SessionResult(Base):
+class SessionWord(Base):
     """Stores individual word results for each session"""
     __tablename__ = "session_results"
     
     session_id = Column(UUID(as_uuid=True), ForeignKey("sessions.id", ondelete="CASCADE"), nullable=False)
-    translation_id = Column(UUID(as_uuid=True), ForeignKey("translations.id", ondelete="CASCADE"), nullable=False)
-    correct = Column(Boolean, nullable=False)
+    translation_from_id = Column(UUID(as_uuid=True), ForeignKey("translations.id", ondelete="CASCADE"), nullable=False)
+    translation_to_id = Column(UUID(as_uuid=True), ForeignKey("translations.id", ondelete="CASCADE"), nullable=False)
+    from_language = Column(String, ForeignKey("languages.code"), nullable=False)
+    to_language = Column(String, ForeignKey("languages.code"), nullable=False)
+    correct = Column(Boolean, nullable=True, default=None)
+    user_answer = Column(String, nullable=True)
     
     session = relationship("Session", back_populates="results")
-    translation = relationship("Translation")
+    translation_from = relationship("Translation", foreign_keys=[translation_from_id])
+    translation_to = relationship("Translation", foreign_keys=[translation_to_id])
 
 
 class UserProgress(Base):

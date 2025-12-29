@@ -11,8 +11,8 @@ export class MasterWord extends Model {
       concept: this.string(''),
       domainCode: this.string(''),
       difficulty: this.string(''),
-      wordType: this.string(null).nullable(),
-      imageUrl: this.string(null).nullable(),
+      wordType: this.string(''),
+      imageUrl: this.string(''),
       createdAt: this.string(''),
       updatedAt: this.string(''),
       

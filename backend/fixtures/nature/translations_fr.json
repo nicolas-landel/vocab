@@ -1,0 +1,225 @@
+[
+  {
+    "concept": "sun",
+    "language_code": "fr",
+    "text": "soleil",
+    "gender": "m",
+    "sentence_example": "Le soleil brille."
+  },
+  {
+    "concept": "moon",
+    "language_code": "fr",
+    "text": "lune",
+    "gender": "f",
+    "sentence_example": "Regarde la lune ce soir."
+  },
+  {
+    "concept": "star",
+    "language_code": "fr",
+    "text": "étoile",
+    "gender": "f",
+    "plural_text": "étoiles",
+    "sentence_example": "J'ai vu une étoile filante."
+  },
+  {
+    "concept": "sky",
+    "language_code": "fr",
+    "text": "ciel",
+    "gender": "m",
+    "sentence_example": "Le ciel est bleu."
+  },
+  {
+    "concept": "tree",
+    "language_code": "fr",
+    "text": "arbre",
+    "gender": "m",
+    "plural_text": "arbres",
+    "sentence_example": "L'arbre est très grand."
+  },
+  {
+    "concept": "flower",
+    "language_code": "fr",
+    "text": "fleur",
+    "gender": "f",
+    "plural_text": "fleurs",
+    "sentence_example": "Cette fleur sent bon."
+  },
+  {
+    "concept": "grass",
+    "language_code": "fr",
+    "text": "herbe",
+    "gender": "f",
+    "sentence_example": "Ne pas marcher sur l'herbe."
+  },
+  {
+    "concept": "water",
+    "language_code": "fr",
+    "text": "eau",
+    "gender": "f",
+    "sentence_example": "Buvez beaucoup d'eau."
+  },
+  {
+    "concept": "rain",
+    "language_code": "fr",
+    "text": "pluie",
+    "gender": "f",
+    "sentence_example": "J'aime le bruit de la pluie."
+  },
+  {
+    "concept": "wind",
+    "language_code": "fr",
+    "text": "vent",
+    "gender": "m",
+    "sentence_example": "Le vent souffle fort."
+  },
+  {
+    "concept": "river",
+    "language_code": "fr",
+    "text": "rivière",
+    "gender": "f",
+    "plural_text": "rivières",
+    "sentence_example": "La rivière coule vers la mer."
+  },
+  {
+    "concept": "mountain",
+    "language_code": "fr",
+    "text": "montagne",
+    "gender": "f",
+    "plural_text": "montagnes",
+    "sentence_example": "Escalader la montagne est difficile."
+  },
+  {
+    "concept": "ocean",
+    "language_code": "fr",
+    "text": "océan",
+    "gender": "m",
+    "plural_text": "océans",
+    "sentence_example": "L'océan est vaste."
+  },
+  {
+    "concept": "forest",
+    "language_code": "fr",
+    "text": "forêt",
+    "gender": "f",
+    "plural_text": "forêts",
+    "sentence_example": "Les animaux vivent dans la forêt."
+  },
+  {
+    "concept": "desert",
+    "language_code": "fr",
+    "text": "désert",
+    "gender": "m",
+    "plural_text": "déserts",
+    "sentence_example": "Le désert est sec."
+  },
+  {
+    "concept": "season",
+    "language_code": "fr",
+    "text": "saison",
+    "gender": "f",
+    "plural_text": "saisons",
+    "sentence_example": "Ma saison préférée est l'été."
+  },
+  {
+    "concept": "climate",
+    "language_code": "fr",
+    "text": "climat",
+    "gender": "m",
+    "sentence_example": "Le climat change."
+  },
+  {
+    "concept": "animal",
+    "language_code": "fr",
+    "text": "animal",
+    "gender": "m",
+    "plural_text": "animaux",
+    "sentence_example": "Le zoo a beaucoup d'animaux."
+  },
+  {
+    "concept": "plant",
+    "language_code": "fr",
+    "text": "plante",
+    "gender": "f",
+    "plural_text": "plantes",
+    "sentence_example": "Arrosez la plante régulièrement."
+  },
+  {
+    "concept": "earth",
+    "language_code": "fr",
+    "text": "terre",
+    "gender": "f",
+    "sentence_example": "Nous vivons sur Terre."
+  },
+  {
+    "concept": "ecosystem",
+    "language_code": "fr",
+    "text": "écosystème",
+    "gender": "m",
+    "plural_text": "écosystèmes",
+    "sentence_example": "L'écosystème est fragile."
+  },
+  {
+    "concept": "biodiversity",
+    "language_code": "fr",
+    "text": "biodiversité",
+    "gender": "f",
+    "sentence_example": "La biodiversité est importante pour la nature."
+  },
+  {
+    "concept": "pollution",
+    "language_code": "fr",
+    "text": "pollution",
+    "gender": "f",
+    "sentence_example": "La pollution nuit à l'environnement."
+  },
+  {
+    "concept": "atmosphere",
+    "language_code": "fr",
+    "text": "atmosphère",
+    "gender": "f",
+    "sentence_example": "L'atmosphère nous protège."
+  },
+  {
+    "concept": "geology",
+    "language_code": "fr",
+    "text": "géologie",
+    "gender": "f",
+    "sentence_example": "Étudiez la géologie de la région."
+  },
+  {
+    "concept": "photosynthesis",
+    "language_code": "fr",
+    "text": "photosynthèse",
+    "gender": "f",
+    "sentence_example": "Les plantes utilisent la photosynthèse pour fabriquer de la nourriture."
+  },
+  {
+    "concept": "erosion",
+    "language_code": "fr",
+    "text": "érosion",
+    "gender": "f",
+    "sentence_example": "L'érosion change le paysage."
+  },
+  {
+    "concept": "conservation",
+    "language_code": "fr",
+    "text": "conservation",
+    "gender": "f",
+    "sentence_example": "La conservation de la nature est vitale."
+  },
+  {
+    "concept": "sustainability",
+    "language_code": "fr",
+    "text": "durabilité",
+    "gender": "f",
+    "sentence_example": "La durabilité assure des ressources pour l'avenir."
+  },
+  {
+    "concept": "habitat",
+    "language_code": "fr",
+    "text": "habitat",
+    "gender": "m",
+    "plural_text": "habitats",
+    "sentence_example": "Protégez l'habitat de l'animal."
+  }
+]

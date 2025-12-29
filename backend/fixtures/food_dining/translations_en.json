@@ -1,27 +1,182 @@
 [
   {
-    "concept": "bread",
+    "concept": "food",
     "language_code": "en",
-    "text": "bread"
+    "text": "food",
+    "sentence_example": "I like good food."
   },
   {
     "concept": "water",
     "language_code": "en",
-    "text": "water"
+    "text": "water",
+    "sentence_example": "Drink plenty of water."
+  },
+  {
+    "concept": "bread",
+    "language_code": "en",
+    "text": "bread",
+    "sentence_example": "I eat bread for breakfast."
+  },
+  {
+    "concept": "fruit",
+    "language_code": "en",
+    "text": "fruit",
+    "sentence_example": "Fruit is healthy."
   },
   {
     "concept": "apple",
     "language_code": "en",
-    "text": "apple"
+    "text": "apple",
+    "sentence_example": "An apple a day keeps the doctor away."
   },
   {
-    "concept": "coffee",
+    "concept": "banana",
     "language_code": "en",
-    "text": "coffee"
+    "text": "banana",
+    "sentence_example": "Monkeys like bananas."
+  },
+  {
+    "concept": "meat",
+    "language_code": "en",
+    "text": "meat",
+    "sentence_example": "He eats meat."
+  },
+  {
+    "concept": "fish",
+    "language_code": "en",
+    "text": "fish",
+    "sentence_example": "Fish is good for you."
+  },
+  {
+    "concept": "milk",
+    "language_code": "en",
+    "text": "milk",
+    "sentence_example": "I drink milk."
+  },
+  {
+    "concept": "egg",
+    "language_code": "en",
+    "text": "egg",
+    "sentence_example": "I had an egg for breakfast."
   },
   {
     "concept": "restaurant",
     "language_code": "en",
-    "text": "restaurant"
+    "text": "restaurant",
+    "sentence_example": "Let's go to a restaurant."
+  },
+  {
+    "concept": "menu",
+    "language_code": "en",
+    "text": "menu",
+    "sentence_example": "Can I see the menu?"
+  },
+  {
+    "concept": "waiter",
+    "language_code": "en",
+    "text": "waiter",
+    "sentence_example": "The waiter is attentive."
+  },
+  {
+    "concept": "breakfast",
+    "language_code": "en",
+    "text": "breakfast",
+    "sentence_example": "Breakfast is the most important meal."
+  },
+  {
+    "concept": "lunch",
+    "language_code": "en",
+    "text": "lunch",
+    "sentence_example": "What's for lunch?"
+  },
+  {
+    "concept": "dinner",
+    "language_code": "en",
+    "text": "dinner",
+    "sentence_example": "Dinner is ready."
+  },
+  {
+    "concept": "beer",
+    "language_code": "en",
+    "text": "beer",
+    "sentence_example": "He ordered a beer."
+  },
+  {
+    "concept": "wine",
+    "language_code": "en",
+    "text": "wine",
+    "sentence_example": "Red wine goes with meat."
+  },
+  {
+    "concept": "coffee",
+    "language_code": "en",
+    "text": "coffee",
+    "sentence_example": "I need coffee to wake up."
+  },
+  {
+    "concept": "tea",
+    "language_code": "en",
+    "text": "tea",
+    "sentence_example": "Do you prefer tea or coffee?"
+  },
+  {
+    "concept": "vegetable",
+    "language_code": "en",
+    "text": "vegetable",
+    "sentence_example": "Eat your vegetables."
+  },
+  {
+    "concept": "chef",
+    "language_code": "en",
+    "text": "chef",
+    "sentence_example": "The chef is famous."
+  },
+  {
+    "concept": "recipe",
+    "language_code": "en",
+    "text": "recipe",
+    "sentence_example": "I need the recipe."
+  },
+  {
+    "concept": "ingredient",
+    "language_code": "en",
+    "text": "ingredient",
+    "sentence_example": "Fresh ingredients are key."
+  },
+  {
+    "concept": "spicy",
+    "language_code": "en",
+    "text": "spicy",
+    "sentence_example": "I like spicy food."
+  },
+  {
+    "concept": "dessert",
+    "language_code": "en",
+    "text": "dessert",
+    "sentence_example": "Chocolate cake for dessert."
+  },
+  {
+    "concept": "appetizer",
+    "language_code": "en",
+    "text": "appetizer",
+    "sentence_example": "We ordered an appetizer."
+  },
+  {
+    "concept": "bill",
+    "language_code": "en",
+    "text": "bill",
+    "sentence_example": "Can I have the bill please?"
+  },
+  {
+    "concept": "tip",
+    "language_code": "en",
+    "text": "tip",
+    "sentence_example": "Leave a tip for the waiter."
+  },
+  {
+    "concept": "vegetarian",
+    "language_code": "en",
+    "text": "vegetarian",
+    "sentence_example": "I am vegetarian."
   }
 ]

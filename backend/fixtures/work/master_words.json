@@ -3,30 +3,210 @@
     "concept": "job",
     "domain_code": "work",
     "difficulty": "EASY",
-    "word_type": "NOUN"
+    "word_type": "NOUN",
+    "image_url": null
   },
   {
     "concept": "office",
     "domain_code": "work",
     "difficulty": "EASY",
-    "word_type": "NOUN"
-  },
-  {
-    "concept": "meeting",
-    "domain_code": "work",
-    "difficulty": "MEDIUM",
-    "word_type": "NOUN"
+    "word_type": "NOUN",
+    "image_url": null
   },
   {
     "concept": "boss",
     "domain_code": "work",
     "difficulty": "EASY",
-    "word_type": "NOUN"
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "worker",
+    "domain_code": "work",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "salary",
+    "domain_code": "work",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "to_work",
+    "domain_code": "work",
+    "difficulty": "EASY",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "meeting",
+    "domain_code": "work",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "company",
+    "domain_code": "work",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
   },
   {
     "concept": "computer",
     "domain_code": "work",
     "difficulty": "EASY",
-    "word_type": "NOUN"
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "email",
+    "domain_code": "work",
+    "difficulty": "EASY",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "manager",
+    "domain_code": "work",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "colleague",
+    "domain_code": "work",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "career",
+    "domain_code": "work",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "interview",
+    "domain_code": "work",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "resume",
+    "domain_code": "work",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "project",
+    "domain_code": "work",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "contract",
+    "domain_code": "work",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "client",
+    "domain_code": "work",
+    "difficulty": "MEDIUM",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "to_hire",
+    "domain_code": "work",
+    "difficulty": "MEDIUM",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "to_fire",
+    "domain_code": "work",
+    "difficulty": "MEDIUM",
+    "word_type": "VERB",
+    "image_url": null
+  },
+  {
+    "concept": "promotion",
+    "domain_code": "work",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "retirement",
+    "domain_code": "work",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "unemployment",
+    "domain_code": "work",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "internship",
+    "domain_code": "work",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "entrepreneur",
+    "domain_code": "work",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "negotiation",
+    "domain_code": "work",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "deadline",
+    "domain_code": "work",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "efficiency",
+    "domain_code": "work",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "productivity",
+    "domain_code": "work",
+    "difficulty": "HARD",
+    "word_type": "NOUN",
+    "image_url": null
+  },
+  {
+    "concept": "to_resign",
+    "domain_code": "work",
+    "difficulty": "HARD",
+    "word_type": "VERB",
+    "image_url": null
   }
 ]

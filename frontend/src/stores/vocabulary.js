@@ -27,8 +27,9 @@ export const useVocabularyStore = defineStore('vocabulary', {
     difficulties: () => {
       return ['EASY', 'MEDIUM', 'HARD']
     },
-    getLanguageName: () => (code) => {
-      const lang = this.languages.find(l => l.code === code)
+    getLanguageName: (state) => (code) => {
+      const languages = useRepo(Language).all()
+      const lang = languages.find(l => l.code === code)
       return lang ? lang.name : code
     }
   },
