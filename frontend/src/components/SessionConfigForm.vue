@@ -77,6 +77,7 @@ import { useAuthStore } from '@/stores/auth'
 import { UserLanguage } from "@/models"
 import { useRepo } from 'pinia-orm'
 import { useNotificationsStore } from '@/stores/notification'
+import { SESSION_TYPES, DIFFICULTY_LEVELS } from "@/const"
 
 
 const { t } = useI18n()
@@ -96,16 +97,16 @@ const config = ref({
   languageTested: '',
   domain: null,
   difficulty: '',
-  sessionType: 'MIXED'
+  sessionType: SESSION_TYPES.MIXED
 })
 
 const languages = ref([])
 const domains = ref([])
 
 const translatedDifficulties = computed(() => [
-  { label: t('difficulties.easy'), value: 'EASY' },
-  { label: t('difficulties.medium'), value: 'MEDIUM' },
-  { label: t('difficulties.hard'), value: 'HARD' }
+  { label: t('difficulties.easy'), value: DIFFICULTY_LEVELS.EASY },
+  { label: t('difficulties.medium'), value: DIFFICULTY_LEVELS.MEDIUM },
+  { label: t('difficulties.hard'), value: DIFFICULTY_LEVELS.HARD }
 ])
 
 const translatedDomains = computed(() => 
@@ -116,9 +117,9 @@ const translatedDomains = computed(() =>
 )
 
 const sessionTypes = computed(() => [
-  { label: t('sessionConfig.comprehension'), value: 'COMPREHENSION' },
-  { label: t('sessionConfig.expression'), value: 'EXPRESSION' },
-  { label: t('sessionConfig.both'), value: 'MIXED' }
+  { label: t('sessionConfig.comprehension'), value: SESSION_TYPES.COMPREHENSION },
+  { label: t('sessionConfig.expression'), value: SESSION_TYPES.EXPRESSION },
+  { label: t('sessionConfig.both'), value: SESSION_TYPES.MIXED }
 ])
 
 const userAppLanguage = computed(() => {
@@ -202,7 +203,7 @@ onMounted(async () => {
   if (domains.value.length > 0) {
     config.value.domain = domains.value[0].id
   }
-  config.value.difficulty = 'EASY'
+  config.value.difficulty = DIFFICULTY_LEVELS.EASY
 
 })
 </script>

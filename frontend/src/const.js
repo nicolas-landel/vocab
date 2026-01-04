@@ -1,0 +1,13 @@
+
+
+export const SESSION_TYPES = {
+  COMPREHENSION: "COMPREHENSION",
+  EXPRESSION: "EXPRESSION",
+  MIXED: "MIXED",
+}
+
+export const DIFFICULTY_LEVELS = {
+  EASY: "EASY",
+  MEDIUM: "MEDIUM",
+  HARD: "HARD",
+}

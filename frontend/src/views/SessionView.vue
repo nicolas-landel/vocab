@@ -2,19 +2,21 @@
   <VContainer>
     <VCard v-if="!sessionStore.isSessionComplete" max-width="800" class="mx-auto">
       <VCardTitle>
-        <div class="d-flex justify-space-between align-center w-100">
-          <span>{{ t('session.progress') }}</span>
-          <span class="text-body-1">
-            {{ progress.toFixed(0) }}%
-          </span>
+        <div class="d-flex justify-center align-center w-100">
+           <VChip
+            color="primary"
+            variant="outlined"
+          >{{ currentDomain?.name || '' }}</VChip>
+          </div>
+          <div class="d-flex justify-center align-center mt-4">
+          <VProgressLinear
+            :model-value="progress"
+            color="primary"
+            height="10"
+            style="width: 70%;"
+          />
         </div>
       </VCardTitle>
-
-      <VProgressLinear
-        :model-value="progress"
-        color="primary"
-        height="8"
-      ></VProgressLinear>
 
       <VCardText class="pt-8">
         <div v-if="currentWord">
@@ -25,12 +27,6 @@
             <div class="text-h3 mb-6 capitalize-text">
               {{ getTextToTranslate }}
             </div>
-            
-            <!-- <div v-if="currentWord.masterWord?.domain" class="mb-4">
-              <VChip color="primary" variant="outlined">
-                {{ t(`domains.${sessionStore.currentWord.masterWord.domain.code}`) }}
-              </VChip>
-            </div> -->
           </VCol>
 
           <VCol>
@@ -54,42 +50,25 @@
               {{ t('session.validate') }}
             </VBtn>
           </VCol>
-          
-
-
-          <!-- Result Display -->
-          <VCol cols="12" v-if="showResult">
-            <VAlert
-              :type="isCorrect ? 'success' : 'error'"
-              :icon="isCorrect ? 'mdi-check-circle' : 'mdi-close-circle'"
-              prominent
+          <VCol>
+            <VBtn
+              v-if="!showResult"
+              variant="text"
+              class="text-decoration-underline"
+              @click="skipWord"
+              block
             >
-              <div class="text-h6">{{ isCorrect ? t('session.correct') : t('session.incorrect') }}</div>
-              <div v-if="!isCorrect" class="mt-2">
-                {{ t('session.correctAnswer') }}: <strong>{{ correctAnswer }}</strong>
-              </div>
-            </VAlert>
+              {{ t('session.iForgot') }}
+            </VBtn>
           </VCol>
 
-          <VCol cols="12">
-            <div class="d-flex gap-2">
-              <VBtn
-                v-if="!showResult"
-                variant="text"
-                class="text-decoration-underline"
-                @click="skipWord"
-                block
-              >
-                {{ t('session.iForgot') }}
-              </VBtn>
-            </div>
-          </VCol>
         </div>
+          
       </VCardText>
     </VCard>
 
     <!-- Session Complete -->
-    <VCard v-else max-width="800" class="mx-auto">
+    <!-- <VCard v-else max-width="800" class="mx-auto">
       <VCardTitle class="text-center">{{ t('session.complete') }}</VCardTitle>
       <VCardText>
         <div class="text-center mb-6">
@@ -123,7 +102,7 @@
           </VBtn>
         </div>
       </VCardText>
-    </VCard>
+    </VCard> -->
   </VContainer>
 </template>
 
@@ -132,8 +111,10 @@ import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useSessionStore } from '@/stores/session'
-import { SessionWord } from "@/models"
+import { SessionWord, Domain } from "@/models"
 import { useRepo } from "pinia-orm"
+import { SESSION_TYPES } from "@/const"
+import { generateRandomProbability } from '@/utils/helpers'
 
 const { t } = useI18n()
 const props = defineProps(['id'])
@@ -144,9 +125,16 @@ const sessionWordRepo = useRepo(SessionWord)
 const currentWord = ref(null)
 const currentIndex = ref(0)
 const userAnswer = ref('')
+const typeOfTranslation = ref('')
 // const showResult = ref(false)
 // const isCorrect = ref(false)
 // const correctAnswer = ref('')
+
+const currentDomain = computed(() => {
+  const domainCode = sessionStore.currentConfig?.domain
+  console.log("Current Domain Code:", domainCode, useRepo(Domain).find(domainCode))
+  return useRepo(Domain).find(domainCode)
+})
 
 const answeredWords = computed(() => {
   return sessionWordRepo.query()
@@ -164,57 +152,87 @@ const allWords = computed(() => {
 })
 
 const progress = computed(() => {
-  console.log("pppppppp", answeredWords.value, allWords.value)
   if (allWords.value.length === 0) return 0
   return (answeredWords.value.length / allWords.value.length) * 100
 })
 
+
 const getTextToTranslate = computed(() => {
   if (!currentWord.value) return ''
-  // Assuming we want to show the text from the 'translationFrom' relationship
-  return currentWord.value.translationFrom?.text || ''
+
+  if (typeOfTranslation.value === 'to') {
+    return currentWord.value.translationTo?.text || ''
+  } else {
+    return currentWord.value.translationFrom?.text || ''
+  }
 })
+
 
 
 const submitAnswer = () => {
   console.log("Submitting answer for word:", userAnswer.value)
   if (!userAnswer.value.trim()) return
+  // TODO : 
+  // 1. Submit answer to store
+  // 2. Check if correct (ie currentWord.translation.text OR synonyms)
+  // display result + show correct answer if wrong
+  // with button to go to next word
 
-  correctAnswer.value = currentWord.value.translation?.text || ''
+
+  // correctAnswer.value = currentWord.value.translation?.text || ''
   
-  // Submit answer to store
-  sessionStore.submitAnswer(userAnswer.value)
+  // // Submit answer to store
+  // sessionStore.submitAnswer(userAnswer.value)
   
-  // Check if answer was correct
-  const answerRecord = sessionStore.answers[sessionStore.answers.length - 1]
-  isCorrect.value = answerRecord?.correct || false
+  // // Check if answer was correct
+  // const answerRecord = sessionStore.answers[sessionStore.answers.length - 1]
+  // isCorrect.value = answerRecord?.correct || false
   
-  showResult.value = true
+  // showResult.value = true
 }
 
-const skipWord = () => {
-  sessionStore.skipWord()
-  resetInputState()
-}
+// const skipWord = () => {
+//   sessionStore.skipWord()
+//   resetInputState()
+// }
 
-const nextWord = () => {
-  resetInputState()
-}
+// const nextWord = () => {
+//   resetInputState()
+// }
 
-const resetInputState = () => {
-  userAnswer.value = ''
-  showResult.value = false
-  isCorrect.value = false
-  correctAnswer.value = ''
-}
+// const resetInputState = () => {
+//   userAnswer.value = ''
+//   showResult.value = false
+//   isCorrect.value = false
+//   correctAnswer.value = ''
+// }
 
-const finishSession = async () => {
-  try {
-    await sessionStore.completeSession()
-    router.push('/')
-  } catch (error) {
-    console.error(t('session.failedToComplete'), error)
-    alert(t('session.failedToComplete'))
+// const finishSession = async () => {
+//   try {
+//     await sessionStore.completeSession()
+//     router.push('/')
+//   } catch (error) {
+//     console.error(t('session.failedToComplete'), error)
+//     alert(t('session.failedToComplete'))
+//   }
+// }
+
+const getTypeOfTranslation = () => {
+  // TODO call this if MIXED to next words
+  const decideRandomTranslationType = () => {
+    const rand = generateRandomProbability()
+    console.log("Random Probability for mixed session type:", rand)
+    return rand < 0.5 ? 'to' : 'from'
+  }
+  const sessionType = sessionStore.currentConfig?.sessionType
+  if (sessionType === SESSION_TYPES.COMPREHENSION) {
+    return 'to'
+  }
+  if (sessionType === SESSION_TYPES.EXPRESSION) {
+    return 'from'
+  }
+  if (sessionType === SESSION_TYPES.MIXED) {
+    return decideRandomTranslationType()
   }
 }
 
@@ -223,6 +241,7 @@ onMounted(async () => {
     router.push('/')
   }
   currentWord.value = allWords.value[currentIndex.value]
+  typeOfTranslation.value = getTypeOfTranslation()
   console.log("Current Word:", currentWord.value)
 })
 </script>
@@ -232,4 +251,5 @@ onMounted(async () => {
 .capitalize-text {
   text-transform: capitalize !important;
 }
+
 </style>
